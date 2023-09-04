@@ -90,7 +90,7 @@ const PrivacyPolicy = () => {
               <b>Owner contact email:</b>{" "}
               <a
                 className="text-blue-400"
-                href="https://developers.facebook.com/docs/permissions/reference"
+                href="mailto:support@cloudsocial.io"
                 target="_blank"
               >
                 support@cloudsocial.io

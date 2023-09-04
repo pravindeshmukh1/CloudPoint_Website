@@ -80,7 +80,7 @@ const Header = ({ handleHidden }) => {
               <li className="group relative pt-4 pb-4 has-child">
                 <Link href="#" legacyBehavior>
                   <a className="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500">
-                  Resources
+                    Resources
                   </a>
                 </Link>
                 <ul className="drop-down-menu min-w-200">
@@ -120,6 +120,17 @@ const Header = ({ handleHidden }) => {
                     </Link>
                   </li>
                   <li>
+                    <Link
+                      href="https://www.iubenda.com/privacy-policy/84213336/cookie-policy"
+                      class="iubenda-nostyle no-brand iubenda-noiframe iubenda-embed iubenda-noiframe"
+                      legacyBehavior
+                    >
+                      <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500" target="_blank">
+                        Cookie Policy
+                      </a>
+                    </Link>
+                  </li>
+                  <li>
                     <Link href="/terms-of-service" legacyBehavior>
                       <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
                         Terms Of Service
@@ -136,21 +147,21 @@ const Header = ({ handleHidden }) => {
                   <li>
                     <Link href="/security" legacyBehavior>
                       <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-                      Security
+                        Security
                       </a>
                     </Link>
                   </li>
                   <li>
                     <Link href="/services" legacyBehavior>
                       <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-                      Services
+                        Services
                       </a>
                     </Link>
                   </li>
                   <li>
                     <Link href="/about" legacyBehavior>
                       <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-                      About Us
+                        About Us
                       </a>
                     </Link>
                   </li>
@@ -170,7 +181,7 @@ const Header = ({ handleHidden }) => {
                   </a>
                 </Link>
               </li> */}
-          
+
               <li className="pt-4 pb-4">
                 <Link href="/pricing" legacyBehavior>
                   <a className="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500">
@@ -178,7 +189,7 @@ const Header = ({ handleHidden }) => {
                   </a>
                 </Link>
               </li>
-                {/* <li className="pt-4 pb-4">
+              {/* <li className="pt-4 pb-4">
                   <Link href="https://calendly.com/cloudsocial-support/csdemo" legacyBehavior>
                     <a className="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500" target="_blank">
                     ScheduleDemo
@@ -186,9 +197,12 @@ const Header = ({ handleHidden }) => {
                   </Link>
                 </li> */}
               <li className="pt-4 pb-4">
-                <Link href="https://cloudsocial.postaffiliatepro.com/" legacyBehavior  >
-                  <a className="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500" >
-                  Refer Us
+                <Link
+                  href="https://cloudsocial.postaffiliatepro.com/"
+                  legacyBehavior
+                >
+                  <a className="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500">
+                    Refer Us
                   </a>
                 </Link>
               </li>
@@ -238,8 +252,13 @@ const Header = ({ handleHidden }) => {
               </li> */}
             </ul>
             <div className="hidden lg:block">
-              <Link href="https://app.cloudsocial.io/accounts/login"  legacyBehavior>
-                <a className="btn-accent hover-up-2"  target="_blank" >Log In</a>
+              <Link
+                href="https://app.cloudsocial.io/accounts/login"
+                legacyBehavior
+              >
+                <a className="btn-accent hover-up-2" target="_blank">
+                  Log In
+                </a>
               </Link>
               <Link href="/signup" legacyBehavior>
                 <a className="btn-primary hover-up-2">Sign Up</a>

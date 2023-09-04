@@ -127,7 +127,7 @@ const Security = () => {
                 <p className="mb-3">
                   To report an incident of suspected abuse, misuse, or a
                   security issue you have discovered you should contact{" "}
-                  <a className="text-blue-400" href="" target="_blank">
+                  <a className="text-blue-400" href="mailto:support@cloudsocial.io" target="_blank">
                     support@cloudsocial.io
                   </a>
                   .{" "}

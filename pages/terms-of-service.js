@@ -13,7 +13,7 @@ const TermsOfService = () => {
   return (
     <>
       <Head>
-      <meta charSet="utf-8" name="CloudSocial Terms Of Service" />
+        <meta charSet="utf-8" name="CloudSocial Terms Of Service" />
         <title>CloudSocial | Terms Of Service</title>
         <meta
           name="description"
@@ -72,7 +72,7 @@ const TermsOfService = () => {
               <b>Owner contact email :</b>{" "}
               <a
                 className="text-blue-400"
-                href="https://developers.facebook.com/docs/permissions/reference"
+                href="mailto:support@cloudsocial.io"
                 target="_blank"
               >
                 support@cloudsocial.io
@@ -122,8 +122,15 @@ const TermsOfService = () => {
                     other credentials that you select or that are provided to
                     you for use of the Service. You will notify us immediately
                     of any unauthorized use of your account or any other breach
-                    of security by emailing us at support@cloudsocial.io.
-                    Services offered by CloudSocial CloudSocial is constantly
+                    of security by emailing us at{" "}
+                    <a
+                      className="text-blue-400"
+                      href="mailto:support@cloudsocial.io"
+                      target="_blank"
+                    >
+                      support@cloudsocial.io
+                    </a>
+                    . Services offered by CloudSocial CloudSocial is constantly
                     evolving in order to provide the best possible experience,
                     services and information for its users. You acknowledge and
                     agree that the form and nature of the services which we
@@ -303,7 +310,11 @@ const TermsOfService = () => {
                     </a>{" "}
                     For any questions or complaints about the CloudSocial’s
                     privacy practices you can contact us at{" "}
-                    <a className="text-blue-400" href="" target="_blank">
+                    <a
+                      className="text-blue-400"
+                      href="mailto:support@cloudsocial.io"
+                      target="_blank"
+                    >
                       support@cloudsocial.io.
                     </a>{" "}
                     Facebook Terms of Service –{" "}
@@ -467,7 +478,7 @@ const TermsOfService = () => {
                     Software, please email to{" "}
                     <a
                       className="text-blue-400"
-                      href="support@cloudsocial.io"
+                      href="mailto:support@cloudsocial.io"
                       target="_blank"
                     >
                       support@cloudsocial.io
