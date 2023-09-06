@@ -2162,7 +2162,7 @@ li.menu-item-has-children.active .menu-expand {
 .hover-up-5:hover {
   transform: translateY(-5px);
   transition: 0.3s;
-  box-shadow: 0 0 20px #000 !important;
+  /* box-shadow: 0 0 20px #000 !important; */
 
 }
 

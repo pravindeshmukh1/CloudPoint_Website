@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Script from "next/script";
 import React from "react";
 import { useState, useEffect } from "react";
 
@@ -14,6 +15,14 @@ const Header = ({ handleHidden }) => {
   });
   return (
     <>
+      <Script>
+        {`prefinery=window.prefinery||function(){(window.prefinery.q=window.prefinery.q||[]).push(arguments)};`}
+      </Script>
+      <Script
+        src="https://widget.prefinery.com/widget/v2/4eezyyb5.js"
+        defer
+      ></Script>
+
       <header
         className={
           scroll
@@ -40,6 +49,19 @@ const Header = ({ handleHidden }) => {
                   </a>
                 </Link>
                 <ul className="drop-down-menu min-w-200">
+                  <li>
+                    <Link
+                      href="https://calendly.com/cloudsocial-support/csdemo"
+                      legacyBehavior
+                    >
+                      <a
+                        className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500"
+                        target="_blank"
+                      >
+                        ScheduleDemo
+                      </a>
+                    </Link>
+                  </li>
                   <li>
                     <Link href="/" legacyBehavior>
                       <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
@@ -113,6 +135,13 @@ const Header = ({ handleHidden }) => {
                     </Link>
                   </li>
                   <li>
+                    <Link href="/integration" legacyBehavior>
+                      <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
+                        Integration
+                      </a>
+                    </Link>
+                  </li>
+                  <li>
                     <Link href="/privacy-policy" legacyBehavior>
                       <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
                         Privacy Policy
@@ -125,7 +154,10 @@ const Header = ({ handleHidden }) => {
                       class="iubenda-nostyle no-brand iubenda-noiframe iubenda-embed iubenda-noiframe"
                       legacyBehavior
                     >
-                      <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500" target="_blank">
+                      <a
+                        className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500"
+                        target="_blank"
+                      >
                         Cookie Policy
                       </a>
                     </Link>
@@ -198,10 +230,14 @@ const Header = ({ handleHidden }) => {
                 </li> */}
               <li className="pt-4 pb-4">
                 <Link
-                  href="https://cloudsocial.postaffiliatepro.com/"
                   legacyBehavior
+                  href="https://cloudsocial.postaffiliatepro.com"
+                  className=""
                 >
-                  <a className="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500">
+                  <a
+                    className="prefinery-form-cta text-sm font-semibold text-blueGray-600 hover:text-blueGray-500"
+                    target="_blank"
+                  >
                     Refer Us
                   </a>
                 </Link>
@@ -252,7 +288,7 @@ const Header = ({ handleHidden }) => {
               </li> */}
             </ul>
             <div className="hidden lg:block">
-              <Link
+              {/* <Link
                 href="https://app.cloudsocial.io/accounts/login"
                 legacyBehavior
               >
@@ -262,8 +298,65 @@ const Header = ({ handleHidden }) => {
               </Link>
               <Link href="/signup" legacyBehavior>
                 <a className="btn-primary hover-up-2">Sign Up</a>
-              </Link>
+              </Link> */}
+                <ul className="hidden lg:flex lg:items-center lg:w-auto lg:space-x-12">
+                <li className="group relative">
+                  <Link 
+                    href="https://app.cloudsocial.io/accounts/login"
+                    legacyBehavior
+                  >
+                    <a
+                      className="text-blue Gray-600 hover:text-blue Gray-500 btn-accent hover-up-2"
+                      target="_blank"
+                    >
+                      Log In
+                    </a>
+                  </Link>
+                </li>
+                <li className="group relative" style={{marginLeft:"5px !important;"}} >
+                  <Link
+                    href="https://app.cloudsocial.io/accounts/login"
+                    legacyBehavior
+                  >
+                    <a
+                      className="text-blue Gray-600 hover:text-blue Gray-500 btn-primary hover-up-2"
+                      target="_blank"
+                    >
+                      Start Free Trail 
+                    </a>
+                  </Link>
+                  <ul className="drop-down-menu min-w-200 mt-2">
+                    <li>
+                      <Link
+                        href="https://app.cloudsocial.io/accounts/gold/9"
+                        legacyBehavior
+                      >
+                        <a
+                          className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500"
+                          target="_blank"
+                        >
+                          Brand
+                        </a>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="https://app.cloudsocial.io/accounts/platinum/17"
+                        legacyBehavior
+                      >
+                        <a
+                          className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500"
+                          target="_blank"
+                        >
+                          Agency
+                        </a>
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
             </div>
+
             <div className="lg:hidden">
               <button
                 className="navbar-burger flex items-center py-2 px-3 text-blue-500 hover:text-blue-700 rounded border border-blue-200 hover:border-blue-300"

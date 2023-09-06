@@ -65,28 +65,28 @@ export default function Document() {
           content="smpy82pzrgde0svbqynd7fpt3ya5bb"
         />
 
-         {/* application/ld+json   */}
-      <script
-        id="app-ld-json"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(content1, null, "\t"),
-        }}
-      />
-      <script
-        id="app-ld-json"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(content2, null, "\t"),
-        }}
-      />
-      <script
-        id="app-ld-json"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(content3, null, "\t"),
-        }}
-      />
+        {/* application/ld+json   */}
+        <script
+          id="app-ld-json"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(content1, null, "\t"),
+          }}
+        />
+        <script
+          id="app-ld-json"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(content2, null, "\t"),
+          }}
+        />
+        <script
+          id="app-ld-json"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(content3, null, "\t"),
+          }}
+        />
 
         {/* Google Analytics Google tag (gtag.js)   */}
         <script async>
@@ -146,6 +146,23 @@ src="https://www.facebook.com/tr?id=226453679214323&ev=PageView&noscript=1"/>`,
           (function(h,o,t,j,a,r){ h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)}; h._hjSettings={hjid:3533239,hjsv:6}; a=o.getElementsByTagName('head')[0]; r=o.createElement('script');r.async=1; r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv; a.appendChild(r); })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
         `}
         </script>
+
+        {/*  Prefinery Code  */}
+        {/* <script>
+          {`prefinery=window.prefinery||function(){(window.prefinery.q=window.prefinery.q||[]).push(arguments)};`}
+        </script>
+        <script>
+          {`src="https://widget.prefinery.com/widget/v2/4eezyyb5.js" defer`}
+        </script> */}
+
+        <Script>
+        {`prefinery=window.prefinery||function(){(window.prefinery.q=window.prefinery.q||[]).push(arguments)};`}
+      </Script>
+      <Script
+        src="https://widget.prefinery.com/widget/v2/4eezyyb5.js"
+        defer
+      ></Script>
+
       </Head>
       <body>
         <Main />
@@ -252,18 +269,6 @@ src="https://www.facebook.com/tr?id=226453679214323&ev=PageView&noscript=1"/>`,
       />`,
           }}
         />
-        {/*  Prefinery Code  */}
-        <script>
-          {`prefinery =
-        window.prefinery ||
-        function () {
-          (window.prefinery.q = window.prefinery.q || []).push(arguments);
-        };`}
-        </script>
-        <script>
-          {`src="https://widget.prefinery.com/widget/v2/4eezyyb5.js"
-      defer`}
-        </script>
 
         {/*  Iubenda */}
         <script>
