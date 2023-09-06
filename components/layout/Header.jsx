@@ -314,17 +314,17 @@ const Header = ({ handleHidden }) => {
                   </Link>
                 </li>
                 <li className="group relative" style={{marginLeft:"5px !important;"}} >
-                  <Link
+                  {/* <Link
                     href="https://app.cloudsocial.io/accounts/login"
                     legacyBehavior
-                  >
+                  > */}
                     <a
                       className="text-blue Gray-600 hover:text-blue Gray-500 btn-primary hover-up-2"
                       target="_blank"
                     >
                       Start Free Trail 
                     </a>
-                  </Link>
+                  {/* </Link> */}
                   <ul className="drop-down-menu min-w-200 mt-2">
                     <li>
                       <Link
