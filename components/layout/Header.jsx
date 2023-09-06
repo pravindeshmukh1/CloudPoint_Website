@@ -299,7 +299,7 @@ const Header = ({ handleHidden }) => {
               <Link href="/signup" legacyBehavior>
                 <a className="btn-primary hover-up-2">Sign Up</a>
               </Link> */}
-                <ul className="hidden lg:flex lg:items-center lg:w-auto lg:space-x-12">
+                <ul className="hidden lg:flex lg:items-center lg:w-auto">
                 <li className="group relative">
                   <Link 
                     href="https://app.cloudsocial.io/accounts/login"
@@ -313,7 +313,7 @@ const Header = ({ handleHidden }) => {
                     </a>
                   </Link>
                 </li>
-                <li className="group relative" style={{marginLeft:"5px !important;"}} >
+                <li className="group relative ">
                   {/* <Link
                     href="https://app.cloudsocial.io/accounts/login"
                     legacyBehavior
