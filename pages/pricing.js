@@ -368,333 +368,163 @@ const Pricing = () => {
 
                   <div className="flex flex-col items-center mb-8">
                     <ul className="text-gray-400">
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>15 Social Channels</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>3 Users</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>0 Mentions (Listen)</span>
                       </li>
                       <li className="mt-3 mb-3 text-md text-blue-600 font-bold">
                         <span>Publish</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>Posting Rich Media Content</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>Bulk Media Upload</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>Tagging</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>Recall Post</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>Global Time Zone Selection</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/close-o.svg"
+                          alt="close"
+                        />
+
                         <span>Audience Targeting</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/close-o.svg"
+                          alt="close"
+                        />
                         <span>Social Calendar</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/close-o.svg"
+                          alt="close"
+                        />
                         <span>Insta-Alerts via Email</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>Create Content with Crello</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>FB Ad Manager</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>URL Shortener</span>
                       </li>
                       <li className="mt-3 mb-3 text-md text-blue-600 font-bold">
                         <span>ORM - Omnibox & Respond</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>Social Channel + Email Inbox</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>Collaboration</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>In Mention Search</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
-                        <span>Filters</span>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
+                        <span>Filters Date Range</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/close-o.svg"
+                          alt="close"
+                        />
                         <span>
                           Export to XLS, PDF &<br />
                           Share via Email
@@ -703,166 +533,85 @@ const Pricing = () => {
                       <li className="mt-3 mb-3 text-md text-blue-600 font-bold">
                         <span>Listen</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/close-o.svg"
+                          alt="close"
+                        />
                         <span>
                           Keyword search across <br />
                           select social channels
                         </span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/close-o.svg"
+                          alt="close"
+                        />
                         <span>Export to CSV, PDF</span>
                       </li>
                       <li className="mt-3 mb-3 text-md text-blue-600 font-bold">
                         <span>Reports & Analytics</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/close-o.svg"
+                          alt="close"
+                        />
                         <span>Unified Dashboard</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/close-o.svg"
+                          alt="close"
+                        />
                         <span>Social Channels Report</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/close-o.svg"
+                          alt="close"
+                        />
                         <span>Analytics</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/close-o.svg"
+                          alt="close"
+                        />
                         <span>Sentiment Analysis</span>
                       </li>
                       <li className="mt-3 mb-3 text-md text-blue-600 font-bold">
                         <span>Support - 24*7*365</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>Email</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>Call</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>Chat</span>
                       </li>
                     </ul>
@@ -931,332 +680,162 @@ const Pricing = () => {
                   <div className="flex flex-col items-center mb-8">
                     <ul>
                       <li className="flex mb-3 text-sm mt-2">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>40 Social Channels</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>15 Users</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>2000* Mentions (Listen)</span>
                       </li>
                       <li className="mt-3 mb-3 text-md  text-white-600 font-bold">
                         <span>Publish</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>Posting Rich Media Content</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>Bulk Media Upload</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>Tagging</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>Recall Post</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>Global Time Zone Selection</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="close"
+                        />
                         <span>Audience Targeting</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
+
                         <span>Social Calendar</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>Insta-Alerts via Email</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>Create Content with Crello</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>FB Ad Manager</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>URL Shortener</span>
                       </li>
                       <li className="mt-3 mb-3 text-md text-white-600 font-bold">
                         <span>ORM - Omnibox & Respond</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>Social Channel + Email Inbox</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>Collaboration</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>In Mention Search</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>Filters</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>
                           Export to XLS, PDF &<br />
                           Share via Email
@@ -1265,166 +844,85 @@ const Pricing = () => {
                       <li className="mt-3 mb-3 text-md text-white-600 font-bold">
                         <span>Listen</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>
                           Keyword search across <br />
                           select social channels
                         </span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>Export to CSV, PDF</span>
                       </li>
                       <li className="mt-3 mb-3 text-md text-white-600 font-bold">
                         <span>Reports & Analytics</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>Unified Dashboard</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>Social Channels Report</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>Analytics</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>Sentiment Analysis</span>
                       </li>
                       <li className="mt-3 mb-3 text-md text-white-600 font-bold">
                         <span>Support - 24*7*365</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>Email</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>Call</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>Chat</span>
                       </li>
                     </ul>
@@ -1492,333 +990,168 @@ const Pricing = () => {
                   </div>
                   <div className="flex flex-col items-center mb-8">
                     <ul className="text-gray-400">
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>100 Social Channels</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>50 Users</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>10,000* Mentions (Listen)</span>
                       </li>
                       <li className="mt-3 mb-3 text-md  text-blue-600 font-bold">
                         <span>Publish</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>Posting Rich Media Content</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>Bulk Media Upload</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>Tagging</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>Recall Post</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>Global Time Zone Selection</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        {/*  <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        /> */}
+
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>Audience Targeting</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>Social Calendar</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>Insta-Alerts via Email</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>Create Content with Crello</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>FB Ad Manager</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>URL Shortener</span>
                       </li>
                       <li className="mt-3 mb-3 text-md text-blue-600 font-bold">
                         <span>ORM - Omnibox & Respond</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>Social Channel + Email Inbox</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>Collaboration</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>In Mention Search</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>Filters</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>
                           Export to XLS, PDF &<br />
                           Share via Email
@@ -1827,166 +1160,85 @@ const Pricing = () => {
                       <li className="mt-3 mb-3 text-md text-blue-600 font-bold">
                         <span>Listen</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>
                           Keyword search across <br />
                           select social channels
                         </span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>Export to CSV, PDF</span>
                       </li>
                       <li className="mt-3 mb-3 text-md text-blue-600 font-bold">
                         <span>Reports & Analytics</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>Unified Dashboard</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>Social Channels Report</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>Analytics</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>Sentiment Analysis</span>
                       </li>
                       <li className="mt-3 mb-3 text-md text-blue-600 font-bold">
                         <span>Support - 24*7*365</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>Email</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>Call</span>
                       </li>
-                      <li className="flex mb-3 text-sm ">
-                        <svg
-                          className="w-6 h-5 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
+                      <li className="flex mb-3 text-sm">
+                        <img
+                          className="w-6 h-5 mr-2"
+                          src="/assets/imgs/icons/check-o.svg"
+                          alt="check"
+                        />
                         <span>Chat</span>
                       </li>
                     </ul>

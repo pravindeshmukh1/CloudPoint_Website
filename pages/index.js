@@ -517,10 +517,11 @@ function Home() {
                 <Link href="/blog-single" legacyBehavior>
                   <a>
                     <img
-                      className="h-80 w-full object-cover rounded"
+                      className="h-100 w-full object-cover rounded drop-shadow"
                       // src="/assets/imgs/placeholders/img-6.png"
-                      src="https://www.cloudsocial.io/wp-content/uploads/image/Publish-Calendar.png"
-                      alt="Monst"
+                      // src="https://www.cloudsocial.io/wp-content/uploads/image/Publish-Calendar.png"
+                      src="/assets/imgs/backgrounds/1.png"
+                      alt="Publish-Calendar"
                     />
                   </a>
                 </Link>
@@ -573,10 +574,11 @@ function Home() {
                 <Link href="/blog-single" legacyBehavior>
                   <a>
                     <img
-                      className="h-80 w-full object-cover rounded"
+                      className="h-100 w-full object-cover rounded drop-shadow"
                       // src="/assets/imgs/placeholders/img-7.png"
-                      src="https://www.cloudsocial.io/wp-content/uploads/image/Omnibox-Ticket&comments.png"
-                      alt="Monst"
+                      // src="https://www.cloudsocial.io/wp-content/uploads/image/Omnibox-Ticket&comments.png"
+                      src="/assets/imgs/backgrounds/2.png"
+                      alt="Omnibox-Ticket&Comments"
                     />
                   </a>
                 </Link>
@@ -626,10 +628,11 @@ function Home() {
                 <Link href="/blog-single" legacyBehavior>
                   <a>
                     <img
-                      className="h-80 w-full object-cover rounded"
-                      src="/assets/imgs/placeholders/img-8.png"
-                      // src="https://www.cloudsocial.io/wp-content/uploads/image/Analytics.png"
-                      alt="Monst"
+                      className="h-100 w-full object-cover rounded drop-shadow"
+                      // src="/assets/imgs/placeholders/img-8.png"
+                      //  src="https://www.cloudsocial.io/wp-content/uploads/image/Analytics.png"
+                      src="/assets/imgs/backgrounds/3.png"
+                      alt="Analytics"
                     />
                   </a>
                 </Link>
@@ -647,16 +650,17 @@ function Home() {
                     className="text-3xl md:text-4xl mb-4 font-bold font-heading wow animate_animated animate_fadeIn"
                     data-wow-delay=".3s"
                   >
-                    All your <span className="text-blue-500">Social Media</span>{" "}
-                    in One place
+                    Manage all your{" "}
+                    <span className="text-blue-500">Social Media</span> from One
+                    Place
                   </h2>
                   <p
                     className="text-xs md:text-base text-blueGray-400 leading-loose wow animate_animated animate_fadeIn"
                     data-wow-delay=".9s"
                   >
-                    Manage and plan your social media activities effectively yet
-                    effortlessly with CloudSocial and remain accessible to
-                    users.
+                    Control multiple social accounts simultaneously, engage with
+                    several prospects at the same time, and provide superior
+                    customer experience.
                   </p>
                 </div>
               </div>

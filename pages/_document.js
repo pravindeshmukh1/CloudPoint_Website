@@ -90,25 +90,20 @@ export default function Document() {
 
         {/* Google Analytics Google tag (gtag.js)   */}
         <script async>
-          {`
-          src="https://www.googletagmanager.com/gtag/js?id=G-P5Y9P6SQSV">
-        `}
+          {`src="https://www.googletagmanager.com/gtag/js?id=G-P5Y9P6SQSV"`}
         </script>
         <script>
-          {`
-          window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-P5Y9P6SQSV');
-
-        `}
+          {`window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-P5Y9P6SQSV');`}
         </script>
+
         {/* Google tag (gtag.js)   */}
         <script async>
           {`
-          async src="https://www.googletagmanager.com/gtag/js?id=AW-10904077330"></script>
-<script>
+          async src="https://www.googletagmanager.com/gtag/js?id=AW-10904077330">
+          `}
+        </script>
+        <script>
+          {`
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
@@ -148,21 +143,13 @@ src="https://www.facebook.com/tr?id=226453679214323&ev=PageView&noscript=1"/>`,
         </script>
 
         {/*  Prefinery Code  */}
-        {/* <script>
+        <script>
           {`prefinery=window.prefinery||function(){(window.prefinery.q=window.prefinery.q||[]).push(arguments)};`}
         </script>
-        <script>
-          {`src="https://widget.prefinery.com/widget/v2/4eezyyb5.js" defer`}
-        </script> */}
-
-        <Script>
-        {`prefinery=window.prefinery||function(){(window.prefinery.q=window.prefinery.q||[]).push(arguments)};`}
-      </Script>
-      <Script
-        src="https://widget.prefinery.com/widget/v2/4eezyyb5.js"
-        defer
-      ></Script>
-
+        <script
+          src="https://widget.prefinery.com/widget/v2/4eezyyb5.js"
+          defer
+        ></script>
       </Head>
       <body>
         <Main />

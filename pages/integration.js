@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Layout from "../components/layout/Layout";
 import Link from "next/link";
 import CounterUp from "../components/elements/Counterup";
-import { IntegrationIcon } from "../public/assets/cardDetails";
+import { integrationIcon } from "../public/assets/cardDetails";
 
 const Integration = () => {
   const [inViewport, setInViewport] = useState(false);
@@ -101,7 +101,7 @@ const Integration = () => {
         <section className="py-20">
           <div className="container text-center">
             <div className="flex flex-wrap justify-center -mx-5">
-              {IntegrationIcon.map(({ img, title, id, alt, content }) => (
+              {integrationIcon.map(({ img, title, id, alt, content }) => (
                 <div className="w-1/2 lg:w-1/4 px-5 mb-12" key={id}>
                   <div
                     className="hover-up-5 pt-8 pb-8 px-4 text-center bg-white rounded shadow wow animate__animated animate__fadeIn animated border border-gray-100 hover:border-gray-200"

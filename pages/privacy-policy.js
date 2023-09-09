@@ -102,7 +102,7 @@ const PrivacyPolicy = () => {
                 <h3 className="text-md font-bold font-heading">
                   Types of Data collected
                 </h3>
-                <p className="mb-1 text">
+                <p className="mb-1">
                   Among the types of Personal Data that this Website collects,
                   by itself or through third parties, there are: Tracker; Usage
                   Data; various types of Data; email address; unique device
@@ -625,7 +625,7 @@ const PrivacyPolicy = () => {
                           provided by Facebook, Inc.{" "}
                           <b>
                             In order to understand Facebook's use of Data,
-                            consult
+                            consult{" "}
                           </b>
                           <a
                             className="text-blue-400"
