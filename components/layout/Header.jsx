@@ -128,19 +128,27 @@ const Header = ({ handleHidden }) => {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/faqs" legacyBehavior>
-                      <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-                        Faqs
-                      </a>
-                    </Link>
-                  </li>
-                  <li>
                     <Link href="/integration" legacyBehavior>
                       <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
                         Integration
                       </a>
                     </Link>
                   </li>
+                  <li>
+                    <Link href="/compendium" legacyBehavior>
+                      <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
+                      Compendium
+                      </a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/faqs" legacyBehavior>
+                      <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
+                        Faqs
+                      </a>
+                    </Link>
+                  </li>
+
                   <li>
                     <Link href="/privacy-policy" legacyBehavior>
                       <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
@@ -299,9 +307,9 @@ const Header = ({ handleHidden }) => {
               <Link href="/signup" legacyBehavior>
                 <a className="btn-primary hover-up-2">Sign Up</a>
               </Link> */}
-                <ul className="hidden lg:flex lg:items-center lg:w-auto">
+              <ul className="hidden lg:flex lg:items-center lg:w-auto">
                 <li className="group relative">
-                  <Link 
+                  <Link
                     href="https://app.cloudsocial.io/accounts/login"
                     legacyBehavior
                   >
@@ -318,12 +326,12 @@ const Header = ({ handleHidden }) => {
                     href="https://app.cloudsocial.io/accounts/login"
                     legacyBehavior
                   > */}
-                    <a
-                      className="text-blue Gray-600 hover:text-blue Gray-500 btn-primary hover-up-2"
-                      target="_blank"
-                    >
-                      Start Free Trail 
-                    </a>
+                  <a
+                    className="text-blue Gray-600 hover:text-blue Gray-500 btn-primary hover-up-2"
+                    target="_blank"
+                  >
+                    Start Free Trail
+                  </a>
                   {/* </Link> */}
                   <ul className="drop-down-menu min-w-200 mt-2">
                     <li>
