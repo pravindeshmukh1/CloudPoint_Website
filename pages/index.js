@@ -4,6 +4,7 @@ import TextEffect from "../components/elements/TextEffect";
 import Layout from "../components/layout/Layout";
 import Slider1 from "../components/slider/Slider1";
 import Link from "next/link";
+import Head from "next/head";
 
 function Home() {
   const [inViewport, setInViewport] = useState(false);
