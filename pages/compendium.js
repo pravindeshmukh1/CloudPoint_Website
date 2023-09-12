@@ -15,11 +15,11 @@ const Compendium = () => {
   return (
     <>
       <Head>
-        <meta charSet="utf-8" name="CloudSocial Compendium" />
-        <title>CloudSocial | Compendium - Social Media Resources</title>
+        <meta charSet="utf-8" name="CloudSocial Resource Compendium" />
+        <title>Compendium - Social Media Resources by CloudSocial</title>
         <meta
           name="description"
-          content="Check out CloudSocial Compendium Social Media Resources"
+          content="CloudSocial provides all the compendium resources which guide you to succeed in the CloudSocial media marketing platform."
         />
       </Head>
       <Layout>

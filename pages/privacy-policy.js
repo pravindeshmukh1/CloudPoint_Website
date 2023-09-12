@@ -14,10 +14,10 @@ const PrivacyPolicy = () => {
     <>
        <Head>
       <meta charSet="utf-8" name="CloudSocial Privacy Policy" />
-        <title>CloudSocial | Privacy Policy</title>
+        <title>CloudSocial | Privacy Policy </title>
         <meta
           name="description"
-          content="Check out CloudSocial Privacy Policy."
+          content="Check out CloudSocial Policy to learn about CloudSocial."
         />
       </Head>
       <Layout>

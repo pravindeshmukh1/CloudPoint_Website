@@ -14,10 +14,10 @@ const TermsOfService = () => {
     <>
       <Head>
         <meta charSet="utf-8" name="CloudSocial Terms Of Service" />
-        <title>CloudSocial | Terms Of Service</title>
+        <title>Terms Of Service | CloudSocial</title>
         <meta
           name="description"
-          content="Check out CloudSocial TermsOfService."
+          content="Check out CloudSocial Terms Of Service."
         />
       </Head>
       <Layout>

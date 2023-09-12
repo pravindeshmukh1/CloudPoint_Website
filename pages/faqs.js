@@ -7,6 +7,14 @@ import Link from "next/link";
 const Faqs = () => {
   return (
     <>
+     <Head>
+      <meta charSet="utf-8" name="CloudSocial Faqs" />
+        <title>FAQs | Frequently Asked Questions CloudSocial</title>
+        <meta
+          name="description"
+          content="Check out CloudSocial FAQ to learn about CloudSocial, its features, pricing, integrations and how to schedule a post to manage multiple social media handles."
+        />
+      </Head>
       <Layout>
         <section
           className="pt-12 pb-20 lg:bg-contain bg-top bg-no-repeat"

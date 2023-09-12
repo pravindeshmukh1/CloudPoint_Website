@@ -63,6 +63,19 @@ const Header = ({ handleHidden }) => {
                     </Link>
                   </li>
                   <li>
+                    <Link
+                      href="http://www.cloudsocial.io/managedservice"
+                      legacyBehavior
+                    >
+                      <a
+                        className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500"
+                        target="_blank"
+                      >
+                        Managed Service
+                      </a>
+                    </Link>
+                  </li>
+                  {/* <li>
                     <Link href="/" legacyBehavior>
                       <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
                         Landing page 1
@@ -96,7 +109,7 @@ const Header = ({ handleHidden }) => {
                         Landing page 5
                       </a>
                     </Link>
-                  </li>
+                  </li> */}
                 </ul>
               </li>
               <li className="group relative pt-4 pb-4 has-child">
@@ -106,7 +119,7 @@ const Header = ({ handleHidden }) => {
                   </a>
                 </Link>
                 <ul className="drop-down-menu min-w-200">
-                  <li>
+                  {/* <li>
                     <Link href="/portfolio" legacyBehavior>
                       <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
                         Portfolio
@@ -126,6 +139,20 @@ const Header = ({ handleHidden }) => {
                         Testimonials
                       </a>
                     </Link>
+                  </li> */}
+                  <li>
+                    <Link href="/video" legacyBehavior>
+                      <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
+                      Video
+                      </a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/literature" legacyBehavior>
+                      <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
+                      Literature
+                      </a>
+                    </Link>
                   </li>
                   <li>
                     <Link href="/integration" legacyBehavior>
@@ -141,14 +168,13 @@ const Header = ({ handleHidden }) => {
                       </a>
                     </Link>
                   </li>
-                  <li>
+                 {/* <li>
                     <Link href="/faqs" legacyBehavior>
                       <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
                         Faqs
                       </a>
                     </Link>
                   </li>
-
                   <li>
                     <Link href="/privacy-policy" legacyBehavior>
                       <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
@@ -191,7 +217,7 @@ const Header = ({ handleHidden }) => {
                       </a>
                     </Link>
                   </li>
-                  <li>
+                   <li>
                     <Link href="/services" legacyBehavior>
                       <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
                         Services
@@ -211,7 +237,7 @@ const Header = ({ handleHidden }) => {
                         404
                       </a>
                     </Link>
-                  </li>
+                  </li> */}
                 </ul>
               </li>
               {/* <li className="pt-4 pb-4">

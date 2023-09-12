@@ -28,6 +28,14 @@ const Integration = () => {
 
   return (
     <>
+     <Head>
+      <meta charSet="utf-8" name="CloudSocial : All social integration in your pocket" />
+        <title>Social Media Integration Apps | CloudSocial</title>
+        <meta
+          name="description"
+          content="Cloudsocial offers you all social media integration for your all social media management needs. Checkout our page to know more"
+        />
+      </Head>
       <Layout>
         <section className="relative -mt-24 pt-24">
           <div

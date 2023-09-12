@@ -2753,6 +2753,16 @@ li.menu-item-has-children.active .menu-expand {
 		line-height: 1.5 !important;
 	}
 }
+
+@media (min-width: 1024px) and (max-width: 1200px){
+	.lg\:space-x-12 > :not([hidden]) ~ :not([hidden]){
+		--tw-space-x-reverse: 0 !important;
+		margin-right: calc(3rem * var(--tw-space-x-reverse)) !important;
+		/* margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse))) !important; */
+		/* margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse))) !important; */
+		margin-left: 45px !important;
+	}
+}
 @media (min-width: 1200px){
 	.xl\:bg-contain{
 		background-size: contain !important;

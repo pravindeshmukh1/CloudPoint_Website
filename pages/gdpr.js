@@ -7,10 +7,10 @@ const GDPR = () => {
     <>
       <Head>
       <meta charSet="utf-8" name="CloudSocial GDPR Policy" />
-        <title>CloudSocial | General Data Protection Regulation (GDPR)</title>
+        <title>GDPR | General Data Protection Regulation (GDPR) CloudSocial</title>
         <meta
           name="description"
-          content="Know about How Cloud Social is compliant with the GDPR - General Data Protection Regulation."
+          content="Know about How CloudSocial is compliant with the GDPR - General Data Protection Regulation."
         />
       </Head>
       <Layout>

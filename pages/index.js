@@ -29,6 +29,14 @@ function Home() {
 
   return (
     <>
+      <Head>
+        <meta charSet="utf-8" name="CloudSocial Solution"/>
+        <title>Social Media Management Tools | CloudSocial</title>
+        <meta
+          name="description"
+          content="Best social media management tools built to manage all your social media handles at one place. Grow and engage with an ease of social media listening."
+        />
+      </Head>
       <Layout>
         <section
           className="xl:bg-contain bg-top bg-no-repeat -mt-24 pt-24"
@@ -84,12 +92,13 @@ function Home() {
             >
               <img
                 className="jump rounded wow animate_animated animate_fadeIn"
-                src="/assets/imgs/placeholders/dashboard.png"
-                alt="Monst"
+                //  src="/assets/imgs/placeholders/dashboard.png"
+                src="/assets/imgs/backgrounds/slider/dashboard1248.jpg"
+                alt="dashboard"
               />
             </div>
           </div>
-          <div className="container px-4 mx-auto">
+          {/* <div className="container px-4 mx-auto">
             <div className="flex flex-wrap justify-between pt-8 pb-16">
               <div
                 className="hover-up-5 flex w-1/2 lg:w-auto py-4 wow animate_animated animate_fadeIn"
@@ -216,7 +225,7 @@ function Home() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </section>
 
         <section
@@ -354,13 +363,13 @@ function Home() {
                 >
                   <img
                     className="jump relative mx-auto rounded-xl w-full z-10"
-                    src="/assets/imgs/placeholders/img1.jpg"
-                    alt="Monst"
+                    src="/assets/imgs/backgrounds/slider/sentiment1248.jpg"
+                    alt="dashboard"
                   />
                   <img
                     className="jump relative mx-auto rounded-xl w-full z-10"
-                    src="/assets/imgs/placeholders/calendar.jpg"
-                    alt="Monst"
+                    src="/assets/imgs/backgrounds/slider/listen1248.jpg"
+                    alt="listen"
                   />
                   <img
                     className="absolute top-0 left-0 w-40 -ml-12 -mt-12"

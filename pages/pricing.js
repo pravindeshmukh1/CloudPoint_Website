@@ -42,10 +42,8 @@ const Pricing = () => {
   return (
     <>
       <Head>
-        <meta charSet="utf-8" name="CloudSocial Security Policy" />
-        <title>
-          CloudSocial | Social Media Post Scheduler - Pricing and Packages
-        </title>
+        <meta charSet="utf-8" name="CloudSocial Pricing" />
+        <title>Pricing and Packages - Social Media Post Scheduler | CloudSocial</title>
         <meta
           name="description"
           content="CloudSocial provides social media post scheduling tools for small businesses, brands, digital agencies. Check out how much does CloudSocial cost? Try it free."
@@ -1465,7 +1463,7 @@ const Pricing = () => {
             </div>
           </div>
         </section>
-        <section className="py-20">
+        {/* <section className="py-20">
           <div className="container">
             <div className="max-w-lg mb-16">
               <h2
@@ -2232,7 +2230,7 @@ const Pricing = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </Layout>
     </>
   );

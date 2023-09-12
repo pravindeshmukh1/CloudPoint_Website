@@ -14,7 +14,7 @@ const Security = () => {
     <>
       <Head>
       <meta charSet="utf-8" name="CloudSocial Security Policy" />
-        <title>CloudSocial | Security</title>
+        <title>Security | CloudSocial</title>
         <meta
           name="description"
           content="CloudSocial servers hosted in the cloud by Amazon Web Services. All the data is store in highly secure AWS data centres. Read more about CloudSocial environment."
