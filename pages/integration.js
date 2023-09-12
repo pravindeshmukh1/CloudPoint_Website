@@ -3,6 +3,7 @@ import Layout from "../components/layout/Layout";
 import Link from "next/link";
 import CounterUp from "../components/elements/Counterup";
 import { integrationIcon } from "../public/assets/cardDetails";
+import Head from "next/head";
 
 const Integration = () => {
   const [inViewport, setInViewport] = useState(false);
