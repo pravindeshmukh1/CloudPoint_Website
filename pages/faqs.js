@@ -3,6 +3,7 @@ import Layout from "../components/layout/Layout";
 import { Disclosure } from "@headlessui/react";
 import { ChevronUpIcon, PlusCircleIcon } from "@heroicons/react/outline";
 import Link from "next/link";
+import Head from "next/head";
 
 const Faqs = () => {
   return (
