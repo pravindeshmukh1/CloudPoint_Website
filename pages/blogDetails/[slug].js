@@ -2,7 +2,6 @@ import React from "react";
 import Layout from "../../components/layout/Layout";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import axios from "axios";
 
 // export async function getServerSideProps(context) {
   export const getServerSideProps = (async (context) => {
