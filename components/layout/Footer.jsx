@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import CounterUp from "../elements/Counterup";
 import { star } from "../../public/assets/cardDetails";
+import Image from "next/image";
 
 const Footer = () => {
   const [date, setDate] = React.useState();
@@ -27,13 +28,23 @@ const Footer = () => {
                   data-wow-delay=".2s"
                   key={id}
                 >
-                  <div className="flex justify-center items-center text-blue-500 rounded-xl h-12 w-12 sm:h-20 sm:w-20">
+                  <div className="flex justify-center items-center text-blue-500 rounded-xl h-12 w-12 sm:h-201 sm:w-20 md:w-1\/2 lg:w-3\/5">
                     <Link href={url} legacyBehavior>
                       <a target="_blank">
-                        <img
+                        {/* <img
                           className="h-100 w-full object-cover hover:drop-shadow"
                           src={img}
                           alt={title}
+                        /> */}
+                        <Image
+                          className="object-cover"
+                          src={img}
+                          alt={title}
+                          priority
+                          width={600}
+                          height={600}
+                          // layout="fill"
+                          objectFit="contain"
                         />
                       </a>
                     </Link>
@@ -230,6 +241,16 @@ const Footer = () => {
               >
                 <img
                   src="/assets/imgs/icons/instagram-blue.svg"
+                  alt="instagram"
+                />
+              </a>
+              <a
+                className="inline-block px-2"
+                target="_blank"
+                href="https://twitter.com/Cloudsocial_"
+              >
+                <img
+                  src="/assets/imgs/icons/twitter-blue.svg"
                   alt="instagram"
                 />
               </a>

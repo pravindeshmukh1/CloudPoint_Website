@@ -2402,6 +2402,9 @@ li.menu-item-has-children.active .menu-expand {
 	.sm\:w-20{
 		width: 5rem !important;
 	}
+	.sm\:w-30{
+		width: 10rem !important;
+	}
 	.sm\:max-w-sm{
 		max-width: 24rem !important;
 	}

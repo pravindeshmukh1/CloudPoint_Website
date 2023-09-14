@@ -5,6 +5,7 @@ import Layout from "../components/layout/Layout";
 import Slider1 from "../components/slider/Slider1";
 import Link from "next/link";
 import Head from "next/head";
+import Image from "next/image";
 
 function Home() {
   const [inViewport, setInViewport] = useState(false);
@@ -31,7 +32,7 @@ function Home() {
   return (
     <>
       <Head>
-        <meta charSet="utf-8" name="CloudSocial Solution"/>
+        <meta charSet="utf-8" name="CloudSocial Solution" />
         <title>Social Media Management Tools | CloudSocial</title>
         <meta
           name="description"
@@ -89,13 +90,22 @@ function Home() {
             <img src="/assets/imgs/elements/pattern.png" alt="Monst" />
             <div
               className="absolute"
-              style={{ top: "9%", left: "14%", width: "72%", height: "66%" }}
+              // style={{ top: "9%", left: "14%", width: "72%", height: "66%" }}
+              style={{ top: "9%", width: "100%", height: "100%" }}
             >
-              <img
+              {/* <img
                 className="jump rounded wow animate_animated animate_fadeIn"
                 //  src="/assets/imgs/placeholders/dashboard.png"
                 src="/assets/imgs/backgrounds/slider/dashboard1248.jpg"
                 alt="dashboard"
+              /> */}
+              <Image
+                className="jump rounded wow animate_animated animate_fadeIn"
+                src="/assets/imgs/backgrounds/slider/dashboard1248.jpg"
+                alt="dashboard"
+                priority
+                layout="fill"
+                objectFit="contain"
               />
             </div>
           </div>
@@ -362,7 +372,32 @@ function Home() {
                   className="wow animate_animated animate_fadeIn"
                   data-wow-delay=".5s"
                 >
-                  <img
+                  <Image
+                    className="jump relative mx-auto rounded-xl w-full z-10"
+                    src="/assets/imgs/backgrounds/slider/crm1248.jpg"
+                    alt="listen"
+                    priority
+                    layout="fill"
+                    objectFit="contain"
+                  />
+                  <Image
+                    className="jump relative mx-auto rounded-xl w-full z-10"
+                    src="/assets/imgs/backgrounds/slider/sentiment1248.jpg"
+                    alt="dashboard"
+                    priority
+                    layout="fill"
+                    objectFit="contain"
+                  />
+                  <Image
+                    className="jump relative mx-auto rounded-xl w-full z-10"
+                    src="/assets/imgs/backgrounds/slider/listen1248.jpg"
+                    alt="listen"
+                    priority
+                    layout="fill"
+                    objectFit="contain"
+                  />
+
+                  {/* <img
                     className="jump relative mx-auto rounded-xl w-full z-10"
                     src="/assets/imgs/backgrounds/slider/sentiment1248.jpg"
                     alt="dashboard"
@@ -371,7 +406,7 @@ function Home() {
                     className="jump relative mx-auto rounded-xl w-full z-10"
                     src="/assets/imgs/backgrounds/slider/listen1248.jpg"
                     alt="listen"
-                  />
+                  /> */}
                   <img
                     className="absolute top-0 left-0 w-40 -ml-12 -mt-12"
                     src="/assets/imgs/elements/blob-tear.svg"
@@ -526,12 +561,22 @@ function Home() {
               <div className="w-full lg:w-1/2 px-4 mb-8 order-0 lg:order-1">
                 <Link href="/blog-single" legacyBehavior>
                   <a>
-                    <img
+                    {/* <img
                       className="h-100 w-full object-cover rounded drop-shadow"
                       // src="/assets/imgs/placeholders/img-6.png"
                       // src="https://www.cloudsocial.io/wp-content/uploads/image/Publish-Calendar.png"
                       src="/assets/imgs/backgrounds/1.png"
                       alt="Publish-Calendar"
+                    /> */}
+                    <Image
+                      className=" object-cover rounded drop-shadow"
+                      src="/assets/imgs/backgrounds/1.png"
+                      alt="Publish-Calendar"
+                      priority
+                      // layout="fill"
+                      width={1000}
+                      height={1000}
+                      objectFit="contain"
                     />
                   </a>
                 </Link>
@@ -583,12 +628,22 @@ function Home() {
               <div className="w-full lg:w-1/2 px-4 mb-8 order-0">
                 <Link href="/blog-single" legacyBehavior>
                   <a>
-                    <img
+                    {/* <img
                       className="h-100 w-full object-cover rounded drop-shadow"
                       // src="/assets/imgs/placeholders/img-7.png"
                       // src="https://www.cloudsocial.io/wp-content/uploads/image/Omnibox-Ticket&comments.png"
                       src="/assets/imgs/backgrounds/2.png"
                       alt="Omnibox-Ticket&Comments"
+                    /> */}
+                    <Image
+                      className=" object-cover rounded drop-shadow"
+                      src="/assets/imgs/backgrounds/2.png"
+                      alt="Publish-Calendar"
+                      priority
+                      // layout="fill"
+                      width={1000}
+                      height={1000}
+                      objectFit="contain"
                     />
                   </a>
                 </Link>
@@ -637,12 +692,22 @@ function Home() {
               <div className="w-full lg:w-1/2 px-4 mb-8 order-0 lg:order-1">
                 <Link href="/blog-single" legacyBehavior>
                   <a>
-                    <img
+                    {/* <img
                       className="h-100 w-full object-cover rounded drop-shadow"
                       // src="/assets/imgs/placeholders/img-8.png"
                       //  src="https://www.cloudsocial.io/wp-content/uploads/image/Analytics.png"
                       src="/assets/imgs/backgrounds/3.png"
                       alt="Analytics"
+                    /> */}
+                    <Image
+                      className=" object-cover rounded drop-shadow"
+                      src="/assets/imgs/backgrounds/3.png"
+                      alt="Analytics"
+                      priority
+                      // layout="fill"
+                      width={1000}
+                      height={1000}
+                      objectFit="contain"
                     />
                   </a>
                 </Link>

@@ -4,6 +4,7 @@ import Link from "next/link";
 import CounterUp from "../components/elements/Counterup";
 import { integrationIcon } from "../public/assets/cardDetails";
 import Head from "next/head";
+import Image from "next/image";
 
 const Integration = () => {
   const [inViewport, setInViewport] = useState(false);
@@ -29,8 +30,11 @@ const Integration = () => {
 
   return (
     <>
-     <Head>
-      <meta charSet="utf-8" name="CloudSocial : All social integration in your pocket" />
+      <Head>
+        <meta
+          charSet="utf-8"
+          name="CloudSocial : All social integration in your pocket"
+        />
         <title>Social Media Integration Apps | CloudSocial</title>
         <meta
           name="description"
@@ -113,13 +117,21 @@ const Integration = () => {
               {integrationIcon.map(({ img, title, id, alt, content }) => (
                 <div className="w-1/2 lg:w-1/4 px-5 mb-12" key={id}>
                   <div
-                    className="hover-up-5 pt-8 pb-8 px-4 text-center bg-white rounded shadow wow animate__animated animate__fadeIn animated border border-gray-100 hover:border-gray-200"
-                    data-wow-delay=".1s"
+                    className="hover-up-5 pt-8 pb-8 px-1 text-center bg-white rounded shadow wow animate__animated animate__fadeIn animated border border-gray-100 hover:border-gray-200 "
+                    data-wow-delay=".1s hover:drop-shadow"
                   >
-                    <img
+                    {/* <img
                       className="mb-6 h-20 w-2 mx-auto"
                       src={img}
                       alt={alt}
+                    /> */}
+                    <Image
+                      className="mb-6 h-20 w-2 mx-auto "
+                      src={img}
+                      alt={alt}
+                      width={100}
+                      height={100}
+                      objectFit="contain"
                     />
                     <strong className="mt-6 mb-2 text-md">{title}</strong>
                     <p className="text-gray-500 text-xs mt-3">{content}</p>

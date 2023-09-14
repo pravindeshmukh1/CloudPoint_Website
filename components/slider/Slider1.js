@@ -2,6 +2,7 @@ import SwiperCore, { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Link from "next/link";
 import { socialMedia } from "../../public/assets/cardDetails";
+import YoutubeEmbed from "../elements/YoutubeEmbed";
 
 SwiperCore.use([Navigation]);
 
@@ -26,7 +27,7 @@ const Slider1 = () => {
         {socialMedia.map(({ img, title, desc, listen, imgUrl, id }) => (
           <SwiperSlide key={id}>
             <div className="px-3 pb-5">
-              <div className="card-slider group">
+              <div className="card-slider group p-3">
                 <div className="flex items-end mb-4">
                   <img className="" src={img} alt={title}/>
                   <h1 className="mx-2 text-xl font-semibold group-hover:text-blue-500">
@@ -36,7 +37,8 @@ const Slider1 = () => {
                   </h1>
                 </div>
                 <div className="mb-4">
-                  <img className="rounded-xl" src={imgUrl} alt={title} />
+                  {/* <img className="rounded-xl" src={imgUrl} alt={title} /> */}
+                  <YoutubeEmbed embedId={listen} />
                   <div className="flex justify-between items-end ">
                     <p className="mt-2 text-xs text-gray-500 group-hover:text-blue-500">
                       {desc}
@@ -48,7 +50,7 @@ const Slider1 = () => {
           </SwiperSlide>
         ))}
 
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <div className="px-3 pb-5">
             <div className="card-slider group">
               <img
@@ -163,7 +165,7 @@ const Slider1 = () => {
               </div>
             </div>
           </div>
-        </SwiperSlide>
+        </SwiperSlide> */}
       </Swiper>
 
       <div id="carausel-2-columns-1-arrows" className="flex">

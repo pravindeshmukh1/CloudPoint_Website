@@ -108,11 +108,12 @@ const Video = () => {
               </div>
             </div>
             <div className="flex flex-wrap -mx-3 -mb-6 text-center">
-              {video?.CloudInfluence.map((videoData) => {
+              {video?.CloudInfluence.map((videoData,index) => {
                 return (
                   <div
                     className="hover-up-5 w-full md:w-1/2 lg:w-1/3 px-3 mb-6 wow animate__animated animate__fadeIn"
                     data-wow-delay=".3s"
+                    key={index}
                   >
                     <div className="p-3 bg-white shadow rounded">
                       <div className="flex w-12 mb-1 h-12 mx-auto items-center justify-center text-blue-800 font-bold font-heading bg-blue-200 rounded-full">
