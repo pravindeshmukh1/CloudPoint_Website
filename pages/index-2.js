@@ -259,7 +259,7 @@ const Index2 = () => {
                         </div>
                     </div>
                 </section>
-                <section className="py-20">
+                {/* <section className="py-20">
                     <div className="container">
                         <div className="max-w-2xl lg:max-w-3xl mx-auto">
                             <div className="mb-12 text-center">
@@ -351,7 +351,7 @@ const Index2 = () => {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
             </Layout>
         </>
     );

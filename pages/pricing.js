@@ -253,12 +253,12 @@ const Pricing = () => {
                 <span className="text-blue-500">choose </span>
                 <span>your best plan</span>
               </h2>
-              <p
+              {/* <p
                 className="max-w-sm mx-auto text-lg text-gray-400 wow animate__animated animate__fadeInDown"
                 data-wow-delay=".5s"
               >
                 Best for freelance developers who need to save their time
-              </p>
+              </p> */}
             </div>
             {/* css in side public/css file */}
 

@@ -43,8 +43,8 @@ const Footer = () => {
                           priority
                           width={600}
                           height={600}
-                          // layout="fill"
-                          objectFit="contain"
+                          // fill
+                          // objectFit="contain"
                         />
                       </a>
                     </Link>

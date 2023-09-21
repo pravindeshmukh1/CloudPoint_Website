@@ -2,17 +2,15 @@ import React from "react";
 import Layout from "../../components/layout/Layout";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import ReactMarkdown from "react-markdown";
 
 // export async function getServerSideProps(context) {
-  export const getServerSideProps = (async (context) => {
+export const getServerSideProps = async (context) => {
   const { slug } = context.query;
   console.log(slug);
   try {
     const myHeaders = new Headers();
-    myHeaders.append(
-      "Authorization",
-      "Bearer fa758c5c6948176496e72931738966ca4dfc61813b103613d53ab6c39770874b4c481e0291cf5f2689f4e7d1ed8e4bbbb29dfd2e82dcc95cb7f04149acd7bb8fd15aaa798311c0ce77305220bc0b8c46b405f15afaa386ceab8668868011e0d0e04fd7731a7d9bb50186c7a60506656db501592ec290cc4de0e113dd66aa44f3"
-    );
+    myHeaders.append("Authorization", `${process.env.BEARER_TOKEN}`);
 
     const requestOptions = {
       method: "GET",
@@ -21,7 +19,7 @@ import { useRouter } from "next/router";
     };
 
     const response = await fetch(
-      `http://localhost:1337/api/Blogs?filters[slug][$eq]=${slug}&populate=*`,
+      `${process.env.STRAPI_URL}?filters[slug][$eq]=${slug}&populate=*`,
       requestOptions
     );
 
@@ -30,17 +28,17 @@ import { useRouter } from "next/router";
     }
 
     const data = await response.json(); // Parse the response as JSON
-  //  console.log(data);
+    //  console.log(data);
 
     return { props: { data } };
   } catch (error) {
     console.error("Error fetching data:", error);
     return { props: { data: null } }; // Handle errors gracefully
   }
-})
+};
 
 const BlogSingle = ({ data }) => {
-  console.log("BlogSingle",data);
+  console.log("BlogSingle", data);
   //   React.useEffect(() => {
   //     let config = {
   //       method: "get",
@@ -69,7 +67,9 @@ const BlogSingle = ({ data }) => {
           <div
             className="pt-20 pb-8 mb-12 bg-cover bg-no-repeat"
             style={{
-              backgroundImage: `url('http://localhost:1337${data.data[0].attributes.thumbnail.data[0].attributes.url}')`,
+            //  backgroundImage: "url('assets/imgs/placeholders/img-14.jpg')",
+              // backgroundImage: `url('http://localhost:1337${data.data[0].attributes.thumbnail.data[0].attributes.url}')`,
+            backgroundImage: `url('https://strapi.cloudsocial.io${data.data[0].attributes.thumbnail.data[0].attributes.url}')`,
             }}
           >
             <div className="container">
@@ -79,13 +79,16 @@ const BlogSingle = ({ data }) => {
                     {/* <Link href="/blog" legacyBehavior>
                       <a className="text-blueGray-200 hover:underline">
                         <span className="inline-block py-1 px-3 text-xs font-semibold bg-blue-100 text-blue-600 rounded-xl mr-3">
-                          Bussiness
+                        {data.data[0].attributes.categories}
                         </span>
                       </a>
                     </Link> */}
-                    <span className="text-blueGray-200 text-sm">
-                      {/* {blogDetails?.attributes?.date} */}
+                    <span className="inline-block py-1 px-3 text-xs font-semibold bg-blue-100 text-blue-600 rounded-xl mr-3">
+                      {data.data[0].attributes.categories}
                     </span>
+                    {/* <span className="text-blueGray-200 text-sm">
+                      {data.data[0].attributes.date}
+                    </span> */}
                   </span>
                   <h2 className="text-4xl md:text-5xl mt-4 text-blue-400 font-bold font-heading">
                     {data.data[0].attributes.title}
@@ -104,21 +107,41 @@ const BlogSingle = ({ data }) => {
                     </p>
                   </div>
                 </div> */}
-                 <div className="flex justify-center">
+                <div className="flex justify-center">
                   <div className="">
-                    <p className="text-black mb-1 font-bold text-xs">Categories : {data.data[0].attributes.categories}</p>
+                    <p className="text-black font-bold text-xs">
+                      {/* Categories : {data.data[0].attributes.categories} */}
+                      &nbsp;
+                      <span className="text-blueGray-200 text-xs font">
+                        {data.data[0].attributes.date}
+                      </span>
+                    </p>
                   </div>
-                </div> 
+                </div>
               </div>
             </div>
           </div>
           <div className="container">
+            {/* <div className="text-center">
+              <h2 className="text-4xl md:text-5xl mt-4 text-blue-400 font-bold font-heading">
+                {data.data[0].attributes.title}
+              </h2>
+            </div>
+            <div className="flex justify-center">
+              <div className="">
+                <p className="text-black mb-1 font-bold text-xs">
+                  Categories : {data.data[0].attributes.categories}
+                </p>
+              </div>
+            </div> */}
             <div
               className="max-w-2xl mx-auto"
               dangerouslySetInnerHTML={{
                 __html: data.data[0].attributes.content,
               }}
             />
+            {/* <ReactMarkdown children={data.data[0].attributes.content} escapeHtml={false}/> */}
+            {/* <ReactMarkdown skipHtml={true}  allowDangerousHtml={false} children={data.data[0].attributes.content} /> */}
           </div>
         </section>
 

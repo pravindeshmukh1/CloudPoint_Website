@@ -53,10 +53,10 @@ const Integration = () => {
                 <div className="py-12">
                   <div className="max-w-lg lg:max-w-md mx-auto lg:mx-0 mb-8 text-center lg:text-left">
                     <h2 className="text-3xl lg:text-5xl mb-4 font-bold font-heading wow animate__animatedanimated animate__fadeIn">
-                      Committed to <span className="text-blue-500">People</span>{" "}
-                      and the future
+                    CloudSocial has integrated all of your <span className="text-blue-500">favourite apps</span>{" "}
+                    for an holistic experience.
                     </h2>
-                    <p className="text-blueGray-400 leading-relaxed wow animate__animatedanimated animate__fadeIn">
+                    {/* <p className="text-blueGray-400 leading-relaxed wow animate__animatedanimated animate__fadeIn">
                       We are <strong className="text-blue-500">Monst</strong>, a
                       Creative Design{" "}
                       <span
@@ -68,10 +68,10 @@ const Integration = () => {
                     <p className="text-blueGray-400 leading-relaxed wow animate__animatedanimated animate__fadeIn mt-3 text-sm">
                       Helping you maximize operations management with
                       digitization
-                    </p>
+                    </p> */}
                   </div>
                   <div className="text-center lg:text-left">
-                    <Link href="/services" legacyBehavior>
+                    <Link href="/pricing" legacyBehavior>
                       <a className="tracking-wide hover-up-2 block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-blue-400 hover:bg-blue-500 rounded wow animate__animatedanimated animate__fadeIn">
                         Our Services
                       </a>
@@ -99,7 +99,7 @@ const Integration = () => {
             </div>
           </div>
         </section>
-        <section className="py-20 bg-blueGray-50" id="how-we-work">
+        {/* <section className="py-20 bg-blueGray-50" id="how-we-work">
           <div className="container text-center">
             <div className="max-w-lg mx-auto mb-16">
               <h2 className="text-3xl md:text-4xl mt-2 mb-4 font-bold font-heading">
@@ -109,7 +109,7 @@ const Integration = () => {
               </h2>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section className="py-20">
           <div className="container text-center">

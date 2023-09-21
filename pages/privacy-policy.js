@@ -3277,48 +3277,107 @@ const PrivacyPolicy = () => {
                             />
                           </Disclosure.Button>
                           <Disclosure.Panel className="text-gray-700 text-sm mt-2">
-                            <table class="table-auto">
-                              <thead>
-                                <tr>
-                                  <th className="">#</th>
-                                  <th className="">
-                                    <Link href="/pricing">Silver</Link>
-                                  </th>
-                                  <th className="">
-                                    <Link href="/pricing">Gold</Link>
-                                  </th>
-                                  <th className="">
-                                    <Link href="/pricing">Platinum</Link>
-                                  </th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr className="">
-                                  <td>No. of Brands</td>
-                                  <td>1</td>
-                                  <td>3</td>
-                                  <td>7</td>
-                                </tr>
-                                <tr className="">
-                                  <td>No. of Roles</td>
-                                  <td>2</td>
-                                  <td>6</td>
-                                  <td>7</td>
-                                </tr>
-                                <tr className="">
-                                  <td>No. of Users</td>
-                                  <td>3</td>
-                                  <td>15</td>
-                                  <td>50</td>
-                                </tr>
-                                <tr className="">
-                                  <td>No. of Advance Listen Mentions</td>
-                                  <td>-</td>
-                                  <td>2000*</td>
-                                  <td>10,000*</td>
-                                </tr>
-                              </tbody>
-                            </table>
+                          <div className="w-full hover-up-5 border-blue-gray-100 bg-blue-50 rounded shadow">
+                              <table className="w-full min-w-max table-auto text-left ">
+                                <thead>
+                                  <tr className="border  border-blue-gray-100 bg-blue-50 ">
+                                    <th className="text-md font-bold font-heading mb-2 border px-1 py-1">
+                                      #
+                                    </th>
+                                    <th className="text-md font-bold font-heading mb-2 border px-1 py-1">
+                                      Silver
+                                    </th>
+                                    <th className="text-md font-bold font-heading mb-2 border px-1 py-1">
+                                      Gold
+                                    </th>
+                                    <th className="text-md font-bold font-heading mb-2 border px-1 py-1">
+                                      Platinum
+                                    </th>
+                                  </tr>
+                                </thead>
+                                <tbody className="border-b border-blue-gray-100 bg-blue-50">
+                                  <tr className="px-3 py-3 border-b border-blue-gray-100 bg-blue-50">
+                                    <td className="text-sm mb-1 bg-blueGray-100 border px-1 py-1">
+                                      Monthly/ Annually
+                                    </td>
+                                    <td className="text-sm mb-1 bg-blueGray-100 border px-1 py-1">
+                                      <Link href="/pricing" legacyBehavior>
+                                        <a className="text-blue-500">Silver</a>
+                                      </Link>
+                                    </td>
+                                    <td className="text-sm mb-1 bg-blueGray-100 border px-1 py-1">
+                                      <Link href="/pricing" legacyBehavior>
+                                        <a className="text-blue-500">Gold</a>
+                                      </Link>
+                                    </td>
+                                    <td className="text-sm mb-1 bg-blueGray-100 border px-1 py-1">
+                                      <Link href="/pricing" legacyBehavior>
+                                        <a className="text-blue-500">
+                                          Platinum
+                                        </a>
+                                      </Link>
+                                    </td>
+                                  </tr>
+                                  <tr className="px-3 py-3 border-b border-blue-gray-100 bg-blue-50">
+                                    <td className="text-sm mb-1 bg-blueGray-100 border px-1 py-1">
+                                      No. of Brands
+                                    </td>
+                                    <td className="text-sm mb-1 bg-blueGray-100 border px-1 py-1">
+                                      1
+                                    </td>
+                                    <td className="text-sm mb-1 bg-blueGray-100 border px-1 py-1">
+                                      3
+                                    </td>
+                                    <td className="text-sm mb-1 bg-blueGray-100 border px-1 py-1">
+                                      7
+                                    </td>
+                                  </tr>
+                                  <tr className="px-3 py-3 border-b border-blue-gray-100 bg-blue-50">
+                                    <td className="text-sm mb-1 bg-blueGray-100 border px-1 py-1">
+                                      No. of Roles
+                                    </td>
+                                    <td className="text-sm mb-1 bg-blueGray-100 border px-1 py-1">
+                                      2
+                                    </td>
+                                    <td className="text-sm mb-1 bg-blueGray-100 border px-1 py-1">
+                                      6
+                                    </td>
+                                    <td className="text-sm mb-1 bg-blueGray-100 border px-1 py-1">
+                                      7
+                                    </td>
+                                  </tr>
+
+                                  <tr className="px-3 py-3 border-b border-blue-gray-100 bg-blue-50">
+                                    <td className="text-sm mb-1 bg-blueGray-100 border px-1 py-1">
+                                      No. of Users
+                                    </td>
+                                    <td className="text-sm mb-1 bg-blueGray-100 border px-1 py-1">
+                                      3
+                                    </td>
+                                    <td className="text-sm mb-1 bg-blueGray-100 border px-1 py-1">
+                                      15
+                                    </td>
+                                    <td className="text-sm mb-1 bg-blueGray-100 border px-1 py-1">
+                                      50
+                                    </td>
+                                  </tr>
+                                  <tr className="px-3 py-3 border-b border-blue-gray-100 bg-blue-50">
+                                    <td className="text-sm mb-1 bg-blueGray-100 border px-1 py-1">
+                                      No. of Advance Listen Mentions
+                                    </td>
+                                    <td className="text-sm mb-1 bg-blueGray-100 border px-1 py-1">
+                                      -
+                                    </td>
+                                    <td className="text-sm mb-1 bg-blueGray-100 border px-1 py-1">
+                                      2000*
+                                    </td>
+                                    <td className="text-sm mb-1 bg-blueGray-100 border px-1 py-1">
+                                      10,000
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
                           </Disclosure.Panel>
                         </>
                       )}
@@ -3523,7 +3582,7 @@ const PrivacyPolicy = () => {
           </div>
         </section>
 
-        <section className="pb-20">
+        {/* <section className="pb-20">
           <div className="container">
             <div className="max-w-2xl lg:max-w-3xl mx-auto">
               <div className="mb-12 text-center">
@@ -3716,7 +3775,7 @@ const PrivacyPolicy = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </Layout>
     </>
   );

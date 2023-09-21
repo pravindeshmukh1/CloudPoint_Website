@@ -6,21 +6,23 @@ const Blog = () => {
   const [blogData, setBlogData] = React.useState([]);
   console.log("🚀 ~ file: blog.js:8 ~ blogData:", blogData);
 
-  const getAllBlogs = async()=>{
+  const getAllBlogs = async () => {
     let headersList = {
-      "Accept": "*/*",
-      "User-Agent": "Thunder Client (https://www.thunderclient.com)",
-      "Authorization": "Bearer fa758c5c6948176496e72931738966ca4dfc61813b103613d53ab6c39770874b4c481e0291cf5f2689f4e7d1ed8e4bbbb29dfd2e82dcc95cb7f04149acd7bb8fd15aaa798311c0ce77305220bc0b8c46b405f15afaa386ceab8668868011e0d0e04fd7731a7d9bb50186c7a60506656db501592ec290cc4de0e113dd66aa44f3"
-     }
-     let response = await fetch("http://localhost:1337/api/Blogs", { 
-       method: "GET",
-       headers: headersList
-     });
+      Accept: "*/*",
+      Authorization:
+      `${process.env.BEARER_TOKEN}`
+    };
+    let response = await fetch(`${process.env.STRAPI_URL}`, {
+      method: "GET",
+      headers: headersList,
+    });
 
-     let data = await response.json();
-     console.log(data);
-     setBlogData(data.data)
-  }
+    let data = await response.json();
+    console.log(data);
+    setBlogData(data.data);
+  };
+
+ 
   React.useEffect(() => {
     // let config = {
     //   method: "get",
@@ -41,7 +43,7 @@ const Blog = () => {
     //   .catch((error) => {
     //     console.log(error);
     //   });
-   
+
     getAllBlogs();
   }, []);
   return (
@@ -69,7 +71,7 @@ const Blog = () => {
                   ></path>
                 </svg>
               </li>
-              <li className="inline-flex items-center">
+              {/* <li className="inline-flex items-center">
                 <a href="#" className="hover:text-blue-500 text-gray-800">
                   Our Services
                 </a>
@@ -87,10 +89,10 @@ const Blog = () => {
               </li>
               <li className="inline-flex items-center text-gray-400">
                 <span>Web Development</span>
-              </li>
+              </li> */}
             </ul>
             <div className="flex flex-wrap -mx-3">
-              <div
+              {/* <div
                 className="w-full lg:w-1/3 px-3 mb-12 wow animate__animated animate__fadeIn animated hover-up-5"
                 data-wow-delay=".1s"
               >
@@ -167,7 +169,7 @@ const Blog = () => {
                   erat risus sed mauris. Vestibulum vehicula leo eget libero
                   eleifend.
                 </p>
-              </div>
+              </div> */}
               {blogData?.map((data) => {
                 return (
                   <div
@@ -187,17 +189,22 @@ const Blog = () => {
                       <Link href="/blog-2" legacyBehavior>
                         <a>
                           <span className="inline-block py-1 px-3 text-xs font-semibold bg-blue-100 text-blue-600 rounded-xl mr-3">
-                            Company
+                          {data.attributes.categories}
                           </span>
                         </a>
                       </Link>
+                      {/* <span className="text-blueGray-400 text-xs">
+                        {data.attributes.date} {data.attributes.postBy}
+                      </span> */}
+                    </p>
+                    <p className="mt-2 text-sm text-blue-400 flex justify-end">
                       <span className="text-blueGray-400 text-xs">
-                     {data.attributes.date}    {data.attributes.postBy} 
+                        {data.attributes.date} {data.attributes.postBy}
                       </span>
                     </p>
                     <h3 className="my-2 text-2xl font-bold font-heading">
                       <Link
-                        href={`/blogDetails/${data.attributes.slug}`}
+                        href={`/blog/${data.attributes.slug}`}
                         legacyBehavior
                       >
                         <a className="hover:text-blue-500">
