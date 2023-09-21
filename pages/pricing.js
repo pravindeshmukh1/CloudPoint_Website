@@ -18,15 +18,13 @@ const Pricing = () => {
   const [data11, setData11] = React.useState("");
 
   const [res, setRes] = useState("");
-  console.log("🚀 ~ file: pricing.js:15 ~ res:", res);
+ // console.log("🚀 ~ file: pricing.js:15 ~ res:", res);
 
   const getLocation = async () => {
     const res = await fetch("https://api.db-ip.com/v2/free/self");
     const data = res.json();
-    console.log("🚀 ~ file: Layout.jsx:20 ~ data:", data);
-
     data.then((data) => {
-      console.log("-------------", data);
+      // console.log("-------------", data);
       // valueData.current = data.countryCode;
       setRes(data);
     });
@@ -37,7 +35,7 @@ const Pricing = () => {
 
   const value1 = money.filter((money) => money.CountryCode === res.countryCode);
   const value2 = money.filter((money) => money.CountryCode === data11);
-  console.log("🚀 ~ file: pricing.js:33 ~ value1:", value1);
+ // console.log("🚀 ~ file: pricing.js:33 ~ value1:", value1);
 
   return (
     <>
@@ -263,8 +261,8 @@ const Pricing = () => {
             {/* css in side public/css file */}
 
             <div className="flex justify-center align-middle ">
-              <div class="btn-container">
-                <label class="switch btn-color-mode-switch">
+              <div className="btn-container">
+                <label className="switch btn-color-mode-switch">
                   <input
                     type="checkbox"
                     name="color_mode"
@@ -277,7 +275,7 @@ const Pricing = () => {
                     htmlFor="color_mode"
                     data-on="Yearly"
                     data-off="Monthly"
-                    class="btn-color-mode-switch-inner"
+                    className="btn-color-mode-switch-inner"
                   ></label>
                 </label>
               </div>

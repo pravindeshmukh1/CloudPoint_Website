@@ -2,9 +2,44 @@ import React from "react";
 import Layout from "../components/layout/Layout";
 import Link from "next/link";
 
-const Blog = () => {
+export const getServerSideProps = async (context) => {
+  const { slug } = context.query;
+  console.log(slug);
+  try {
+    const myHeaders = new Headers();
+    myHeaders.append("Authorization", `${process.env.BEARER_TOKEN}`);
+
+    const requestOptions = {
+      method: "GET",
+      headers: myHeaders,
+      redirect: "follow",
+    };
+
+    const response = await fetch(
+      `${process.env.STRAPI_URL}`,
+      requestOptions
+    );
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+
+    const data = await response.json(); // Parse the response as JSON
+    const blogList = await data.data; // Parse the response as JSON
+     console.log(blogList);
+
+    return { props: { blogList } };
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    return { props: { data: null } }; // Handle errors gracefully
+  }
+};
+
+const Blog = ({blogList}) => {
+  console.log("🚀 ~ file: blog.js:38 ~ blogList:", blogList);
+  
   const [blogData, setBlogData] = React.useState([]);
-  console.log("🚀 ~ file: blog.js:8 ~ blogData:", blogData);
+ // console.log("🚀 ~ file: blog.js:8 ~ blogData:", blogData);
 
   const getAllBlogs = async () => {
     let headersList = {
@@ -19,33 +54,13 @@ const Blog = () => {
 
     let data = await response.json();
     console.log(data);
-    setBlogData(data.data);
+    setBlogData(data.data.toReversed());
   };
 
- 
   React.useEffect(() => {
-    // let config = {
-    //   method: "get",
-    //   maxBodyLength: Infinity,
-    //   url: "http://localhost:1337/api/Blogs",
-    //   headers: {
-    //     Authorization:
-    //       "Bearer fa758c5c6948176496e72931738966ca4dfc61813b103613d53ab6c39770874b4c481e0291cf5f2689f4e7d1ed8e4bbbb29dfd2e82dcc95cb7f04149acd7bb8fd15aaa798311c0ce77305220bc0b8c46b405f15afaa386ceab8668868011e0d0e04fd7731a7d9bb50186c7a60506656db501592ec290cc4de0e113dd66aa44f3",
-    //   },
-    // };
-
-    // axios
-    //   .request(config)
-    //   .then((response) => {
-    //     console.log(JSON.stringify(response.data.data));
-    //     setBlogData(response.data.data);
-    //   })
-    //   .catch((error) => {
-    //     console.log(error);
-    //   });
-
     getAllBlogs();
   }, []);
+  
   return (
     <>
       <Layout>
@@ -170,7 +185,9 @@ const Blog = () => {
                   eleifend.
                 </p>
               </div> */}
-              {blogData?.map((data) => {
+
+              {/* {blogData?.map((data) => { */}
+              {blogList?.map((data) => {
                 return (
                   <div
                     className="w-full lg:w-1/3 px-3 mb-12 wow animate__animated animate__fadeIn animated hover-up-5"
