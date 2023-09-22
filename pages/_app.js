@@ -18,20 +18,11 @@ function MyApp({ Component, pageProps }) {
   }, []);
   return (
     <>
-      <Head>
-        <meta charSet="utf-8" name="CloudSocial Solution page" />
-        <title>Social Media Management Tools | CloudSocial</title>
-        <meta
-          name="description"
-          content="Best social media management tools built to manage all your social media handles at one place. Grow and engage with an ease of social media listening."
-        />
-      </Head>
-
-      {!loading ? <Component {...pageProps} /> : <Preloader />}
-       {/* <!--Start of Tawk.to Script--> */}
+      {/* <!--Start of Tawk.to Script-->    
+        <div id='tawk_5fc258c9920fc91564cb894d'></div>
+       */}
       <Script id="tawk" strategy="lazyOnload">
         {`
-        <div id='tawk_5fc258c9920fc91564cb894d'></div>
       var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date(); Tawk_API.embedded='tawk_5fc258c9920fc91564cb894d';
       (function(){
       var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
@@ -42,6 +33,46 @@ function MyApp({ Component, pageProps }) {
       s0.parentNode.insertBefore(s1,s0);})();
         `}
       </Script>
+
+      {/* <!-- Google tag (gtag.js) --> */}
+      <Script
+        strategy="lazyOnload"
+        src={`https://www.googletagmanager.com/gtag/js?id=G-P5Y9P6SQSV`}
+      />
+      <Script strategy="lazyOnload">
+        {`
+        window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-P5Y9P6SQSV');
+        `}
+      </Script>
+
+      {/* <!-- Google tag (gtag.js) - Ads --> */}
+      <Script
+        strategy="lazyOnload"
+        src={`https://www.googletagmanager.com/gtag/js?id=AW-1090407733`}
+      />
+      <Script strategy="lazyOnload">
+        {`
+        window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-10904077330');
+        `}
+      </Script>
+
+      <Head>
+        <meta charSet="utf-8" name="CloudSocial Solution page" />
+        <title>Social Media Management Tools | CloudSocial</title>
+        <meta
+          name="description"
+          content="Best social media management tools built to manage all your social media handles at one place. Grow and engage with an ease of social media listening."
+        />
+      </Head>
+
+      {!loading ? <Component {...pageProps} /> : <Preloader />}
+
     </>
   );
 }
