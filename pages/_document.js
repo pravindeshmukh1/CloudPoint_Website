@@ -168,7 +168,7 @@ src="https://www.facebook.com/tr?id=226453679214323&ev=PageView&noscript=1"/>`,
           }}
         />
         {/* Tawk.to Script  */}
-        <script type="text/javascript">
+        {/* <script type="text/javascript">
           {`
       <div id='tawk_5fc258c9920fc91564cb894d'></div>
       var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date(); Tawk_API.embedded='tawk_5fc258c9920fc91564cb894d';
@@ -180,7 +180,7 @@ src="https://www.facebook.com/tr?id=226453679214323&ev=PageView&noscript=1"/>`,
       s1.setAttribute('crossorigin','*');
       s0.parentNode.insertBefore(s1,s0);})();
         `}
-        </script>
+        </script> */}
 
         {/* repuso widget code  */}
         <script>
