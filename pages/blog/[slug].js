@@ -140,8 +140,8 @@ const BlogSingle = ({ data }) => {
                 __html: data.data[0].attributes.content,
               }}
             />
-            {/* <ReactMarkdown children={data.data[0].attributes.content} escapeHtml={false}/> */}
-            {/* <ReactMarkdown skipHtml={true}  allowDangerousHtml={false} children={data.data[0].attributes.content} /> */}
+            <ReactMarkdown children={data.data[0].attributes.content}/>
+            <ReactMarkdown skipHtml={true}  allowDangerousHtml={true} children={data.data[0].attributes.content} />
           </div>
         </section>
 

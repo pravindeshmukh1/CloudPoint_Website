@@ -90,23 +90,25 @@ function Home() {
             <img src="/assets/imgs/elements/pattern.png" alt="Monst" />
             <div
               className="absolute"
-              // style={{ top: "9%", left: "14%", width: "72%", height: "66%" }}
-              style={{ top: "9%", width: "100%", height: "100%" }}
+               style={{ top: "9%", left: "14%", width: "72%", height: "66%" }}
+              //style={{ top: "9%", width: "100%", height: "100%" }}
             >
-              {/* <img
+              <img
                 className="jump rounded wow animate_animated animate_fadeIn"
                 //  src="/assets/imgs/placeholders/dashboard.png"
                 src="/assets/imgs/backgrounds/slider/dashboard1248.jpg"
                 alt="dashboard"
-              /> */}
-              <Image
-                className="jump rounded wow animate_animated animate_fadeIn"
+              />
+              {/* <Image
+                className="jump rounded wow animate_animated animate_fadeIn mx-auto"
                 src="/assets/imgs/backgrounds/slider/dashboard1248.jpg"
                 alt="dashboard"
                 priority
-                layout="fill"
-                objectFit="contain"
-              />
+                // layout="fill"
+                width={1000}
+                height={1000}
+                // objectFit="contain"
+              /> */}
             </div>
           </div>
           {/* <div className="container px-4 mx-auto">
@@ -377,24 +379,30 @@ function Home() {
                     src="/assets/imgs/backgrounds/slider/crm1248.jpg"
                     alt="listen"
                     priority
-                    layout="fill"
-                    objectFit="contain"
+                    // layout="fill"
+                    width={1000}
+                    height={1000}
+                    // objectFit="contain"
                   />
                   <Image
                     className="jump relative mx-auto rounded-xl w-full z-10"
                     src="/assets/imgs/backgrounds/slider/sentiment1248.jpg"
                     alt="dashboard"
                     priority
-                    layout="fill"
-                    objectFit="contain"
+                    // layout="fill"
+                    width={1000}
+                    height={1000}
+                    // objectFit="contain"
                   />
                   <Image
                     className="jump relative mx-auto rounded-xl w-full z-10"
                     src="/assets/imgs/backgrounds/slider/listen1248.jpg"
                     alt="listen"
                     priority
-                    layout="fill"
-                    objectFit="contain"
+                    // layout="fill"
+                    width={1000}
+                    height={1000}
+                    // objectFit="contain"
                   />
 
                   {/* <img
@@ -576,7 +584,7 @@ function Home() {
                       // layout="fill"
                       width={1000}
                       height={1000}
-                      objectFit="contain"
+                      // objectFit="contain"
                     />
                   </a>
                 </Link>
@@ -626,27 +634,27 @@ function Home() {
                 </Link>
               </div>
               <div className="w-full lg:w-1/2 px-4 mb-8 order-0">
-                <Link href="/blog-single" legacyBehavior>
-                  <a>
-                    {/* <img
+                {/* <Link href="/blog-single" legacyBehavior> */}
+                <a>
+                  {/* <img
                       className="h-100 w-full object-cover rounded drop-shadow"
                       // src="/assets/imgs/placeholders/img-7.png"
                       // src="https://www.cloudsocial.io/wp-content/uploads/image/Omnibox-Ticket&comments.png"
                       src="/assets/imgs/backgrounds/2.png"
                       alt="Omnibox-Ticket&Comments"
                     /> */}
-                    <Image
-                      className=" object-cover rounded drop-shadow"
-                      src="/assets/imgs/backgrounds/2.png"
-                      alt="Publish-Calendar"
-                      priority
-                      // layout="fill"
-                      width={1000}
-                      height={1000}
-                      objectFit="contain"
-                    />
-                  </a>
-                </Link>
+                  <Image
+                    className=" object-cover rounded drop-shadow"
+                    src="/assets/imgs/backgrounds/2.png"
+                    alt="Publish-Calendar"
+                    priority
+                    // layout="fill"
+                    width={1000}
+                    height={1000}
+                    // objectFit="contain"
+                  />
+                </a>
+                {/* </Link> */}
               </div>
             </div>
             <div className="flex flex-wrap -mx-4 mb-12 wow animate_animated animate_fadeIn animated hover-up-5">
@@ -707,7 +715,7 @@ function Home() {
                       // layout="fill"
                       width={1000}
                       height={1000}
-                      objectFit="contain"
+                      // objectFit="contain"
                     />
                   </a>
                 </Link>
