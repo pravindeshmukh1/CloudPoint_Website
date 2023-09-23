@@ -74,12 +74,27 @@ function MyApp({ Component, pageProps }) {
   gtag('config', 'AW-10904077330'); 
         `}
       </Script>
-      {/* <div id="tawk_5fc258c9920fc91564cb894d"></div>
-      <TawkMessengerReact
+
+      <Script id="tawk" strategy="lazyOnload">
+        {`
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date(); Tawk_API.embedded='tawk_5fc258c9920fc91564cb894d';
+      (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/5fc258c9920fc91564cb894d/1estddag9';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);})();
+        `}
+      </Script>
+
+      
+      {/* <div id="tawk_5fc258c9920fc91564cb894d"></div> */}
+      {/* <TawkMessengerReact
         propertyid="tawk_5fc258c9920fc91564cb894d"
         widgetid="1estddag9"
         onLoad={onLoad}
-      /> */}
+      />  */}
     </>
   );
 }
