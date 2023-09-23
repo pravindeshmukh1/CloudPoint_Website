@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => {
     var Tawk_API = Tawk_API || {},
       Tawk_LoadStart = new Date();
-    Tawk_API.embedded = process.env.TAWK;
+    Tawk_API.embedded = "tawk_5fc258c9920fc91564cb894d";
     (function () {
       var s1 = document.createElement("script"),
         s0 = document.getElementsByTagName("script")[0];
@@ -42,6 +42,10 @@ function MyApp({ Component, pageProps }) {
         <meta
           name="description"
           content="Best social media management tools built to manage all your social media handles at one place. Grow and engage with an ease of social media listening."
+        />
+        <Script
+          strategy="lazyOnload"
+          src="https://embed.tawk.to/5fc258c9920fc91564cb894d/1estddag9"
         />
       </Head>
 
@@ -88,7 +92,10 @@ function MyApp({ Component, pageProps }) {
         `}
       </Script>
 
-      
+      <Script
+        strategy="lazyOnload"
+        src="https://embed.tawk.to/5fc258c9920fc91564cb894d/1estddag9"
+      />
       {/* <div id="tawk_5fc258c9920fc91564cb894d"></div> */}
       {/* <TawkMessengerReact
         propertyid="tawk_5fc258c9920fc91564cb894d"
