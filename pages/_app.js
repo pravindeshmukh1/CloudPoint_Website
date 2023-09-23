@@ -6,7 +6,7 @@ import "../public/assets/css/tailwind-built.css";
 import Preloader from "../components/elements/Preloader";
 import "swiper/css";
 import Script from "next/script";
-import TawkMessengerReact from "@tawk.to/tawk-messenger-react";
+// import TawkMessengerReact from "@tawk.to/tawk-messenger-react";
 
 function MyApp({ Component, pageProps }) {
   const [loading, setLoading] = useState(false);
