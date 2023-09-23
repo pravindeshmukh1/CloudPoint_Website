@@ -192,6 +192,7 @@ const Blog = ({blogList}) => {
                   <div
                     className="w-full lg:w-1/3 px-3 mb-12 wow animate__animated animate__fadeIn animated hover-up-5"
                     data-wow-delay=".1s"
+                    key={data.attributes.id}
                   >
                     <Link href="/blog-single" legacyBehavior>
                       <a>
