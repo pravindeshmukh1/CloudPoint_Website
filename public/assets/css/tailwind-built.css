@@ -2208,7 +2208,8 @@ li.menu-item-has-children.active .menu-expand {
   line-height: 50px;
   cursor: pointer;
   color: #fff;
-  right: 30px;
+  /* right: 30px; */
+  left:50% !important;
   bottom: 30px;
   border-radius: 5px;
   text-align: center;

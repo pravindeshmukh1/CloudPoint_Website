@@ -244,7 +244,7 @@ const Footer = () => {
                   alt="instagram"
                 />
               </a>
-              <a
+              {/* <a
                 className="inline-block px-2"
                 target="_blank"
                 href="https://twitter.com/Cloudsocial_"
@@ -253,7 +253,7 @@ const Footer = () => {
                   src="/assets/imgs/icons/twitter-blue.svg"
                   alt="instagram"
                 />
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
