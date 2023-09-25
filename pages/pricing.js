@@ -1287,7 +1287,7 @@ const Pricing = () => {
                           } w-6 h-6`}
                         />
                       </Disclosure.Button>
-                      <Disclosure.Panel className="text-gray-700 text-sm mt-2">
+                      <Disclosure.Panel className="text-gray-700 text-sm mt-2 text-justify">
                         CloudSocial is a cloud-based platform that allows you to
                         manage your social media platforms seamlessly and
                         efficiently. You can use CloudSocial to post content,
@@ -1318,7 +1318,7 @@ const Pricing = () => {
                           } w-6 h-6`}
                         />
                       </Disclosure.Button>
-                      <Disclosure.Panel className="text-gray-700 text-sm mt-2">
+                      <Disclosure.Panel className="text-gray-700 text-sm mt-2 text-justify">
                         No, you can start the free trial without adding any card
                         details.
                       </Disclosure.Panel>
@@ -1339,7 +1339,7 @@ const Pricing = () => {
                           } w-6 h-6`}
                         />
                       </Disclosure.Button>
-                      <Disclosure.Panel className="text-gray-700 text-sm mt-2">
+                      <Disclosure.Panel className="text-gray-700 text-sm mt-2 text-justify">
                         We take supporting you very seriously. Should you need
                         any help in configuring or using CloudSocial we are
                         there to support you. You can reach our support team
@@ -1368,7 +1368,7 @@ const Pricing = () => {
                           } w-6 h-6`}
                         />
                       </Disclosure.Button>
-                      <Disclosure.Panel className="text-gray-700 text-sm mt-2">
+                      <Disclosure.Panel className="text-gray-700 text-sm mt-2 text-justify">
                         CloudSocial provides you with 3 different packages. You
                         can select the pack which fits your requirements best.
                         <ul className="list-disc list-inside text-sm ml-4">
@@ -1404,7 +1404,7 @@ const Pricing = () => {
                           } w-6 h-6`}
                         />
                       </Disclosure.Button>
-                      <Disclosure.Panel className="text-gray-700 text-sm mt-2">
+                      <Disclosure.Panel className="text-gray-700 text-sm mt-2 text-justify">
                         You can manage your Social Media presence across all
                         these profiles :
                         <ul className="list-disc list-inside text-sm ml-4">
@@ -1447,7 +1447,7 @@ const Pricing = () => {
                           } w-6 h-6`}
                         />
                       </Disclosure.Button>
-                      <Disclosure.Panel className="text-gray-700 text-sm mt-2">
+                      <Disclosure.Panel className="text-gray-700 text-sm mt-2 text-justify">
                         Omnibox is where you find and respond to all of your
                         incoming mentions. No more juggling multiple tools,
                         especially in an age when consumers believe in reaching

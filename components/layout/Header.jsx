@@ -38,6 +38,7 @@ const Header = ({ handleHidden }) => {
                   className="h-6" //h-10
                   src="/assets/imgs/logos/CSLogo.svg"
                   alt="CloudSocial"
+                  style={{marginBottom:"5px !important"}}
                 />
               </a>
             </Link>
@@ -143,14 +144,14 @@ const Header = ({ handleHidden }) => {
                   <li>
                     <Link href="/video" legacyBehavior>
                       <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-                      Video
+                        Video
                       </a>
                     </Link>
                   </li>
                   <li>
                     <Link href="/literature" legacyBehavior>
                       <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-                      Literature
+                        Literature
                       </a>
                     </Link>
                   </li>
@@ -164,11 +165,11 @@ const Header = ({ handleHidden }) => {
                   <li>
                     <Link href="/compendium" legacyBehavior>
                       <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-                      Compendium
+                        Compendium
                       </a>
                     </Link>
                   </li>
-                 {/* <li>
+                  {/* <li>
                     <Link href="/faqs" legacyBehavior>
                       <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
                         Faqs
