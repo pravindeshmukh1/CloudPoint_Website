@@ -364,7 +364,7 @@ const Pricing = () => {
 
                   <div className="flex flex-col items-center mb-8">
                     <ul className="text-gray-400">
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -372,7 +372,7 @@ const Pricing = () => {
                         />
                         <span>15 Social Channels</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -380,7 +380,7 @@ const Pricing = () => {
                         />
                         <span>3 Users</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -391,7 +391,7 @@ const Pricing = () => {
                       <li className="mt-3 mb-3 text-md text-blue-600 font-bold">
                         <span>Publish</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -399,7 +399,7 @@ const Pricing = () => {
                         />
                         <span>Posting Rich Media Content</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -407,7 +407,7 @@ const Pricing = () => {
                         />
                         <span>Bulk Media Upload</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -415,7 +415,7 @@ const Pricing = () => {
                         />
                         <span>Tagging</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -423,7 +423,7 @@ const Pricing = () => {
                         />
                         <span>Recall Post</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -431,7 +431,7 @@ const Pricing = () => {
                         />
                         <span>Global Time Zone Selection</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/close-o.svg"
@@ -440,7 +440,7 @@ const Pricing = () => {
 
                         <span>Audience Targeting</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/close-o.svg"
@@ -448,7 +448,7 @@ const Pricing = () => {
                         />
                         <span>Social Calendar</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/close-o.svg"
@@ -456,7 +456,7 @@ const Pricing = () => {
                         />
                         <span>Insta-Alerts via Email</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -464,7 +464,7 @@ const Pricing = () => {
                         />
                         <span>Create Content with Crello</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -472,7 +472,7 @@ const Pricing = () => {
                         />
                         <span>FB Ad Manager</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -483,7 +483,7 @@ const Pricing = () => {
                       <li className="mt-3 mb-3 text-md text-blue-600 font-bold">
                         <span>ORM - Omnibox & Respond</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -491,7 +491,7 @@ const Pricing = () => {
                         />
                         <span>Social Channel + Email Inbox</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -499,7 +499,7 @@ const Pricing = () => {
                         />
                         <span>Collaboration</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -507,7 +507,7 @@ const Pricing = () => {
                         />
                         <span>In Mention Search</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -515,32 +515,30 @@ const Pricing = () => {
                         />
                         <span>Filters Date Range</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/close-o.svg"
                           alt="close"
                         />
                         <span>
-                          Export to XLS, PDF &<br />
-                          Share via Email
+                          Export to XLS, PDF & Share via Email
                         </span>
                       </li>
                       <li className="mt-3 mb-3 text-md text-blue-600 font-bold">
                         <span>Listen</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/close-o.svg"
                           alt="close"
                         />
                         <span>
-                          Keyword search across <br />
-                          select social channels
+                          Keyword search
                         </span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/close-o.svg"
@@ -551,7 +549,7 @@ const Pricing = () => {
                       <li className="mt-3 mb-3 text-md text-blue-600 font-bold">
                         <span>Reports & Analytics</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/close-o.svg"
@@ -559,7 +557,7 @@ const Pricing = () => {
                         />
                         <span>Unified Dashboard</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/close-o.svg"
@@ -567,7 +565,7 @@ const Pricing = () => {
                         />
                         <span>Social Channels Report</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/close-o.svg"
@@ -575,7 +573,7 @@ const Pricing = () => {
                         />
                         <span>Analytics</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/close-o.svg"
@@ -586,7 +584,7 @@ const Pricing = () => {
                       <li className="mt-3 mb-3 text-md text-blue-600 font-bold">
                         <span>Support - 24*7*365</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -594,7 +592,7 @@ const Pricing = () => {
                         />
                         <span>Email</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -602,7 +600,7 @@ const Pricing = () => {
                         />
                         <span>Call</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -683,7 +681,7 @@ const Pricing = () => {
                         />
                         <span>40 Social Channels</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -691,7 +689,7 @@ const Pricing = () => {
                         />
                         <span>15 Users</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -702,7 +700,7 @@ const Pricing = () => {
                       <li className="mt-3 mb-3 text-md  text-white-600 font-bold">
                         <span>Publish</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -710,7 +708,7 @@ const Pricing = () => {
                         />
                         <span>Posting Rich Media Content</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -718,7 +716,7 @@ const Pricing = () => {
                         />
                         <span>Bulk Media Upload</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -726,7 +724,7 @@ const Pricing = () => {
                         />
                         <span>Tagging</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -734,7 +732,7 @@ const Pricing = () => {
                         />
                         <span>Recall Post</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -742,7 +740,7 @@ const Pricing = () => {
                         />
                         <span>Global Time Zone Selection</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -750,7 +748,7 @@ const Pricing = () => {
                         />
                         <span>Audience Targeting</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -759,7 +757,7 @@ const Pricing = () => {
 
                         <span>Social Calendar</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -767,7 +765,7 @@ const Pricing = () => {
                         />
                         <span>Insta-Alerts via Email</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -775,7 +773,7 @@ const Pricing = () => {
                         />
                         <span>Create Content with Crello</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -783,7 +781,7 @@ const Pricing = () => {
                         />
                         <span>FB Ad Manager</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -794,7 +792,7 @@ const Pricing = () => {
                       <li className="mt-3 mb-3 text-md text-white-600 font-bold">
                         <span>ORM - Omnibox & Respond</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -802,7 +800,7 @@ const Pricing = () => {
                         />
                         <span>Social Channel + Email Inbox</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -810,7 +808,7 @@ const Pricing = () => {
                         />
                         <span>Collaboration</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -818,7 +816,7 @@ const Pricing = () => {
                         />
                         <span>In Mention Search</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -826,32 +824,32 @@ const Pricing = () => {
                         />
                         <span>Filters</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
                           alt="check"
                         />
                         <span>
-                          Export to XLS, PDF &<br />
-                          Share via Email
+                          Export to XLS, PDF & Share via Email
                         </span>
                       </li>
                       <li className="mt-3 mb-3 text-md text-white-600 font-bold">
                         <span>Listen</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
                           alt="check"
                         />
                         <span>
-                          Keyword search across <br />
-                          select social channels
+                          {/* Keyword search across <br />
+                          select social channels */}
+                          Keyword search
                         </span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -862,7 +860,7 @@ const Pricing = () => {
                       <li className="mt-3 mb-3 text-md text-white-600 font-bold">
                         <span>Reports & Analytics</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -870,7 +868,7 @@ const Pricing = () => {
                         />
                         <span>Unified Dashboard</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -878,7 +876,7 @@ const Pricing = () => {
                         />
                         <span>Social Channels Report</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -886,7 +884,7 @@ const Pricing = () => {
                         />
                         <span>Analytics</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -897,7 +895,7 @@ const Pricing = () => {
                       <li className="mt-3 mb-3 text-md text-white-600 font-bold">
                         <span>Support - 24*7*365</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -905,7 +903,7 @@ const Pricing = () => {
                         />
                         <span>Email</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -913,7 +911,7 @@ const Pricing = () => {
                         />
                         <span>Call</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -986,7 +984,7 @@ const Pricing = () => {
                   </div>
                   <div className="flex flex-col items-center mb-8">
                     <ul className="text-gray-400">
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -994,7 +992,7 @@ const Pricing = () => {
                         />
                         <span>100 Social Channels</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -1002,7 +1000,7 @@ const Pricing = () => {
                         />
                         <span>50 Users</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -1013,7 +1011,7 @@ const Pricing = () => {
                       <li className="mt-3 mb-3 text-md  text-blue-600 font-bold">
                         <span>Publish</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -1021,7 +1019,7 @@ const Pricing = () => {
                         />
                         <span>Posting Rich Media Content</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -1029,7 +1027,7 @@ const Pricing = () => {
                         />
                         <span>Bulk Media Upload</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -1037,7 +1035,7 @@ const Pricing = () => {
                         />
                         <span>Tagging</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -1045,7 +1043,7 @@ const Pricing = () => {
                         />
                         <span>Recall Post</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -1053,7 +1051,7 @@ const Pricing = () => {
                         />
                         <span>Global Time Zone Selection</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         {/*  <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -1067,7 +1065,7 @@ const Pricing = () => {
                         />
                         <span>Audience Targeting</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -1075,7 +1073,7 @@ const Pricing = () => {
                         />
                         <span>Social Calendar</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -1083,7 +1081,7 @@ const Pricing = () => {
                         />
                         <span>Insta-Alerts via Email</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -1091,7 +1089,7 @@ const Pricing = () => {
                         />
                         <span>Create Content with Crello</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -1099,7 +1097,7 @@ const Pricing = () => {
                         />
                         <span>FB Ad Manager</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -1110,7 +1108,7 @@ const Pricing = () => {
                       <li className="mt-3 mb-3 text-md text-blue-600 font-bold">
                         <span>ORM - Omnibox & Respond</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -1118,7 +1116,7 @@ const Pricing = () => {
                         />
                         <span>Social Channel + Email Inbox</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -1126,7 +1124,7 @@ const Pricing = () => {
                         />
                         <span>Collaboration</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -1134,7 +1132,7 @@ const Pricing = () => {
                         />
                         <span>In Mention Search</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -1142,32 +1140,30 @@ const Pricing = () => {
                         />
                         <span>Filters</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
                           alt="check"
                         />
                         <span>
-                          Export to XLS, PDF &<br />
-                          Share via Email
+                          Export to XLS, PDF & Share via Email
                         </span>
                       </li>
                       <li className="mt-3 mb-3 text-md text-blue-600 font-bold">
                         <span>Listen</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
                           alt="check"
                         />
                         <span>
-                          Keyword search across <br />
-                          select social channels
+                        Keyword search
                         </span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -1178,7 +1174,7 @@ const Pricing = () => {
                       <li className="mt-3 mb-3 text-md text-blue-600 font-bold">
                         <span>Reports & Analytics</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -1186,7 +1182,7 @@ const Pricing = () => {
                         />
                         <span>Unified Dashboard</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -1194,7 +1190,7 @@ const Pricing = () => {
                         />
                         <span>Social Channels Report</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -1202,7 +1198,7 @@ const Pricing = () => {
                         />
                         <span>Analytics</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -1213,7 +1209,7 @@ const Pricing = () => {
                       <li className="mt-3 mb-3 text-md text-blue-600 font-bold">
                         <span>Support - 24*7*365</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -1221,7 +1217,7 @@ const Pricing = () => {
                         />
                         <span>Email</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
@@ -1229,7 +1225,7 @@ const Pricing = () => {
                         />
                         <span>Call</span>
                       </li>
-                      <li className="flex mb-3 text-sm">
+                      <li className="flex mb-3 text-xs">
                         <img
                           className="w-6 h-5 mr-2"
                           src="/assets/imgs/icons/check-o.svg"
