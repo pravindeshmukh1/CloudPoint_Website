@@ -42,18 +42,18 @@ const Security = () => {
                 Security
               </h2>
             </div>
-            <div className="w-full text-center lg:text-left text-lg lg:text-base font-semibold lg:font-normal mb-2 lg:mb-0 px-3">
+            <div className="w-full text-center lg:text-left text-lg lg:text-base lg:font-normal mb-2 lg:mb-0 px-3">
               <div className="text-left text-sm">
                 <h3 className="text-md font-bold font-heading mt-4 mb-2">
                   Infrastructure
                 </h3>
-                <p className="mb-3">
+                <p className="mb-3 text-justify">
                   CloudSocial servers are all hosted in the cloud by Amazon Web
                   Services (AWS). The AWS infrastructure puts strong safeguards
                   in place to help protect customer privacy.
                 </p>
 
-                <ul className="list-disc list-inside text-sm ml-4">
+                <ul className="list-disc list-inside text-sm ml-4 text-justify">
                   <li>All data is stored in highly secure AWS data centres.</li>
                   <li>
                     AWS ensures that all data is encrypted in transit with TLS
@@ -64,12 +64,12 @@ const Security = () => {
                 <h3 className="text-md font-bold font-heading mt-4 mb-2">
                   Protecting Your Data
                 </h3>
-                <p className="mb-3">
+                <p className="mb-3 text-justify">
                   Protecting your data is of paramount importance and a constant
                   focus here at CloudSocial.
                 </p>
 
-                <ul className="list-disc list-inside text-sm ml-4">
+                <ul className="list-disc list-inside text-sm ml-4 text-justify">
                   <li>
                     Data is backed up daily and in some cases, more frequently
                     than that.
@@ -100,12 +100,12 @@ const Security = () => {
                 <h3 className="text-md font-bold font-heading mt-4 mb-2">
                   Employee Access
                 </h3>
-                <p className="mb-3">
+                <p className="mb-3 text-justify">
                   Access to infrastructure and other aspects of the CloudSocial
                   environment, as well as customer data, is strictly limited to
                   those within our team that absolutely need it.
                 </p>
-                <ul className="list-disc list-inside text-sm ml-4">
+                <ul className="list-disc list-inside text-sm ml-4 text-justify">
                   <li>
                     Only our Engineering team has access to our production
                     environment. SSH keys are required for console access to
@@ -124,7 +124,7 @@ const Security = () => {
                 <h3 className="text-md font-bold font-heading mt-4 mb-2">
                   How to Report a Security Incident
                 </h3>
-                <p className="mb-3">
+                <p className="mb-3 text-justify">
                   To report an incident of suspected abuse, misuse, or a
                   security issue you have discovered you should contact{" "}
                   <a className="text-blue-400" href="mailto:support@cloudsocial.io" target="_blank">
@@ -133,12 +133,12 @@ const Security = () => {
                   .{" "}
                 </p>
 
-                <p className="mb-3">
+                <p className="mb-3 text-justify">
                   immediately. For incidents that affect a single account,
                   please reach out to us via our usual support channels.
                 </p>
 
-                <ul className="list-disc list-inside text-sm ml-4">
+                <ul className="list-disc list-inside text-sm ml-4 text-justify">
                   <li>
                     CloudSocial support team will acknowledge your report,
                     usually within 1 business day.

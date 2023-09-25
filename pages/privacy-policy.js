@@ -32,19 +32,20 @@ const PrivacyPolicy = () => {
               className="mx-auto sm:max-w-sm mb-10 wow animate__animated animate__fadeIn"
               data-wow-delay=".1s"
               src="assets/imgs/illustrations/eating.svg"
-              alt="Monst"
+              alt="privacy-policy"
             />
             <div className="mb-12 text-center">
               <h2
-                className="text-4xl font-bold font-heading wow animate__animated animate__fadeIn animated"
+                className="lg:text-4xl sm:text-2xl font-bold font-heading wow animate__animated animate__fadeIn animated"
                 data-wow-delay=".1s"
               >
                 Privacy Policy of{" "}
-                <span className="text-blue-500">www.cloudsocial.io</span>
+                <br />
+                <span className="text-blue-500 word-break">www.cloudsocial.io</span>
               </h2>
               <h6>This Website collects some Personal Data from its Users.</h6>
             </div>
-            <div className="text-center lg:text-left text-lg lg:text-base mb-5">
+            <div className="text-center lg:text-left lg:text-base  mb-5">
               <p className="mb-3">
                 This document contains
                 <a
@@ -97,9 +98,9 @@ const PrivacyPolicy = () => {
               </a>
             </p>
             <hr className="mb-3 mt-3 text-gray-300" />
-            <div className="w-full text-center lg:text-left text-lg lg:text-base font-semibold lg:font-normal mb-2 lg:mb-0 px-3">
-              <div className="text-left text-sm">
-                <h3 className="text-md font-bold font-heading">
+            <div className="w-full text-center lg:text-left text-lg lg:text-base font-semibold1 lg:font-normal mb-2 lg:mb-0 px-3">
+              <div className="text-left text-sm text-justify">
+                <h3 className="text-md font-bold font-heading mt-2 mb-2">
                   Types of Data collected
                 </h3>
                 <p className="mb-1">
@@ -377,7 +378,7 @@ const PrivacyPolicy = () => {
                           } w-6 h-6`}
                         />
                       </Disclosure.Button>
-                      <Disclosure.Panel className="text-gray-700 text-sm mt-2">
+                      <Disclosure.Panel className="text-gray-700 text-sm mt-2 text-justify">
                         <p className="mb-3">
                           This type of service allows this Website to access
                           Data from your account on a third-party service and
@@ -463,7 +464,7 @@ const PrivacyPolicy = () => {
                           } w-6 h-6`}
                         />
                       </Disclosure.Button>
-                      <Disclosure.Panel className="text-gray-700 text-sm mt-2">
+                      <Disclosure.Panel className="text-gray-700 text-sm mt-2 text-justify">
                         <p className="mb-3">
                           This type of service allows User Data to be utilized
                           for advertising communication purposes. These
@@ -852,7 +853,7 @@ const PrivacyPolicy = () => {
                           } w-6 h-6`}
                         />
                       </Disclosure.Button>
-                      <Disclosure.Panel className="text-gray-700 text-sm mt-2">
+                      <Disclosure.Panel className="text-gray-700 text-sm mt-2 text-justify">
                         <p className="mb-3">
                           The services contained in this section enable the
                           Owner to monitor and analyze web traffic and can be
@@ -1303,7 +1304,7 @@ const PrivacyPolicy = () => {
                           } w-6 h-6`}
                         />
                       </Disclosure.Button>
-                      <Disclosure.Panel className="text-gray-700 text-sm mt-2">
+                      <Disclosure.Panel className="text-gray-700 text-sm mt-2 text-justify">
                         <p className="mb-3">
                           This type of service allows the Owner to save and
                           manage backups of this Website on external servers
@@ -1358,7 +1359,7 @@ const PrivacyPolicy = () => {
                           } w-6 h-6`}
                         />
                       </Disclosure.Button>
-                      <Disclosure.Panel className="text-gray-700 text-sm mt-2">
+                      <Disclosure.Panel className="text-gray-700 text-sm mt-2 text-justify">
                         <p className="mb-3">
                           The services contained in this section allow the Owner
                           to track and analyze the User response concerning web
@@ -1467,7 +1468,7 @@ const PrivacyPolicy = () => {
                           } w-6 h-6`}
                         />
                       </Disclosure.Button>
-                      <Disclosure.Panel className="text-gray-700 text-sm mt-2">
+                      <Disclosure.Panel className="text-gray-700 text-sm mt-2 text-justify">
                         <p className="mb-3">
                           This type of service allows you to view content hosted
                           on external platforms directly from the pages of this
@@ -1607,7 +1608,7 @@ const PrivacyPolicy = () => {
                           } w-6 h-6`}
                         />
                       </Disclosure.Button>
-                      <Disclosure.Panel className="text-gray-700 text-sm mt-2">
+                      <Disclosure.Panel className="text-gray-700 text-sm mt-2 text-justify">
                         <p className="mb-3">
                           This type of service has the purpose of hosting Data
                           and files that enable this Website to run and be
@@ -1674,7 +1675,7 @@ const PrivacyPolicy = () => {
                           } w-6 h-6`}
                         />
                       </Disclosure.Button>
-                      <Disclosure.Panel className="text-gray-700 text-sm mt-2">
+                      <Disclosure.Panel className="text-gray-700 text-sm mt-2 text-justify">
                         <p className="mb-3">
                           This type of service allows Users to interact with
                           third-party live chat platforms directly from the
@@ -1785,7 +1786,7 @@ const PrivacyPolicy = () => {
                           } w-6 h-6`}
                         />
                       </Disclosure.Button>
-                      <Disclosure.Panel className="text-gray-700 text-sm mt-2">
+                      <Disclosure.Panel className="text-gray-700 text-sm mt-2 text-justify">
                         <p className="mb-3">
                           This type of service allows this Website to manage the
                           creation, deployment, administration, distribution and
@@ -1885,7 +1886,7 @@ const PrivacyPolicy = () => {
                           } w-6 h-6`}
                         />
                       </Disclosure.Button>
-                      <Disclosure.Panel className="text-gray-700 text-sm mt-2">
+                      <Disclosure.Panel className="text-gray-700 text-sm mt-2 text-justify">
                         <p className="mb-3">
                           By registering or authenticating, Users allow this
                           Website to identify them and give them access to
@@ -1994,7 +1995,7 @@ const PrivacyPolicy = () => {
                           } w-6 h-6`}
                         />
                       </Disclosure.Button>
-                      <Disclosure.Panel className="text-gray-700 text-sm mt-2">
+                      <Disclosure.Panel className="text-gray-700 text-sm mt-2 text-justify">
                         <p className="mb-3">
                           This type of service allows this Website and its
                           partners to inform, optimize and serve advertising
@@ -2198,7 +2199,7 @@ const PrivacyPolicy = () => {
                           } w-6 h-6`}
                         />
                       </Disclosure.Button>
-                      <Disclosure.Panel className="text-gray-700 text-sm mt-2">
+                      <Disclosure.Panel className="text-gray-700 text-sm mt-2 text-justify">
                         <p className="mb-3">
                           This type of service helps the Owner to manage the
                           tags or scripts needed on this Website in a
@@ -2987,7 +2988,7 @@ const PrivacyPolicy = () => {
                           } w-6 h-6`}
                         />
                       </Disclosure.Button>
-                      <Disclosure.Panel className="text-gray-700 text-sm mt-2">
+                      <Disclosure.Panel className="text-gray-700 text-sm mt-2 text-justify">
                         <h3 className="text-md font-bold font-heading mt-2 mb-2">
                           Personal Data (or Data)
                         </h3>
@@ -3165,7 +3166,7 @@ const PrivacyPolicy = () => {
                               } w-6 h-6`}
                             />
                           </Disclosure.Button>
-                          <Disclosure.Panel className="text-gray-700 text-sm mt-2">
+                          <Disclosure.Panel className="text-gray-700 text-sm mt-2 text-justify">
                             CloudSocial is a cloud-based platform that allows
                             you to manage your social media platforms seamlessly
                             and efficiently. You can use CloudSocial to post
@@ -3195,7 +3196,7 @@ const PrivacyPolicy = () => {
                               } w-6 h-6`}
                             />
                           </Disclosure.Button>
-                          <Disclosure.Panel className="text-gray-700 text-sm mt-2">
+                          <Disclosure.Panel className="text-gray-700 text-sm mt-2 text-justify">
                             CloudSocial is a subscription-based platform and it
                             offers a 30-days free trial without entering any
                             Credit Card details. We offer customers the ability
@@ -3223,7 +3224,7 @@ const PrivacyPolicy = () => {
                               } w-6 h-6`}
                             />
                           </Disclosure.Button>
-                          <Disclosure.Panel className="text-gray-700 text-sm mt-2">
+                          <Disclosure.Panel className="text-gray-700 text-sm mt-2 text-justify">
                             To start your free trial, you do not need to enter
                             your card information.
                           </Disclosure.Panel>
@@ -3244,7 +3245,7 @@ const PrivacyPolicy = () => {
                               } w-6 h-6`}
                             />
                           </Disclosure.Button>
-                          <Disclosure.Panel className="text-gray-700 text-sm mt-2">
+                          <Disclosure.Panel className="text-gray-700 text-sm mt-2 text-justify">
                             You can click on the given link and schedule your
                             demo at your convenient time.
                             <br />
@@ -3266,7 +3267,7 @@ const PrivacyPolicy = () => {
                       {({ open }) => (
                         <>
                           <Disclosure.Button className="w-full font-bold border-b border-gray-200 py-3 flex justify-between items-center mt-4">
-                            <span>
+                            <span className="text-left">
                               What are all the subscription plans that
                               CloudSocial offers?
                             </span>
@@ -3276,7 +3277,7 @@ const PrivacyPolicy = () => {
                               } w-6 h-6`}
                             />
                           </Disclosure.Button>
-                          <Disclosure.Panel className="text-gray-700 text-sm mt-2">
+                          <Disclosure.Panel className="text-gray-700 text-sm mt-2 text-justify">
                           <div className="w-full hover-up-5 border-blue-gray-100 bg-blue-50 rounded shadow">
                               <table className="w-full min-w-max table-auto text-left ">
                                 <thead>
@@ -3396,7 +3397,7 @@ const PrivacyPolicy = () => {
                               } w-6 h-6`}
                             />
                           </Disclosure.Button>
-                          <Disclosure.Panel className="text-gray-700 text-sm mt-2">
+                          <Disclosure.Panel className="text-gray-700 text-sm mt-2 text-justify">
                             <p className="">
                               <strong>1. Dashboard : </strong>The dashboard will
                               provide you with an overall view of your brand's
@@ -3451,7 +3452,7 @@ const PrivacyPolicy = () => {
                               } w-6 h-6`}
                             />
                           </Disclosure.Button>
-                          <Disclosure.Panel className="text-gray-700 text-sm mt-2">
+                          <Disclosure.Panel className="text-gray-700 text-sm mt-2 text-justify">
                             By social channels, we mean any of the social media
                             channels that CloudSocial can currently manage. It
                             could be any of the following options :
@@ -3495,7 +3496,7 @@ const PrivacyPolicy = () => {
                               } w-6 h-6`}
                             />
                           </Disclosure.Button>
-                          <Disclosure.Panel className="text-gray-700 text-sm mt-2">
+                          <Disclosure.Panel className="text-gray-700 text-sm mt-2 text-justify">
                             Omnibox is where you find and respond to all of your
                             incoming mentions. No more juggling multiple tools,
                             especially in an age when consumers believe in
@@ -3522,7 +3523,7 @@ const PrivacyPolicy = () => {
                               } w-6 h-6`}
                             />
                           </Disclosure.Button>
-                          <Disclosure.Panel className="text-gray-700 text-sm mt-2">
+                          <Disclosure.Panel className="text-gray-700 text-sm mt-2 text-justify">
                             <ul className="list-disc list-inside text-sm ml-4">
                               <li>Facebook</li>
                               <li>YouTube</li>
@@ -3545,7 +3546,7 @@ const PrivacyPolicy = () => {
                       {({ open }) => (
                         <>
                           <Disclosure.Button className="w-full font-bold border-b border-gray-200 py-3 flex justify-between items-center mt-4">
-                            <span>
+                            <span className="text-left">
                               When I need support from CloudSocial, how do I get
                               in touch with CloudSocial Customer Support?
                             </span>
@@ -3555,7 +3556,7 @@ const PrivacyPolicy = () => {
                               } w-6 h-6`}
                             />
                           </Disclosure.Button>
-                          <Disclosure.Panel className="text-gray-700 text-sm mt-2">
+                          <Disclosure.Panel className="text-gray-700 text-sm mt-2 text-justify">
                             We take your support very seriously. If you need
                             assistance configuring or using CloudSocial, we are
                             here to help. You can contact our support team via

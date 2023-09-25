@@ -25,7 +25,7 @@ const GDPR = () => {
               className="mx-auto sm:max-w-sm mb-10 wow animate__animated animate__fadeIn"
               data-wow-delay=".1s"
               src="assets/imgs/illustrations/eating.svg"
-              alt="Monst"
+              alt="gdpr"
             />
             <div className="mb-12 text-center">
               <h2
@@ -35,12 +35,12 @@ const GDPR = () => {
                 GDPR
               </h2>
             </div>
-            <div className="w-full text-center lg:text-left text-lg lg:text-base font-semibold lg:font-normal mb-2 lg:mb-0 px-3">
+            <div className="w-full text-center lg:text-left text-lg lg:text-base lg:font-normal mb-2 lg:mb-0 px-3">
               <div className="text-left text-sm">
                 <h3 className="text-md font-bold font-heading mt-4 mb-2">
                   CloudSocial and the General Data Protection Regulation (GDPR)
                 </h3>
-                <p className="mb-3">
+                <p className="mb-3 text-justify">
                   In 2016 the European Commission approved and adopted a new
                   framework for European data protection law called the General
                   Data Protection Regulation (GDPR). The GDPR requirements have
@@ -58,12 +58,12 @@ const GDPR = () => {
                   GDPR preparedness checklist
                 </h3>
 
-                <p className="mb-3">
+                <p className="mb-3 text-justify">
                   We have ensured complete compliance with the GDPR. Below is a
                   high-level overview of the key activities we have performed:
                 </p>
 
-                <ul className="list-disc list-inside text-sm ml-4">
+                <ul className="list-disc list-inside text-sm ml-4 text-justify">
                   <li>Appointed a Data Protection Officer</li>
                   <li>
                     Conducted an internal audit to ensure that all third parties
@@ -95,11 +95,11 @@ const GDPR = () => {
                 <h3 className="text-md font-bold font-heading mt-4 mb-2">
                   Frequently Asked Questions
                 </h3>
-                <p className="mb-3">
+                <p className="mb-3 text-justify">
                   Does CloudSocial have a Data Processing Agreement (DPA) we can
                   sign?
                 </p>
-                <p className="mb-3">
+                <p className="mb-3 text-justify">
                   As a Data Processor, our updated Terms & Conditions include
                   the necessary data processing clauses. When we are acting as a
                   Data Controller, the terms of our Privacy Policy will govern.
@@ -113,7 +113,7 @@ const GDPR = () => {
                 <h3 className="text-md font-bold font-heading mt-4 mb-2">
                   Where does CloudSocial store its data?
                 </h3>
-                <p className="mb-3">
+                <p className="mb-3 text-justify">
                   Our server infrastructure is hosted by Amazon Web Services
                   (AWS) - in their North Virginia (US) region. You can read more
                   about our Security provisions and overview by heading to our
@@ -123,7 +123,7 @@ const GDPR = () => {
                   Can you delete my data or answer any other questions about my
                   data?
                 </h3>
-                <p className="mb-3">
+                <p className="mb-3 text-justify">
                   Please login to your account and navigate to ‘Delete my
                   Account’ sections to permanently delete your CloudSocial
                   account and it’s associated data. Alternatively, you may email
@@ -135,7 +135,7 @@ const GDPR = () => {
                 <h3 className="text-md font-bold font-heading mt-4 mb-2">
                   How is my data being used?
                 </h3>
-                <p className="mb-3">
+                <p className="mb-3 text-justify">
                   We are continually auditing the third-party services that we
                   use, in order to ensure that we are only making use of
                   services that add value to CloudSocial, the product and its

@@ -32,21 +32,22 @@ const TermsOfService = () => {
               className="mx-auto sm:max-w-sm mb-10 wow animate__animated animate__fadeIn"
               data-wow-delay=".1s"
               src="assets/imgs/illustrations/eating.svg"
-              alt="Monst"
+              alt="terms"
             />
             <div className="mb-12 text-center">
               <h2
-                className="text-4xl font-bold font-heading wow animate__animated animate__fadeIn animated"
+                className="lg:text-4xl sm:text-2xl font-bold font-heading wow animate__animated animate__fadeIn animated"
                 data-wow-delay=".1s"
               >
                 Terms and Conditions of{" "}
-                <span className="text-blue-500">www.cloudsocial.io</span>
+                <br />
+                <span className="text-blue-500 word-break">www.cloudsocial.io</span>
               </h2>
               <h6>This Website collects some Personal Data from its Users.</h6>
             </div>
 
-            <div className="text-center lg:text-left text-lg lg:text-base mb-5">
-              <p className="mb-1 ">
+            <div className="text-center lg:text-left lg:text-base mb-5">
+              <p className="mb-1 text-justify">
                 These Terms govern the use of this Website, and, any other
                 related Agreement or legal relationship with the Owner in a
                 legally binding way. Capitalized words are defined in the
@@ -61,17 +62,17 @@ const TermsOfService = () => {
             <h3 className="text-md font-bold font-heading">
               This Website is provided by :
             </h3>
-            <p className="mb-1 ">
+            <p className="mb-1 text-justify">
               CloudSocial Technologies Pte Ltd.
               <br />
               68 Circular Road,
               <br />
               #02-01, 049422 Singapore
             </p>
-            <p className="mb-3">
+            <p className="mb-3 text-justify">
               <b>Owner contact email :</b>{" "}
               <a
-                className="text-blue-400"
+                className="text-blue-400 word-break"
                 href="mailto:support@cloudsocial.io"
                 target="_blank"
               >
@@ -79,7 +80,7 @@ const TermsOfService = () => {
               </a>
             </p>
             <hr className="mb-3 mt-3 text-gray-300" />
-            <div className="w-full text-center lg:text-left text-lg lg:text-base font-semibold lg:font-normal mb-2 lg:mb-0 px-3">
+            <div className="w-full text-center lg:text-left text-lg lg:text-base font-semibold1 lg:font-normal mb-2 lg:mb-0 px-3">
               <div className="text-left text-sm">
                 <h3 className="text-md font-bold font-heading">
                   "This Website" refers to
@@ -88,10 +89,7 @@ const TermsOfService = () => {
                 <h3 className="text-md font-bold font-heading mt-4 mb-2">
                   Methods of processing
                 </h3>
-
-                <p className="mb-1 "></p>
-
-                <ul className="list-disc list-inside text-sm ml-4">
+                <ul className="list-disc list-inside text-sm ml-4 text-justify">
                   <li>
                     Acceptance of Terms Your use of services offered by
                     CloudSocial.io (powered by CLOUDSOCIAL TECHNOLOGIES PTE LTD)
@@ -124,7 +122,7 @@ const TermsOfService = () => {
                     of any unauthorized use of your account or any other breach
                     of security by emailing us at{" "}
                     <a
-                      className="text-blue-400"
+                      className="text-blue-400 word-break"
                       href="mailto:support@cloudsocial.io"
                       target="_blank"
                     >
@@ -280,7 +278,7 @@ const TermsOfService = () => {
                     of Use When you agree to terms and conditions you are
                     agreeing to be bound by the YouTube Terms of Service at{" "}
                     <a
-                      className="text-blue-400"
+                      className="text-blue-400 word-break"
                       href="https://www.youtube.com/t/terms"
                       target="_blank"
                     >
@@ -288,7 +286,7 @@ const TermsOfService = () => {
                     </a>{" "}
                     and Google privacy policy at{" "}
                     <a
-                      className="text-blue-400"
+                      className="text-blue-400 word-break"
                       href="https://policies.google.com/privacy"
                       target="_blank"
                     >
@@ -302,7 +300,7 @@ const TermsOfService = () => {
                     can revoke CloudSocial access from your data via the Google
                     security settings at{" "}
                     <a
-                      className="text-blue-400"
+                      className="text-blue-400 word-break"
                       href="https://myaccount.google.com/connections?filters=3,4&hl=en_GB"
                       target="_blank"
                     >
@@ -311,7 +309,7 @@ const TermsOfService = () => {
                     For any questions or complaints about the CloudSocial’s
                     privacy practices you can contact us at{" "}
                     <a
-                      className="text-blue-400"
+                      className="text-blue-400 word-break"
                       href="mailto:support@cloudsocial.io"
                       target="_blank"
                     >
@@ -319,7 +317,7 @@ const TermsOfService = () => {
                     </a>{" "}
                     Facebook Terms of Service –{" "}
                     <a
-                      className="text-blue-400"
+                      className="text-blue-400 word-break"
                       href="https://www.facebook.com/terms.php"
                       target="_blank"
                     >
@@ -328,7 +326,7 @@ const TermsOfService = () => {
                     By using CloudSocial you are agreeing to be bound by the
                     Facebook Terms of Service. Instagram Terms of Service –{" "}
                     <a
-                      className="text-blue-400"
+                      className="text-blue-400 word-break"
                       href="https://help.instagram.com/581066165581870"
                       target="_blank"
                     >
@@ -337,7 +335,7 @@ const TermsOfService = () => {
                     By using CloudSocial you are agreeing to be bound by the
                     Instagram Terms of Service. Twitter Terms of Service –{" "}
                     <a
-                      className="text-blue-400"
+                      className="text-blue-400 word-break"
                       href="https://twitter.com/en/tos"
                       target="_blank"
                     >
@@ -346,7 +344,7 @@ const TermsOfService = () => {
                     By using CloudSocial you are agreeing to be bound by the
                     Twitter Terms of Service. LinkedIn Terms of Service –{" "}
                     <a
-                      className="text-blue-400"
+                      className="text-blue-400 word-break"
                       href="https://www.linkedin.com/legal/l/service-terms"
                       target="_blank"
                     >
@@ -387,7 +385,7 @@ const TermsOfService = () => {
                     third-party platform FastSpring to process your payments.
                     Please refer to the Privacy Policies of FastSpring{" "}
                     <a
-                      className="text-blue-400"
+                      className="text-blue-400 word-break"
                       href="https://fastspring.com/privacy/"
                       target="_blank"
                     >
@@ -421,7 +419,7 @@ const TermsOfService = () => {
                     Policies of third-party products:
                     <br />
                     <a
-                      className="text-blue-400"
+                      className="text-blue-400 word-break"
                       href=" https://www.youtube.com/about/policies/#community-guidelines"
                       target="_blank"
                     >
@@ -429,7 +427,7 @@ const TermsOfService = () => {
                     </a>{" "}
                     <br />
                     <a
-                      className="text-blue-400"
+                      className="text-blue-400 word-break"
                       href="https://www.facebook.com/policy.php"
                       target="_blank"
                     >
@@ -437,7 +435,7 @@ const TermsOfService = () => {
                     </a>{" "}
                     <br />
                     <a
-                      className="text-blue-400"
+                      className="text-blue-400 word-break"
                       href="https://twitter.com/en/privacy"
                       target="_blank"
                     >
@@ -445,7 +443,7 @@ const TermsOfService = () => {
                     </a>{" "}
                     <br />
                     <a
-                      className="text-blue-400"
+                      className="text-blue-400 word-break"
                       href="https://help.instagram.com/155833707900388"
                       target="_blank"
                     >
@@ -453,7 +451,7 @@ const TermsOfService = () => {
                     </a>{" "}
                     <br />
                     <a
-                      className="text-blue-400"
+                      className="text-blue-400 word-break"
                       href="https://www.linkedin.com/legal/privacy-policy"
                       target="_blank"
                     >
@@ -477,7 +475,7 @@ const TermsOfService = () => {
                     a question about privacy policy of our Website and/or
                     Software, please email to{" "}
                     <a
-                      className="text-blue-400"
+                      className="text-blue-400 word-break"
                       href="mailto:support@cloudsocial.io"
                       target="_blank"
                     >
@@ -492,7 +490,7 @@ const TermsOfService = () => {
                   What the User should know at a glance
                 </h3>
 
-                <ul className="list-disc list-inside text-sm ml-4">
+                <ul className="list-disc list-inside text-sm ml-4 text-justify">
                   <li>
                     Please note that some provisions in these Terms may only
                     apply to certain categories of Users. In particular, certain
@@ -507,16 +505,16 @@ const TermsOfService = () => {
                 <h4 className="text-md font-bold font-heading text-lg mt-4 mb-3">
                   TERMS OF USE
                 </h4>
-                <p className="mb-1 ">
+                <p className="mb-1 text-justify">
                   Unless otherwise specified, the terms of use detailed in this
                   section apply generally when using this Website.
                 </p>
-                <p className="mb-1 ">
+                <p className="mb-1 text-justify">
                   Single or additional conditions of use or access may apply in
                   specific scenarios and in such cases are additionally
                   indicated within this document.
                 </p>
-                <p className="mb-1 ">
+                <p className="mb-1 text-justify">
                   By using this Website, Users confirm to meet the following
                   requirements:
                 </p>
@@ -530,26 +528,26 @@ const TermsOfService = () => {
                 <h3 className="text-md font-bold font-heading mt-4 mb-2">
                   Account registration
                 </h3>
-                <p className="mb-1 ">
+                <p className="mb-1 text-justify">
                   To use the Service Users must register or create a User
                   account, providing all required data or information in a
                   complete and truthful manner.
                 </p>
 
-                <p className="mb-1 ">
+                <p className="mb-1 text-justify">
                   Failure to do so will cause unavailability of the Service.
                 </p>
-                <p className="mb-1 ">
+                <p className="mb-1 text-justify">
                   Users are responsible for keeping their login credentials
                   confidential and safe. For this reason, Users are also
                   required to choose passwords that meet the highest standards
                   of strength permitted by this Website.
                 </p>
-                <p className="mb-1 ">
+                <p className="mb-1 text-justify">
                   By registering, Users agree to be fully responsible for all
                   activities that occur under their username and password.
                 </p>
-                <p className="mb-1 ">
+                <p className="mb-1 text-justify">
                   Users are required to immediately and unambiguously inform the
                   Owner via the contact details indicated in this document, if
                   they think their personal information, including but not
@@ -560,12 +558,12 @@ const TermsOfService = () => {
                   Account termination
                 </h3>
 
-                <p className="mb-1 ">
+                <p className="mb-1 text-justify">
                   Users can terminate their account and stop using the Service
                   subject to the conditions and according to the procedures
                   outlined in the relevant section of this Website.
                 </p>
-                <p className="mb-1 ">
+                <p className="mb-1 text-justify">
                   However, termination of the account will not be possible until
                   the subscription period paid for by the User has expired.
                 </p>
@@ -573,7 +571,7 @@ const TermsOfService = () => {
                 <h3 className="text-md font-bold font-heading mt-4 mb-2">
                   Account suspension and deletion
                 </h3>
-                <p className="mb-1 ">
+                <p className="mb-1 text-justify">
                   The Owner reserves the right to suspend or terminate the
                   User's account at any time and without notice, at the Owner's
                   sole discretion, in these cases:
@@ -599,12 +597,12 @@ const TermsOfService = () => {
                   </li>
                 </ul>
 
-                <p className="mb-1 ">
+                <p className="mb-1 text-justify">
                   The suspension or deletion of User accounts shall not entitle
                   Users to any claims for compensation, damages or
                   reimbursement.
                 </p>
-                <p className="mb-1 ">
+                <p className="mb-1 text-justify">
                   The suspension or deletion of accounts due to causes
                   attributable to the User does not exempt the User from paying
                   any applicable fees or prices.
@@ -613,18 +611,18 @@ const TermsOfService = () => {
                 <h3 className="text-md font-bold font-heading mt-4 mb-2">
                   Content on this Website
                 </h3>
-                <p className="mb-1 ">
+                <p className="mb-1 text-justify">
                   Unless where otherwise specified or clearly recognizable, all
                   content available on this Website is owned or provided by the
                   Owner or its licensors.
                 </p>
-                <p className="mb-1 ">
+                <p className="mb-1 text-justify">
                   The Owner undertakes its utmost effort to ensure that the
                   content provided on this Website infringes no applicable legal
                   provisions or third-party rights. However, it may not always
                   be possible to achieve such a result.
                 </p>
-                <p className="mb-1 ">
+                <p className="mb-1 text-justify">
                   In such cases, without prejudice to any legal prerogatives of
                   Users to enforce their rights, Users are kindly asked to
                   preferably report related complaints using the contact details
@@ -633,11 +631,11 @@ const TermsOfService = () => {
                 <h3 className="text-md font-bold font-heading mt-4 mb-2">
                   Rights regarding content on this Website - All rights reserved
                 </h3>
-                <p className="mb-1 ">
+                <p className="mb-1 text-justify">
                   The Owner holds and reserves all intellectual property rights
                   for any such content.
                 </p>
-                <p className="mb-1 ">
+                <p className="mb-1 text-justify">
                   In particular, but without limitation, Users may not copy,
                   download, share (beyond the limits set forth below), modify,
                   translate, transform, publish, transmit, sell, sublicense,
@@ -646,28 +644,28 @@ const TermsOfService = () => {
                   any third party to do so through the User or their device,
                   even without the User's knowledge.
                 </p>
-                <p className="mb-1 ">
+                <p className="mb-1 text-justify">
                   Where explicitly stated on this Website, the User may
                   download, copy and/or share some content available through
                   this Website for its sole personal and non-commercial use and
                   provided that the copyright attributions and all the other
                   attributions requested by the Owner are correctly implemented.
                 </p>
-                <p className="mb-1 ">
+                <p className="mb-1 text-justify">
                   Any applicable statutory limitation or exception to copyright
                   shall stay unaffected.
                 </p>
                 <h3 className="text-md font-bold font-heading mt-4 mb-2">
                   Access to external resources
                 </h3>
-                <p className="mb-1 ">
+                <p className="mb-1 text-justify">
                   Through this Website Users may have access to external
                   resources provided by third parties. Users acknowledge and
                   accept that the Owner has no control over such resources and
                   is therefore not responsible for their content and
                   availability.
                 </p>
-                <p className="mb-1 ">
+                <p className="mb-1 text-justify">
                   Conditions applicable to any resources provided by third
                   parties, including those applicable to any possible grant of
                   rights in content, result from each such third parties’ terms
@@ -677,17 +675,17 @@ const TermsOfService = () => {
                 <h3 className="text-md font-bold font-heading mt-4 mb-2">
                   Acceptable use
                 </h3>
-                <p className="mb-1 ">
+                <p className="mb-1 text-justify">
                   This Website and the Service may only be used within the scope
                   of what they are provided for, under these Terms and
                   applicable law.
                 </p>
-                <p className="mb-1 ">
+                <p className="mb-1 text-justify">
                   Users are solely responsible for making sure that their use of
                   this Website and/or the Service violates no applicable law,
                   regulations or third-party rights.
                 </p>
-                <p className="mb-1 ">
+                <p className="mb-1 text-justify">
                   Therefore, the Owner reserves the right to take any
                   appropriate measure to protect its legitimate interests
                   including by denying Users access to this Website or the
@@ -713,7 +711,7 @@ const TermsOfService = () => {
                 <h3 className="text-md font-bold font-heading mt-4 mb-2">
                   Limitation of liability
                 </h3>
-                <p className="mb-1 ">
+                <p className="mb-1 text-justify">
                   Nothing in these Terms excludes, restricts or modifies any
                   guarantee, condition, warranty, right or remedy which the User
                   may have under the Competition and Consumer Act 2010 (Cth) or
@@ -734,7 +732,7 @@ const TermsOfService = () => {
                 <h3 className="text-md font-bold font-heading mt-4 mb-2">
                   Disclaimer of Warranties
                 </h3>
-                <p className="mb-1 font-bold">
+                <p className="mb-1 font-bold text-justify">
                   This Website is provided strictly on an “as is” and “as
                   available” basis. Use of the Service is at Users’ own risk. To
                   the maximum extent permitted by applicable law, the Owner
@@ -747,7 +745,7 @@ const TermsOfService = () => {
                   owner or through the Service will create any warranty not
                   expressly stated herein.
                 </p>
-                <p className="mb-1 font-bold">
+                <p className="mb-1 font-bold text-justify">
                   Without limiting the foregoing, the Owner, its subsidiaries,
                   affiliates, licensors, officers, directors, agents,
                   co-branders, partners, suppliers and employees do not warrant
@@ -762,7 +760,7 @@ const TermsOfService = () => {
                   computer system or mobile device or loss of data that results
                   from such download or Users’ use of the Service.
                 </p>
-                <p className="mb-1 font-bold">
+                <p className="mb-1 font-bold text-justify">
                   The Owner does not warrant, endorse, guarantee, or assume
                   responsibility for any product or service advertised or
                   offered by a third party through the Service or any
@@ -770,14 +768,14 @@ const TermsOfService = () => {
                   party to or in any way monitor any transaction between Users
                   and third-party providers of products or services.
                 </p>
-                <p className="mb-1 font-bold">
+                <p className="mb-1 font-bold text-justify">
                   The Service may become inaccessible or it may not function
                   properly with Users’ web browser, mobile device, and/or
                   operating system. The owner cannot be held liable for any
                   perceived or actual damages arising from Service content,
                   operation, or use of this Service.
                 </p>
-                <p className="mb-1 font-bold">
+                <p className="mb-1 font-bold text-justify">
                   Without limiting the foregoing, the Owner, its subsidiaries,
                   affiliates, licensors, officers, directors, agents,
                   co-branders, partners, suppliers and employees do not warrant
@@ -792,7 +790,7 @@ const TermsOfService = () => {
                   computer system or mobile device or loss of data that results
                   from such download or Users’ use of the Service.
                 </p>
-                <p className="mb-1 font-bold">
+                <p className="mb-1 font-bold text-justify">
                   Federal law, some states, and other jurisdictions, do not
                   allow the exclusion and limitations of certain implied
                   warranties. The above exclusions may not apply to Users. This
@@ -805,14 +803,14 @@ const TermsOfService = () => {
                 <h3 className="text-md font-bold font-heading mt-4 mb-2">
                   Limitations of liability
                 </h3>
-                <p className="mb-1 font-bold">
+                <p className="mb-1 font-bold text-justify">
                   To the maximum extent permitted by applicable law, in no event
                   shall the Owner, and its subsidiaries, affiliates, officers,
                   directors, agents, co-branders, partners, suppliers and
                   employees be liable for
                 </p>
 
-                <ul className="list-disc list-inside text-sm ml-4 font-bold">
+                <ul className="list-disc list-inside text-sm ml-4 font-bold text-justify">
                   <li>
                     any indirect, punitive, incidental, special, consequential
                     or exemplary damages, including without limitation damages
@@ -863,14 +861,14 @@ const TermsOfService = () => {
                   </li>
                 </ul>
 
-                <p className="mb-1 mt-2 font-bold">
+                <p className="mb-1 mt-2 font-bold text-justify">
                   This limitation of liability section shall apply to the
                   fullest extent permitted by law in the applicable jurisdiction
                   whether the alleged liability is based on contract, tort,
                   negligence, strict liability, or any other basis, even if
                   company has been advised of the possibility of such damage.
                 </p>
-                <p className="mb-1 font-bold">
+                <p className="mb-1 font-bold text-justify">
                   Some jurisdictions do not allow the exclusion or limitation of
                   incidental or consequential damages, therefore the above
                   limitations or exclusions may not apply to User. The terms
@@ -884,7 +882,7 @@ const TermsOfService = () => {
                 <h3 className="text-md font-bold font-heading mt-4 mb-2">
                   Indemnification
                 </h3>
-                <p className="mb-1 font-bold">
+                <p className="mb-1 font-bold text-justify">
                   The User agrees to defend, indemnify and hold the Owner and
                   its subsidiaries, affiliates, officers, directors, agents,
                   co-branders, partners, suppliers and employees harmless from
@@ -894,7 +892,7 @@ const TermsOfService = () => {
                   arising from
                 </p>
 
-                <ul className="list-disc list-inside text-sm ml-4 font-bold">
+                <ul className="list-disc list-inside text-sm ml-4 font-bold text-justify">
                   <li>
                     User’s use of and access to the Service, including any data
                     or content transmitted or received by User;
@@ -933,7 +931,7 @@ const TermsOfService = () => {
                 <h3 className="text-md font-bold font-heading mt-4 mb-2">
                   No Waiver
                 </h3>
-                <p className="mb-3">
+                <p className="mb-3 text-justify">
                   The Owner’s failure to assert any right or provision under
                   these Terms shall not constitute a waiver of any such right or
                   provision. No waiver shall be considered a further or
@@ -943,20 +941,20 @@ const TermsOfService = () => {
                   Service interruption
                 </h3>
 
-                <p className="mb-3">
+                <p className="mb-3 text-justify">
                   To ensure the best possible service level, the Owner reserves
                   the right to interrupt the Service for maintenance, system
                   updates or any other changes, informing the Users
                   appropriately.
                 </p>
-                <p className="mb-3">
+                <p className="mb-3 text-justify">
                   Within the limits of law, the Owner may also decide to suspend
                   or terminate the Service altogether. If the Service is
                   terminated, the Owner will cooperate with Users to enable them
                   to withdraw Personal Data or information in accordance with
                   applicable law.
                 </p>
-                <p className="mb-3">
+                <p className="mb-3 text-justify">
                   Additionally, the Service might not be available due to
                   reasons outside the Owner’s reasonable control, such as “force
                   majeure” (eg. labor actions, infrastructural breakdowns or
@@ -965,7 +963,7 @@ const TermsOfService = () => {
                 <h3 className="text-md font-bold font-heading mt-4 mb-2">
                   Service reselling
                 </h3>
-                <p className="mb-3">
+                <p className="mb-3 text-justify">
                   Users may not reproduce, duplicate, copy, sell, resell or
                   exploit any portion of this Website and of its Service without
                   the Owner’s express prior written permission, granted either
@@ -976,7 +974,7 @@ const TermsOfService = () => {
                   Privacy policy
                 </h3>
 
-                <p className="mb-3">
+                <p className="mb-3 text-justify">
                   To learn more about the use of their Personal Data, Users may
                   refer to the privacy policy of this Website.
                 </p>
@@ -985,7 +983,7 @@ const TermsOfService = () => {
                   Intellectual property rights
                 </h3>
 
-                <p className="mb-3">
+                <p className="mb-3 text-justify">
                   Without prejudice to any more specific provision of these
                   Terms, any intellectual property rights, such as copyrights,
                   trademark rights, patent rights and design rights related to
@@ -994,7 +992,7 @@ const TermsOfService = () => {
                   applicable laws or international treaties relating to
                   intellectual property.
                 </p>
-                <p className="mb-3">
+                <p className="mb-3 text-justify">
                   All trademarks — nominal or figurative — and all other marks,
                   trade names, service marks, word marks, illustrations, images,
                   or logos appearing in connection with this Website are, and
@@ -1007,28 +1005,28 @@ const TermsOfService = () => {
                   Changes to these Terms
                 </h3>
 
-                <p className="mb-3">
+                <p className="mb-3 text-justify">
                   The Owner reserves the right to amend or otherwise modify
                   these Terms at any time. In such cases, the Owner will
                   appropriately inform the User of these changes.
                 </p>
-                <p className="mb-3">
+                <p className="mb-3 text-justify">
                   Such changes will only affect the relationship with the User
                   for the future.
                 </p>
-                <p className="mb-3">
+                <p className="mb-3 text-justify">
                   The continued use of the Service will signify the User’s
                   acceptance of the revised Terms. If Users do not wish to be
                   bound by the changes, they must stop using the Service.
                   Failure to accept the revised Terms, may entitle either party
                   to terminate the Agreement.
                 </p>
-                <p className="mb-3">
+                <p className="mb-3 text-justify">
                   The applicable previous version will govern the relationship
                   prior to the User's acceptance. The User can obtain any
                   previous version from the Owner.
                 </p>
-                <p className="mb-3">
+                <p className="mb-3 text-justify">
                   If required by applicable law, the Owner will specify the date
                   by which the modified Terms will enter into force.
                 </p>
@@ -1036,14 +1034,14 @@ const TermsOfService = () => {
                 <h3 className="text-md font-bold font-heading mt-4 mb-2">
                   Assignment of contract
                 </h3>
-                <p className="mb-3">
+                <p className="mb-3 text-justify">
                   The Owner reserves the right to transfer, assign, dispose of
                   by novation, or subcontract any or all rights or obligations
                   under these Terms, taking the User’s legitimate interests into
                   account. Provisions regarding changes of these Terms will
                   apply accordingly.
                 </p>
-                <p className="mb-3">
+                <p className="mb-3 text-justify">
                   Users may not assign or transfer their rights or obligations
                   under these Terms in any way, without the written permission
                   of the Owner.
@@ -1052,7 +1050,7 @@ const TermsOfService = () => {
                 <h3 className="text-md font-bold font-heading mt-4 mb-2">
                   Contacts
                 </h3>
-                <p className="mb-3">
+                <p className="mb-3 text-justify">
                   All communications relating to the use of this Website must be
                   sent using the contact information stated in this document.
                 </p>
@@ -1060,7 +1058,7 @@ const TermsOfService = () => {
                   Severability
                 </h3>
 
-                <p className="mb-3">
+                <p className="mb-3 text-justify">
                   Should any provision of these Terms be deemed or become
                   invalid or unenforceable under applicable law, the invalidity
                   or unenforceability of such provision shall not affect the
@@ -1070,7 +1068,7 @@ const TermsOfService = () => {
                 <h3 className="text-md font-bold font-heading mt-4 mb-2">
                   US Users
                 </h3>
-                <p className="mb-3">
+                <p className="mb-3 text-justify">
                   Any such invalid or unenforceable provision will be
                   interpreted, construed and reformed to the extent reasonably
                   required to render it valid, enforceable and consistent with
@@ -1084,20 +1082,20 @@ const TermsOfService = () => {
                 <h3 className="text-md font-bold font-heading mt-4 mb-2">
                   EU Users
                 </h3>
-                <p className="mb-3">
+                <p className="mb-3 text-justify">
                   Should any provision of these Terms be or be deemed void,
                   invalid or unenforceable, the parties shall do their best to
                   find, in an amicable way, an agreement on valid and
                   enforceable provisions thereby substituting the void, invalid
                   or unenforceable parts.
                 </p>
-                <p className="mb-3">
+                <p className="mb-3 text-justify">
                   In case of failure to do so, the void, invalid or
                   unenforceable provisions shall be replaced by the applicable
                   statutory provisions, if so permitted or stated under the
                   applicable law.
                 </p>
-                <p className="mb-3">
+                <p className="mb-3 text-justify">
                   Without prejudice to the above, the nullity, invalidity or the
                   impossibility to enforce a particular provision of these Terms
                   shall not nullify the entire Agreement, unless the severed
@@ -1111,7 +1109,7 @@ const TermsOfService = () => {
                 <h3 className="text-md font-bold font-heading mt-4 mb-2">
                   Governing law
                 </h3>
-                <p className="mb-3">
+                <p className="mb-3 text-justify">
                   These Terms are governed by the law of the place where the
                   Owner is based, as disclosed in the relevant section of this
                   document, without regard to conflict of laws principles.
@@ -1120,7 +1118,7 @@ const TermsOfService = () => {
                 <h3 className="text-md font-bold font-heading mt-4 mb-2">
                   Exception for European Consumers
                 </h3>
-                <p className="mb-3">
+                <p className="mb-3 text-justify">
                   However, regardless of the above, if the User qualifies as a
                   European Consumer and has their habitual residence in a
                   country where the law provides for a higher consumer
@@ -1130,7 +1128,7 @@ const TermsOfService = () => {
                 <h3 className="text-md font-bold font-heading mt-4 mb-2">
                   Venue of jurisdiction
                 </h3>
-                <p className="mb-3">
+                <p className="mb-3 text-justify">
                   The exclusive competence to decide on any controversy
                   resulting from or connected to these Terms lies with the
                   courts of the place where the Owner is based, as displayed in
@@ -1139,7 +1137,7 @@ const TermsOfService = () => {
                 <h3 className="text-md font-bold font-heading mt-4 mb-2">
                   Exception for European Consumers
                 </h3>
-                <p className="mb-3">
+                <p className="mb-3 text-justify">
                   The above does not apply to any Users that qualify as European
                   Consumers, nor to Consumers based in Switzerland, Norway or
                   Iceland.
@@ -1165,7 +1163,7 @@ const TermsOfService = () => {
                         <h3 className="text-md font-bold font-heading mt-4 mb-2">
                           This Website (or this Application)
                         </h3>
-                        <p className="mb-3">
+                        <p className="mb-3 text-justify">
                           The property that enables the provision of the
                           Service.
                         </p>
@@ -1173,7 +1171,7 @@ const TermsOfService = () => {
                         <h3 className="text-md font-bold font-heading mt-4 mb-2">
                           Agreement
                         </h3>
-                        <p className="mb-3">
+                        <p className="mb-3 text-justify">
                           Any legally binding or contractual relationship
                           between the Owner and the User, governed by these
                           Terms.
@@ -1182,14 +1180,14 @@ const TermsOfService = () => {
                         <h3 className="text-md font-bold font-heading mt-4 mb-2">
                           Business User
                         </h3>
-                        <p className="mb-3">
+                        <p className="mb-3 text-justify">
                           Any User that does not qualify as a Consumer.
                         </p>
 
                         <h3 className="text-md font-bold font-heading mt-4 mb-2">
                           European (or Europe)
                         </h3>
-                        <p className="mb-3">
+                        <p className="mb-3 text-justify">
                           Applies where a User is physically present or has
                           their registered offices within the EU, regardless of
                           nationality.
@@ -1198,21 +1196,21 @@ const TermsOfService = () => {
                         <h3 className="text-md font-bold font-heading mt-4 mb-2">
                           Owner (or We)
                         </h3>
-                        <p className="mb-3">
+                        <p className="mb-3 text-justify">
                           Indicates the natural person(s) or legal entity that
                           provides this Website and/or the Service to Users.
                         </p>
                         <h3 className="text-md font-bold font-heading mt-4 mb-2">
                           Service
                         </h3>
-                        <p className="mb-3">
+                        <p className="mb-3 text-justify">
                           The service provided by this Website as described in
                           these Terms and on this Website.
                         </p>
                         <h3 className="text-md font-bold font-heading mt-4 mb-2">
                           Terms
                         </h3>
-                        <p className="mb-3">
+                        <p className="mb-3 text-justify">
                           All provisions applicable to the use of this Website
                           and/or the Service as described in this document,
                           including any other related documents or agreements,
@@ -1222,7 +1220,7 @@ const TermsOfService = () => {
                         <h3 className="text-md font-bold font-heading mt-4 mb-2">
                           User (or You)
                         </h3>
-                        <p className="mb-3">
+                        <p className="mb-3 text-justify">
                           Indicates any natural person or legal entity using
                           this Website.
                         </p>
@@ -1230,7 +1228,7 @@ const TermsOfService = () => {
                         <h3 className="text-md font-bold font-heading mt-4 mb-2">
                           Consumer
                         </h3>
-                        <p className="mb-3">
+                        <p className="mb-3 text-justify">
                           Any User qualifying as a natural person who accesses
                           goods or services for personal use, or more generally,
                           acts for purposes outside their trade, business, craft
@@ -1243,10 +1241,10 @@ const TermsOfService = () => {
 
                 <hr className="mb-3 mt-3 text-gray-300" />
 
-                <p className="mb-1 ">Latest update: September 22, 2021</p>
-                <p className="mb-1 ">
+                <p className="mb-1 text-justify">Latest update: September 22, 2021</p>
+                <p className="mb-1 text-justify">
                   <a
-                    className="text-blue-400"
+                    className="text-blue-400 word-break"
                     href="https://www.iubenda.com/en/terms-and-conditions-generator"
                     target="_blank"
                   >
@@ -1254,7 +1252,7 @@ const TermsOfService = () => {
                   </a>{" "}
                   hosts this content and only collects{" "}
                   <a
-                    className="text-blue-400"
+                    className="text-blue-400 word-break"
                     href="https://www.iubenda.com/privacy-policy/65675001"
                     target="_blank"
                   >

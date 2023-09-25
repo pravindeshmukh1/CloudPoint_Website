@@ -213,7 +213,7 @@ const Faqs = () => {
                               } w-6 h-6`}
                             />
                           </Disclosure.Button>
-                          <Disclosure.Panel className="text-gray-700 text-sm mt-2">
+                          <Disclosure.Panel className="text-gray-700 text-sm mt-2 text-justify">
                             CloudSocial is a cloud-based platform that allows
                             you to manage your social media platforms seamlessly
                             and efficiently. You can use CloudSocial to post
@@ -243,7 +243,7 @@ const Faqs = () => {
                               } w-6 h-6`}
                             />
                           </Disclosure.Button>
-                          <Disclosure.Panel className="text-gray-700 text-sm mt-2">
+                          <Disclosure.Panel className="text-gray-700 text-sm mt-2 text-justify">
                             CloudSocial is a subscription-based platform and it
                             offers a 30-days free trial without entering any
                             Credit Card details. We offer customers the ability
@@ -271,7 +271,7 @@ const Faqs = () => {
                               } w-6 h-6`}
                             />
                           </Disclosure.Button>
-                          <Disclosure.Panel className="text-gray-700 text-sm mt-2">
+                          <Disclosure.Panel className="text-gray-700 text-sm mt-2 text-justify">
                             To start your free trial, you do not need to enter
                             your card information.
                           </Disclosure.Panel>
@@ -292,7 +292,7 @@ const Faqs = () => {
                               } w-6 h-6`}
                             />
                           </Disclosure.Button>
-                          <Disclosure.Panel className="text-gray-700 text-sm mt-2">
+                          <Disclosure.Panel className="text-gray-700 text-sm mt-2 text-justify">
                             You can click on the given link and schedule your
                             demo at your convenient time.
                             <br />
@@ -324,7 +324,7 @@ const Faqs = () => {
                               } w-6 h-6`}
                             />
                           </Disclosure.Button>
-                          <Disclosure.Panel className="text-gray-700 text-sm mt-2">
+                          <Disclosure.Panel className="text-gray-700 text-sm mt-2 text-justify">
                             <div className="w-full hover-up-5 border-blue-gray-100 bg-blue-50 rounded shadow">
                               <table className="w-full min-w-max table-auto text-left ">
                                 <thead>
@@ -444,7 +444,7 @@ const Faqs = () => {
                               } w-6 h-6`}
                             />
                           </Disclosure.Button>
-                          <Disclosure.Panel className="text-gray-700 text-sm mt-2">
+                          <Disclosure.Panel className="text-gray-700 text-sm mt-2 text-justify">
                             <p className="">
                               <strong>1. Dashboard : </strong>The dashboard will
                               provide you with an overall view of your brand's
@@ -499,7 +499,7 @@ const Faqs = () => {
                               } w-6 h-6`}
                             />
                           </Disclosure.Button>
-                          <Disclosure.Panel className="text-gray-700 text-sm mt-2">
+                          <Disclosure.Panel className="text-gray-700 text-sm mt-2 text-justify">
                             By social channels, we mean any of the social media
                             channels that CloudSocial can currently manage. It
                             could be any of the following options :
@@ -543,7 +543,7 @@ const Faqs = () => {
                               } w-6 h-6`}
                             />
                           </Disclosure.Button>
-                          <Disclosure.Panel className="text-gray-700 text-sm mt-2">
+                          <Disclosure.Panel className="text-gray-700 text-sm mt-2 text-justify">
                             Omnibox is where you find and respond to all of your
                             incoming mentions. No more juggling multiple tools,
                             especially in an age when consumers believe in
@@ -570,7 +570,7 @@ const Faqs = () => {
                               } w-6 h-6`}
                             />
                           </Disclosure.Button>
-                          <Disclosure.Panel className="text-gray-700 text-sm mt-2">
+                          <Disclosure.Panel className="text-gray-700 text-sm mt-2 text-justify">
                             <ul className="list-disc list-inside text-sm ml-4">
                               <li>Facebook</li>
                               <li>YouTube</li>
@@ -603,7 +603,7 @@ const Faqs = () => {
                               } w-6 h-6`}
                             />
                           </Disclosure.Button>
-                          <Disclosure.Panel className="text-gray-700 text-sm mt-2">
+                          <Disclosure.Panel className="text-gray-700 text-sm mt-2 text-justify">
                             We take your support very seriously. If you need
                             assistance configuring or using CloudSocial, we are
                             here to help. You can contact our support team via

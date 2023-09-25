@@ -155,9 +155,9 @@ const Footer = () => {
           </div> */}
           <div
             className="flex flex-col lg:flex-row items-center lg:justify-between"
-            style={{ gap: "25px !important" }}
+            style={{ gap: "25px !important", columnGap:"10px !important" }}
           >
-            <p className="text-sm text-blueGray-400">
+            <p className="text-sm text-blueGray-400 order-last lg:order-first">
               &copy; {date} CloudSocial
               {/* <a className="text-blue-400" href="" target="_blank">
                             CloudSocial Technologies Pte Ltd.
@@ -216,7 +216,7 @@ const Footer = () => {
               </Link>
             </p>
 
-            <div className="order-first lg:order-last -mx-2 mb-4 lg:mb-0">
+            <div className="order-first lg:order-last -mx-2 mb-4 lg:mb-0 flex">
               <a
                 className="inline-block px-2"
                 target="_blank"
