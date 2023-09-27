@@ -10,6 +10,9 @@
   "dependencies": {
     "@headlessui/react": "^1.4.2",
     "@heroicons/react": "^1.0.5",
+    "@mdx-js/loader": "^2.3.0",
+    "@mdx-js/react": "^2.3.0",
+    "@next/mdx": "^13.5.3",
     "@tawk.to/tawk-messenger-react": "^2.0.2",
     "marked": "^9.0.2",
     "next": "^13.1.5",
@@ -20,7 +23,9 @@
     "react-typing-effect": "^2.0.5",
     "react-visibility-sensor": "^5.1.1",
     "remark": "^14.0.3",
+    "remark-gfm": "^4.0.0",
     "remark-html": "^15.0.2",
+    "styled-jsx": "^5.1.2",
     "swiper": "^8.4.6",
     "wow.js": "^1.2.2",
     "wowjs": "^1.1.3"

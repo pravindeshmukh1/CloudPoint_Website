@@ -271,7 +271,45 @@ export const star = [
       "https://www.capterra.com/reviews/205569/CloudSocial?utm_source=vendor&utm_medium=badge&utm_campaign=capterra_reviews_badge",
   },
 ];
-
+export const footerIcon = [
+  {
+    id: 1,
+    title: "Facebook",
+    alt: "facebook",
+    img: "https://www.cloudsocial.io/wp-content/uploads/image/icon/facebook.svg",
+    href:"https://www.facebook.com/cloudsocial.io"
+  },
+  {
+    id: 2,
+    title: "Youtube",
+    alt: "youtube",
+    img: "https://www.cloudsocial.io/wp-content/uploads/image/icon/youtube.svg",
+    href:"https://www.youtube.com/channel/UCcdcLfRsJmTRax5L3XqbOYQ"
+  },
+  {
+    id: 3,
+    title: "Instagram",
+    alt: "instagram",
+    img: "https://www.cloudsocial.io/wp-content/uploads/image/icon/Instagram.svg",
+    href:"https://www.instagram.com/cloudsocial.io/"
+  },
+  {
+    id: 4,
+    title: "LinkedIn",
+    alt: "linkedin",
+    img: "https://www.cloudsocial.io/wp-content/uploads/image/icon/linkedin.svg",
+    // img:
+    //   "https://www.cloudsocial.io/wp-content/uploads/image/icon/LinkedIn.svg",
+    href:"https://www.linkedin.com/company/cloudsocial-io/"
+  },
+  {
+    id: 5,
+    title: "Twitter",
+    alt: "twitter",
+    img: "https://www.cloudsocial.io/wp-content/uploads/image/icon/twitter.svg",
+    href:"https://twitter.com/Cloudsocial_"
+  },
+];
 
 
 export const howToData1 = [

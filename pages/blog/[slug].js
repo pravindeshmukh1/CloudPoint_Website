@@ -3,6 +3,17 @@ import Layout from "../../components/layout/Layout";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import ReactMarkdown from "react-markdown";
+import MarkdownRenderer from "../../components/elements/MarkdownRenderer";
+import style from "./markdown-styles.module.css";
+import gfm from "remark-gfm";
+
+function LinkRenderer(props) {
+  return (
+    <a href={props.href} target="_blank" rel="noreferrer">
+      {props.children}
+    </a>
+  );
+}
 
 // export async function getServerSideProps(context) {
 export const getServerSideProps = async (context) => {
@@ -67,9 +78,9 @@ const BlogSingle = ({ data }) => {
           <div
             className="pt-20 pb-8 mb-12 bg-cover bg-no-repeat"
             style={{
-            //  backgroundImage: "url('assets/imgs/placeholders/img-14.jpg')",
+              //  backgroundImage: "url('assets/imgs/placeholders/img-14.jpg')",
               // backgroundImage: `url('http://localhost:1337${data.data[0].attributes.thumbnail.data[0].attributes.url}')`,
-            backgroundImage: `url('https://strapi.cloudsocial.io${data.data[0].attributes.thumbnail.data[0].attributes.url}')`,
+              backgroundImage: `url('https://strapi.cloudsocial.io${data.data[0].attributes.thumbnail.data[0].attributes.url}')`,
             }}
           >
             <div className="container">
@@ -134,14 +145,39 @@ const BlogSingle = ({ data }) => {
                 </p>
               </div>
             </div> */}
-            <div
+            {/* <div
               className="max-w-2xl mx-auto"
               dangerouslySetInnerHTML={{
                 __html: data.data[0].attributes.content,
               }}
+            /> */}
+
+            {/* <ReactMarkdown
+              components={{
+                h2: "h1",
+                ol:"number",
+                listStyle:"auto",
+                em: ({ node, ...props }) => (
+                  // <i style={{ color: "red" }} {...props} />
+                  <ol style={{ color: "red",listStyle:"auto" }} {...props} />
+                ),
+              }}
+              children={data.data[0].attributes.content}
+            /> */}
+            <ReactMarkdown
+              className={style.reactMarkDown}
+              components={{
+                a: LinkRenderer,
+                table: ({ node, ...props }) => (
+                  <table style={{ border: "1px solid black" }} {...props} />
+                ),
+              }}
+              skipHtml={true}
+              allowDangerousHtml={true}
+              // remarkPlugins={[gfm]} // table ,
+              children={data.data[0].attributes.content}
             />
-            <ReactMarkdown children={data.data[0].attributes.content}/>
-            <ReactMarkdown skipHtml={true}  allowDangerousHtml={true} children={data.data[0].attributes.content} />
+            {/* <MarkdownRenderer markdownContent={data.data[0].attributes.content} /> */}
           </div>
         </section>
 

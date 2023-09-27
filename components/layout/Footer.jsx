@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import CounterUp from "../elements/Counterup";
-import { star } from "../../public/assets/cardDetails";
+import { footerIcon, star } from "../../public/assets/cardDetails";
 import Image from "next/image";
 
 const Footer = () => {
@@ -154,8 +154,8 @@ const Footer = () => {
             </div>
           </div> */}
           <div
-            className="flex flex-col lg:flex-row items-center lg:justify-between"
-            style={{ gap: "25px !important", columnGap:"10px !important" }}
+            className="flex flex-col lg:flex-row items-center lg:justify-between "
+            style={{ gap: "25px !important", columnGap: "10px !important" }}
           >
             <p className="text-sm text-blueGray-400 order-last lg:order-first">
               &copy; {date} CloudSocial
@@ -163,21 +163,21 @@ const Footer = () => {
                             CloudSocial Technologies Pte Ltd.
                             </a> */}
             </p>
-            <p className="text-sm text-blueGray-400">
+            <p className="text-sm text-blueGray-400 hover-up-5">
               <Link href="/faqs" legacyBehavior>
                 <a className="text-sm text-Gray-600 hover:text-blue-500 underline">
                   Faqs
                 </a>
               </Link>
             </p>
-            <p className="text-sm text-blueGray-400">
+            <p className="text-sm text-blueGray-400 hover-up-5">
               <Link href="/privacy-policy" legacyBehavior>
                 <a className="text-sm text-Gray-600 hover:text-blue-500 underline">
                   Privacy Policy
                 </a>
               </Link>
             </p>
-            <p className="text-sm text-blueGray-400">
+            <p className="text-sm text-blueGray-400 hover-up-5">
               <Link
                 href="https://www.iubenda.com/privacy-policy/84213336/cookie-policy"
                 class="iubenda-nostyle no-brand iubenda-noiframe iubenda-embed iubenda-noiframe"
@@ -191,8 +191,7 @@ const Footer = () => {
                 </a>
               </Link>
             </p>
-
-            <p className="text-sm text-blueGray-400">
+            <p className="text-sm text-blueGray-400 hover-up-5">
               <Link href="/terms-of-service" legacyBehavior>
                 <a className="text-sm text-Gray-600 hover:text-blue-500 underline">
                   Terms Of Service
@@ -200,7 +199,7 @@ const Footer = () => {
               </Link>
             </p>
 
-            <p className="text-sm text-blueGray-400">
+            <p className="text-sm text-blueGray-400 hover-up-5">
               <Link href="/gdpr" legacyBehavior>
                 <a className="text-sm text-Gray-600 hover:text-blue-500 underline">
                   GDPR
@@ -208,16 +207,43 @@ const Footer = () => {
               </Link>
             </p>
 
-            <p className="text-sm text-blueGray-400">
+            <p className="text-sm text-blueGray-400 hover-up-5">
               <Link href="/security" legacyBehavior>
                 <a className="text-sm text-Gray-600 hover:text-blue-500 underline">
                   Security
                 </a>
               </Link>
             </p>
-
+           
             <div className="order-first lg:order-last -mx-2 mb-4 lg:mb-0 flex">
-              <a
+            {footerIcon.map(({ img, href, alt, id }) => (
+                <div
+                  className="hover-up-5 flex w-1/2 lg:w-auto py-4 wow animate_animated animate_fadeIn"
+                  data-wow-delay=".2s"
+                  key={id}
+                >
+                    <Link href={href} legacyBehavior>
+                      <a target="_blank">
+                        <img
+                          className="h-100 object-cover hover:drop-shadow w-5 mr-1"
+                          src={img}
+                          alt={alt}
+                        />
+                        {/* <Image
+                          className="object-cover"
+                          src={img}
+                          alt={alt}
+                          priority
+                          width={100}
+                          height={100}
+                          // fill
+                          // objectFit="contain"
+                        /> */}
+                      </a>
+                    </Link>
+                </div>
+              ))}
+              {/* <a
                 className="inline-block px-2"
                 target="_blank"
                 href="https://www.facebook.com/cloudsocial.io"
@@ -243,7 +269,7 @@ const Footer = () => {
                   src="/assets/imgs/icons/instagram-blue.svg"
                   alt="instagram"
                 />
-              </a>
+              </a> */}
               {/* <a
                 className="inline-block px-2"
                 target="_blank"

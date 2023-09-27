@@ -1,0 +1,80 @@
+.reactMarkDown code {
+  display: block;
+  white-space: pre-wrap;
+}
+.reactMarkDown strong {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.reactMarkDown u {
+  text-decoration: underline;
+}
+.reactMarkDown h2 {
+  font-size: 23px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.reactMarkDown h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.reactMarkDown h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.reactMarkDown h5 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.reactMarkDown h6 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.reactMarkDown p {
+  font-size: 18px;
+  text-align: justify;
+}
+.reactMarkDown p strong {
+  font-weight: 600;
+  margin-top: 15px !important;
+  margin-bottom: 15px !important;
+}
+
+.reactMarkDown ul {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  list-style: disc outside none;
+}
+
+.reactMarkDown ul li {
+  font-size: 18px;
+  text-align: justify;
+  margin-left: 32px;
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+.reactMarkDown ol li {
+  font-size: 18px;
+  text-align: justify;
+  margin-left: 32px;
+  display: list-item;
+  text-align: -webkit-match-parent;
+  list-style: decimal;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.reactMarkDown ol li strong {
+  font-size: 18px;
+  font-weight: 600;
+}
