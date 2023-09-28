@@ -14,7 +14,6 @@ import TawkMessengerReact from "@tawk.to/tawk-messenger-react";
 //   { ssr: false }
 // );
 
-
 function MyApp({ Component, pageProps }) {
   const [loading, setLoading] = useState(false);
   const onLoad = () => {
@@ -25,19 +24,18 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => {
     // initialRenderRef.current = true;
 
-  //   var Tawk_API = Tawk_API || {},
-  //   Tawk_LoadStart = new Date();
-  // Tawk_API.embedded = "tawk_5fc258c9920fc91564cb894d";
-  // (function () {
-  //   var s1 = document.createElement("script"),
-  //     s0 = document.getElementsByTagName("script")[0];     
-  //   s1.async = true;
-  //   s1.src = "https://embed.tawk.to/5fc258c9920fc91564cb894d/1estddag9";
-  //   s1.charset = "UTF-8";
-  //   s1.setAttribute("crossorigin", "*");
-  //   s0.parentNode.insertBefore(s1, s0);
-  // })();
-
+    //   var Tawk_API = Tawk_API || {},
+    //   Tawk_LoadStart = new Date();
+    // Tawk_API.embedded = "tawk_5fc258c9920fc91564cb894d";
+    // (function () {
+    //   var s1 = document.createElement("script"),
+    //     s0 = document.getElementsByTagName("script")[0];
+    //   s1.async = true;
+    //   s1.src = "https://embed.tawk.to/5fc258c9920fc91564cb894d/1estddag9";
+    //   s1.charset = "UTF-8";
+    //   s1.setAttribute("crossorigin", "*");
+    //   s0.parentNode.insertBefore(s1, s0);
+    // })();
 
     setLoading(true);
     // setTimeout(() => {
@@ -57,34 +55,6 @@ function MyApp({ Component, pageProps }) {
       </Head>
 
       {!loading ? <Component {...pageProps} /> : <Preloader />}
-
-      {/* <!-- Google tag (gtag.js) --> */}
-      <Script
-        strategy="lazyOnload"
-        src={`https://www.googletagmanager.com/gtag/js?id=G-P5Y9P6SQSV`}
-      />
-      <Script strategy="lazyOnload">
-        {`
-        window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-P5Y9P6SQSV');
-        `}
-      </Script>
-
-      {/* <!-- Google tag (gtag.js) - Ads --> */}
-      <Script
-        strategy="lazyOnload"
-        src={`https://www.googletagmanager.com/gtag/js?id=AW-1090407733`}
-      />
-      <Script strategy="lazyOnload">
-        {`
-        window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'AW-10904077330'); 
-        `}
-      </Script>
 
       {/* <Script id="tawk" strategy="lazyOnload">
         {`
@@ -108,7 +78,7 @@ function MyApp({ Component, pageProps }) {
         propertyid="5fc258c9920fc91564cb894d"
         widgetid="1estddag9"
         onLoad={onLoad}
-      /> 
+      />
 
       {/* {initialRenderRef.current && (
         <TawkMessengerReact
