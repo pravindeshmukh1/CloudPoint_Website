@@ -21,6 +21,100 @@ function Home() {
       }
     }
   };
+  const [errors, setErrors] = useState({});
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phoneNumber: "",
+    // Other form fields
+  });
+
+  const pdfUrls =
+    "https://www.cloudsocial.io/wp-content/uploads/2023/The%20Ultimate%20Instagram%20Marketing%20Guide-For%20Beginners%20in%202023.pdf";
+
+  const handlePdfOpen = () => {
+    // Open the PDF in a new tab.
+    window.open(pdfUrls, "_blank");
+  };
+  const validateForm = () => {
+    const newErrors = {};
+    // Add validation rules here
+    if (!formData.name) {
+      newErrors.name = "Name is required";
+    }
+    if (!formData.email) {
+      newErrors.email = "Email is required";
+    } else if (!/^\S+@\S+\.\S+$/.test(formData.email)) {
+      newErrors.email = "Invalid email format";
+    }
+    if (!formData.phoneNumber) {
+      newErrors.phoneNumber = "Phone number is required";
+    } else if (!/^[0-9]{10}$/.test(formData.phoneNumber)) {
+      newErrors.phoneNumber = "Invalid phone number format";
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+      createdAt: new Date(),
+    });
+  };
+
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState("");
+
+  async function onSubmit(event) {
+    console.log("🚀 ~ file: index.js:29 ~ event:", event);
+    event.preventDefault();
+    setIsLoading(true);
+    setError(null); // Clear previous errors when a new request starts
+
+    try {
+      // const formData = new FormData(event.currentTarget);
+      // console.log("🚀 ~ file: index.js:35 ~ formData:", formData);
+      // const formDatas = {
+      //   email: "pravin2391@gmail.com",
+      // };
+      if (validateForm()) {
+        let headersList = {
+          Accept: "*/*",
+          "User-Agent": "Thunder Client (https://www.thunderclient.com)",
+          "Content-Type": "application/json",
+        };
+        const response = await fetch(
+          // "https://strapi.cloudsocial.io/api/ebookUser",
+          "https://reqres.in/api/users",
+          {
+            method: "POST",
+            body: JSON.stringify({ data: formData }),
+            headers: headersList,
+          }
+        );
+        if (!response.ok) {
+          throw new Error("Failed to submit the data. Please try again.");
+        } else {
+          handlePdfOpen();
+        }
+
+        // Handle response if necessary
+        const data = await response.json();
+        console.log("🚀 ~ file: index.js:57 ~ data:", data);
+      }
+    } catch (error) {
+      // Capture the error message to display to the user
+      setError(error.message);
+      console.error(error);
+    } finally {
+      setIsLoading(false);
+    }
+  }
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -90,7 +184,7 @@ function Home() {
             <img src="/assets/imgs/elements/pattern.png" alt="Monst" />
             <div
               className="absolute"
-               style={{ top: "9%", left: "14%", width: "72%", height: "66%" }}
+              style={{ top: "9%", left: "14%", width: "72%", height: "66%" }}
               //style={{ top: "9%", width: "100%", height: "100%" }}
             >
               <img
@@ -436,10 +530,7 @@ function Home() {
             <div className="flex flex-wrap items-center justify-between max-w-2xl lg:max-w-full mb-12">
               <div className="w-full lg:w-1/2 mb-4 lg:mb-0">
                 <h2 className="text-3xl md:text-4xl font-bold font-heading wow animate_animated animate_fadeInDown">
-                  <span>Manage all your </span>
-                  <span className="text-blue-500"> Social Media</span>
-                  <br />
-                  <span>from One Place</span>
+                  <span>Centralized Social Management</span>
                 </h2>
               </div>
               <div className="w-full lg:w-1/2">
@@ -455,21 +546,23 @@ function Home() {
                 className="hover-up-5 w-full md:w-1/2 lg:w-1/3 px-3 mb-6 wow animate_animated animate_fadeIn"
                 data-wow-delay=".3s"
               >
-                <div className="p-12 bg-white shadow rounded">
+                <div className="p-8 bg-white shadow rounded">
                   <div className="flex w-12 h-12 mx-auto items-center justify-center text-blue-800 font-bold font-heading bg-blue-200 rounded-full">
                     1
                   </div>
                   <img
                     className="h-36 mx-auto my-4"
                     src="/assets/imgs/illustrations/eating.svg"
-                    alt="Monst"
+                    alt="collaboration"
                   />
                   <h3 className="mb-2 font-bold font-heading text-xl">
-                    Project Initialization
+                    Team Collaboration
                   </h3>
                   <p className="text-sm text-blueGray-400 leading-relaxed">
-                    Project initiation ensures that you lay a strong foundation
-                    for a new project in your company our team.
+                    Team collaboration is the backbone of effective social media
+                    management. With the right tools and strategies in place,
+                    your team can work together seamlessly to create engaging
+                    content and build a strong online presence.
                   </p>
                 </div>
               </div>
@@ -477,27 +570,31 @@ function Home() {
                 className="hover-up-5 w-full md:w-1/2 lg:w-1/3 px-3 mb-6 wow animate_animated animate_fadeIn"
                 data-wow-delay=".5s"
               >
-                <div className="p-12 bg-white shadow rounded">
+                <div className="p-8 bg-white shadow rounded">
                   <div className="flex w-12 h-12 mx-auto items-center justify-center text-blue-800 font-bold font-heading bg-blue-200 rounded-full">
                     2
                   </div>
                   <img
                     className="h-36 mx-auto my-4"
                     src="/assets/imgs/illustrations/space.svg"
-                    alt="Monst"
+                    alt="time saving"
                   />
                   <h3 className="mb-2 font-bold font-heading text-xl">
-                    Project planning
+                    Time-saving scheduling solution
                   </h3>
                   <p className="text-sm text-blueGray-400 leading-relaxed">
-                    A project plan is essential to keep everything related to
-                    the project organized, methodical, and on track.
+                    A time-saving scheduling solution allows you to plan and
+                    automate your social media posts in advance. This not only
+                    frees up your time for other tasks but also ensures a
+                    consistent and organized online presence for your brand or
+                    business. It's a valuable tool for efficient social media
+                    management.
                   </p>
                 </div>
               </div>
               <div className="hover-up-5 w-full lg:w-1/3 px-3 mb-6">
                 <div
-                  className="p-12 bg-white shadow rounded wow animate_animated animate_fadeIn"
+                  className="p-8 bg-white shadow rounded wow animate_animated animate_fadeIn"
                   data-wow-delay=".7s"
                 >
                   <div className="flex w-12 h-12 mx-auto items-center justify-center text-blue-800 font-bold font-heading bg-blue-200 rounded-full">
@@ -506,14 +603,17 @@ function Home() {
                   <img
                     className="h-36 mx-auto my-4"
                     src="/assets/imgs/illustrations/tasks.svg"
-                    alt="Monst"
+                    alt="modern inbox"
                   />
                   <h3 className="mb-2 font-bold font-heading text-xl">
-                    Project organization
+                    Modern Inbox
                   </h3>
                   <p className="text-sm text-blueGray-400 leading-relaxed">
-                    Moving forward you will be able to keep yourself and your
-                    team on track, and address challenges early.
+                    Your all-in-one solution for social media management. Stay
+                    organized, engage with your audience, and track your
+                    performance seamlessly with our user-friendly tool.
+                    Experience the power of efficient social media
+                    management today!
                   </p>
                 </div>
               </div>
@@ -527,14 +627,13 @@ function Home() {
                 <Link href="/blog" legacyBehavior>
                   <a>
                     <span className="inline-block py-1 px-3 uppercase text-xs font-semibold bg-blue-50 rounded-full text-blue-600">
-                      Development
+                      Scheduling
                     </span>
                   </a>
                 </Link>
                 <h3 className="my-4 text-xl md:text-2xl font-bold font-heading">
                   <Link href="/blog-single" legacyBehavior>
                     <a className="hover:text-blue-500">
-                      {" "}
                       Convenient Scheduling Options
                     </a>
                   </Link>
@@ -595,7 +694,7 @@ function Home() {
                 <Link href="/blog-2" legacyBehavior>
                   <a>
                     <span className="inline-block py-1 px-3 uppercase text-xs font-semibold bg-blue-50 rounded-full text-blue-600">
-                      Startup
+                      Omnibox
                     </span>
                   </a>
                 </Link>
@@ -662,7 +761,7 @@ function Home() {
                 <Link href="/blog-2" legacyBehavior>
                   <a>
                     <span className="inline-block py-1 px-3 uppercase text-xs font-semibold bg-blue-50 rounded-full text-blue-600">
-                      Startup
+                      Analytics
                     </span>
                   </a>
                 </Link>
@@ -1112,41 +1211,127 @@ function Home() {
                 <h2 className="mb-4 text-3xl lg:text-4xl font-bold font-heading wow animate_animated animate_fadeIn">
                   <span>Subscribe now to</span>
                   <span className="text-blue-500"> Our Newsletter </span>
-                  <span>and get the Coupon code.</span>
+                  <span>and E-Book.</span>
                 </h2>
                 <p
                   className="mb-8 text-blueGray-400 wow animate_animated animate_fadeIn"
                   data-wow-delay=".3s"
                 >
-                  All your information is completely confidential
+                  Elevate your social media marketing game with our free <br /> in-depth guides.
                 </p>
-                <div
-                  className="p-4 bg-white rounded-lg flex flex-wrap max-w-md mx-auto wow animate_animated animate_fadeIn"
-                  data-wow-delay=".5s"
-                >
-                  <div className="flex w-full md:w-2/3 px-3 mb-3 md:mb-0 md:mr-6 bg-blueGray-100 rounded">
-                    <svg
-                      className="h-6 w-6 my-auto text-blueGray-500"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-                      <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
-                    </svg>
-                    <input
-                      className="w-full pl-3 py-4 text-xs text-blueGray-400 font-semibold leading-none bg-blueGray-100 outline-none"
-                      type="text"
-                      placeholder="Type your e-mail"
-                    />
-                  </div>
-                  <button
-                    className="w-full md:w-auto py-4 px-8 text-xs text-white font-semibold leading-none bg-blue-400 hover:bg-blue-500 rounded"
-                    type="submit"
+                {/* {error && <div style={{ color: "red" }}>{error}</div>} */}
+                <form onSubmit={onSubmit}>
+                  <div
+                    className="p-4 bg-white rounded-lg flex flex-wrap max-w-md mx-auto wow animate_animated animate_fadeIn"
+                    data-wow-delay=".5s"
                   >
-                    Sign Up
-                  </button>
-                </div>
+                    <div className="w-full mb-2">
+                      <div className="flex w-full md:w-2/31 px-3 mb-3 md:mb-0 md:mr-6 bg-blueGray-100 rounded">
+                        <svg
+                          viewBox="0 0 1024 1024"
+                          className="h-6 w-6 my-auto text-blueGray-500"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M288 320a224 224 0 1 0 448 0 224 224 0 1 0-448 0zm544 608H160a32 32 0 0 1-32-32v-96a160 160 0 0 1 160-160h448a160 160 0 0 1 160 160v96a32 32 0 0 1-32 32z"
+                          />
+                        </svg>
+                        <input
+                          className="w-full pl-3 py-4 text-xs text-blueGray-400 font-semibold leading-none bg-blueGray-100 outline-none"
+                          type="text"
+                          name="name"
+                          value={formData.name}
+                          onChange={handleChange}
+                          isInvalid={!!errors.name}
+                          placeholder="Type your name"
+                        />
+                        {errors.name ? (
+                          <p className="mb-2 text-xs" style={{ color: "darkred" }}>
+                            {errors.name}
+                          </p>
+                        ) : (
+                          ""
+                        )}
+                      </div>
+                    </div>
+                    <div className="w-full mb-2">
+                      <div className="flex w-full md:w-2/31 px-3 mb-3 md:mb-0 md:mr-6 bg-blueGray-100 rounded">
+                        <svg
+                          className="h-6 w-6 my-auto text-blueGray-500"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                        >
+                          <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                          <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                        </svg>
+                        <input
+                          className="w-full pl-3 py-4 text-xs text-blueGray-400 font-semibold leading-none bg-blueGray-100 outline-none"
+                          type="email"
+                          name="email"
+                          value={formData.email}
+                          onChange={handleChange}
+                          isInvalid={!!errors.email}
+                          placeholder="Type your e-mail"
+                        />
+                        {errors.email ? (
+                          <p className="mb-2 text-xs" style={{ color: "darkred" }}>
+                            {errors.email}
+                          </p>
+                        ) : (
+                          ""
+                        )}
+                      </div>
+                    </div>
+                    <div className="w-full mb-2">
+                      <div className="flex w-full md:w-2/31 px-3 mb-3 md:mb-0 md:mr-6 bg-blueGray-100 rounded">
+                        <svg
+                          className="h-6 w-6 my-auto text-blueGray-500"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                          class="bi bi-telephone-fill"
+                          viewBox="0 0 20 20"
+                          width={30}
+                          height={30}
+                          style={{ color: "#656f8d", marginTop: "15px" }}
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                            // fill="#656f8d"
+                          ></path>
+                        </svg>
+                        <input
+                          className="w-full pl-3 py-4 text-xs text-blueGray-400 font-semibold leading-none bg-blueGray-100 outline-none"
+                          type="tel"
+                          required
+                          name="phoneNumber"
+                          value={formData.phoneNumber}
+                          onChange={handleChange}
+                          isInvalid={!!errors.phoneNumber}
+                          placeholder="Type your phoneNumber"
+                        />
+                        {errors.phoneNumber ? (
+                          <p className="mb-2 text-xs" style={{ color: "darkred" }}>
+                            {errors.phoneNumber}
+                          </p>
+                        ) : (
+                          ""
+                        )}
+                      </div>
+                    </div>
+                    <div className="w-full mb-2 flex justify-end">
+                      <button
+                        className="w-full md:w-auto py-4 px-8 text-xs text-white font-semibold leading-none bg-blue-400 hover:bg-blue-500 rounded"
+                        type="submit"
+                        disabled={isLoading}
+                      >
+                        {isLoading ? "Loading" : "Sign Up"}
+                      </button>
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
           </div>

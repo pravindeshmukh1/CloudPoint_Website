@@ -310,8 +310,8 @@ const Pricing = () => {
               </div>
             </div> */}
 
-            <div className="flex flex-wrap -mx-3 mt-8">
-              <div className="w-full md:w-1/2 lg:w-1/3 px-3 mb-6">
+            <div className="flex flex-wrap justify-center items-center -mx-3 mt-8">
+              {/* <div className="w-full md:w-1/2 lg:w-1/3 px-3 mb-6">
                 <div
                   className="hover-up-5 pt-16 pb-8 px-4 text-center bg-white rounded shadow wow animate__animated animate__fadeIn"
                   data-wow-delay=".2s"
@@ -324,10 +324,10 @@ const Pricing = () => {
                   <h3 className="mb-1 text-4xl font-bold font-heading">
                     Silver
                   </h3>
-                  {/* {!show && (
-                    <p className="mt-1 text-gray-400">Billed Annually</p>
-                  )}
-                  {show && (<p className="mt-1 text-gray-400"></p>)} */}
+                  <div className="text-sm font-bold h-16">
+                    Best suited for entrepreneurs, small businesses and
+                    freelancers
+                  </div>
                   <p
                     className={`${
                       !show ? "mt-1 text-gray-400" : "mt-1 text-white"
@@ -346,7 +346,6 @@ const Pricing = () => {
                   )}
                   {!show && (
                     <span className="text-4xl text-blue-500 font-bold font-heading">
-                      {/* Billed Annually */}
                       {value1.length > 0 ? value1[0].CurrencyCode : "$"}
                       {value1.length > 0
                         ? value1[0].Pack_Prices_Billed_Annually.Silver
@@ -357,11 +356,6 @@ const Pricing = () => {
                   <div className="mb-2 text-sm">
                     <i>No Credit Card Required</i>
                   </div>
-                  <div className="mt-2 mb-8 text-sm">
-                    Best suited for entrepreneurs, small businesses and
-                    freelancers
-                  </div>
-
                   <div className="flex flex-col items-center mb-8">
                     <ul className="text-gray-400">
                       <li className="flex mb-3 text-xs">
@@ -612,22 +606,16 @@ const Pricing = () => {
                   </div>
                   <div>
                     <a
-                      className="block sm:inline-block py-4 px-6 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-blue-400 hover:bg-blue-500 rounded"
+                      className="block sm:inline-block py-4 px-6 mb-4 sm:mb-0 text-xs text-white text-center font-semibold leading-none bg-blue-400 hover:bg-blue-500 rounded"
                       href="https://app.cloudsocial.io/accounts/silver/5"
                       target="_blank"
                     >
                       Start Free Trial
                     </a>
-                    <a
-                      className="block sm:inline-block py-4 px-6 text-xs text-gray-500 hover:text-gray-600 text-center font-semibold leading-none bg-white border border-gray-200 hover:border-gray-300 rounded"
-                      href="#"
-                    >
-                      Purchase
-                    </a>
                   </div>
                 </div>
-              </div>
-              <div className="w-full md:w-1/2 lg:w-1/3 px-3 mb-6">
+              </div> */}
+              <div className="w-full md:w-1/2 lg:w-2/5  px-3 mb-6">
                 <div
                   className="hover-up-5 pt-16 pb-8 px-4 text-center text-white bg-blue-500 rounded  shadow hover:shadow-xl wow animate__animated animate__fadeIn"
                   data-wow-delay=".4s"
@@ -638,10 +626,12 @@ const Pricing = () => {
                     alt="CloudSocial"
                   />
                   <h3 className="mb-1 text-4xl font-bold font-heading">Gold</h3>
-
+                  <div className="text-sm font-bold h-16">
+                    Best suited for brands
+                  </div>
                   <p
                     className={`${
-                      !show ? "mt-1 text-gray-400" : "mt-1 text-blue-500"
+                      !show ? "mt-1 text-gray-4001 font-bold" : "mt-1 text-blue-500"
                     }`}
                   >
                     Billed Annually
@@ -664,13 +654,9 @@ const Pricing = () => {
                     </span>
                   )}
 
-                  <div className="mb-2 text-sm">
+                  <div className="text-sm">
                     <i>No Credit Card Required</i>
                   </div>
-                  <div className="mt-2 mb-12 text-sm">
-                    Best suited for brands
-                  </div>
-
                   <div className="flex flex-col items-center mb-8">
                     <ul>
                       <li className="flex mb-3 text-sm mt-2">
@@ -923,22 +909,22 @@ const Pricing = () => {
                   </div>
                   <div>
                     <a
-                      className="block sm:inline-block py-4 px-6 mb-4 sm:mb-0 sm:mr-3 text-xs text-blue-500 font-semibold leading-none bg-white hover:bg-gray-50 rounded"
+                      className="block sm:inline-block py-4 px-6 mb-4 sm:mb-0 text-xs text-blue-500 font-semibold leading-none bg-white hover:bg-gray-50 rounded"
                       href="https://app.cloudsocial.io/accounts/gold/9"
                       target="_blank"
                     >
                       Start Free Trial
                     </a>
-                    <a
+                    {/* <a
                       className="block sm:inline-block py-4 px-6 text-xs font-semibold leading-none border border border-blue-400 hover:border-blue-400 rounded"
                       href="#"
                     >
                       Purchase
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>
-              <div className="w-full lg:w-1/3 px-3 mb-6">
+              <div className="w-full lg:w-2/5 px-3 mb-6">
                 <div
                   className="hover-up-5 pt-16 pb-8 px-4 text-center bg-white rounded shadow wow animate__animated animate__fadeIn"
                   data-wow-delay=".6s"
@@ -951,9 +937,12 @@ const Pricing = () => {
                   <h3 className="mb-1 text-4xl font-bold font-heading">
                     Platinum
                   </h3>
+                  <div className="text-sm font-bold h-16">
+                    Best suited for social media and digital agencies
+                  </div>
                   <p
                     className={`${
-                      !show ? "mt-1 text-gray-400" : "mt-1 text-white"
+                      !show ? "mt-1 text-blue-600 font-bold" : "mt-1 text-white"
                     }`}
                   >
                     Billed Annually
@@ -978,9 +967,6 @@ const Pricing = () => {
 
                   <div className="mb-2 text-sm">
                     <i>No Credit Card Required</i>
-                  </div>
-                  <div className="mt-2 mb-8 text-sm">
-                    Best suited for social media and digital agencies
                   </div>
                   <div className="flex flex-col items-center mb-8">
                     <ul className="text-gray-400">
@@ -1237,25 +1223,20 @@ const Pricing = () => {
                   </div>
                   <div>
                     <a
-                      className="block sm:inline-block py-4 px-6 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-blue-400 hover:bg-blue-500 rounded"
+                      className="block sm:inline-block py-4 px-6 mb-4 sm:mb-0 text-xs text-white text-center font-semibold leading-none bg-blue-400 hover:bg-blue-500 rounded"
                       href="https://app.cloudsocial.io/accounts/platinum/17"
                       target="_blank"
                     >
                       Start Free Trial
-                    </a>
-                    <a
-                      className="block sm:inline-block py-4 px-6 text-xs text-gray-500 hover:text-gray-600 text-center font-semibold leading-none bg-white border border-gray-200 hover:border-gray-300 rounded"
-                      href="#"
-                    >
-                      Purchase
                     </a>
                   </div>
                 </div>
               </div>
             </div>
             <p
-              className=" text-md text-gray-700 wow animate__animated animate__fadeInDown"
+              className=" text-md text-gray-700 wow animate__animated animate__fadeInDown flex justify-center items-center"
               data-wow-delay=".5s"
+              
             >
               *During trial period 250 and 500 mentions (listen) will be
               allocated to Gold & Platinum pack respectively.
