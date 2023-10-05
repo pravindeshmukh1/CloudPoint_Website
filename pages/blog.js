@@ -1,6 +1,6 @@
-import React from "react";
-import Layout from "../components/layout/Layout";
+import React, { useState } from "react";
 import Link from "next/link";
+import Layout from "../components/layout/Layout";
 
 export const getServerSideProps = async (context) => {
   const { slug } = context.query;
@@ -16,7 +16,7 @@ export const getServerSideProps = async (context) => {
     };
 
     const response = await fetch(
-      `${process.env.STRAPI_URL}`,
+      `${process.env.STRAPI_URL}/Blogs`,
       requestOptions
     );
 
@@ -26,7 +26,7 @@ export const getServerSideProps = async (context) => {
 
     const data = await response.json(); // Parse the response as JSON
     const blogList = await data.data; // Parse the response as JSON
-     console.log(blogList);
+    console.log(blogList);
 
     return { props: { blogList } };
   } catch (error) {
@@ -35,32 +35,129 @@ export const getServerSideProps = async (context) => {
   }
 };
 
-const Blog = ({blogList}) => {
+const Blog = ({ blogList }) => {
   console.log("🚀 ~ file: blog.js:38 ~ blogList:", blogList);
-  
-  const [blogData, setBlogData] = React.useState([]);
- // console.log("🚀 ~ file: blog.js:8 ~ blogData:", blogData);
 
-  const getAllBlogs = async () => {
-    let headersList = {
-      Accept: "*/*",
-      Authorization:
-      `${process.env.BEARER_TOKEN}`
-    };
-    let response = await fetch(`${process.env.STRAPI_URL}`, {
-      method: "GET",
-      headers: headersList,
-    });
+  //   const [blogData, setBlogData] = React.useState([]);
+  //  // console.log("🚀 ~ file: blog.js:8 ~ blogData:", blogData);
 
-    let data = await response.json();
-    console.log(data);
-    setBlogData(data.data.toReversed());
+  //   const getAllBlogs = async () => {
+  //     let headersList = {
+  //       Accept: "*/*",
+  //       Authorization:
+  //       `${process.env.BEARER_TOKEN}`
+  //     };
+  //     let response = await fetch(`${process.env.STRAPI_URL}`, {
+  //       method: "GET",
+  //       headers: headersList,
+  //     });
+
+  //     let data = await response.json();
+  //     console.log(data);
+  //     setBlogData(data.data.toReversed());
+  //   };
+
+  //   React.useEffect(() => {
+  //     getAllBlogs();
+  //   }, []);
+
+  const [errors, setErrors] = useState({});
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phoneNumber: "",
+    // Other form fields
+  });
+
+  const pdfUrls =
+    "https://www.cloudsocial.io/wp-content/uploads/2023/The%20Ultimate%20Instagram%20Marketing%20Guide-For%20Beginners%20in%202023.pdf";
+
+  const handlePdfOpen = () => {
+    // Open the PDF in a new tab.
+    window.open(pdfUrls, "_blank");
+    // setShow(false);
+  };
+  const validateForm = () => {
+    const newErrors = {};
+    // Add validation rules here
+    if (!formData.name) {
+      newErrors.name = "Name is required";
+    }
+
+    if (!formData.email) {
+      newErrors.email = "Email is required";
+    } else if (!/^\S+@\S+\.\S+$/.test(formData.email)) {
+      newErrors.email = "Invalid email format";
+    }
+    if (!formData.phoneNumber) {
+      newErrors.phoneNumber = "Phone number is required";
+    } else if (!/^[0-9]{10}$/.test(formData.phoneNumber)) {
+      newErrors.phoneNumber = "Invalid phone number format";
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
   };
 
-  React.useEffect(() => {
-    getAllBlogs();
-  }, []);
-  
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+      createdAt: new Date(),
+    });
+  };
+
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState("");
+
+  async function onSubmit(event) {
+    console.log("🚀 ~ file: index.js:29 ~ event:", event);
+    event.preventDefault();
+    setIsLoading(true);
+    setError(null); // Clear previous errors when a new request starts
+
+    try {
+      // const formData = new FormData(event.currentTarget);
+      // console.log("🚀 ~ file: index.js:35 ~ formData:", formData);
+      // const formDatas = {
+      //   email: "pravin2391@gmail.com",
+      // };
+      if (validateForm()) {
+        let headersList = {
+          Accept: "*/*",
+          "User-Agent": "Thunder Client (https://www.thunderclient.com)",
+          "Content-Type": "application/json",
+        };
+        const response = await fetch(
+          // "https://strapi.cloudsocial.io/api/ebookUser",
+          "https://reqres.in/api/users",
+          {
+            method: "POST",
+            body: JSON.stringify({ data: formData }),
+            headers: headersList,
+          }
+        );
+        if (!response.ok) {
+          throw new Error("Failed to submit the data. Please try again.");
+        } else {
+          handlePdfOpen();
+        }
+
+        // Handle response if necessary
+        const data = await response.json();
+        console.log("🚀 ~ file: index.js:57 ~ data:", data);
+      }
+    } catch (error) {
+      // Capture the error message to display to the user
+      setError(error.message);
+      console.error(error);
+    } finally {
+      setIsLoading(false);
+    }
+  }
+
   return (
     <>
       <Layout>
@@ -187,27 +284,31 @@ const Blog = ({blogList}) => {
               </div> */}
 
               {/* {blogData?.map((data) => { */}
-              {blogList?.map((data,index) => {
+              {blogList?.map((data, index) => {
                 return (
                   <div
                     className="w-full lg:w-1/3 px-3 mb-12 wow animate__animated animate__fadeIn animated hover-up-5"
                     data-wow-delay=".1s"
                     key={index}
                   >
-                    <Link href="/blog-single" legacyBehavior>
+                    <Link href={`/blog/${data.attributes.slug}`} legacyBehavior>
                       <a>
                         <img
                           className="h-80 w-full object-cover rounded"
                           src="/assets/imgs/placeholders/img-8.png"
-                          alt="Monst"
+                          // src={data.attributes.blogImg}
+                          alt={data.attributes.title}
                         />
                       </a>
                     </Link>
                     <p className="mt-6 text-sm text-blue-400">
-                      <Link href="/blog-2" legacyBehavior>
+                      <Link
+                        href={`/categories/${data.attributes.categories}`}
+                        legacyBehavior
+                      >
                         <a>
                           <span className="inline-block py-1 px-3 text-xs font-semibold bg-blue-100 text-blue-600 rounded-xl mr-3">
-                          {data.attributes.categories}
+                            {data.attributes.categories}
                           </span>
                         </a>
                       </Link>
@@ -230,20 +331,20 @@ const Blog = ({blogList}) => {
                         </a>
                       </Link>
                     </h3>
-                    <p className="text-blueGray-400 leading-loose">
+                    <p className="text-blueGray-400 leading-loose text-justify">
                       {data.attributes.description}
                     </p>
                   </div>
                 );
               })}
             </div>
-            <div className="text-center">
+            {/* <div className="text-center">
               <Link href="/blog-2" legacyBehavior>
                 <a className="hover-up-5 inline-block py-4 px-8 text-xs text-white font-semibold leading-none bg-blue-400 hover:bg-blue-500 rounded">
                   Show all posts
                 </a>
               </Link>
-            </div>
+            </div> */}
           </div>
         </section>
 
@@ -253,35 +354,122 @@ const Blog = ({blogList}) => {
               <h2 className="mb-4 text-3xl lg:text-3xl text-white font-bold font-heading">
                 <span>Subscribe now to </span>
                 <span className="text-blue-200">Our Newsletter</span> <br />
-                <span>and get the Coupon code.</span>
+                <span>and E-Book.</span>
               </h2>
               <p className="mb-8 text-blueGray-200">
-                All your information is completely confidential
+                Elevate your social media marketing game with our free <br />{" "}
+                in-depth guides.
               </p>
-              <div className="flex flex-wrap max-w-lg mx-auto">
-                <div className="flex w-full md:w-2/3 px-3 mb-3 md:mb-0 md:mr-6 bg-blue-500 border border-blue-300 rounded">
-                  <svg
-                    className="h-6 w-6 my-auto text-blue-300"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
-                  </svg>
-                  <input
-                    className="w-full pl-3 py-4 text-xs text-white placeholder-white font-semibold leading-none bg-blue-500 outline-none"
-                    type="text"
-                    placeholder="Type your e-mail"
-                  />
+              {/* {error && <div style={{ color: "red" }}>{error}</div>} */}
+              <form onSubmit={onSubmit}>
+                <div className="flex flex-wrap max-w-lg mx-auto">
+                  <div className="w-full">
+                    <div className="flex w-full md:w-2/31 px-3 mb-3 md:mb-0 md:mr-6 bg-blue-500 border border-blue-300 rounded">
+                      <svg
+                        viewBox="0 0 1024 1024"
+                        className="h-6 w-6 my-auto text-white"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M288 320a224 224 0 1 0 448 0 224 224 0 1 0-448 0zm544 608H160a32 32 0 0 1-32-32v-96a160 160 0 0 1 160-160h448a160 160 0 0 1 160 160v96a32 32 0 0 1-32 32z"
+                        />
+                      </svg>
+                      <input
+                        className="w-full pl-3 py-4 text-xs text-white placeholder-white font-semibold leading-none bg-blue-500 outline-none"
+                        type="text"
+                        name="name"
+                        value={formData.name}
+                        onChange={handleChange}
+                        isInvalid={!!errors.name}
+                        placeholder="Type your name"
+                      />
+                    </div>
+                    {errors.name ? (
+                      <p className="mb-2 text-xs" style={{ color: "red" }}>
+                        {errors.name}
+                      </p>
+                    ) : (
+                      ""
+                    )}
+                  </div>
+                  <div className="w-full">
+                    <div className="flex w-full md:w-2/31 px-3 mb-3 mt-2 md:mb-0 md:mr-6 bg-blue-500 border border-blue-300 rounded">
+                      <svg
+                        className="h-6 w-6 my-auto text-white"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                      </svg>
+                      <input
+                        className="w-full pl-3 py-4 text-xs text-white placeholder-white font-semibold leading-none bg-blue-500 outline-none"
+                        type="email"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                        isInvalid={!!errors.email}
+                        placeholder="Type your e-mail"
+                      />
+                    </div>
+                    {errors.email ? (
+                      <p className="mb-2 text-xs" style={{ color: "red" }}>
+                        {errors.email}
+                      </p>
+                    ) : (
+                      ""
+                    )}
+                  </div>
+                  <div className="w-full">
+                    <div className="flex w-full md:w-2/31 px-3 mb-3 mt-2 md:mb-0 md:mr-6 bg-blue-500 border border-blue-300 rounded">
+                      <svg
+                        className="h-6 w-6 my-auto text-white"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        class="bi bi-telephone-fill"
+                        viewBox="0 0 20 20"
+                        width={30}
+                        height={30}
+                        style={{ color: "white", marginTop: "15px" }}
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                          // fill="#656f8d"
+                        ></path>
+                      </svg>
+                      <input
+                        className="w-full pl-3 py-4 text-xs text-white placeholder-white font-semibold leading-none bg-blue-500 outline-none"
+                        type="tel"
+                        required
+                        name="phoneNumber"
+                        value={formData.phoneNumber}
+                        onChange={handleChange}
+                        isInvalid={!!errors.phoneNumber}
+                        placeholder="Type your phoneNumber"
+                      />
+                    </div>
+                    {errors.phoneNumber ? (
+                      <p className="mb-2 text-xs" style={{ color: "red" }}>
+                        {errors.phoneNumber}
+                      </p>
+                    ) : (
+                      ""
+                    )}
+                  </div>
+                    <div className="flex w-full md:w-2/31 mb-3 mt-2 md:mb-0 md:mr-61 justify-end">
+                      <button
+                        className="w-full md:w-auto mt-2 py-4 px-8 text-xs text-white text-blue-800 hover:text-white font-semibold leading-none border border-blue-300 hover:border-blue-300 bg-white hover:bg-blue-500 rounded transition duration-300 ease-in-out"
+                        type="submit"
+                        disabled={isLoading}
+                      >
+                        {isLoading ? "Loading" : "Sign Up"}{" "}
+                      </button>
+                  </div>
                 </div>
-                <button
-                  className="w-full md:w-auto py-4 px-8 text-xs text-white text-blue-800 hover:text-white font-semibold leading-none border border-blue-300 hover:border-blue-300 bg-white hover:bg-blue-500 rounded transition duration-300 ease-in-out"
-                  type="submit"
-                >
-                  Sign Up
-                </button>
-              </div>
+              </form>
             </div>
           </div>
         </section>

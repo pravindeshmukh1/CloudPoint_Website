@@ -40,7 +40,7 @@ const Slider1 = () => {
                   {/* <img className="rounded-xl" src={imgUrl} alt={title} /> */}
                   <YoutubeEmbed embedId={listen} />
                   <div className="flex justify-between items-end ">
-                    <p className="mt-2 text-xs text-gray-500 group-hover:text-blue-500">
+                    <p className="mt-2 text-xs text-gray-500 group-hover:text-blue-500 text-justify">
                       {desc}
                     </p>
                   </div>

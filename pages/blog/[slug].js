@@ -30,7 +30,7 @@ export const getServerSideProps = async (context) => {
     };
 
     const response = await fetch(
-      `${process.env.STRAPI_URL}?filters[slug][$eq]=${slug}&populate=*`,
+      `${process.env.STRAPI_URL}/Blogs?filters[slug][$eq]=${slug}&populate=*`,
       requestOptions
     );
 
@@ -87,19 +87,21 @@ const BlogSingle = ({ data }) => {
               <div className="max-w-2xl mx-auto">
                 <div className="text-center mb-6">
                   <span className="text-base md:text-lg">
-                    {/* <Link href="/blog" legacyBehavior>
-                      <a className="text-blueGray-200 hover:underline">
-                        <span className="inline-block py-1 px-3 text-xs font-semibold bg-blue-100 text-blue-600 rounded-xl mr-3">
-                        {data.data[0].attributes.categories}
-                        </span>
-                      </a>
-                    </Link> */}
-                    <span className="inline-block py-1 px-3 text-xs font-semibold bg-blue-100 text-blue-600 rounded-xl mr-3">
-                      {data.data[0].attributes.categories}
+                    <span className="text-base md:text-lg">
+                      <Link
+                        href={`/categories/${data.data[0].attributes.categories}`}
+                        legacyBehavior
+                      >
+                        <a className="text-blueGray-200 hover:underline">
+                          <span className="inline-block py-1 px-3 text-xs font-semibold bg-blue-100 text-blue-600 rounded-xl mr-3">
+                            {data.data[0].attributes.categories}
+                          </span>
+                        </a>
+                      </Link>
+                      <span className="text-blueGray-500 text-sm">
+                        {data.data[0].attributes.date}
+                      </span>
                     </span>
-                    {/* <span className="text-blueGray-200 text-sm">
-                      {data.data[0].attributes.date}
-                    </span> */}
                   </span>
                   <h2 className="text-4xl md:text-5xl mt-4 text-blue-400 font-bold font-heading">
                     {data.data[0].attributes.title}

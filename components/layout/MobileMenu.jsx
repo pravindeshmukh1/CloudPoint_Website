@@ -178,7 +178,14 @@ const MobileMenu = ({ hiddenClass, handleRemove }) => {
                   </a>
                 </Link>
               </li>
-              <li
+              <li className="mb-1 rounded-xl">
+                <Link href="/blog" legacyBehavior>
+                  <a className="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500 rounded-xl">
+                  Blog
+                  </a>
+                </Link>
+              </li>
+              {/* <li
                 className={
                   isActive.key == 2
                     ? "mb-1 menu-item-has-children rounded-xl active"
@@ -222,7 +229,7 @@ const MobileMenu = ({ hiddenClass, handleRemove }) => {
                     </Link>
                   </li>
                 </ul>
-              </li>
+              </li> */}
               <li
                 className={"mb-1 menu-item-has-children rounded-xl"}
               >
