@@ -22,7 +22,7 @@ const PrivacyPolicy = () => {
       </Head>
       <Layout>
         <section
-          className="pt-12 pb-20 lg:bg-contain bg-top bg-no-repeat"
+          className="pt-12 lg:bg-contain bg-top bg-no-repeat"
           style={{
             backgroundImage: 'url("assets/imgs/backgrounds/intersect.svg")',
           }}
@@ -3142,7 +3142,7 @@ const PrivacyPolicy = () => {
                 <hr className="mb-3 mt-3 text-gray-300" />
               </div>
             </div>
-            <div className="max-w-4xl mx-auto">
+            {/* <div className="max-w-4xl mx-auto">
               <div
                 className="flex-1 wow animate__animated animate__fadeIn"
                 data-wow-delay=".3s"
@@ -3579,7 +3579,7 @@ const PrivacyPolicy = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
 

@@ -384,7 +384,7 @@ function Home() {
                       <h3 className="mb-2 text-xl font-semibold font-heading">
                         Analytics
                       </h3>
-                      <p className="text-blueGray-400 leading-loose">
+                      <p className="text-blueGray-400 leading-loose text-justify">
                         Track your social media performance and customize your
                         branding strategy using CloudSocial's detailed insights
                         and analytics reports.
@@ -421,7 +421,7 @@ function Home() {
                       <h3 className="mb-2 text-xl font-semibold font-heading">
                         Publish
                       </h3>
-                      <p className="text-blueGray-400 leading-loose">
+                      <p className="text-blueGray-400 leading-loose text-justify">
                         Create, schedule, and post your content on multiple
                         social channels from the CloudSocial platform to
                         maximize visibility and brand awareness. Remain
@@ -429,7 +429,7 @@ function Home() {
                       </p>
                     </div>
                   </div>
-                  <div
+                  {/* <div
                     className="flex items-start py-4 wow animate_animated animate_fadeIn"
                     data-wow-delay=".9s"
                   >
@@ -453,11 +453,43 @@ function Home() {
                       <h3 className="mb-2 text-xl font-semibold font-heading">
                         Omnibox
                       </h3>
-                      <p className="text-blueGray-400 leading-loose">
+                      <p className="text-blueGray-400 leading-loose text-justify">
                         Engage with customers and prospects across numerous
                         social media channels from our integrated Omnibox
                         console. Manage and streamline your social media teams
                         with approval workflows.
+                      </p>
+                    </div>
+                  </div> */}
+                  <div
+                    className="flex items-start py-4 wow animate_animated animate_fadeIn"
+                    data-wow-delay=".9s"
+                  >
+                    <div className="w-8 mr-5 text-blue-500">
+                      <svg
+                        className="w-6 h-6"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="mb-2 text-xl font-semibold font-heading">
+                        Listen
+                      </h3>
+                      <p className="text-blueGray-400 leading-loose text-justify">
+                        Stay updated on the latest social media trends and
+                        events. Monitor all your social channels and spot
+                        prospects from miles away with custom keywords using
+                        Social Media Listening.
                       </p>
                     </div>
                   </div>
@@ -1217,7 +1249,8 @@ function Home() {
                   className="mb-8 text-blueGray-400 wow animate_animated animate_fadeIn"
                   data-wow-delay=".3s"
                 >
-                  Elevate your social media marketing game with our free <br /> in-depth guides.
+                  Elevate your social media marketing game with our free <br />{" "}
+                  in-depth guides.
                 </p>
                 {/* {error && <div style={{ color: "red" }}>{error}</div>} */}
                 <form onSubmit={onSubmit}>
@@ -1247,7 +1280,10 @@ function Home() {
                           placeholder="Type your name"
                         />
                         {errors.name ? (
-                          <p className="mb-2 text-xs" style={{ color: "darkred" }}>
+                          <p
+                            className="mb-2 text-xs"
+                            style={{ color: "darkred" }}
+                          >
                             {errors.name}
                           </p>
                         ) : (
@@ -1276,7 +1312,10 @@ function Home() {
                           placeholder="Type your e-mail"
                         />
                         {errors.email ? (
-                          <p className="mb-2 text-xs" style={{ color: "darkred" }}>
+                          <p
+                            className="mb-2 text-xs"
+                            style={{ color: "darkred" }}
+                          >
                             {errors.email}
                           </p>
                         ) : (
@@ -1313,7 +1352,10 @@ function Home() {
                           placeholder="Type your phoneNumber"
                         />
                         {errors.phoneNumber ? (
-                          <p className="mb-2 text-xs" style={{ color: "darkred" }}>
+                          <p
+                            className="mb-2 text-xs"
+                            style={{ color: "darkred" }}
+                          >
                             {errors.phoneNumber}
                           </p>
                         ) : (

@@ -15,11 +15,12 @@ const Footer = () => {
   }, []);
   return (
     <>
-      <section className="py-20">
+      <section className="pb-20 pt-10">
         <div
           className="container px-4 mx-auto wow animate__animated animate__fadeIn"
           data-wow-delay=".3s"
         >
+          <hr className="mb-8 mt-8 text-gray-300" />
           <div className="container px-4 mx-auto">
             <div className="flex justify-around pt-1 pb-1">
               {star.map(({ img, title, url, id }) => (
@@ -214,22 +215,22 @@ const Footer = () => {
                 </a>
               </Link>
             </p>
-           
+
             <div className="order-first lg:order-last -mx-2 mb-4 lg:mb-0 flex">
-            {footerIcon.map(({ img, href, alt, id }) => (
+              {footerIcon.map(({ img, href, alt, id }) => (
                 <div
                   className="hover-up-5 flex w-1/2 lg:w-auto py-4 wow animate_animated animate_fadeIn"
                   data-wow-delay=".2s"
                   key={id}
                 >
-                    <Link href={href} legacyBehavior>
-                      <a target="_blank">
-                        <img
-                          className="h-100 object-cover hover:drop-shadow w-5 mr-1"
-                          src={img}
-                          alt={alt}
-                        />
-                        {/* <Image
+                  <Link href={href} legacyBehavior>
+                    <a target="_blank">
+                      <img
+                        className="h-100 object-cover hover:drop-shadow w-5 mr-1"
+                        src={img}
+                        alt={alt}
+                      />
+                      {/* <Image
                           className="object-cover"
                           src={img}
                           alt={alt}
@@ -239,8 +240,8 @@ const Footer = () => {
                           // fill
                           // objectFit="contain"
                         /> */}
-                      </a>
-                    </Link>
+                    </a>
+                  </Link>
                 </div>
               ))}
               {/* <a

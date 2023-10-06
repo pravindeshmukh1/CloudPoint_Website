@@ -30,7 +30,7 @@ const Faqs = () => {
               src="assets/imgs/illustrations/eating.svg"
               alt="Monst"
             />
-            <form
+            {/* <form
               className="flex justify-center max-w-3xl mx-auto mb-16 wow animate__animated animate__fadeIn"
               data-wow-delay=".3s"
             >
@@ -54,7 +54,7 @@ const Faqs = () => {
                   />
                 </svg>
               </button>
-            </form>
+            </form> */}
             <div className="flex flex-wrap justify-between -mx-3 mb-12">
               <div
                 className="w-full md:w-1/2 lg:w-1/4 px-3 mb-6 wow animate__animated animate__fadeIn"
@@ -78,13 +78,13 @@ const Faqs = () => {
                     </svg>
                   </div>
                   <h4 className="mb-3 font-bold font-heading">
-                    Internet Things
+                    Filters in CloudSocial
                   </h4>
                   <ul className="list-disc list-inside text-sm text-blueGray-400">
-                    <li className="mb-2">Lorem ipsum dolor sit amet</li>
-                    <li className="mb-2">Maecenas efficitur pharetra</li>
-                    <li className="mb-2">Sed lorem ante</li>
-                    <li>Ullamcorper neque</li>
+                    <li className="mb-2">Efficient Content Management:</li>
+                    <li className="mb-2">Targeted Audience Engagement</li>
+                    <li className="mb-2">Performance Tracking</li>
+                    <li>Streamlined Reporting</li>
                   </ul>
                 </div>
               </div>
@@ -110,13 +110,15 @@ const Faqs = () => {
                     </svg>
                   </div>
                   <h4 className="mb-3 font-bold font-heading">
-                    Artificial Intelligence
+                    Tracking competitors
                   </h4>
                   <ul className="list-disc list-inside text-sm text-blueGray-400">
-                    <li className="mb-2">Lorem ipsum dolor sit amet</li>
-                    <li className="mb-2">Maecenas efficitur pharetra</li>
-                    <li className="mb-2">Sed lorem ante</li>
-                    <li>Ullamcorper neque</li>
+                    <li className="mb-2">
+                      Eye on rivals social media activities
+                    </li>
+                    <li className="mb-2">Analyze Performance</li>
+                    <li className="mb-2">Benchmark Metrics</li>
+                    <li>Refine your social media strategies</li>
                   </ul>
                 </div>
               </div>
@@ -141,14 +143,12 @@ const Faqs = () => {
                       />
                     </svg>
                   </div>
-                  <h4 className="mb-3 font-bold font-heading">
-                    Cloud Computing
-                  </h4>
+                  <h4 className="mb-3 font-bold font-heading">Reports</h4>
                   <ul className="list-disc list-inside text-sm text-blueGray-400">
-                    <li className="mb-2">Lorem ipsum dolor sit amet</li>
-                    <li className="mb-2">Maecenas efficitur pharetra</li>
-                    <li className="mb-2">Sed lorem ante</li>
-                    <li>Ullamcorper neque</li>
+                    <li className="mb-2">Generate detailed reports</li>
+                    <li className="mb-2">customizable templates and metrics</li>
+                    <li className="mb-2">Competitor Analysis</li>
+                    <li>Present data in visually engaging formats</li>
                   </ul>
                 </div>
               </div>
@@ -179,12 +179,18 @@ const Faqs = () => {
                       />
                     </svg>
                   </div>
-                  <h4 className="mb-3 font-bold font-heading">Data Analicys</h4>
+                  <h4 className="mb-3 font-bold font-heading">Analytics</h4>
                   <ul className="list-disc list-inside text-sm text-blueGray-400">
-                    <li className="mb-2">Lorem ipsum dolor sit amet</li>
-                    <li className="mb-2">Maecenas efficitur pharetra</li>
-                    <li className="mb-2">Sed lorem ante</li>
-                    <li>Ullamcorper neque</li>
+                    <li className="mb-2">
+                      Analytics aids strategy and future planning.
+                    </li>
+                    <li className="mb-2">
+                      Informed decisions rely on data, not guesswork.
+                    </li>
+                    <li className="mb-2">
+                      CloudSocial uses NPS to measure satisfaction.
+                    </li>
+                    <li>NPS boosts customer loyalty over time.</li>
                   </ul>
                 </div>
               </div>
