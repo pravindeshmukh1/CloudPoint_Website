@@ -311,7 +311,7 @@ const Pricing = () => {
             </div> */}
 
             <div className="flex flex-wrap justify-center items-center -mx-3 mt-8">
-              {/* <div className="w-full md:w-1/2 lg:w-1/3 px-3 mb-6">
+             {/* <div className="w-full md:w-1/2 lg:w-1/3 px-3 mb-6">
                 <div
                   className="hover-up-5 pt-16 pb-8 px-4 text-center bg-white rounded shadow wow animate__animated animate__fadeIn"
                   data-wow-delay=".2s"
@@ -330,17 +330,16 @@ const Pricing = () => {
                   </div>
                   <p
                     className={`${
-                      !show ? "mt-1 text-gray-400" : "mt-1 text-white"
+                      show ? "mt-1 text-blue-600 font-bold" : "mt-1 text-white"
                     }`}
                   >
                     Billed Annually
                   </p>
-
                   {show && (
                     <span className="text-4xl text-blue-500 font-bold font-heading">
                       {value1.length > 0 ? value1[0].CurrencyCode : "$"}
                       {value1.length > 0
-                        ? value1[0].Pack_Prices_Monthly.Silver
+                        ? value1[0].Pack_Prices_Billed_Annually.Silver
                         : "13"}
                     </span>
                   )}
@@ -348,7 +347,7 @@ const Pricing = () => {
                     <span className="text-4xl text-blue-500 font-bold font-heading">
                       {value1.length > 0 ? value1[0].CurrencyCode : "$"}
                       {value1.length > 0
-                        ? value1[0].Pack_Prices_Billed_Annually.Silver
+                        ? value1[0].Pack_Prices_Monthly.Silver
                         : "13"}
                     </span>
                   )}
@@ -614,7 +613,7 @@ const Pricing = () => {
                     </a>
                   </div>
                 </div>
-              </div> */}
+              </div>  */}
               <div className="w-full md:w-1/2 lg:w-2/5  px-3 mb-6">
                 <div
                   className="hover-up-5 pt-16 pb-8 px-4 text-center text-white bg-blue-500 rounded  shadow hover:shadow-xl wow animate__animated animate__fadeIn"
@@ -631,12 +630,12 @@ const Pricing = () => {
                   </div>
                   <p
                     className={`${
-                      !show ? "mt-1 text-gray-4001 font-bold" : "mt-1 text-blue-500"
+                      show ? "mt-1 text-gray-4001 font-bold" : "mt-1 text-blue-500"
                     }`}
                   >
                     Billed Annually
                   </p>
-                  {!show && (
+                  {show && (
                     <span className="text-4xl text-white-500 font-bold font-heading">
                       {value1.length > 0 ? value1[0].CurrencyCode : "$"}
                       {value1.length > 0
@@ -644,7 +643,7 @@ const Pricing = () => {
                         : "70"}
                     </span>
                   )}
-                  {show && (
+                  {!show && (
                     <span className="text-4xl text-white-500 font-bold font-heading">
                       {/* Billed Annually */}
                       {value1.length > 0 ? value1[0].CurrencyCode : "$"}
@@ -942,12 +941,12 @@ const Pricing = () => {
                   </div>
                   <p
                     className={`${
-                      !show ? "mt-1 text-blue-600 font-bold" : "mt-1 text-white"
+                      show ? "mt-1 text-blue-600 font-bold" : "mt-1 text-white"
                     }`}
                   >
                     Billed Annually
                   </p>
-                  {!show && (
+                  {show && (
                     <span className="text-4xl text-white-500 font-bold font-heading">
                       {value1.length > 0 ? value1[0].CurrencyCode : "$"}
                       {value1.length > 0
@@ -955,7 +954,7 @@ const Pricing = () => {
                         : "225"}
                     </span>
                   )}
-                  {show && (
+                  {!show && (
                     <span className="text-4xl text-white-500 font-bold font-heading">
                       {/* Billed Annually */}
                       {value1.length > 0 ? value1[0].CurrencyCode : "$"}
