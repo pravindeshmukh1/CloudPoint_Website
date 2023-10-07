@@ -6,6 +6,7 @@ import Slider1 from "../components/slider/Slider1";
 import Link from "next/link";
 import Head from "next/head";
 import Image from "next/image";
+import { addEbookUser } from "../lib/blog";
 
 function Home() {
   const [inViewport, setInViewport] = useState(false);
@@ -71,41 +72,18 @@ function Home() {
   const [error, setError] = useState("");
 
   async function onSubmit(event) {
-    console.log("🚀 ~ file: index.js:29 ~ event:", event);
+    // console.log("🚀 ~ file: index.js:29 ~ event:", event);
     event.preventDefault();
     setIsLoading(true);
     setError(null); // Clear previous errors when a new request starts
 
     try {
-      // const formData = new FormData(event.currentTarget);
-      // console.log("🚀 ~ file: index.js:35 ~ formData:", formData);
-      // const formDatas = {
-      //   email: "pravin2391@gmail.com",
-      // };
       if (validateForm()) {
-        let headersList = {
-          Accept: "*/*",
-          "User-Agent": "Thunder Client (https://www.thunderclient.com)",
-          "Content-Type": "application/json",
-        };
-        const response = await fetch(
-          // "https://strapi.cloudsocial.io/api/ebookUser",
-          "https://reqres.in/api/users",
-          {
-            method: "POST",
-            body: JSON.stringify({ data: formData }),
-            headers: headersList,
-          }
-        );
-        if (!response.ok) {
-          throw new Error("Failed to submit the data. Please try again.");
-        } else {
+        // console.log("🚀 ~ file: index.js:35 ~ formData:", formData);
+        await addEbookUser(formData).then((data) => {
+          // console.log("🚀 ~ file: blog.js:175 ~ response:", data);
           handlePdfOpen();
-        }
-
-        // Handle response if necessary
-        const data = await response.json();
-        console.log("🚀 ~ file: index.js:57 ~ data:", data);
+        });
       }
     } catch (error) {
       // Capture the error message to display to the user
@@ -1329,14 +1307,14 @@ function Home() {
                           className="h-6 w-6 my-auto text-blueGray-500"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="currentColor"
-                          class="bi bi-telephone-fill"
+                          // class="bi bi-telephone-fill"
                           viewBox="0 0 20 20"
                           width={30}
                           height={30}
                           style={{ color: "#656f8d", marginTop: "15px" }}
                         >
                           <path
-                            fill-rule="evenodd"
+                            fillRule="evenodd"
                             d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
                             // fill="#656f8d"
                           ></path>

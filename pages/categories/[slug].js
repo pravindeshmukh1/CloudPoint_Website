@@ -436,8 +436,8 @@ const categories = ({ blogList }) => {
           </div>
         </section>
 
-        <section className="py-20 bg-blue-500">
-          <div className="container">
+        <section className="py-5">
+          {/* <div className="container">
             <div className="text-center max-w-xl mx-auto">
               <h2 className="mb-4 text-3xl lg:text-3xl text-white font-bold font-heading">
                 <span>Subscribe now to </span>
@@ -472,7 +472,7 @@ const categories = ({ blogList }) => {
                 </button>
               </div>
             </div>
-          </div>
+          </div> */}
         </section>
       </Layout>
     </>
