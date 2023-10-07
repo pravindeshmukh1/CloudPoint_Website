@@ -6,6 +6,7 @@ import ReactMarkdown from "react-markdown";
 import MarkdownRenderer from "../../components/elements/MarkdownRenderer";
 import style from "./markdown-styles.module.css";
 import gfm from "remark-gfm";
+import { getSingleBlog } from "../../lib/blog";
 
 function LinkRenderer(props) {
   return (
@@ -18,27 +19,30 @@ function LinkRenderer(props) {
 // export async function getServerSideProps(context) {
 export const getServerSideProps = async (context) => {
   const { slug } = context.query;
-  console.log(slug);
+ // console.log(slug);
   try {
-    const myHeaders = new Headers();
-    myHeaders.append("Authorization", `${process.env.BEARER_TOKEN}`);
+    // const myHeaders = new Headers();
+    // myHeaders.append("Authorization", `${process.env.BEARER_TOKEN}`);
 
-    const requestOptions = {
-      method: "GET",
-      headers: myHeaders,
-      redirect: "follow",
-    };
+    // const requestOptions = {
+    //   method: "GET",
+    //   headers: myHeaders,
+    //   redirect: "follow",
+    // };
 
-    const response = await fetch(
-      `${process.env.STRAPI_URL}/Blogs?filters[slug][$eq]=${slug}&populate=*`,
-      requestOptions
-    );
+    // const response = await fetch(
+    //   `${process.env.STRAPI_URL}/Blogs?filters[slug][$eq]=${slug}&populate=*`,
+    //   requestOptions
+    // );
 
-    if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
-    }
+    // if (!response.ok) {
+    //   throw new Error(`HTTP error! Status: ${response.status}`);
+    // }
 
-    const data = await response.json(); // Parse the response as JSON
+    // const data = await response.json(); // Parse the response as JSON
+
+    const data = await getSingleBlog(slug);
+
     //  console.log(data);
 
     return { props: { data } };
@@ -49,7 +53,7 @@ export const getServerSideProps = async (context) => {
 };
 
 const BlogSingle = ({ data }) => {
-  console.log("BlogSingle", data);
+  // console.log("BlogSingle", data);
   //   React.useEffect(() => {
   //     let config = {
   //       method: "get",

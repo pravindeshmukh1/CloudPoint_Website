@@ -1,33 +1,36 @@
 import React from "react";
 import Link from "next/link";
 import Layout from "../../components/layout/Layout";
+import { getCategoriesBlogList } from "../../lib/blog";
 
 export const getServerSideProps = async (context) => {
   const { slug } = context.query;
-  console.log("slug", slug);
+  //console.log("slug", slug);
 
   try {
-    const myHeaders = new Headers();
-    myHeaders.append("Authorization", `${process.env.BEARER_TOKEN}`);
+    // const myHeaders = new Headers();
+    // myHeaders.append("Authorization", `${process.env.BEARER_TOKEN}`);
 
-    const requestOptions = {
-      method: "GET",
-      headers: myHeaders,
-      redirect: "follow",
-    };
+    // const requestOptions = {
+    //   method: "GET",
+    //   headers: myHeaders,
+    //   redirect: "follow",
+    // };
 
-    const response = await fetch(
-      `${process.env.STRAPI_URL}/blogs?filters[categories][$eq]=${slug}`,
-      requestOptions
-    );
+    // const response = await fetch(
+    //   `${process.env.STRAPI_URL}/blogs?filters[categories][$eq]=${slug}`,
+    //   requestOptions
+    // );
 
-    if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
-    }
+    // if (!response.ok) {
+    //   throw new Error(`HTTP error! Status: ${response.status}`);
+    // }
 
-    const data = await response.json(); // Parse the response as JSON
-    const blogList = await data.data; // Parse the response as JSON
-    console.log(blogList);
+    // const data = await response.json(); // Parse the response as JSON
+    // const blogList = await data.data; // Parse the response as JSON
+
+    const blogList = await getCategoriesBlogList(slug);
+    // console.log(blogList);
 
     return { props: { blogList } };
   } catch (error) {

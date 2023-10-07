@@ -11,8 +11,6 @@
 //   },
 // };
 
-
-
 // next.config.mjs
 import remarkGfm from "remark-gfm";
 import createMDX from "@next/mdx";
@@ -25,6 +23,7 @@ const nextConfig = {
     domains: ["www.cloudsocial.io", "www.softwaresuggest.com"],
   },
   env: {
+    DOMAIN_URL: "https://www.cloudsocial.io",
     TAWK: "5fc258c9920fc91564cb894d",
     STRAPI_URL: "https://strapi.cloudsocial.io/api",
     BEARER_TOKEN:

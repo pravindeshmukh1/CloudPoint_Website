@@ -1,32 +1,35 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Layout from "../components/layout/Layout";
+import { getBlogList } from "../lib/blog";
 
 export const getServerSideProps = async (context) => {
   const { slug } = context.query;
-  console.log(slug);
+ // console.log(slug);
   try {
-    const myHeaders = new Headers();
-    myHeaders.append("Authorization", `${process.env.BEARER_TOKEN}`);
+    // const myHeaders = new Headers();
+    // myHeaders.append("Authorization", `${process.env.BEARER_TOKEN}`);
 
-    const requestOptions = {
-      method: "GET",
-      headers: myHeaders,
-      redirect: "follow",
-    };
+    // const requestOptions = {
+    //   method: "GET",
+    //   headers: myHeaders,
+    //   redirect: "follow",
+    // };
 
-    const response = await fetch(
-      `${process.env.STRAPI_URL}/Blogs`,
-      requestOptions
-    );
+    // const response = await fetch(
+    //   `${process.env.STRAPI_URL}/Blogs`,
+    //   requestOptions
+    // );
 
-    if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
-    }
+    // if (!response.ok) {
+    //   throw new Error(`HTTP error! Status: ${response.status}`);
+    // }
 
-    const data = await response.json(); // Parse the response as JSON
-    const blogList = await data.data; // Parse the response as JSON
-    console.log(blogList);
+    // const data = await response.json(); // Parse the response as JSON
+    // const blogList = await data.data; // Parse the response as JSON
+    // console.log(blogList);
+
+    const blogList = await getBlogList();
 
     return { props: { blogList } };
   } catch (error) {
@@ -36,7 +39,7 @@ export const getServerSideProps = async (context) => {
 };
 
 const Blog = ({ blogList }) => {
-  console.log("🚀 ~ file: blog.js:38 ~ blogList:", blogList);
+  // console.log("🚀 ~ file: blog.js:38 ~ blogList:", blogList);
 
   //   const [blogData, setBlogData] = React.useState([]);
   //  // console.log("🚀 ~ file: blog.js:8 ~ blogData:", blogData);
@@ -147,7 +150,7 @@ const Blog = ({ blogList }) => {
 
         // Handle response if necessary
         const data = await response.json();
-        console.log("🚀 ~ file: index.js:57 ~ data:", data);
+        // console.log("🚀 ~ file: index.js:57 ~ data:", data);
       }
     } catch (error) {
       // Capture the error message to display to the user
@@ -459,14 +462,14 @@ const Blog = ({ blogList }) => {
                       ""
                     )}
                   </div>
-                    <div className="flex w-full md:w-2/31 mb-3 mt-2 md:mb-0 md:mr-61 justify-end">
-                      <button
-                        className="w-full md:w-auto mt-2 py-4 px-8 text-xs text-white text-blue-800 hover:text-white font-semibold leading-none border border-blue-300 hover:border-blue-300 bg-white hover:bg-blue-500 rounded transition duration-300 ease-in-out"
-                        type="submit"
-                        disabled={isLoading}
-                      >
-                        {isLoading ? "Loading" : "Sign Up"}{" "}
-                      </button>
+                  <div className="flex w-full md:w-2/31 mb-3 mt-2 md:mb-0 md:mr-61 justify-end">
+                    <button
+                      className="w-full md:w-auto mt-2 py-4 px-8 text-xs text-white text-blue-800 hover:text-white font-semibold leading-none border border-blue-300 hover:border-blue-300 bg-white hover:bg-blue-500 rounded transition duration-300 ease-in-out"
+                      type="submit"
+                      disabled={isLoading}
+                    >
+                      {isLoading ? "Loading" : "Sign Up"}{" "}
+                    </button>
                   </div>
                 </div>
               </form>
