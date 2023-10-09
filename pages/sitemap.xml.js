@@ -2,13 +2,24 @@ import { getBlogList } from "../lib/blog";
 
 //pages/sitemap.xml.js
 const EXTERNAL_DATA_URL = `${process.env.STRAPI_URL}/Blogs`;
-const domainUrl1 = "https://www.cloudsocial.io/blog";
+const domain = "https://cloudsocial.io";
 const domainUrl = `${process.env.DOMAIN_URL}/blog`;
 
 function generateSiteMap(blogList) {
   return `<?xml version="1.0" encoding="UTF-8"?>
    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
+   <url>
+       <loc>${`${domain}/video`}</loc>
+       <loc>${`${domain}/literature`}</loc>
+       <loc>${`${domain}/integration`}</loc>
+       <loc>${`${domain}/compendium`}</loc>
+       <loc>${`${domain}/pricing`}</loc>
+       <loc>${`${domain}/blog`}</loc>
+       <loc>${`${domain}/privacy-policy`}</loc>
+       <loc>${`${domain}/terms-of-service`}</loc>
+       <loc>${`${domain}/gdpr`}</loc>
+       <loc>${`${domain}/security`}</loc>
+     </url>
      ${blogList
        .map(({ id, attributes }) => {
          return `
@@ -30,22 +41,7 @@ function SiteMap() {
 }
 
 export const getServerSideProps = async ({ res }) => {
-  //   const myHeaders = new Headers();
-  //   myHeaders.append("Authorization", `${process.env.BEARER_TOKEN}`);
-
-  //   const requestOptions = {
-  //     method: "GET",
-  //     headers: myHeaders,
-  //     redirect: "follow",
-  //   };
-  //   // We make an API call to gather the URLs for our site
-  //   const request = await fetch(EXTERNAL_DATA_URL, requestOptions);
-  //   const data = await request.json();
-  //   const blogList = await data.data;
-
   const blogList = await getBlogList();
-
-  //console.log("🚀 ~ file: sitemap.xml.js:38 ~ blogList:", blogList);
 
   // We generate the XML sitemap with the posts data
   const sitemap = generateSiteMap(blogList);

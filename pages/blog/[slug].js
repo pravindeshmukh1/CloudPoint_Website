@@ -7,6 +7,7 @@ import MarkdownRenderer from "../../components/elements/MarkdownRenderer";
 import style from "./markdown-styles.module.css";
 import gfm from "remark-gfm";
 import { getSingleBlog } from "../../lib/blog";
+import Head from "next/head";
 
 function LinkRenderer(props) {
   return (
@@ -19,7 +20,7 @@ function LinkRenderer(props) {
 // export async function getServerSideProps(context) {
 export const getServerSideProps = async (context) => {
   const { slug } = context.query;
- // console.log(slug);
+  // console.log(slug);
   try {
     // const myHeaders = new Headers();
     // myHeaders.append("Authorization", `${process.env.BEARER_TOKEN}`);
@@ -77,6 +78,14 @@ const BlogSingle = ({ data }) => {
   //   }, []);
   return (
     <>
+      <Head>
+        <meta charSet="utf-8" name="CloudSocial Solution" />
+        <title>{data.data[0].attributes.metaTitle}</title>
+        <meta
+          name="description"
+          content={`${data.data[0].attributes.metaDescription}`}
+        />
+      </Head>
       <Layout>
         <section className="pb-20">
           <div

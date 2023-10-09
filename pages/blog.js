@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Layout from "../components/layout/Layout";
 import { addEbookUser, getBlogList } from "../lib/blog";
+import Head from "next/head";
 
 export const getServerSideProps = async (context) => {
   const { slug } = context.query;
@@ -139,6 +140,14 @@ const Blog = ({ blogList }) => {
 
   return (
     <>
+     <Head>
+        <meta charSet="utf-8" name="CloudSocial Solution" />
+        <title>Social Media Management and Marketing Blogs | CloudSocial</title>
+        <meta
+          name="description"
+          content="Social Media Management and Marketing Blogs"
+        />
+      </Head>
       <Layout>
         <section className="py-20">
           <div className="container">
