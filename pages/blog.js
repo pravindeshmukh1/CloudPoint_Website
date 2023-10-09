@@ -19,6 +19,7 @@ export const getServerSideProps = async (context) => {
 };
 
 const Blog = ({ blogList }) => {
+  console.log("🚀 ~ file: blog.js:22 ~ blogList:", blogList);
   const router = useRouter()
   const [errors, setErrors] = useState({});
 
@@ -236,9 +237,9 @@ const Blog = ({ blogList }) => {
                     <Link href={`/blog/${data.attributes.slug}`} legacyBehavior>
                       <a>
                         <img
-                          className="h-80 w-full object-cover rounded"
-                          src="/assets/imgs/placeholders/img-8.png"
-                          // src={data.attributes.blogImg}
+                          className="h-80 w-full object-cover1 rounded"
+                          // src="/assets/imgs/placeholders/img-8.png"
+                          src={`https://strapi.cloudsocial.io${data.attributes.thumbnail.data[0].attributes.url}`}
                           alt={data.attributes.title}
                         />
                       </a>
