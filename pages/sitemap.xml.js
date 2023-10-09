@@ -19,7 +19,10 @@ function generateSiteMap(blogList) {
        <loc>${`${domain}/terms-of-service`}</loc>
        <loc>${`${domain}/gdpr`}</loc>
        <loc>${`${domain}/security`}</loc>
-     </url>
+       <lastmod>${new Date().toISOString()}</lastmod>
+       <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
      ${blogList
        .map(({ id, attributes }) => {
          return `
