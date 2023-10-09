@@ -169,6 +169,13 @@ const Header = ({ handleHidden }) => {
                       </a>
                     </Link>
                   </li>
+                  <li>
+                    <Link href="/ebook" legacyBehavior>
+                      <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
+                        E-book
+                      </a>
+                    </Link>
+                  </li>
                   {/* <li>
                     <Link href="/faqs" legacyBehavior>
                       <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">

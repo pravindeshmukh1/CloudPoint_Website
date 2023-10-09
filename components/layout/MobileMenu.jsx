@@ -69,7 +69,13 @@ const MobileMenu = ({ hiddenClass, handleRemove }) => {
                     Home
                   </a>
                 </Link>
-                <ul className={isActive.key == 1 ? "dropdown pl-5 border rounded-xl border-blueGray-200" : "hidden"}>
+                <ul
+                  className={
+                    isActive.key == 1
+                      ? "dropdown pl-5 border rounded-xl border-blueGray-200"
+                      : "hidden"
+                  }
+                >
                   <li>
                     <Link
                       href="https://calendly.com/cloudsocial-support/csdemo"
@@ -127,7 +133,13 @@ const MobileMenu = ({ hiddenClass, handleRemove }) => {
                     Resources
                   </a>
                 </Link>
-                <ul className={isActive.key == 2 ? "dropdown pl-5 border rounded-xl border-blueGray-200" : "hidden"}>
+                <ul
+                  className={
+                    isActive.key == 2
+                      ? "dropdown pl-5 border rounded-xl border-blueGray-200"
+                      : "hidden"
+                  }
+                >
                   <li>
                     <Link href="video" legacyBehavior>
                       <a className="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500">
@@ -156,6 +168,13 @@ const MobileMenu = ({ hiddenClass, handleRemove }) => {
                       </a>
                     </Link>
                   </li>
+                  <li>
+                    <Link href="/ebook" legacyBehavior>
+                      <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
+                        E-book
+                      </a>
+                    </Link>
+                  </li>
                 </ul>
               </li>
               <li className="mb-1 rounded-xl">
@@ -181,7 +200,7 @@ const MobileMenu = ({ hiddenClass, handleRemove }) => {
               <li className="mb-1 rounded-xl">
                 <Link href="/blog" legacyBehavior>
                   <a className="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500 rounded-xl">
-                  Blog
+                    Blog
                   </a>
                 </Link>
               </li>
@@ -230,9 +249,7 @@ const MobileMenu = ({ hiddenClass, handleRemove }) => {
                   </li>
                 </ul>
               </li> */}
-              <li
-                className={"mb-1 menu-item-has-children rounded-xl"}
-              >
+              <li className={"mb-1 menu-item-has-children rounded-xl"}>
                 <Link
                   href="https://app.cloudsocial.io/accounts/login"
                   legacyBehavior
@@ -259,13 +276,22 @@ const MobileMenu = ({ hiddenClass, handleRemove }) => {
                     Start Free Trail
                   </a>
                 </Link>
-                <ul className={isActive.key == 4 ? "dropdown pl-5 border rounded-xl border-blueGray-200" : "hidden"}>
+                <ul
+                  className={
+                    isActive.key == 4
+                      ? "dropdown pl-5 border rounded-xl border-blueGray-200"
+                      : "hidden"
+                  }
+                >
                   <li>
                     <Link
                       href="https://app.cloudsocial.io/accounts/gold/9"
                       legacyBehavior
                     >
-                      <a className="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500" target="_blank">
+                      <a
+                        className="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500"
+                        target="_blank"
+                      >
                         Brand
                       </a>
                     </Link>
@@ -275,7 +301,10 @@ const MobileMenu = ({ hiddenClass, handleRemove }) => {
                       href="https://app.cloudsocial.io/accounts/platinum/17"
                       legacyBehavior
                     >
-                      <a className="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500" target="_blank">
+                      <a
+                        className="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500"
+                        target="_blank"
+                      >
                         Agency
                       </a>
                     </Link>

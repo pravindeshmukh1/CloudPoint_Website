@@ -1,35 +1,14 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Layout from "../components/layout/Layout";
-import { addEbookUser, getBlogList } from "../lib/blog";
 import Head from "next/head";
+import { addEbookUser, getBlogList } from "../lib/apiCall";
+import { useRouter } from "next/router";
 
 export const getServerSideProps = async (context) => {
   const { slug } = context.query;
   // console.log(slug);
   try {
-    // const myHeaders = new Headers();
-    // myHeaders.append("Authorization", `${process.env.BEARER_TOKEN}`);
-
-    // const requestOptions = {
-    //   method: "GET",
-    //   headers: myHeaders,
-    //   redirect: "follow",
-    // };
-
-    // const response = await fetch(
-    //   `${process.env.STRAPI_URL}/Blogs`,
-    //   requestOptions
-    // );
-
-    // if (!response.ok) {
-    //   throw new Error(`HTTP error! Status: ${response.status}`);
-    // }
-
-    // const data = await response.json(); // Parse the response as JSON
-    // const blogList = await data.data; // Parse the response as JSON
-    // console.log(blogList);
-
     const blogList = await getBlogList();
 
     return { props: { blogList } };
@@ -40,31 +19,7 @@ export const getServerSideProps = async (context) => {
 };
 
 const Blog = ({ blogList }) => {
-  // console.log("🚀 ~ file: blog.js:38 ~ blogList:", blogList);
-
-  //   const [blogData, setBlogData] = React.useState([]);
-  //  // console.log("🚀 ~ file: blog.js:8 ~ blogData:", blogData);
-
-  //   const getAllBlogs = async () => {
-  //     let headersList = {
-  //       Accept: "*/*",
-  //       Authorization:
-  //       `${process.env.BEARER_TOKEN}`
-  //     };
-  //     let response = await fetch(`${process.env.STRAPI_URL}`, {
-  //       method: "GET",
-  //       headers: headersList,
-  //     });
-
-  //     let data = await response.json();
-  //     console.log(data);
-  //     setBlogData(data.data.toReversed());
-  //   };
-
-  //   React.useEffect(() => {
-  //     getAllBlogs();
-  //   }, []);
-
+  const router = useRouter()
   const [errors, setErrors] = useState({});
 
   const [formData, setFormData] = useState({
@@ -73,15 +28,6 @@ const Blog = ({ blogList }) => {
     phoneNumber: "",
     // Other form fields
   });
-
-  const pdfUrls =
-    "https://www.cloudsocial.io/wp-content/uploads/2023/The%20Ultimate%20Instagram%20Marketing%20Guide-For%20Beginners%20in%202023.pdf";
-
-  const handlePdfOpen = () => {
-    // Open the PDF in a new tab.
-    window.open(pdfUrls, "_blank");
-    // setShow(false);
-  };
   const validateForm = () => {
     const newErrors = {};
     // Add validation rules here
@@ -126,8 +72,16 @@ const Blog = ({ blogList }) => {
       if (validateForm()) {
         // console.log("🚀 ~ file: index.js:35 ~ formData:", formData);
         await addEbookUser(formData).then((data) => {
-          console.log("🚀 ~ file: blog.js:175 ~ response:", data);
-          handlePdfOpen();
+          // console.log("🚀 ~ file: blog.js:175 ~ response:", data);
+          const localData = {
+            name: data.data.attributes.name,
+            email: data.data.attributes.email,
+            phoneNumber: data.data.attributes.phoneNumber,
+          };
+
+          localStorage.setItem("user", JSON.stringify(localData));
+          // handlePdfOpen();
+          router.push("/ebook");
         });
       }
     } catch (error) {
@@ -140,7 +94,7 @@ const Blog = ({ blogList }) => {
 
   return (
     <>
-     <Head>
+      <Head>
         <meta charSet="utf-8" name="CloudSocial Solution" />
         <title>Social Media Management and Marketing Blogs | CloudSocial</title>
         <meta
@@ -369,12 +323,15 @@ const Blog = ({ blogList }) => {
                         name="name"
                         value={formData.name}
                         onChange={handleChange}
-                        isInvalid={!!errors.name}
+                        // isInvalid={!!errors.name}
                         placeholder="Type your name"
                       />
                     </div>
                     {errors.name ? (
-                      <p className="mb-2 text-xs" style={{ color: "red" }}>
+                      <p
+                        className="mb-2 text-xs flex justify-end pr-3"
+                        style={{ color: "darkred" }}
+                      >
                         {errors.name}
                       </p>
                     ) : (
@@ -398,12 +355,15 @@ const Blog = ({ blogList }) => {
                         name="email"
                         value={formData.email}
                         onChange={handleChange}
-                        isInvalid={!!errors.email}
+                        // isInvalid={!!errors.email}
                         placeholder="Type your e-mail"
                       />
                     </div>
                     {errors.email ? (
-                      <p className="mb-2 text-xs" style={{ color: "red" }}>
+                      <p
+                        className="mb-2 text-xs flex justify-end pr-3"
+                        style={{ color: "darkred" }}
+                      >
                         {errors.email}
                       </p>
                     ) : (
@@ -435,12 +395,15 @@ const Blog = ({ blogList }) => {
                         name="phoneNumber"
                         value={formData.phoneNumber}
                         onChange={handleChange}
-                        isInvalid={!!errors.phoneNumber}
+                        // isInvalid={!!errors.phoneNumber}
                         placeholder="Type your phoneNumber"
                       />
                     </div>
                     {errors.phoneNumber ? (
-                      <p className="mb-2 text-xs" style={{ color: "red" }}>
+                      <p
+                        className="mb-2 text-xs flex justify-end pr-3"
+                        style={{ color: "darkred" }}
+                      >
                         {errors.phoneNumber}
                       </p>
                     ) : (

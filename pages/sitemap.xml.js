@@ -1,4 +1,4 @@
-import { getBlogList } from "../lib/blog";
+import { getBlogList } from "../lib/apiCall";
 
 //pages/sitemap.xml.js
 const EXTERNAL_DATA_URL = `${process.env.STRAPI_URL}/Blogs`;
@@ -68,6 +68,12 @@ function generateSiteMap(blogList) {
       <changefreq>monthly</changefreq>
       <priority>1.0</priority>
     </url>
+    <url>
+    <loc>${`${domain}/ebook`}</loc>
+    <lastmod>${new Date().toISOString()}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
     
      ${blogList
        .map(({ id, attributes }) => {

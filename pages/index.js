@@ -6,9 +6,12 @@ import Slider1 from "../components/slider/Slider1";
 import Link from "next/link";
 import Head from "next/head";
 import Image from "next/image";
-import { addEbookUser } from "../lib/blog";
+import { useRouter } from "next/router";
+import { addEbookUser } from "../lib/apiCall";
 
 function Home() {
+  const router = useRouter()
+
   const [inViewport, setInViewport] = useState(false);
 
   const handleScroll = () => {
@@ -81,8 +84,19 @@ function Home() {
       if (validateForm()) {
         // console.log("🚀 ~ file: index.js:35 ~ formData:", formData);
         await addEbookUser(formData).then((data) => {
-          // console.log("🚀 ~ file: blog.js:175 ~ response:", data);
-          handlePdfOpen();
+          // console.log(
+          //   "🚀 ~ file: blog.js:175 ~ response:",
+          //   data.data.attributes.name
+          // );
+          const localData = {
+            name: data.data.attributes.name,
+            email: data.data.attributes.email,
+            phoneNumber: data.data.attributes.phoneNumber,
+          };
+
+          localStorage.setItem("user", JSON.stringify(localData));
+          // handlePdfOpen();
+          router.push('/ebook')
         });
       }
     } catch (error) {
@@ -1254,20 +1268,21 @@ function Home() {
                           name="name"
                           value={formData.name}
                           onChange={handleChange}
-                          isInvalid={!!errors.name}
+                          // isInvalid={!!errors.name}
                           placeholder="Type your name"
                         />
-                        {errors.name ? (
-                          <p
-                            className="mb-2 text-xs"
-                            style={{ color: "darkred" }}
-                          >
-                            {errors.name}
-                          </p>
-                        ) : (
-                          ""
-                        )}
                       </div>
+
+                      {errors.name ? (
+                        <p
+                          className="mb-2 text-xs flex justify-end pr-3"
+                          style={{ color: "darkred" }}
+                        >
+                          {errors.name}
+                        </p>
+                      ) : (
+                        ""
+                      )}
                     </div>
                     <div className="w-full mb-2">
                       <div className="flex w-full md:w-2/31 px-3 mb-3 md:mb-0 md:mr-6 bg-blueGray-100 rounded">
@@ -1286,20 +1301,20 @@ function Home() {
                           name="email"
                           value={formData.email}
                           onChange={handleChange}
-                          isInvalid={!!errors.email}
+                          // isInvalid={!!errors.email}
                           placeholder="Type your e-mail"
                         />
-                        {errors.email ? (
-                          <p
-                            className="mb-2 text-xs"
-                            style={{ color: "darkred" }}
-                          >
-                            {errors.email}
-                          </p>
-                        ) : (
-                          ""
-                        )}
                       </div>
+                      {errors.email ? (
+                        <p
+                          className="mb-2 text-xs flex justify-end pr-3"
+                          style={{ color: "darkred" }}
+                        >
+                          {errors.email}
+                        </p>
+                      ) : (
+                        ""
+                      )}
                     </div>
                     <div className="w-full mb-2">
                       <div className="flex w-full md:w-2/31 px-3 mb-3 md:mb-0 md:mr-6 bg-blueGray-100 rounded">
@@ -1326,20 +1341,20 @@ function Home() {
                           name="phoneNumber"
                           value={formData.phoneNumber}
                           onChange={handleChange}
-                          isInvalid={!!errors.phoneNumber}
+                          // isInvalid={!!errors.phoneNumber}
                           placeholder="Type your phoneNumber"
                         />
-                        {errors.phoneNumber ? (
-                          <p
-                            className="mb-2 text-xs"
-                            style={{ color: "darkred" }}
-                          >
-                            {errors.phoneNumber}
-                          </p>
-                        ) : (
-                          ""
-                        )}
                       </div>
+                      {errors.name ? (
+                        <p
+                          className="mb-2 text-xs flex justify-end pr-3"
+                          style={{ color: "darkred" }}
+                        >
+                          {errors.phoneNumber}
+                        </p>
+                      ) : (
+                        ""
+                      )}
                     </div>
                     <div className="w-full mb-2 flex justify-end">
                       <button

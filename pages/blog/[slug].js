@@ -6,8 +6,9 @@ import ReactMarkdown from "react-markdown";
 import MarkdownRenderer from "../../components/elements/MarkdownRenderer";
 import style from "./markdown-styles.module.css";
 import gfm from "remark-gfm";
-import { getSingleBlog } from "../../lib/blog";
 import Head from "next/head";
+import Image from "next/image";
+import { getSingleBlog } from "../../lib/apiCall";
 
 function LinkRenderer(props) {
   return (
@@ -88,84 +89,48 @@ const BlogSingle = ({ data }) => {
       </Head>
       <Layout>
         <section className="pb-20">
-          <div
-            className="pt-20 pb-8 mb-12 bg-cover bg-no-repeat"
-            style={{
-              //  backgroundImage: "url('assets/imgs/placeholders/img-14.jpg')",
-              // backgroundImage: `url('http://localhost:1337${data.data[0].attributes.thumbnail.data[0].attributes.url}')`,
-              backgroundImage: `url('https://strapi.cloudsocial.io${data.data[0].attributes.thumbnail.data[0].attributes.url}')`,
-            }}
-          >
-            <div className="container">
-              <div className="max-w-2xl mx-auto">
-                <div className="text-center mb-6">
-                  <span className="text-base md:text-lg">
-                    <span className="text-base md:text-lg">
-                      <Link
-                        href={`/categories/${data.data[0].attributes.categories}`}
-                        legacyBehavior
-                      >
-                        <a className="text-blueGray-200 hover:underline">
-                          <span className="inline-block py-1 px-3 text-xs font-semibold bg-blue-100 text-blue-600 rounded-xl mr-3">
-                            {data.data[0].attributes.categories}
-                          </span>
-                        </a>
-                      </Link>
-                      <span className="text-blueGray-500 text-sm">
-                        {data.data[0].attributes.date}
-                      </span>
-                    </span>
-                  </span>
-                  <h2 className="text-4xl md:text-5xl mt-4 text-blue-400 font-bold font-heading">
-                    {data.data[0].attributes.title}
-                  </h2>
-                </div>
-                {/* <div className="flex justify-center mb-8">
-                  <img
-                    className="w-12 h-12 object-cover rounded-full"
-                    src="/assets/imgs/placeholders/avatar-8.png"
-                    alt="Monst"
-                  />
-                  <div className="pl-4">
-                    <p className="text-blueGray-100 mb-1">Alice Bradley</p>
-                    <p className="text-xs text-blueGray-200 font-semibold">
-                      Co Founders
-                    </p>
-                  </div>
-                </div> */}
-                <div className="flex justify-center">
-                  <div className="">
-                    <p className="text-black font-bold text-xs">
-                      {/* Categories : {data.data[0].attributes.categories} */}
-                      &nbsp;
-                      <span className="text-blueGray-200 text-xs font">
-                        {data.data[0].attributes.date}
-                      </span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+         
+          <div className="flex justify-center">
+            <img
+              className="w-2/3 h-128 object-cover1 rounded relative"
+              src={`https://strapi.cloudsocial.io${data.data[0].attributes.thumbnail.data[0].attributes.url}`}
+              alt={data.data[0].attributes.title}
+            />
+
           </div>
           <div className="container">
-            {/* <div className="text-center">
-              <h2 className="text-4xl md:text-5xl mt-4 text-blue-400 font-bold font-heading">
+            <div className="text-center">
+              <h2 className="text-4xl md:text-4xl mt-4 text-blue-400 font-bold font-heading">
                 {data.data[0].attributes.title}
               </h2>
             </div>
-            <div className="flex justify-center">
-              <div className="">
-                <p className="text-black mb-1 font-bold text-xs">
-                  Categories : {data.data[0].attributes.categories}
-                </p>
+            <div className="flex justify-end">
+              <div className="text-center mb-6">
+                <span className="text-base md:text-lg">
+                  <span className="text-base md:text-lg">
+                    <Link
+                      href={`/categories/${data.data[0].attributes.categories}`}
+                      legacyBehavior
+                    >
+                      <a className="text-blueGray-200 hover:underline">
+                        <span className="inline-block py-1 px-3 text-xs font-semibold bg-blue-100 text-blue-600 rounded-xl mr-3">
+                          {data.data[0].attributes.categories}
+                        </span>
+                      </a>
+                    </Link>
+                    <span className="text-blueGray-500 text-sm">
+                      {data.data[0].attributes.date}
+                    </span>
+                  </span>
+                </span>
               </div>
-            </div> */}
+            </div>
             {/* <div
               className="max-w-2xl mx-auto"
               dangerouslySetInnerHTML={{
                 __html: data.data[0].attributes.content,
               }}
-            /> */}
+            />
 
             {/* <ReactMarkdown
               components={{
