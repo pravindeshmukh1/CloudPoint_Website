@@ -10,19 +10,65 @@ function generateSiteMap(blogList) {
    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
    <url>
        <loc>${`${domain}/video`}</loc>
-       <loc>${`${domain}/literature`}</loc>
-       <loc>${`${domain}/integration`}</loc>
-       <loc>${`${domain}/compendium`}</loc>
-       <loc>${`${domain}/pricing`}</loc>
-       <loc>${`${domain}/blog`}</loc>
-       <loc>${`${domain}/privacy-policy`}</loc>
-       <loc>${`${domain}/terms-of-service`}</loc>
-       <loc>${`${domain}/gdpr`}</loc>
-       <loc>${`${domain}/security`}</loc>
        <lastmod>${new Date().toISOString()}</lastmod>
        <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
+    <url>
+       <loc>${`${domain}/literature`}</loc>
+       <lastmod>${new Date().toISOString()}</lastmod>
+       <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+       <loc>${`${domain}/integration`}</loc>
+       <lastmod>${new Date().toISOString()}</lastmod>
+       <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+       <loc>${`${domain}/compendium`}</loc>
+       <lastmod>${new Date().toISOString()}</lastmod>
+       <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+       <loc>${`${domain}/pricing`}</loc>
+       <lastmod>${new Date().toISOString()}</lastmod>
+       <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+       <loc>${`${domain}/blog`}</loc>
+       <lastmod>${new Date().toISOString()}</lastmod>
+       <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+       <loc>${`${domain}/privacy-policy`}</loc>
+       <lastmod>${new Date().toISOString()}</lastmod>
+       <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+       <loc>${`${domain}/terms-of-service`}</loc>
+       <lastmod>${new Date().toISOString()}</lastmod>
+       <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+       <loc>${`${domain}/gdpr`}</loc>
+       <lastmod>${new Date().toISOString()}</lastmod>
+       <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+      <loc>${`${domain}/security`}</loc>
+      <lastmod>${new Date().toISOString()}</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>1.0</priority>
+    </url>
+    
      ${blogList
        .map(({ id, attributes }) => {
          return `
