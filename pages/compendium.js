@@ -182,7 +182,7 @@ const Compendium = () => {
                     className="mt-3"
                     alt="add user"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Add_User.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Add_User.png"
                   />
                 </div>
                 <br />
@@ -198,7 +198,7 @@ const Compendium = () => {
                     className="mt-3"
                     alt="recently added"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Recently_Added.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Recently_Added.png"
                     //
                   />
                 </div>
@@ -234,7 +234,7 @@ const Compendium = () => {
                     className="mt-3"
                     alt="brand creation"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Brand_Creation.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Brand_Creation.png"
                   />
                 </div>
                 <br />
@@ -254,7 +254,7 @@ const Compendium = () => {
                     className="mt-3"
                     alt="connect to facebook page"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Connect_To_Facebook.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Connect_To_Facebook.png"
                   />
                 </div>
                 <br />
@@ -263,7 +263,7 @@ const Compendium = () => {
                     className="mt-3"
                     alt="facebook login page"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Facebook_login.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Facebook_login.png"
                   />
                 </div>
                 <div className="flex justify-center items-center">
@@ -271,7 +271,7 @@ const Compendium = () => {
                     className="mt-3"
                     alt="Facebook_Auth"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Facebook_Auth.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Facebook_Auth.png"
                   />
                 </div>
                 <br />
@@ -280,7 +280,7 @@ const Compendium = () => {
                     className="mt-3"
                     alt="facebook auth page"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Facebook_Auth_2.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Facebook_Auth_2.png"
                   />
                 </div>
                 <br />
@@ -289,7 +289,7 @@ const Compendium = () => {
                     className="mt-3"
                     alt="Facebook_Auth_3"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Facebook_Auth_3.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Facebook_Auth_3.png"
                   />
                 </div>
                 <br />
@@ -298,7 +298,7 @@ const Compendium = () => {
                     className="mt-3"
                     alt="Page_selection"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Page_selection.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Page_selection.png"
                   />
                 </div>
                 <br />
@@ -315,7 +315,7 @@ const Compendium = () => {
                     className="mt-3"
                     alt="connect to instagram page"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Connect_To_Instagram.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Connect_To_Instagram.png"
                   />
                 </div>
                 <br />
@@ -324,7 +324,7 @@ const Compendium = () => {
                     className="mt-3"
                     alt="Facebook_Auth_Insta_1"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Facebook_Auth_Insta_1.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Facebook_Auth_Insta_1.png"
                   />
                 </div>
                 <br />
@@ -339,7 +339,7 @@ const Compendium = () => {
                     }}
                     alt="Facebook_Auth_Insta_2"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Facebook_Auth_Insta_2.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Facebook_Auth_Insta_2.png"
                   />
                 </div>
                 <div className="flex justify-center items-center">
@@ -353,7 +353,7 @@ const Compendium = () => {
                     }}
                     alt="Facebook_Auth_Insta_3"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Facebook_Auth_Insta_3.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Facebook_Auth_Insta_3.png"
                   />
                 </div>
                 <div className="flex justify-center items-center">
@@ -367,7 +367,7 @@ const Compendium = () => {
                     }}
                     alt="Facebook_Auth_Insta_4"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Facebook_Auth_Insta_4.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Facebook_Auth_Insta_4.png"
                   />
                 </div>
                 <div className="flex justify-center items-center">
@@ -381,7 +381,7 @@ const Compendium = () => {
                     }}
                     alt="Facebook_Auth_Insta_5"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Facebook_Auth_Insta_5.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Facebook_Auth_Insta_5.png"
                   />
                 </div>
                 <div className="flex justify-center items-center">
@@ -395,7 +395,7 @@ const Compendium = () => {
                     }}
                     alt="Facebook_Auth_Insta_6"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Facebook_Auth_Insta_6.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Facebook_Auth_Insta_6.png"
                   />
                 </div>
 
@@ -404,7 +404,7 @@ const Compendium = () => {
                     className="mt-3"
                     alt="Page_selection_Insta"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Page_selection_Insta.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Page_selection_Insta.png"
                   />
                 </div>
                 <br />
@@ -423,7 +423,7 @@ const Compendium = () => {
                     }}
                     alt="Connect_To_twitter"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Connect_To_twitter.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Connect_To_twitter.png"
                   />
                 </div>
                 <div className="flex justify-center items-center">
@@ -437,7 +437,7 @@ const Compendium = () => {
                     }}
                     alt="twiter_Auth_1"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/twiter_Auth_1.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/twiter_Auth_1.png"
                   />
                 </div>
                 <br />
@@ -456,7 +456,7 @@ const Compendium = () => {
                     }}
                     alt="Connect_To_Linkedin"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Connect_To_Linkedin.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Connect_To_Linkedin.png"
                   />
                 </div>
                 <div className="flex justify-center items-center">
@@ -470,7 +470,7 @@ const Compendium = () => {
                     }}
                     alt="LinkedIn_Login"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/LinkedIn_Login.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/LinkedIn_Login.png"
                   />
                 </div>
                 <div className="flex justify-center items-center">
@@ -484,7 +484,7 @@ const Compendium = () => {
                     }}
                     alt="LinkedIn_Auth_1"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/LinkedIn_Auth_1.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/LinkedIn_Auth_1.png"
                   />
                 </div>
                 <br />
@@ -493,7 +493,7 @@ const Compendium = () => {
                     className="mt-3"
                     alt="Page_selection_LinkedIn"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Page_selection_LinkedIn.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Page_selection_LinkedIn.png"
                   />
                 </div>
                 <br />
@@ -512,7 +512,7 @@ const Compendium = () => {
                     }}
                     alt="Connect_To_Pinterest"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Connect_To_Pinterest.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Connect_To_Pinterest.png"
                   />
                 </div>
                 <br />
@@ -521,7 +521,7 @@ const Compendium = () => {
                     className="mt-3"
                     alt="Login_To_Pinterest"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Login_To_Pinterest.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Login_To_Pinterest.png"
                   />
                 </div>
                 <br />
@@ -530,7 +530,7 @@ const Compendium = () => {
                     className="mt-3"
                     alt="Pinterest_Auth"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Pinterest_Auth.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Pinterest_Auth.png"
                   />
                 </div>
                 <br />
@@ -539,7 +539,7 @@ const Compendium = () => {
                     className="mt-3"
                     alt="Page_selection_Pinterest"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Page_selection_Pinterest.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Page_selection_Pinterest.png"
                   />
                 </div>
                 <br />
@@ -558,7 +558,7 @@ const Compendium = () => {
                     }}
                     alt="Connect_To_Youtube"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Connect_To_Youtube.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Connect_To_Youtube.png"
                   />
                 </div>
                 <br />
@@ -573,7 +573,7 @@ const Compendium = () => {
                     }}
                     alt="Login_To_Youtube"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Login_To_Youtube.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Login_To_Youtube.png"
                   />
                 </div>
                 <br />
@@ -588,7 +588,7 @@ const Compendium = () => {
                     }}
                     alt="Youtube_Auth"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Youtube_Auth.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Youtube_Auth.png"
                   />
                 </div>
                 <br />
@@ -597,7 +597,7 @@ const Compendium = () => {
                     className="mt-3"
                     alt="Page_selection_Youtube"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Page_selection_Youtube.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Page_selection_Youtube.png"
                   />
                 </div>
                 <br />
@@ -610,7 +610,7 @@ const Compendium = () => {
                     className="mt-3"
                     alt="Email_Channel_config"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Email_Channel_config.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Email_Channel_config.png"
                   />
                 </div>
                 <br />
@@ -629,7 +629,7 @@ const Compendium = () => {
                     }}
                     alt="Connect_To_GMB"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Connect_To_GMB.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Connect_To_GMB.png"
                   />
                 </div>
                 <div className="flex justify-center items-center">
@@ -643,7 +643,7 @@ const Compendium = () => {
                     }}
                     alt="Login_To_GMB"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Login_To_GMB.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Login_To_GMB.png"
                   />
                 </div>
                 <div className="flex justify-center items-center">
@@ -657,7 +657,7 @@ const Compendium = () => {
                     }}
                     alt="Login_To_GMB_2"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Login_To_GMB_2.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Login_To_GMB_2.png"
                   />
                 </div>
                 <div className="flex justify-center items-center">
@@ -671,7 +671,7 @@ const Compendium = () => {
                     }}
                     alt="GMB_Auth"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/GMB_Auth.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/GMB_Auth.png"
                   />
                 </div>
                 <br />
@@ -680,7 +680,7 @@ const Compendium = () => {
                     className="mt-3"
                     alt="Page_selection_GMB"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Page_selection_GMB.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Page_selection_GMB.png"
                   />
                 </div>
                 <br />
@@ -699,7 +699,7 @@ const Compendium = () => {
                     }}
                     alt="Connect_To_Google_Drive"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Connect_To_Google_Drive.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Connect_To_Google_Drive.png"
                   />
                 </div>
                 <div className="flex justify-center items-center">
@@ -713,7 +713,7 @@ const Compendium = () => {
                     }}
                     alt="Login_To_Google_Drive"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Login_To_Google_Drive.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Login_To_Google_Drive.png"
                   />
                 </div>
                 <div className="flex justify-center items-center">
@@ -727,7 +727,7 @@ const Compendium = () => {
                     }}
                     alt="Login_To_Google_Drive_2"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Login_To_Google_Drive_2.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Login_To_Google_Drive_2.png"
                   />
                 </div>
                 <div className="flex justify-center items-center">
@@ -741,7 +741,7 @@ const Compendium = () => {
                     }}
                     alt="Google_Drive_Auth"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Google_Drive_Auth.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Google_Drive_Auth.png"
                   />
                 </div>
                 <br />
@@ -750,7 +750,7 @@ const Compendium = () => {
                     className="mt-3"
                     alt="Page_selection_Google_Drive"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Page_selection_Google_Drive.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Page_selection_Google_Drive.png"
                   />
                 </div>
                 <br />
@@ -770,7 +770,7 @@ const Compendium = () => {
                     }}
                     alt="Connect_To_BM"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Connect_To_BM.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Connect_To_BM.png"
                   />
                 </div>
                 <div className="flex justify-center items-center">
@@ -784,7 +784,7 @@ const Compendium = () => {
                     }}
                     alt="BM_Login_1"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/BM_Login_1.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/BM_Login_1.png"
                   />
                 </div>
                 <div className="flex justify-center items-center">
@@ -798,7 +798,7 @@ const Compendium = () => {
                     }}
                     alt="BM_Login_2"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/BM_Login_2.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/BM_Login_2.png"
                   />
                 </div>
                 <div className="flex justify-center items-center">
@@ -812,7 +812,7 @@ const Compendium = () => {
                     }}
                     alt="BM_Auth"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/BM_Auth.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/BM_Auth.png"
                   />
                 </div>
                 <br />
@@ -821,7 +821,7 @@ const Compendium = () => {
                     className="mt-3"
                     alt="BM_Agent_Url"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/BM_Agent_Url.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/BM_Agent_Url.png"
                   />
                 </div>
                 <br />
@@ -836,7 +836,7 @@ const Compendium = () => {
                     }}
                     alt="BM_congratulation"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/BM_congratulation.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/BM_congratulation.png"
                   />
                 </div>
                 <br />
@@ -855,7 +855,7 @@ const Compendium = () => {
                     }}
                     alt="Connect_To_Medium"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Connect_To_Medium.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Connect_To_Medium.png"
                   />
                 </div>
                 <div className="flex justify-center items-center">
@@ -869,7 +869,7 @@ const Compendium = () => {
                     }}
                     alt="Connect_To_Medium_token"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Connect_To_Medium_token.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Connect_To_Medium_token.png"
                   />
                 </div>
                 <div className="flex justify-center items-center" id="price">
@@ -877,7 +877,7 @@ const Compendium = () => {
                     className="mt-3"
                     alt="Page_selection_Medium"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Page_selection_Medium.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Page_selection_Medium.png"
                   />
                 </div>
                 <br />
@@ -1979,7 +1979,7 @@ const Compendium = () => {
                     className="mt-3"
                     alt="Create_New_Post"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Create_New_Post.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Create_New_Post.png"
                   />
                 </div>
                 <div className="flex justify-center items-center">
@@ -1987,7 +1987,7 @@ const Compendium = () => {
                     className="mt-3 "
                     alt="Create_New_Post_Target"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Create_New_Post_Target.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Create_New_Post_Target.png"
                   />
                 </div>
                 <div className="flex justify-center items-center">
@@ -1995,7 +1995,7 @@ const Compendium = () => {
                     className="mt-3"
                     alt="Create_New_Post_schedule"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Create_New_Post_schedule.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Create_New_Post_schedule.png"
                   />
                 </div>
                 <br />
@@ -2026,7 +2026,7 @@ const Compendium = () => {
                     className="mt-3"
                     alt="Create_Pixabay"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Create_Pixabay.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Create_Pixabay.png"
                   />
                 </div>
                 <br />
@@ -2060,7 +2060,7 @@ const Compendium = () => {
                     className="mt-3"
                     alt="Create_Crello"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Create_Crello.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Create_Crello.png"
                   />
                 </div>
                 <br />
@@ -2080,7 +2080,7 @@ const Compendium = () => {
                     className="mt-3"
                     alt="Scheduling_Post"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Scheduling_Post.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Scheduling_Post.png"
                   />
                 </div>
                 <br />
@@ -2114,7 +2114,7 @@ const Compendium = () => {
                     className="mt-3"
                     alt="Saving_posts_as_drafts_1"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Saving_posts_as_drafts_1.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Saving_posts_as_drafts_1.png"
                     //
                   />
                 </div>
@@ -2124,7 +2124,7 @@ const Compendium = () => {
                     className="mt-3"
                     alt="Saving_posts_as_drafts_2"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Saving_posts_as_drafts_2.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Saving_posts_as_drafts_2.png"
                   />
                 </div>
                 <div className=" mb-2 mt-3">
@@ -2295,7 +2295,7 @@ const Compendium = () => {
                     className="mt-3"
                     alt="Calendar_1"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Calendar_1.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Calendar_1.png"
                   />
                 </div>
                 <br />
@@ -2304,7 +2304,7 @@ const Compendium = () => {
                     className="mt-3"
                     alt="Calendar_2"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Calendar_2.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Calendar_2.png"
                   />
                 </div>
                 <br />
@@ -2423,7 +2423,7 @@ const Compendium = () => {
                     className="mt-3"
                     alt="Shorten_URL"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Shorten_URL.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Shorten_URL.png"
                   />
                 </div>
                 <br />
@@ -3284,14 +3284,14 @@ const Compendium = () => {
                       className="mt-3"
                       alt="FB_Ad_Manager_1"
                       loading="lazy"
-                      src="https://www.cloudsocial.io/wp-content/uploads/faq/FB_Ad_Manager_1.png"
+                      src="https://content.cloudsocial.io/wp-content/uploads/faq/FB_Ad_Manager_1.png"
                     />
                     <br />
                     <img
                       className="mt-3"
                       alt="FB_Ad_Manager_2"
                       loading="lazy"
-                      src="https://www.cloudsocial.io/wp-content/uploads/faq/FB_Ad_Manager_2.png"
+                      src="https://content.cloudsocial.io/wp-content/uploads/faq/FB_Ad_Manager_2.png"
                     />
                   </div>
                 </div>
@@ -3323,7 +3323,7 @@ const Compendium = () => {
                     className="mt-3"
                     alt="FB_Ad_Manager_3"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/FB_Ad_Manager_3.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/FB_Ad_Manager_3.png"
                   />
                 </div>
                 <br />
@@ -3349,7 +3349,7 @@ const Compendium = () => {
                     className="mt-3"
                     alt="FB_Ad_Manager_4"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/FB_Ad_Manager_4.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/FB_Ad_Manager_4.png"
                   />
                 </div>
                 <h4
@@ -3495,7 +3495,7 @@ const Compendium = () => {
                     className="mt-3"
                     alt="Omnibox_1"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Omnibox_1.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Omnibox_1.png"
                   />
                 </div>
                 <br />
@@ -3540,7 +3540,7 @@ const Compendium = () => {
                     className="mt-3"
                     alt="Omnibox_2"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Omnibox_2.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Omnibox_2.png"
                   />
                 </div>
                 <br />
@@ -3586,7 +3586,7 @@ const Compendium = () => {
                     className="mt-3"
                     alt="Omnibox_3"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Omnibox_3.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Omnibox_3.png"
                     //
                   />
                 </div>
@@ -3608,7 +3608,7 @@ const Compendium = () => {
                     className=" mt-3"
                     alt="Omnibox_4"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Omnibox_4.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Omnibox_4.png"
                     //
                   />
                 </div>
@@ -3632,7 +3632,7 @@ const Compendium = () => {
                     className="mt-3"
                     alt="Omnibox_5"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Omnibox_5.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Omnibox_5.png"
                   />
                 </div>
                 <br />
@@ -3769,7 +3769,7 @@ const Compendium = () => {
                     className="mt-3"
                     alt="Omnibox_6"
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/Omnibox_6.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/Omnibox_6.png"
                   />
                 </div>
                 <br />
@@ -5963,23 +5963,23 @@ const Compendium = () => {
                 <div className="text-sm mb-1">Privacy policy:</div>
                 <div className="text-sm mb-1">
                   <a
-                    href="https://www.iubenda.com/privacy-policy/84213336"
+                    href="https://content.iubenda.com/privacy-policy/84213336"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-sm text-blue-400 mb-1"
                   >
-                    https://www.iubenda.com/privacy-policy/84213336
+                    https://content.iubenda.com/privacy-policy/84213336
                   </a>
                 </div>
                 <div className="text-sm mb-1">Terms of service:</div>
                 <div className="text-sm mb-1">
                   <a
-                    href="https://www.iubenda.com/terms-and-conditions/84213336"
+                    href="https://content.iubenda.com/terms-and-conditions/84213336"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-sm text-blue-400 mb-1"
                   >
-                    https://www.iubenda.com/terms-and-conditions/84213336
+                    https://content.iubenda.com/terms-and-conditions/84213336
                   </a>
                 </div>
                 <div className="text-sm mb-1">
@@ -5992,7 +5992,7 @@ const Compendium = () => {
                     className="mt-3"
                     alt={data.alt}
                     loading="lazy"
-                    src="https://www.cloudsocial.io/wp-content/uploads/faq/GDPR_widget.png"
+                    src="https://content.cloudsocial.io/wp-content/uploads/faq/GDPR_widget.png"
                     
                   />
                 </div> */}

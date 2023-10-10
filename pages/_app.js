@@ -55,7 +55,7 @@ function MyApp({ Component, pageProps }) {
         />
       </Head>
       
-      <ExitIntentPopup />
+      {/* <ExitIntentPopup /> */}
 
       {!loading ? <Component {...pageProps} /> : <Preloader />}
 

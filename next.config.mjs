@@ -20,7 +20,7 @@ const nextConfig = {
   reactStrictMode: true,
   pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"],
   images: {
-    domains: ["www.cloudsocial.io", "www.softwaresuggest.com"],
+    domains: ["www.cloudsocial.io", "www.softwaresuggest.com","content.cloudsocial.io"],
   },
   env: {
     DOMAIN_URL: "https://www.cloudsocial.io",

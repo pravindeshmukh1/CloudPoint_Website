@@ -91,7 +91,7 @@ const MobileMenu = ({ hiddenClass, handleRemove }) => {
                   </li>
                   <li>
                     <Link
-                      href="http://www.cloudsocial.io/managedservice"
+                      href="https://content.cloudsocial.io/managedservice"
                       legacyBehavior
                     >
                       <a
