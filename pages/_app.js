@@ -7,6 +7,7 @@ import Preloader from "../components/elements/Preloader";
 import "swiper/css";
 import Script from "next/script";
 import TawkMessengerReact from "@tawk.to/tawk-messenger-react";
+import ExitIntentPopup from "../components/elements/ExitIntentPopup";
 // import dynamic from "next/dynamic";
 
 // const TawkMessengerReact = dynamic(
@@ -53,6 +54,8 @@ function MyApp({ Component, pageProps }) {
           content="Best social media management tools built to manage all your social media handles at one place. Grow and engage with an ease of social media listening."
         />
       </Head>
+      
+      <ExitIntentPopup />
 
       {!loading ? <Component {...pageProps} /> : <Preloader />}
 

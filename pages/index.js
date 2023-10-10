@@ -847,7 +847,7 @@ function Home() {
           </div>
         </section>
 
-        <section className="py-12 md:py-20">
+        {/* <section className="py-12 md:py-20">
           <div className="container px-4 mx-auto">
             <div className="flex flex-wrap -mx-3">
               <div className="relative w-full lg:w-1/3 mb-8 lg:mb-0 text-center lg:text-left">
@@ -882,7 +882,9 @@ function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
+
+        
         {/* <section
           className="py-20 xl:bg-contain bg-top bg-no-repeat"
           style={{

@@ -170,7 +170,7 @@ const MobileMenu = ({ hiddenClass, handleRemove }) => {
                   </li>
                   <li>
                     <Link href="/ebook" legacyBehavior>
-                      <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
+                      <a className="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500">
                         E-book
                       </a>
                     </Link>
