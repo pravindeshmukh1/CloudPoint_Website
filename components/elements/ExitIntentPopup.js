@@ -11,9 +11,13 @@ const ExitIntentPopup = () => {
     };
 
     document.addEventListener("mouseout", handleMouseOut);
+    window.document.addEventListener("touchend", handleMouseOut);
+    window.addEventListener("beforeunload", handleMouseOut);
 
     return () => {
       document.removeEventListener("mouseout", handleMouseOut);
+      window.document.removeEventListener("touchend", handleMouseOut);
+      window.addEventListener("beforeunload", handleMouseOut);
     };
   }, []);
 
