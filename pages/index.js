@@ -34,13 +34,13 @@ function Home() {
     // Other form fields
   });
 
-  const pdfUrls =
-    "https://www.cloudsocial.io/wp-content/uploads/2023/The%20Ultimate%20Instagram%20Marketing%20Guide-For%20Beginners%20in%202023.pdf";
+  // const pdfUrls =
+  //   "https://www.cloudsocial.io/wp-content/uploads/2023/The%20Ultimate%20Instagram%20Marketing%20Guide-For%20Beginners%20in%202023.pdf";
 
-  const handlePdfOpen = () => {
-    // Open the PDF in a new tab.
-    window.open(pdfUrls, "_blank");
-  };
+  // const handlePdfOpen = () => {
+  //   // Open the PDF in a new tab.
+  //   window.open(pdfUrls, "_blank");
+  // };
   const validateForm = () => {
     const newErrors = {};
     // Add validation rules here
@@ -656,7 +656,7 @@ function Home() {
                   </a>
                 </Link>
                 <h3 className="my-4 text-xl md:text-2xl font-bold font-heading">
-                  <Link href="/blog-single" legacyBehavior>
+                  <Link href="/blog" legacyBehavior>
                     <a className="hover:text-blue-500">
                       Convenient Scheduling Options
                     </a>
@@ -669,7 +669,7 @@ function Home() {
                   a holistic view of your content plan with our cross-platform
                   social media calendar.
                 </p>
-                <Link href="/blog-single" legacyBehavior>
+                <Link href="/blog" legacyBehavior>
                   <a className="text-xs font-semibold text-blue-600">
                     <span>Read More</span>
                     <svg
@@ -690,7 +690,7 @@ function Home() {
                 </Link>
               </div>
               <div className="w-full lg:w-1/2 px-4 mb-8 order-0 lg:order-1">
-                <Link href="/blog-single" legacyBehavior>
+                <Link href="/blog" legacyBehavior>
                   <a>
                     {/* <img
                       className="h-100 w-full object-cover rounded drop-shadow"
@@ -715,7 +715,7 @@ function Home() {
             </div>
             <div className="flex flex-wrap -mx-4 mb-12 wow animate_animated animate_fadeIn animated hover-up-5">
               <div className="w-full lg:w-1/2 px-4 lg:pl-20 lg:pt-4 order-1">
-                <Link href="/blog-2" legacyBehavior>
+                <Link href="/blog" legacyBehavior>
                   <a>
                     <span className="inline-block py-1 px-3 uppercase text-xs font-semibold bg-blue-50 rounded-full text-blue-600">
                       Omnibox
@@ -723,7 +723,7 @@ function Home() {
                   </a>
                 </Link>
                 <h3 className="my-4 text-xl md:text-2xl font-bold font-heading">
-                  <Link href="/blog-single" legacyBehavior>
+                  <Link href="/blog" legacyBehavior>
                     <a className="hover:text-blue-500">
                       {" "}
                       Optimized Engagement With Omnibox
@@ -736,7 +736,7 @@ function Home() {
                   from customers by always staying connected using our social
                   media tools.
                 </p>
-                <Link href="/blog-single" legacyBehavior>
+                <Link href="/blog" legacyBehavior>
                   <a className="text-xs font-semibold text-blue-600">
                     <span>Read More</span>
                     <svg
@@ -782,7 +782,7 @@ function Home() {
             </div>
             <div className="flex flex-wrap -mx-4 mb-12 wow animate_animated animate_fadeIn animated hover-up-5">
               <div className="w-full lg:w-1/2 px-4 lg:pr-20 lg:pt-4 order-1 lg:order-0">
-                <Link href="/blog-2" legacyBehavior>
+                <Link href="/blog" legacyBehavior>
                   <a>
                     <span className="inline-block py-1 px-3 uppercase text-xs font-semibold bg-blue-50 rounded-full text-blue-600">
                       Analytics
@@ -790,7 +790,7 @@ function Home() {
                   </a>
                 </Link>
                 <h3 className="my-4 text-xl md:text-2xl font-bold font-heading">
-                  <Link href="/blog-single" legacyBehavior>
+                  <Link href="/blog" legacyBehavior>
                     <a className="hover:text-blue-500"> Analytics & Reports</a>
                   </Link>
                 </h3>
@@ -800,7 +800,7 @@ function Home() {
                   understand consumer preferences and customize your branding
                   strategy accordingly.
                 </p>
-                <Link href="/blog-single" legacyBehavior>
+                <Link href="/blog" legacyBehavior>
                   <a className="text-xs font-semibold text-blue-600">
                     <span>Read More</span>
                     <svg
@@ -821,7 +821,7 @@ function Home() {
                 </Link>
               </div>
               <div className="w-full lg:w-1/2 px-4 mb-8 order-0 lg:order-1">
-                <Link href="/blog-single" legacyBehavior>
+                <Link href="/blog" legacyBehavior>
                   <a>
                     {/* <img
                       className="h-100 w-full object-cover rounded drop-shadow"
