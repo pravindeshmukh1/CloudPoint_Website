@@ -55,9 +55,10 @@ function MyApp({ Component, pageProps }) {
         />
       </Head>
       
-      {/* <ExitIntentPopup /> */}
 
       {!loading ? <Component {...pageProps} /> : <Preloader />}
+      {/* <ExitIntentPopup /> */}
+
 
       {/* <Script id="tawk" strategy="lazyOnload">
         {`

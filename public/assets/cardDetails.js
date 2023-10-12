@@ -243,30 +243,29 @@ export const socialMedia = [
 ];
 export const star = [
   {
-    id: 4,
+    id: 1,
     title: "Best Support",
     img: "https://www.softwaresuggest.com/award_logo/2021/Best-Support.png",
     url: "https://www.softwaresuggest.com/cloudsocial",
   },
-
   {
     id: 2,
     title: "Get App",
-    img: "https://www.cloudsocial.io/wp-content/uploads/image/icon/getapp.png",
+    img: "http://content.cloudsocial.io/wp-content/uploads/image/icon/getapp.png",
     url: "https://www.getapp.com/marketing-software/a/cloudsocial/reviews/",
   },
   {
     id: 3,
     title: "Software Suggest",
     img:
-      "https://www.cloudsocial.io/wp-content/uploads/image/icon/software5star.png",
+      "http://content.cloudsocial.io/wp-content/uploads/image/icon/software5star.png",
     url: "https://www.softwaresuggest.com/cloudsocial",
   },
   {
-    id: 1,
+    id: 4,
     title: "Capterra",
     img:
-      "https://www.cloudsocial.io/wp-content/uploads/image/icon/capterra.png",
+      "http://content.cloudsocial.io/wp-content/uploads/image/icon/capterra.png",
     url:
       "https://www.capterra.com/reviews/205569/CloudSocial?utm_source=vendor&utm_medium=badge&utm_campaign=capterra_reviews_badge",
   },
@@ -277,7 +276,7 @@ export const footerIcon = [
     title: "Facebook",
     alt: "facebook",
     img: "https://content.cloudsocial.io/wp-content/uploads/image/icon/facebook.svg",
-    href:"https://content.facebook.com/cloudsocial.io"
+    href:"https://www.facebook.com/cloudsocial.io"
   },
   {
     id: 2,
@@ -291,7 +290,7 @@ export const footerIcon = [
     title: "Instagram",
     alt: "instagram",
     img: "https://content.cloudsocial.io/wp-content/uploads/image/icon/Instagram.svg",
-    href:"https://content.instagram.com/cloudsocial.io/"
+    href:"https://www.instagram.com/cloudsocial.io/"
   },
   {
     id: 4,
@@ -300,7 +299,7 @@ export const footerIcon = [
     img: "https://content.cloudsocial.io/wp-content/uploads/image/icon/linkedin.svg",
     // img:
     //   "https://content.cloudsocial.io/wp-content/uploads/image/icon/LinkedIn.svg",
-    href:"https://content.linkedin.com/company/cloudsocial-io/"
+    href:"https://www.linkedin.com/company/cloudsocial-io/"
   },
   {
     id: 5,

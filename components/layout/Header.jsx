@@ -371,7 +371,7 @@ const Header = ({ handleHidden }) => {
                     className="text-blue Gray-600 hover:text-blue Gray-500 btn-primary hover-up-2"
                     target="_blank"
                   >
-                    Start Free Trail
+                    Start Free Trial
                   </a>
                   {/* </Link> */}
                   <ul className="drop-down-menu min-w-200 mt-2">

@@ -542,6 +542,10 @@ video {
 	border: 1px solid #ccc;
 	padding: 10px;
 	z-index: 1000;
+	border-radius: 10px;
+    transition: opacity 5s ease-out;
+	opacity: 1;
+	animation: fadeIn 0.7s;
   }
   
   .popup-content {

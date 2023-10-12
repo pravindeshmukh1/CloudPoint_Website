@@ -5,7 +5,7 @@ const ExitIntentPopup = () => {
 
   useEffect(() => {
     const handleMouseOut = (e) => {
-      if (e.clientY <= 0) {
+      if (e.clientY <= 0 && !sessionStorage.getItem("exitIntentPopupShown")) {
         setShowPopup(true);
       }
     };
@@ -23,6 +23,7 @@ const ExitIntentPopup = () => {
 
   const handleClosePopup = () => {
     setShowPopup(false);
+     sessionStorage.setItem("exitIntentPopupShown", "true");
   };
 
   return (
@@ -30,7 +31,7 @@ const ExitIntentPopup = () => {
       <div className="exit-intent-popup">
         <div className="popup-content">
           <h3 className="text-xl md:text-2xl font-bold font-heading flex justify-between items-center ">
-            <a className="hover:text-blue-500">Header</a>
+            <a className="hover:text-blue-500"></a>
             <img
               className="w-6 h-5 mr-2"
               src="/assets/imgs/icons/close-o.svg"
@@ -39,8 +40,7 @@ const ExitIntentPopup = () => {
             />
           </h3>
           <img
-            className="jump rounded wow animate_animated animate_fadeIn"
-            //  src="/assets/imgs/placeholders/dashboard.png"
+            className="rounded wow animate_animated animate_fadeIn"
             src="/assets/imgs/backgrounds/slider/dashboard1248.jpg"
             alt="dashboard"
           />

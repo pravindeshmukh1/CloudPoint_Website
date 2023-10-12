@@ -273,7 +273,7 @@ const MobileMenu = ({ hiddenClass, handleRemove }) => {
                 {/* <span className="menu-expand">+</span> */}
                 <Link href="#" legacyBehavior>
                   <a className="text-white btn-primary hover:text-blue Gray-500 btn-accent hover-up-2 block text-center">
-                    Start Free Trail
+                    Start Free Trial
                   </a>
                 </Link>
                 <ul
