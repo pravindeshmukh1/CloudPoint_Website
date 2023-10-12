@@ -4,6 +4,8 @@ import Layout from "../components/layout/Layout";
 import Head from "next/head";
 import { addEbookUser, getBlogList } from "../lib/apiCall";
 import { useRouter } from "next/router";
+import Image from "next/image";
+import Ebook from "../components/elements/Ebook";
 
 export const getServerSideProps = async (context) => {
   const { slug } = context.query;
@@ -20,7 +22,7 @@ export const getServerSideProps = async (context) => {
 
 const Blog = ({ blogList }) => {
   console.log("🚀 ~ file: blog.js:22 ~ blogList:", blogList);
-  const router = useRouter()
+  const router = useRouter();
   const [errors, setErrors] = useState({});
 
   const [formData, setFormData] = useState({
@@ -291,7 +293,7 @@ const Blog = ({ blogList }) => {
           </div>
         </section>
 
-        <section className="py-20 bg-blue-500">
+        {/* <section className="py-20 bg-blue-500">
           <div className="container">
             <div className="text-center max-w-xl mx-auto">
               <h2 className="mb-4 text-3xl lg:text-3xl text-white font-bold font-heading">
@@ -303,7 +305,6 @@ const Blog = ({ blogList }) => {
                 Elevate your social media marketing game with our free <br />{" "}
                 in-depth guides.
               </p>
-              {/* {error && <div style={{ color: "red" }}>{error}</div>} */}
               <form onSubmit={onSubmit}>
                 <div className="flex flex-wrap max-w-lg mx-auto">
                   <div className="w-full">
@@ -424,7 +425,9 @@ const Blog = ({ blogList }) => {
               </form>
             </div>
           </div>
-        </section>
+        </section> */}
+
+        <Ebook />
       </Layout>
     </>
   );

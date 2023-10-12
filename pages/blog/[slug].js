@@ -9,6 +9,39 @@ import gfm from "remark-gfm";
 import Head from "next/head";
 import Image from "next/image";
 import { getSingleBlog } from "../../lib/apiCall";
+import {
+  EmailIcon,
+  EmailShareButton,
+  FacebookIcon,
+  FacebookMessengerIcon,
+  FacebookShareButton,
+  GithubIcon,
+  HatenaIcon,
+  InstagramIcon,
+  InstapaperIcon,
+  InstapaperShareButton,
+  LineIcon,
+  LinkedinIcon,
+  LinkedinShareButton,
+  LivejournalIcon,
+  MailruIcon,
+  OKIcon,
+  PinterestIcon,
+  PocketIcon,
+  RedditIcon,
+  SpotifyIcon,
+  TelegramIcon,
+  TumblrIcon,
+  TwitterIcon,
+  TwitterShareButton,
+  ViberIcon,
+  VKIcon,
+  WeiboIcon,
+  WhatsappIcon,
+  WhatsappShareButton,
+  WorkplaceIcon,
+} from "next-share";
+import Ebook from "../../components/elements/Ebook";
 
 function LinkRenderer(props) {
   return (
@@ -47,14 +80,16 @@ export const getServerSideProps = async (context) => {
 
     //  console.log(data);
 
-    return { props: { data } };
+    return { props: { data, slug } };
   } catch (error) {
     console.error("Error fetching data:", error);
     return { props: { data: null } }; // Handle errors gracefully
   }
 };
 
-const BlogSingle = ({ data }) => {
+const BlogSingle = ({ data, slug }) => {
+  const url = process.env.DOMAIN_URL + "/blog/" + slug;
+  // console.log("🚀 ~ file: [slug].js:90 ~ url:", url);
   // console.log("BlogSingle", data);
   //   React.useEffect(() => {
   //     let config = {
@@ -88,15 +123,13 @@ const BlogSingle = ({ data }) => {
         />
       </Head>
       <Layout>
-        <section className="pb-20">
-         
+        <section className="pb-5">
           <div className="flex justify-center">
             <img
               className="w-2/3 h-128 object-cover1 rounded relative"
               src={`https://strapi.cloudsocial.io${data.data[0].attributes.thumbnail.data[0].attributes.url}`}
               alt={data.data[0].attributes.title}
             />
-
           </div>
           <div className="container">
             <div className="text-center">
@@ -104,30 +137,72 @@ const BlogSingle = ({ data }) => {
                 {data.data[0].attributes.title}
               </h2>
             </div>
-            <div className="flex justify-end">
+            <div className="flex justify-end px-2">
               <div className="text-center mb-6">
                 <span className="text-base md:text-lg">
-                  <span className="text-base md:text-lg">
-                    <Link
-                      href={`/categories/${data.data[0].attributes.categories}`}
-                      legacyBehavior
-                    >
-                      <a className="text-blueGray-200 hover:underline">
-                        <span className="inline-block py-1 px-3 text-xs font-semibold bg-blue-100 text-blue-600 rounded-xl mr-3">
-                          {data.data[0].attributes.categories}
-                        </span>
-                      </a>
-                    </Link>
-                    <span className="text-blueGray-500 text-sm">
+                  <div className="flex">
+                    <span className="text-base md:text-lg px-2">
+                      <Link
+                        href={`/categories/${data.data[0].attributes.categories}`}
+                        legacyBehavior
+                      >
+                        <a className="text-blueGray-200 hover:underline">
+                          <span className="inline-block py-1 px-3 text-xs font-semibold bg-blue-100 text-blue-600 rounded-xl">
+                            {data.data[0].attributes.categories}
+                          </span>
+                        </a>
+                      </Link>
+                    </span>
+                    <span className="flex items-center">
+                      <svg
+                        viewBox="0 0 1024 1024"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width={20}
+                        height={20}
+                        style={{
+                          color: "gray",
+                          marginTop: "1px",
+                          display: "initial",
+                        }}
+                      >
+                        <path
+                          fill="#a8a79f"
+                          d="M288 320a224 224 0 1 0 448 0 224 224 0 1 0-448 0zm544 608H160a32 32 0 0 1-32-32v-96a160 160 0 0 1 160-160h448a160 160 0 0 1 160 160v96a32 32 0 0 1-32 32z"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span className="text-blueGray-500 text-xs px-1 flex items-center">
+                      {data.data[0].attributes.postBy}
+                    </span>
+                    <span className="flex items-center px-1">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        enable-background="new 0 0 24 24"
+                        viewBox="0 0 24 24"
+                        width={20}
+                        height={20}
+                        style={{
+                          color: "gray",
+                          marginTop: "1px",
+                          display: "initial",
+                        }}
+                      >
+                        <path
+                          d="M2,19c0,1.7,1.3,3,3,3h14c1.7,0,3-1.3,3-3v-8H2V19z M19,4h-2V3c0-0.6-0.4-1-1-1s-1,0.4-1,1v1H9V3c0-0.6-0.4-1-1-1S7,2.4,7,3v1H5C3.3,4,2,5.3,2,7v2h20V7C22,5.3,20.7,4,19,4z"
+                          fill="#a8a99f"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span className="text-blueGray-500  text-xs flex items-center">
                       {data.data[0].attributes.date}
                     </span>
-                  </span>
+                  </div>
                 </span>
               </div>
             </div>
             {/* <div
               className="max-w-2xl mx-auto"
-              dangerouslySetInnerHTML={{
+              dangerouslySetInnerHTML={{ 
                 __html: data.data[0].attributes.content,
               }}
             />
@@ -158,46 +233,63 @@ const BlogSingle = ({ data }) => {
               children={data.data[0].attributes.content}
             />
             {/* <MarkdownRenderer markdownContent={data.data[0].attributes.content} /> */}
-          </div>
-        </section>
-        <section className="py-5">
-          {/* <div className="container">
-            <div className="text-center max-w-xl mx-auto">
-              <h2 className="mb-4 text-3xl lg:text-3xl text-white font-bold font-heading">
-                <span>Subscribe now to </span>
-                <span className="text-blue-200">Our Newsletter</span> <br />
-                <span>and get the Coupon code.</span>
-              </h2>
-              <p className="mb-8 text-blueGray-200">
-                All your information is completely confidential
-              </p>
-              <div className="flex flex-wrap max-w-lg mx-auto">
-                <div className="flex w-full md:w-2/3 px-3 mb-3 md:mb-0 md:mr-6 bg-blue-500 border border-blue-300 rounded">
-                  <svg
-                    className="h-6 w-6 my-auto text-blue-300"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
-                  </svg>
-                  <input
-                    className="w-full pl-3 py-4 text-xs text-white placeholder-white font-semibold leading-none bg-blue-500 outline-none"
-                    type="text"
-                    placeholder="Type your e-mail"
-                  />
-                </div>
-                <button
-                  className="w-full md:w-auto py-4 px-8 text-xs text-white text-blue-800 hover:text-white font-semibold leading-none border border-blue-300 hover:border-blue-300 bg-white hover:bg-blue-500 rounded transition duration-300 ease-in-out"
-                  type="submit"
+
+
+            <div className="flex justify-end mr-5 mt-8 item-center">
+              <div className="hover-up-5 wow animate_animated animate_fadeIn mr-1">
+                <FacebookShareButton
+                  url={url}
+                  quote={data.data[0].attributes.title}
+                  hashtag={data.data[0].attributes.title}
                 >
-                  Sign Up
-                </button>
+                  <FacebookIcon size={32} round />
+                </FacebookShareButton>
+              </div>
+              <div className="hover-up-5 wow animate_animated animate_fadeIn mr-1">
+                <InstapaperShareButton
+                  url={url}
+                  subject={data.data[0].attributes.title}
+                  body={data.data[0].attributes.description}
+                >
+                  <InstagramIcon size={32} round />
+                </InstapaperShareButton>
+              </div>
+              <div className="hover-up-5 wow animate_animated animate_fadeIn mr-1">
+                <TwitterShareButton
+                  url={url}
+                  title={data.data[0].attributes.title}
+                >
+                  <TwitterIcon size={32} round />
+                </TwitterShareButton>
+              </div>
+              <div className="hover-up-5 wow animate_animated animate_fadeIn mr-1">
+                <LinkedinShareButton url={url}>
+                  <LinkedinIcon size={32} round />
+                </LinkedinShareButton>
+              </div>
+              <div className="hover-up-5 wow animate_animated animate_fadeIn mr-1">
+                <WhatsappShareButton
+                  url={url}
+                  separator=" :: "
+                  title={data.data[0].attributes.title}
+                >
+                  <WhatsappIcon size={32} round />
+                </WhatsappShareButton>
+              </div>
+              <div className="hover-up-5 wow animate_animated animate_fadeIn mr-1">
+                <EmailShareButton
+                  url={url}
+                  subject={data.data[0].attributes.title}
+                  body={data.data[0].attributes.description}
+                >
+                  <EmailIcon size={32} round />
+                </EmailShareButton>
               </div>
             </div>
-          </div> */}
+          </div>
         </section>
+
+        <Ebook />
       </Layout>
     </>
   );

@@ -81,3 +81,16 @@
 .reactMarkDown blockquote {
   margin-left: 20px;
 }
+
+.reactMarkDown a {
+  color:blue;
+  text-decoration: underline;
+}
+.reactMarkDown a:hover {
+  color:darkblue;
+}
+.reactMarkDown br {
+margin-top: 2rem;
+margin-bottom: 2rem;
+}
+
