@@ -4,6 +4,8 @@ import Layout from "../components/layout/Layout";
 import Head from "next/head";
 import { addEbookUser, getBlogList } from "../lib/apiCall";
 import { useRouter } from "next/router";
+import Image from "next/image";
+import Ebook from "../components/elements/Ebook";
 
 export const getServerSideProps = async (context) => {
   const { slug } = context.query;
@@ -19,8 +21,8 @@ export const getServerSideProps = async (context) => {
 };
 
 const Blog = ({ blogList }) => {
-  console.log("🚀 ~ file: blog.js:22 ~ blogList:", blogList);
-  const router = useRouter()
+  // console.log("🚀 ~ file: blog.js:22 ~ blogList:", blogList);
+  const router = useRouter();
   const [errors, setErrors] = useState({});
 
   const [formData, setFormData] = useState({
@@ -255,15 +257,50 @@ const Blog = ({ blogList }) => {
                           </span>
                         </a>
                       </Link>
-                      {/* <span className="text-blueGray-400 text-xs">
-                        {data.attributes.date} {data.attributes.postBy}
-                      </span> */}
                     </p>
-                    <p className="mt-2 text-sm text-blue-400 flex justify-end">
-                      <span className="text-blueGray-400 text-xs">
-                        {data.attributes.date} {data.attributes.postBy}
-                      </span>
-                    </p>
+
+                    <div className="flex justify-end mt-2">
+                    <span className="flex items-center">
+                      <svg
+                        viewBox="0 0 1024 1024"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width={20}
+                        height={20}
+                        style={{
+                          color: "gray",
+                          display: "initial",
+                        }}
+                      >
+                        <path
+                          fill="#a8a79f"
+                          d="M288 320a224 224 0 1 0 448 0 224 224 0 1 0-448 0zm544 608H160a32 32 0 0 1-32-32v-96a160 160 0 0 1 160-160h448a160 160 0 0 1 160 160v96a32 32 0 0 1-32 32z"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span className="text-blueGray-400 text-xs px-1 flex items-center">
+                      {data.attributes.postBy}
+                    </span>
+                    <span className="flex items-center px-1">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width={20}
+                        height={20}
+                        style={{
+                          color: "gray",
+                          display: "initial",
+                        }}
+                      >
+                        <path
+                          d="M2,19c0,1.7,1.3,3,3,3h14c1.7,0,3-1.3,3-3v-8H2V19z M19,4h-2V3c0-0.6-0.4-1-1-1s-1,0.4-1,1v1H9V3c0-0.6-0.4-1-1-1S7,2.4,7,3v1H5C3.3,4,2,5.3,2,7v2h20V7C22,5.3,20.7,4,19,4z"
+                          fill="#a8a99f"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span className="text-blueGray-400  text-xs flex items-center">
+                      {data.attributes.date}
+                    </span>
+                  </div>
                     <h3 className="my-2 text-2xl font-bold font-heading">
                       <Link
                         href={`/blog/${data.attributes.slug}`}
@@ -291,7 +328,7 @@ const Blog = ({ blogList }) => {
           </div>
         </section>
 
-        <section className="py-20 bg-blue-500">
+        {/* <section className="py-20 bg-blue-500">
           <div className="container">
             <div className="text-center max-w-xl mx-auto">
               <h2 className="mb-4 text-3xl lg:text-3xl text-white font-bold font-heading">
@@ -303,7 +340,6 @@ const Blog = ({ blogList }) => {
                 Elevate your social media marketing game with our free <br />{" "}
                 in-depth guides.
               </p>
-              {/* {error && <div style={{ color: "red" }}>{error}</div>} */}
               <form onSubmit={onSubmit}>
                 <div className="flex flex-wrap max-w-lg mx-auto">
                   <div className="w-full">
@@ -424,7 +460,9 @@ const Blog = ({ blogList }) => {
               </form>
             </div>
           </div>
-        </section>
+        </section> */}
+
+        <Ebook />
       </Layout>
     </>
   );
