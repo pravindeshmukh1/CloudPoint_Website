@@ -153,7 +153,8 @@ const BlogSingle = ({ data, slug }) => {
                         </a>
                       </Link>
                     </span>
-                    <span className="flex items-center">
+
+                    <div className="flex items-center">
                       <svg
                         viewBox="0 0 1024 1024"
                         xmlns="http://www.w3.org/2000/svg"
@@ -170,11 +171,11 @@ const BlogSingle = ({ data, slug }) => {
                           d="M288 320a224 224 0 1 0 448 0 224 224 0 1 0-448 0zm544 608H160a32 32 0 0 1-32-32v-96a160 160 0 0 1 160-160h448a160 160 0 0 1 160 160v96a32 32 0 0 1-32 32z"
                         ></path>
                       </svg>
-                    </span>
+                    </div>
                     <span className="text-blueGray-500 text-xs px-1 flex items-center">
                       {data.data[0].attributes.postBy}
                     </span>
-                    <span className="flex items-center px-1">
+                    <div className="flex items-center px-1">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
@@ -191,10 +192,62 @@ const BlogSingle = ({ data, slug }) => {
                           fill="#a8a99f"
                         ></path>
                       </svg>
-                    </span>
+                    </div>
                     <span className="text-blueGray-500  text-xs flex items-center">
                       {data.data[0].attributes.date}
                     </span>
+                  </div>
+
+                  <div className="flex justify-end item-center">
+                    <div className="hover-up-5 wow animate_animated animate_fadeIn mr-1">
+                      <FacebookShareButton
+                        url={url}
+                        quote={data.data[0].attributes.title}
+                        hashtag={data.data[0].attributes.title}
+                      >
+                        <FacebookIcon size={32} round />
+                      </FacebookShareButton>
+                    </div>
+                    <div className="hover-up-5 wow animate_animated animate_fadeIn mr-1">
+                      <InstapaperShareButton
+                        url={url}
+                        subject={data.data[0].attributes.title}
+                        body={data.data[0].attributes.description}
+                      >
+                        <InstagramIcon size={32} round />
+                      </InstapaperShareButton>
+                    </div>
+                    <div className="hover-up-5 wow animate_animated animate_fadeIn mr-1">
+                      <TwitterShareButton
+                        url={url}
+                        title={data.data[0].attributes.title}
+                      >
+                        <TwitterIcon size={32} round />
+                      </TwitterShareButton>
+                    </div>
+                    <div className="hover-up-5 wow animate_animated animate_fadeIn mr-1">
+                      <LinkedinShareButton url={url}>
+                        <LinkedinIcon size={32} round />
+                      </LinkedinShareButton>
+                    </div>
+                    <div className="hover-up-5 wow animate_animated animate_fadeIn mr-1">
+                      <WhatsappShareButton
+                        url={url}
+                        separator=" :: "
+                        title={data.data[0].attributes.title}
+                      >
+                        <WhatsappIcon size={32} round />
+                      </WhatsappShareButton>
+                    </div>
+                    <div className="hover-up-5 wow animate_animated animate_fadeIn mr-1">
+                      <EmailShareButton
+                        url={url}
+                        subject={data.data[0].attributes.title}
+                        body={data.data[0].attributes.description}
+                      >
+                        <EmailIcon size={32} round />
+                      </EmailShareButton>
+                    </div>
                   </div>
                 </span>
               </div>
@@ -232,59 +285,6 @@ const BlogSingle = ({ data, slug }) => {
               children={data.data[0].attributes.content}
             />
             {/* <MarkdownRenderer markdownContent={data.data[0].attributes.content} /> */}
-
-
-            <div className="flex justify-end mr-5 mt-8 item-center">
-              <div className="hover-up-5 wow animate_animated animate_fadeIn mr-1">
-                <FacebookShareButton
-                  url={url}
-                  quote={data.data[0].attributes.title}
-                  hashtag={data.data[0].attributes.title}
-                >
-                  <FacebookIcon size={32} round />
-                </FacebookShareButton>
-              </div>
-              <div className="hover-up-5 wow animate_animated animate_fadeIn mr-1">
-                <InstapaperShareButton
-                  url={url}
-                  subject={data.data[0].attributes.title}
-                  body={data.data[0].attributes.description}
-                >
-                  <InstagramIcon size={32} round />
-                </InstapaperShareButton>
-              </div>
-              <div className="hover-up-5 wow animate_animated animate_fadeIn mr-1">
-                <TwitterShareButton
-                  url={url}
-                  title={data.data[0].attributes.title}
-                >
-                  <TwitterIcon size={32} round />
-                </TwitterShareButton>
-              </div>
-              <div className="hover-up-5 wow animate_animated animate_fadeIn mr-1">
-                <LinkedinShareButton url={url}>
-                  <LinkedinIcon size={32} round />
-                </LinkedinShareButton>
-              </div>
-              <div className="hover-up-5 wow animate_animated animate_fadeIn mr-1">
-                <WhatsappShareButton
-                  url={url}
-                  separator=" :: "
-                  title={data.data[0].attributes.title}
-                >
-                  <WhatsappIcon size={32} round />
-                </WhatsappShareButton>
-              </div>
-              <div className="hover-up-5 wow animate_animated animate_fadeIn mr-1">
-                <EmailShareButton
-                  url={url}
-                  subject={data.data[0].attributes.title}
-                  body={data.data[0].attributes.description}
-                >
-                  <EmailIcon size={32} round />
-                </EmailShareButton>
-              </div>
-            </div>
           </div>
         </section>
 
