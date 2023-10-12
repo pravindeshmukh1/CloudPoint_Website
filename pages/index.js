@@ -6,9 +6,12 @@ import Slider1 from "../components/slider/Slider1";
 import Link from "next/link";
 import Head from "next/head";
 import Image from "next/image";
-import Ebook from "../components/elements/Ebook";
+import { useRouter } from "next/router";
+import { addEbookUser } from "../lib/apiCall";
 
 function Home() {
+  const router = useRouter()
+
   const [inViewport, setInViewport] = useState(false);
 
   const handleScroll = () => {
@@ -22,7 +25,89 @@ function Home() {
       }
     }
   };
- 
+  const [errors, setErrors] = useState({});
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phoneNumber: "",
+    // Other form fields
+  });
+
+  // const pdfUrls =
+  //   "https://www.cloudsocial.io/wp-content/uploads/2023/The%20Ultimate%20Instagram%20Marketing%20Guide-For%20Beginners%20in%202023.pdf";
+
+  // const handlePdfOpen = () => {
+  //   // Open the PDF in a new tab.
+  //   window.open(pdfUrls, "_blank");
+  // };
+  const validateForm = () => {
+    const newErrors = {};
+    // Add validation rules here
+    if (!formData.name) {
+      newErrors.name = "Name is required";
+    }
+    if (!formData.email) {
+      newErrors.email = "Email is required";
+    } else if (!/^\S+@\S+\.\S+$/.test(formData.email)) {
+      newErrors.email = "Invalid email format";
+    }
+    if (!formData.phoneNumber) {
+      newErrors.phoneNumber = "Phone number is required";
+    } else if (!/^[0-9]{10}$/.test(formData.phoneNumber)) {
+      newErrors.phoneNumber = "Invalid phone number format";
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+      createdAt: new Date(),
+    });
+  };
+
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState("");
+
+  async function onSubmit(event) {
+    // console.log("🚀 ~ file: index.js:29 ~ event:", event);
+    event.preventDefault();
+    setIsLoading(true);
+    setError(null); // Clear previous errors when a new request starts
+
+    try {
+      if (validateForm()) {
+        // console.log("🚀 ~ file: index.js:35 ~ formData:", formData);
+        await addEbookUser(formData).then((data) => {
+          // console.log(
+          //   "🚀 ~ file: blog.js:175 ~ response:",
+          //   data.data.attributes.name
+          // );
+          const localData = {
+            name: data.data.attributes.name,
+            email: data.data.attributes.email,
+            phoneNumber: data.data.attributes.phoneNumber,
+          };
+
+          localStorage.setItem("user", JSON.stringify(localData));
+          // handlePdfOpen();
+          router.push('/ebook')
+        });
+      }
+    } catch (error) {
+      // Capture the error message to display to the user
+      setError(error.message);
+      console.error(error);
+    } finally {
+      setIsLoading(false);
+    }
+  }
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -112,134 +197,6 @@ function Home() {
               /> */}
             </div>
           </div>
-          {/* <div className="container px-4 mx-auto">
-            <div className="flex flex-wrap justify-between pt-8 pb-16">
-              <div
-                className="hover-up-5 flex w-1/2 lg:w-auto py-4 wow animate_animated animate_fadeIn"
-                data-wow-delay=".2s"
-              >
-                <div className="flex justify-center items-center bg-blueGray-50 text-blue-500 rounded-xl h-12 w-12 sm:h-20 sm:w-20">
-                  <svg
-                    className="w-8 h-8"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
-                    ></path>
-                  </svg>
-                </div>
-                <div className="sm:py-2 ml-2 sm:ml-6">
-                  <span className="sm:text-2xl font-bold font-heading">+ </span>
-                  <span className="sm:text-2xl font-bold font-heading count counterUp">
-                    {inViewport && <CounterUp end={950} duration={10} />}
-                  </span>
-                  <p className="text-xs sm:text-base text-blueGray-400">
-                    Annual Partner
-                  </p>
-                </div>
-              </div>
-              <div
-                className="hover-up-5 flex w-1/2 lg:w-auto py-4 wow animate_animated animate_fadeIn"
-                data-wow-delay=".4s"
-              >
-                <div className="flex justify-center items-center bg-blueGray-50 text-blue-500 rounded-xl h-12 w-12 sm:h-20 sm:w-20">
-                  <svg
-                    className="w-8 h-8"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"
-                    ></path>
-                  </svg>
-                </div>
-                <div className="sm:py-2 ml-2 sm:ml-6">
-                  <span className="sm:text-2xl font-bold font-heading">+ </span>
-                  <span className="sm:text-2xl font-bold font-heading count counterUp">
-                    {inViewport && <CounterUp end={58} duration={10} />}
-                  </span>
-                  <span className="sm:text-2xl font-bold font-heading">
-                    {" "}
-                    k{" "}
-                  </span>
-                  <p className="text-xs sm:text-base text-blueGray-400">
-                    Completed Projects
-                  </p>
-                </div>
-              </div>
-              <div
-                className="hover-up-5 flex w-1/2 lg:w-auto py-4 wow animate_animated animate_fadeIn"
-                data-wow-delay=".6s"
-              >
-                <div className="flex justify-center items-center bg-blueGray-50 text-blue-500 rounded-xl h-12 w-12 sm:h-20 sm:w-20">
-                  <svg
-                    className="w-8 h-8"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
-                    ></path>
-                  </svg>
-                </div>
-                <div className="sm:py-2 ml-2 sm:ml-6">
-                  <span className="sm:text-2xl font-bold font-heading">+ </span>
-                  <span className="sm:text-2xl font-bold font-heading count counterUp">
-                    {inViewport && <CounterUp end={500} duration={10} />}
-                  </span>
-                  <p className="text-xs sm:text-base text-blueGray-400">
-                    Happy Customers
-                  </p>
-                </div>
-              </div>
-              <div
-                className="hover-up-5 flex w-1/2 lg:w-auto py-4 wow animate_animated animate_fadeIn"
-                data-wow-delay=".8s"
-              >
-                <div className="flex justify-center items-center bg-blueGray-50 text-blue-500 rounded-xl h-12 w-12 sm:h-20 sm:w-20">
-                  <svg
-                    className="w-8 h-8"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-                    ></path>
-                  </svg>
-                </div>
-                <div className="sm:py-2 ml-2 sm:ml-6">
-                  <span className="sm:text-2xl font-bold font-heading">+ </span>
-                  <span className="sm:text-2xl font-bold font-heading count counterUp">
-                    {inViewport && <CounterUp end={300} duration={10} />}
-                  </span>
-                  <p className="text-xs sm:text-base text-blueGray-400">
-                    Research Work
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div> */}
         </section>
 
         <section
@@ -762,388 +719,152 @@ function Home() {
           </div>
         </section>
 
-        {/* <section className="py-12 md:py-20">
-          <div className="container px-4 mx-auto">
-            <div className="flex flex-wrap -mx-3">
-              <div className="relative w-full lg:w-1/3 mb-8 lg:mb-0 text-center lg:text-left">
-                <div className="max-w-md lg:max-w-xs lg:pr-16 mx-auto lg:ml-0 mb-6 lg:mb-0">
-                  <h2
-                    className="text-3xl md:text-4xl mb-4 font-bold font-heading wow animate_animated animate_fadeIn"
-                    data-wow-delay=".3s"
-                  >
-                    Manage all your{" "}
-                    <span className="text-blue-500">Social Media</span> from One
-                    Place
-                  </h2>
-                  <p
-                    className="text-xs md:text-base text-blueGray-400 leading-loose wow animate_animated animate_fadeIn"
-                    data-wow-delay=".9s"
-                  >
-                    Control multiple social accounts simultaneously, engage with
-                    several prospects at the same time, and provide superior
-                    customer experience.
-                  </p>
-                </div>
-              </div>
-              <div className="w-full lg:w-2/3 flex flex-wrap">
-                <div className="relative w-full">
-                  <div
-                    className="carausel-2-columns slick-carausel"
-                    id="carausel-2-columns-1"
-                  >
-                    <Slider1 />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section> */}
-
-        
-        {/* <section
-          className="py-20 xl:bg-contain bg-top bg-no-repeat"
-          style={{
-            backgroundImage: "url('assets/imgs/backgrounds/intersect.svg')",
-          }}
+        <section
+          className="py-20 bg-top bg-no-repeat"
+          style={{ backgroundImage: "url('assets/imgs/elements/blob.svg')" }}
         >
           <div className="container px-4 mx-auto">
-            <div className="text-center mb-16">
-              <h2
-                className="max-w-lg mx-auto mb-4 text-4xl font-bold font-heading wow animate_animated animate_fadeIn"
-                data-wow-delay=".2s"
-              >
-                <span>Start saving time today and</span>
-                <span className="text-blue-500"> choose </span>
-                <span>your best plan</span>
-              </h2>
-              <p
-                className="max-w-sm mx-auto text-lg text-blueGray-400 wow animate_animated animate_fadeInDown"
-                data-wow-delay=".5s"
-              >
-                Best for freelance developers who need to save their time
-              </p>
-            </div>
-            <div className="flex flex-wrap -mx-3">
-              <div className="w-full md:w-1/2 lg:w-1/3 px-3 mb-6">
-                <div
-                  className="hover-up-5 pt-16 pb-8 px-4 text-center bg-white rounded shadow wow animate_animated animate_fadeIn"
-                  data-wow-delay=".2s"
+            <div className="relative py-20 px-4 lg:p-20">
+              <div className="max-w-lg mx-auto text-center">
+                <h2 className="mb-4 text-3xl lg:text-4xl font-bold font-heading wow animate_animated animate_fadeIn">
+                  <span>Subscribe now to</span>
+                  <span className="text-blue-500"> Our Newsletter </span>
+                  <span>and E-Book.</span>
+                </h2>
+                <p
+                  className="mb-8 text-blueGray-400 wow animate_animated animate_fadeIn"
+                  data-wow-delay=".3s"
                 >
-                  <img
-                    className="h-20 mb-6 mx-auto"
-                    src="/assets/imgs/icons/startup.svg"
-                    alt="Monst"
-                  />
-                  <h3 className="mb-2 text-4xl font-bold font-heading">
-                    Startup
-                  </h3>
-                  <span className="text-4xl text-blue-500 font-bold font-heading">
-                    $45.99
-                  </span>
-                  <p className="mt-2 mb-8 text-blueGray-400">user per month</p>
-                  <div className="flex flex-col items-center mb-8">
-                    <ul className="text-blueGray-400">
-                      <li className="flex mb-3">
+                  Elevate your social media marketing game with our free <br />{" "}
+                  in-depth guides.
+                </p>
+                {/* {error && <div style={{ color: "red" }}>{error}</div>} */}
+                <form onSubmit={onSubmit}>
+                  <div
+                    className="p-4 bg-white rounded-lg flex flex-wrap max-w-md mx-auto wow animate_animated animate_fadeIn"
+                    data-wow-delay=".5s"
+                  >
+                    <div className="w-full mb-2">
+                      <div className="flex w-full md:w-2/31 px-3 mb-3 md:mb-0 md:mr-6 bg-blueGray-100 rounded">
                         <svg
-                          className="w-6 h-6 mr-2 text-green-500"
+                          viewBox="0 0 1024 1024"
+                          className="h-6 w-6 my-auto text-blueGray-500"
                           xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
                         >
                           <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
+                            fill="currentColor"
+                            d="M288 320a224 224 0 1 0 448 0 224 224 0 1 0-448 0zm544 608H160a32 32 0 0 1-32-32v-96a160 160 0 0 1 160-160h448a160 160 0 0 1 160 160v96a32 32 0 0 1-32 32z"
+                          />
                         </svg>
-                        <span>3 Emails</span>
-                      </li>
-                      <li className="flex mb-3">
+                        <input
+                          className="w-full pl-3 py-4 text-xs text-blueGray-400 font-semibold leading-none bg-blueGray-100 outline-none"
+                          type="text"
+                          name="name"
+                          value={formData.name}
+                          onChange={handleChange}
+                          // isInvalid={!!errors.name}
+                          placeholder="Type your name"
+                        />
+                      </div>
+
+                      {errors.name ? (
+                        <p
+                          className="mb-2 text-xs flex justify-end pr-3"
+                          style={{ color: "darkred" }}
+                        >
+                          {errors.name}
+                        </p>
+                      ) : (
+                        ""
+                      )}
+                    </div>
+                    <div className="w-full mb-2">
+                      <div className="flex w-full md:w-2/31 px-3 mb-3 md:mb-0 md:mr-6 bg-blueGray-100 rounded">
                         <svg
-                          className="w-6 h-6 mr-2 text-green-500"
+                          className="h-6 w-6 my-auto text-blueGray-500"
                           xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                        >
+                          <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                          <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                        </svg>
+                        <input
+                          className="w-full pl-3 py-4 text-xs text-blueGray-400 font-semibold leading-none bg-blueGray-100 outline-none"
+                          type="email"
+                          name="email"
+                          value={formData.email}
+                          onChange={handleChange}
+                          // isInvalid={!!errors.email}
+                          placeholder="Type your e-mail"
+                        />
+                      </div>
+                      {errors.email ? (
+                        <p
+                          className="mb-2 text-xs flex justify-end pr-3"
+                          style={{ color: "darkred" }}
+                        >
+                          {errors.email}
+                        </p>
+                      ) : (
+                        ""
+                      )}
+                    </div>
+                    <div className="w-full mb-2">
+                      <div className="flex w-full md:w-2/31 px-3 mb-3 md:mb-0 md:mr-6 bg-blueGray-100 rounded">
+                        <svg
+                          className="h-6 w-6 my-auto text-blueGray-500"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                          // class="bi bi-telephone-fill"
+                          viewBox="0 0 20 20"
+                          width={30}
+                          height={30}
+                          style={{ color: "#656f8d", marginTop: "15px" }}
                         >
                           <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                            fillRule="evenodd"
+                            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                            // fill="#656f8d"
                           ></path>
                         </svg>
-                        <span>1 Datebases</span>
-                      </li>
-                      <li className="flex mb-3">
-                        <svg
-                          className="w-6 h-6 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
+                        <input
+                          className="w-full pl-3 py-4 text-xs text-blueGray-400 font-semibold leading-none bg-blueGray-100 outline-none"
+                          type="tel"
+                          required
+                          name="phoneNumber"
+                          value={formData.phoneNumber}
+                          onChange={handleChange}
+                          // isInvalid={!!errors.phoneNumber}
+                          placeholder="Type your phoneNumber"
+                        />
+                      </div>
+                      {errors.name ? (
+                        <p
+                          className="mb-2 text-xs flex justify-end pr-3"
+                          style={{ color: "darkred" }}
                         >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
-                        <span>Unlimited Domains</span>
-                      </li>
-                      <li className="flex">
-                        <svg
-                          className="w-6 h-6 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
-                        <span>10 GB Storage</span>
-                      </li>
-                    </ul>
+                          {errors.phoneNumber}
+                        </p>
+                      ) : (
+                        ""
+                      )}
+                    </div>
+                    <div className="w-full mb-2 flex justify-end">
+                      <button
+                        className="w-full md:w-auto py-4 px-8 text-xs text-white font-semibold leading-none bg-blue-400 hover:bg-blue-500 rounded"
+                        type="submit"
+                        disabled={isLoading}
+                      >
+                        {isLoading ? "Loading" : "Sign Up"}
+                      </button>
+                    </div>
                   </div>
-                  <div>
-                    <a
-                      className="block sm:inline-block py-4 px-6 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-blue-400 hover:bg-blue-500 rounded"
-                      href="#"
-                    >
-                      Start Free Trial
-                    </a>
-                    <a
-                      className="block sm:inline-block py-4 px-6 text-xs text-blueGray-500 hover:text-blueGray-600 text-center font-semibold leading-none bg-white border border-blueGray-200 hover:border-blueGray-300 rounded"
-                      href="#"
-                    >
-                      Purchase
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="w-full md:w-1/2 lg:w-1/3 px-3 mb-6">
-                <div
-                  className="hover-up-5 pt-16 pb-8 px-4 text-center text-white bg-blue-500 rounded shadow wow animate_animated animate_fadeIn"
-                  data-wow-delay=".4s"
-                >
-                  <img
-                    className="h-20 mb-6 mx-auto"
-                    src="/assets/imgs/icons/agency.svg"
-                    alt="Monst"
-                  />
-                  <h3 className="mb-2 text-4xl font-bold font-heading">
-                    Agency
-                  </h3>
-                  <span className="text-4xl font-bold font-heading">
-                    $65.99
-                  </span>
-                  <p className="mt-2 mb-8">user per month</p>
-                  <div className="flex flex-col items-center mb-8">
-                    <ul>
-                      <li className="flex items-center mb-3">
-                        <svg
-                          className="w-6 h-6 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
-                        <span>6 Emails</span>
-                      </li>
-                      <li className="flex items-center mb-3">
-                        <svg
-                          className="w-6 h-6 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
-                        <span>4 Datebases</span>
-                      </li>
-                      <li className="flex items-center mb-3">
-                        <svg
-                          className="w-6 h-6 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
-                        <span>Unlimited Domains</span>
-                      </li>
-                      <li className="flex items-center">
-                        <svg
-                          className="w-6 h-6 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
-                        <span>35 GB Storage</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div>
-                    <a
-                      className="block sm:inline-block py-4 px-6 mb-4 sm:mb-0 sm:mr-3 text-xs text-blue-500 font-semibold leading-none bg-white hover:bg-blueGray-50 rounded"
-                      href="#"
-                    >
-                      Start Free Trial
-                    </a>
-                    <a
-                      className="block sm:inline-block py-4 px-6 text-xs font-semibold leading-none border border-blue-400 hover:border-blue-400 rounded"
-                      href="#"
-                    >
-                      Purchase
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="w-full lg:w-1/3 px-3 mb-6">
-                <div
-                  className="hover-up-5 pt-16 pb-8 px-4 text-center bg-white rounded shadow wow animate_animated animate_fadeIn"
-                  data-wow-delay=".6s"
-                >
-                  <img
-                    className="h-20 mb-6 mx-auto"
-                    src="/assets/imgs/icons/enterprise.svg"
-                    alt="Monst"
-                  />
-                  <h3 className="mb-2 text-4xl font-bold font-heading">
-                    Enterprise
-                  </h3>
-                  <span className="text-4xl text-blue-500 font-bold font-heading">
-                    $85.99
-                  </span>
-                  <p className="mt-2 mb-8 text-blueGray-400">user per month</p>
-                  <div className="flex flex-col items-center mb-8">
-                    <ul className="text-blueGray-400">
-                      <li className="flex mb-3">
-                        <svg
-                          className="w-6 h-6 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
-                        <span>12 Emails</span>
-                      </li>
-                      <li className="flex mb-3">
-                        <svg
-                          className="w-6 h-6 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
-                        <span>8 Datebases</span>
-                      </li>
-                      <li className="flex mb-3">
-                        <svg
-                          className="w-6 h-6 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
-                        <span>Unlimited Domains</span>
-                      </li>
-                      <li className="flex">
-                        <svg
-                          className="w-6 h-6 mr-2 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          ></path>
-                        </svg>
-                        <span>50 GB Storage</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div>
-                    <a
-                      className="block sm:inline-block py-4 px-6 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-blue-400 hover:bg-blue-500 rounded"
-                      href="#"
-                    >
-                      Start Free Trial
-                    </a>
-                    <a
-                      className="block sm:inline-block py-4 px-6 text-xs text-blueGray-500 hover:text-blueGray-600 text-center font-semibold leading-none bg-white border border-blueGray-200 hover:border-blueGray-300 rounded"
-                      href="#"
-                    >
-                      Purchase
-                    </a>
-                  </div>
-                </div>
+                </form>
               </div>
             </div>
           </div>
-        </section> */}
-
-     <Ebook />
+        </section>
       </Layout>
     </>
   );
