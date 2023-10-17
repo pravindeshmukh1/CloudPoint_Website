@@ -130,6 +130,11 @@ const Blog = ({ blogList, currentPage, pagination }) => {
           name="description"
           content="Social Media Management and Marketing Blogs"
         />
+        <link
+          rel="canonical"
+          href="https://cloudsocial.io/blog"
+          key="canonical"
+        />
       </Head>
       <Layout>
         <section className="py-20">

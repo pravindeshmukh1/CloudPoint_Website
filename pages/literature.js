@@ -28,12 +28,17 @@ const Literature = () => {
   }, []);
   return (
     <>
-     <Head>
-      <meta charSet="utf-8" name="CloudSocial Resource Literature" />
+      <Head>
+        <meta charSet="utf-8" name="CloudSocial Resource Literature" />
         <title>Literature Social Media Resources | CloudSocial</title>
         <meta
           name="description"
           content="CloudSocial provides all the literature resources which guide you to succeed in the CloudSocial media marketing platform. Check out our learning materials."
+        />
+        <link
+          rel="canonical"
+          href="https://cloudsocial.io/literature"
+          key="canonical"
         />
       </Head>
       <Layout>
@@ -108,7 +113,7 @@ const Literature = () => {
               </div>
             </div>
             <div className="flex flex-wrap -mx-3 -mb-6 text-center">
-              {literatureData.map((literatureData,index) => {
+              {literatureData.map((literatureData, index) => {
                 return (
                   <div
                     className="hover-up-5 w-full md:w-1/2 lg:w-1/3 px-3 mb-6 wow animate__animated animate__fadeIn"
@@ -144,10 +149,9 @@ const Literature = () => {
                   <span>How To </span>
                 </h2>
               </div>
-            
             </div>
             <div className="flex flex-wrap -mx-3 -mb-6 text-center">
-              {howToData.map((howToData,index) => {
+              {howToData.map((howToData, index) => {
                 return (
                   <div
                     className="hover-up-5 w-full md:w-1/2 lg:w-1/3 px-3 mb-6 wow animate__animated animate__fadeIn"

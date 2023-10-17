@@ -123,21 +123,21 @@ const Footer = () => {
                 >
                   <Link href={href} legacyBehavior>
                     <a target="_blank">
-                      <img
+                      {/* <img
                         className="h-100 object-cover hover:drop-shadow w-5 mr-1"
                         src={img}
                         alt={alt}
-                      />
-                      {/* <Image
-                          className="object-cover"
+                      /> */}
+                      <Image
+                          className="object-cover p-1 mr-2"
                           src={img}
                           alt={alt}
                           priority
-                          width={100}
-                          height={100}
+                          width={25}
+                          height={25}
                           // fill
                           // objectFit="contain"
-                        /> */}
+                        />
                     </a>
                   </Link>
                 </div>

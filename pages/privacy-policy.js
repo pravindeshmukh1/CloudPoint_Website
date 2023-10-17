@@ -12,12 +12,17 @@ import Head from "next/head";
 const PrivacyPolicy = () => {
   return (
     <>
-       <Head>
-      <meta charSet="utf-8" name="CloudSocial Privacy Policy" />
+      <Head>
+        <meta charSet="utf-8" name="CloudSocial Privacy Policy" />
         <title>CloudSocial | Privacy Policy </title>
         <meta
           name="description"
           content="Check out CloudSocial Policy to learn about CloudSocial."
+        />
+        <link
+          rel="canonical"
+          href="https://cloudsocial.io/privacy-policy"
+          key="canonical"
         />
       </Head>
       <Layout>
@@ -39,9 +44,10 @@ const PrivacyPolicy = () => {
                 className="lg:text-4xl sm:text-2xl font-bold font-heading wow animate__animated animate__fadeIn animated"
                 data-wow-delay=".1s"
               >
-                Privacy Policy of{" "}
-                <br />
-                <span className="text-blue-500 word-break">www.cloudsocial.io</span>
+                Privacy Policy of <br />
+                <span className="text-blue-500 word-break">
+                  www.cloudsocial.io
+                </span>
               </h1>
               <h6>This Website collects some Personal Data from its Users.</h6>
             </div>

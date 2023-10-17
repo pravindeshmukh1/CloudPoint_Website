@@ -6,11 +6,18 @@ const GDPR = () => {
   return (
     <>
       <Head>
-      <meta charSet="utf-8" name="CloudSocial GDPR Policy" />
-        <title>GDPR | General Data Protection Regulation (GDPR) CloudSocial</title>
+        <meta charSet="utf-8" name="CloudSocial GDPR Policy" />
+        <title>
+          GDPR | General Data Protection Regulation (GDPR) CloudSocial
+        </title>
         <meta
           name="description"
           content="Know about How CloudSocial is compliant with the GDPR - General Data Protection Regulation."
+        />
+        <link
+          rel="canonical"
+          href="https://cloudsocial.io/gdpr"
+          key="canonical"
         />
       </Head>
       <Layout>
@@ -105,7 +112,11 @@ const GDPR = () => {
                   Data Controller, the terms of our Privacy Policy will govern.
                   If you specifically require a signed copy of our Terms &
                   Conditions, then please contact{" "}
-                  <a className="text-blue-400" href="mailto:support@cloudsocial.io" target="_blank">
+                  <a
+                    className="text-blue-400"
+                    href="mailto:support@cloudsocial.io"
+                    target="_blank"
+                  >
                     support@cloudsocial.io
                   </a>{" "}
                   and we will send you a copy to sign.
@@ -143,7 +154,11 @@ const GDPR = () => {
                   head over to our Privacy Policy. If you have any further
                   questions please don't hesitate to get in touch with us via
                   our Support Chat or by emailing us on{" "}
-                  <a className="text-blue-400" href="mailto:support@cloudsocial.io" target="_blank">
+                  <a
+                    className="text-blue-400"
+                    href="mailto:support@cloudsocial.io"
+                    target="_blank"
+                  >
                     support@cloudsocial.io
                   </a>
                   .{" "}

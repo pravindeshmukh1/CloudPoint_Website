@@ -13,11 +13,16 @@ const Security = () => {
   return (
     <>
       <Head>
-      <meta charSet="utf-8" name="CloudSocial Security Policy" />
+        <meta charSet="utf-8" name="CloudSocial Security Policy" />
         <title>Security | CloudSocial</title>
         <meta
           name="description"
           content="CloudSocial servers hosted in the cloud by Amazon Web Services. All the data is store in highly secure AWS data centres. Read more about CloudSocial environment."
+        />
+        <link
+          rel="canonical"
+          href="https://cloudsocial.io/security"
+          key="canonical"
         />
       </Head>
       <Layout>
@@ -127,7 +132,11 @@ const Security = () => {
                 <p className="mb-3 text-justify">
                   To report an incident of suspected abuse, misuse, or a
                   security issue you have discovered you should contact{" "}
-                  <a className="text-blue-400" href="mailto:support@cloudsocial.io" target="_blank">
+                  <a
+                    className="text-blue-400"
+                    href="mailto:support@cloudsocial.io"
+                    target="_blank"
+                  >
                     support@cloudsocial.io
                   </a>
                   .{" "}

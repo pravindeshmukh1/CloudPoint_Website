@@ -124,6 +124,7 @@ function Home() {
           name="description"
           content="Best social media management tools built to manage all your social media handles at one place. Grow and engage with an ease of social media listening."
         />
+        <link rel="canonical" href="https://cloudsocial.io" key="canonical" />
       </Head>
       <Layout>
         <section
@@ -648,7 +649,7 @@ function Home() {
                   <Image
                     className=" object-cover rounded drop-shadow"
                     src="/assets/imgs/backgrounds/2.png"
-                    alt="Publish-Calendar"
+                    alt="Omnibox-Ticket&Comments"
                     priority
                     // layout="fill"
                     width={1000}

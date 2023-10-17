@@ -40,6 +40,11 @@ const Integration = () => {
           name="description"
           content="Cloudsocial offers you all social media integration for your all social media management needs. Checkout our page to know more"
         />
+        <link
+          rel="canonical"
+          href="https://cloudsocial.io/integration"
+          key="canonical"
+        />
       </Head>
       <Layout>
         <section className="relative -mt-24 pt-24">
@@ -53,8 +58,9 @@ const Integration = () => {
                 <div className="py-12">
                   <div className="max-w-lg lg:max-w-md mx-auto lg:mx-0 mb-8 text-center lg:text-left">
                     <h1 className="text-3xl lg:text-5xl mb-4 font-bold font-heading wow animate__animatedanimated animate__fadeIn">
-                    CloudSocial has integrated all of your <span className="text-blue-500">favourite apps</span>{" "}
-                    for an holistic experience.
+                      CloudSocial has integrated all of your{" "}
+                      <span className="text-blue-500">favourite apps</span> for
+                      an holistic experience.
                     </h1>
                     {/* <p className="text-blueGray-400 leading-relaxed wow animate__animatedanimated animate__fadeIn">
                       We are <strong className="text-blue-500">Monst</strong>, a

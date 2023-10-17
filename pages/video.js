@@ -28,12 +28,17 @@ const Video = () => {
   }, []);
   return (
     <>
-     <Head>
-      <meta charSet="utf-8" name="CloudSocial Resource Video" />
+      <Head>
+        <meta charSet="utf-8" name="CloudSocial Resource Video" />
         <title>Video Social Media Resources | CloudSocial</title>
         <meta
           name="description"
           content="CloudSocial provides all the video resources which guide you to succeed in the CloudSocial media marketing platform. Check out our learning materials."
+        />
+        <link
+          rel="canonical"
+          href="https://cloudsocial.io/video"
+          key="canonical"
         />
       </Head>
       <Layout>
@@ -108,7 +113,7 @@ const Video = () => {
               </div>
             </div>
             <div className="flex flex-wrap -mx-3 -mb-6 text-center">
-              {video?.CloudInfluence.map((videoData,index) => {
+              {video?.CloudInfluence.map((videoData, index) => {
                 return (
                   <div
                     className="hover-up-5 w-full md:w-1/2 lg:w-1/3 px-3 mb-6 wow animate__animated animate__fadeIn"

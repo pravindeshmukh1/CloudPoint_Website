@@ -19,6 +19,7 @@ const TermsOfService = () => {
           name="description"
           content="Check out CloudSocial Terms Of Service."
         />
+        <link rel="canonical" href="https://cloudsocial.io/terms-of-service" key="canonical" />
       </Head>
       <Layout>
         <section
@@ -39,9 +40,10 @@ const TermsOfService = () => {
                 className="lg:text-4xl sm:text-2xl font-bold font-heading wow animate__animated animate__fadeIn animated"
                 data-wow-delay=".1s"
               >
-                Terms and Conditions of{" "}
-                <br />
-                <span className="text-blue-500 word-break">www.cloudsocial.io</span>
+                Terms and Conditions of <br />
+                <span className="text-blue-500 word-break">
+                  www.cloudsocial.io
+                </span>
               </h1>
               <h6>This Website collects some Personal Data from its Users.</h6>
             </div>
@@ -1241,7 +1243,9 @@ const TermsOfService = () => {
 
                 <hr className="mb-3 mt-3 text-gray-300" />
 
-                <p className="mb-1 text-justify">Latest update: September 22, 2021</p>
+                <p className="mb-1 text-justify">
+                  Latest update: September 22, 2021
+                </p>
                 <p className="mb-1 text-justify">
                   <a
                     className="text-blue-400 word-break"

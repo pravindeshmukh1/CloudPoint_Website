@@ -21,6 +21,11 @@ const Compendium = () => {
           name="description"
           content="CloudSocial provides all the compendium resources which guide you to succeed in the CloudSocial media marketing platform."
         />
+        <link
+          rel="canonical"
+          href="https://cloudsocial.io/compendium"
+          key="canonical"
+        />
       </Head>
       <Layout>
         <section
@@ -41,7 +46,7 @@ const Compendium = () => {
                 className="text-4xl font-bold font-heading wow animate__animated animate__fadeIn animated"
                 data-wow-delay=".1s"
               >
-              Quick Start Compendium
+                Quick Start Compendium
               </h1>
             </div>
             <hr className="mb-3 mt-3 text-gray-300" />
@@ -117,7 +122,9 @@ const Compendium = () => {
                   Account-Related
                 </h3>
                 <br />
-                <h4 className="text-md font-bold font-heading mb-2 mt-2">Let’s Begin</h4>
+                <h4 className="text-md font-bold font-heading mb-2 mt-2">
+                  Let’s Begin
+                </h4>
                 <div className="text-sm mb-2 ">
                   This guide will help you set up your CloudSocial account. You
                   are just some easy steps away from managing your social media
@@ -2132,7 +2139,9 @@ const Compendium = () => {
                   <b> History</b> Tab.
                 </div>
                 <br />
-                <h3 className="text-lg font-bold font-heading text-center">Calendar</h3>
+                <h3 className="text-lg font-bold font-heading text-center">
+                  Calendar
+                </h3>
                 <br />
                 <h4 className="text-md font-bold font-heading mb-2 mt-2">
                   Managing your post queue with our CloudSocial Calendar
@@ -2276,7 +2285,8 @@ const Compendium = () => {
                 <div className="w-full flex justify-center items-center">
                   {socialIcon.map((data) => {
                     return (
-                      <img key={data.id}
+                      <img
+                        key={data.id}
                         style={{
                           width: "7%",
                           padding: "10px",
@@ -2393,7 +2403,9 @@ const Compendium = () => {
                   impossible for us to synchronize it.
                 </div>
                 <br />
-                <h4 className="text-md font-bold font-heading mb-2 mt-2">Shorten URLs</h4>
+                <h4 className="text-md font-bold font-heading mb-2 mt-2">
+                  Shorten URLs
+                </h4>
                 <div className="text-sm mb-2">
                   A URL shortener is a good option when you have a lengthy or
                   unattractive URL that you want to share online in social
@@ -2452,7 +2464,7 @@ const Compendium = () => {
                   posts with multiple images due to their API restrictions.
                   However, the following platforms support multiple image posts:
                   <ul className="list-inside list-disc ml-2">
-                    <li >Facebook</li>
+                    <li>Facebook</li>
                     <li>Twitter</li>
                     <li>LinkedIn</li>
                   </ul>
@@ -2628,13 +2640,17 @@ const Compendium = () => {
                   start with a "@" symbol.
                 </div>
                 <br />
-                <h4 className="text-md font-bold font-heading mb-2 mt-2">Mentions</h4>
+                <h4 className="text-md font-bold font-heading mb-2 mt-2">
+                  Mentions
+                </h4>
                 <div className="text-sm mb-1">
                   A Tweet containing another account’s Twitter username,
                   preceded by the "@" symbol. For example: “Hello @CloudSocial!”
                 </div>
                 <br />
-                <h4 className="text-md font-bold font-heading mb-2 mt-2">Replies</h4>
+                <h4 className="text-md font-bold font-heading mb-2 mt-2">
+                  Replies
+                </h4>
                 <div className="text-sm mb-1">
                   A reply is when you respond to another person's Tweet - you
                   can respond to another Tweet from Omnibox section in
@@ -3239,7 +3255,9 @@ const Compendium = () => {
                   </table>
                 </div>
                 <br />
-                <h3 className="text-lg font-bold font-heading text-center">Ad Manager</h3>
+                <h3 className="text-lg font-bold font-heading text-center">
+                  Ad Manager
+                </h3>
                 <br />
                 <h4 className="text-md font-bold font-heading mb-2 mt-2">
                   FB Ad Manage
@@ -3615,18 +3633,24 @@ const Compendium = () => {
                 <br />
                 <h6 className="text-md font-bold font-heading mb-2 mt-2">
                   Other Features in Omnibox
-                  </h6>
+                </h6>
                 <ol className="text-sm list-inside list-decimal ml-2">
                   <li>You can set Tags to the incoming mentions</li>
                   <li>You can set emoji to the incoming mentions</li>
-                  <li>You set the different statuses to the mentions (Response,
-                  In-Progress, Soft-Close and Ignore)</li>
-                  <li>You will be able to view the Current Message, Current
-                  Status of the Related Post, Chat History, Post Traction, Basic
-                  Details, and Social Media Profiles.</li>
-                  <li>You can customize your tags in the brand creation section</li>
+                  <li>
+                    You set the different statuses to the mentions (Response,
+                    In-Progress, Soft-Close and Ignore)
+                  </li>
+                  <li>
+                    You will be able to view the Current Message, Current Status
+                    of the Related Post, Chat History, Post Traction, Basic
+                    Details, and Social Media Profiles.
+                  </li>
+                  <li>
+                    You can customize your tags in the brand creation section
+                  </li>
                 </ol>
-               
+
                 <div className="flex justify-center items-center">
                   <img
                     className="mt-3"
@@ -3655,7 +3679,7 @@ const Compendium = () => {
                 <h6 className="text-md font-bold font-heading mb-2 mt-2">
                   Can I send a private message to anyone on Facebook? Or To whom
                   can I send a private message on Facebook?
-                  </h6>
+                </h6>
                 <div className="text-sm mb-2">Facebook</div>
                 <div className="text-sm mb-2">
                   According to Facebook's own rules, you can send private
@@ -3672,7 +3696,7 @@ const Compendium = () => {
                 <br />
                 <h6 className="text-md font-bold font-heading mb-2 mt-2">
                   How often do you synchronize my Facebook page?
-                  </h6>
+                </h6>
                 <div className="text-sm mb-2">
                   On every event like page addition, Omnibox refresh, mention
                   reply, publish a post, post recall.
@@ -3680,7 +3704,7 @@ const Compendium = () => {
                 <br />
                 <h6 className="text-md font-bold font-heading mb-2 mt-2">
                   How often do you synchronize items in my Twitter Inbox?
-                  </h6>
+                </h6>
                 <div className="text-sm mb-2">
                   On every event like Twitter DM addition, Omnibox refresh and
                   mention reply.
@@ -3688,14 +3712,14 @@ const Compendium = () => {
                 <br />
                 <h6 className="text-md font-bold font-heading mb-2 mt-2">
                   Does CloudSocial support group message on Twitter?
-                  </h6>
+                </h6>
                 <div className="text-sm mb-2">
                   CloudSocial does not support group messages on Twitter.
                 </div>
                 <br />
                 <h6 className="text-md font-bold font-heading mb-2 mt-2">
                   How often are my Instagram comments synced?
-                  </h6>
+                </h6>
                 <div className="text-sm mb-2">
                   On every event like Instagram page addition, Omnibox refresh
                   and mention reply.
@@ -3703,7 +3727,7 @@ const Compendium = () => {
                 <br />
                 <h6 className="text-md font-bold font-heading mb-2 mt-2">
                   How often are comments under my videos synced?
-                  </h6>
+                </h6>
                 <div className="text-sm mb-2">
                   On every event like YouTube page addition, Omnibox refresh and
                   mention reply.
@@ -3711,7 +3735,7 @@ const Compendium = () => {
                 <br />
                 <h6 className="text-md font-bold font-heading mb-2 mt-2">
                   What can I find in my YouTube Inbox?
-                  </h6>
+                </h6>
                 <div className="text-sm mb-2">
                   Your YouTube Inbox contains all public comments on your
                   videos. By using channel filter in Omnibox you can
@@ -3742,7 +3766,7 @@ const Compendium = () => {
                 <br />
                 <h6 className="text-md font-bold font-heading mb-2 mt-2">
                   Social Listen (Keyword search)
-                  </h6>
+                </h6>
                 <div className="text-sm mb-2">
                   Keyword research is the foundation of any online marketing
                   strategy. Before you develop any content, it's important to
@@ -3788,7 +3812,7 @@ const Compendium = () => {
                 <br />
                 <h6 className="text-md font-bold font-heading mb-2 mt-2">
                   Help me choose the best pack according to my requirements?
-                  </h6>
+                </h6>
                 <div className="text-sm mb-2">
                   CloudSocial provides you with 3 different packages. You can
                   select the package which fits your requirements best.
@@ -3912,7 +3936,9 @@ const Compendium = () => {
                 </div>
 
                 <br />
-                <h4 className="text-md font-bold font-heading mb-2 mt-2">Silver Pack</h4>
+                <h4 className="text-md font-bold font-heading mb-2 mt-2">
+                  Silver Pack
+                </h4>
                 <br />
                 <div className="text-sm mb-2">
                   The Silver Pack is &nbsp;
@@ -3945,7 +3971,9 @@ const Compendium = () => {
                 </div>
 
                 <br />
-                <h4 className="text-md font-bold font-heading mb-2 mt-2">Gold Pack</h4>
+                <h4 className="text-md font-bold font-heading mb-2 mt-2">
+                  Gold Pack
+                </h4>
                 <br />
                 <div className="text-sm mb-2">
                   The Gold Pack is best suited for brands.
@@ -3953,8 +3981,8 @@ const Compendium = () => {
 
                 <ul className="text-sm list-inside list-disc mb-2 ml-2">
                   <li>
-                    The contract / validity for Gold Pack is 30 and 365 days named
-                    as Gold 30 or Gold 365.
+                    The contract / validity for Gold Pack is 30 and 365 days
+                    named as Gold 30 or Gold 365.
                   </li>
                   <li>Three Brands can be configured in this Pack.</li>
                   <li>
@@ -4047,7 +4075,9 @@ const Compendium = () => {
                 </ul>
 
                 <br />
-                <h4 className="text-md font-bold font-heading mb-2 mt-2">Silver </h4>
+                <h4 className="text-md font-bold font-heading mb-2 mt-2">
+                  Silver{" "}
+                </h4>
                 <br />
                 <div className="w-full hover-up-5 border-blue-gray-100  bg-blue-50 rounded shadow">
                   <table className="w-full min-w-max table-auto text-left ">
@@ -4424,7 +4454,9 @@ const Compendium = () => {
                 </div>
 
                 <br />
-                <h4 className="text-md font-bold font-heading mb-2 mt-2">Gold </h4>
+                <h4 className="text-md font-bold font-heading mb-2 mt-2">
+                  Gold{" "}
+                </h4>
                 <br />
                 <div className="w-full hover-up-5 border-blue-gray-100 bg-blue-50 rounded shadow">
                   <table className="w-full min-w-max table-auto text-left ">
@@ -4800,7 +4832,9 @@ const Compendium = () => {
                 </div>
 
                 <br />
-                <h4 className="text-md font-bold font-heading mb-2 mt-2">Platinum</h4>
+                <h4 className="text-md font-bold font-heading mb-2 mt-2">
+                  Platinum
+                </h4>
                 <br />
                 <div className="w-full hover-up-5 border-blue-gray-100 bg-blue-50 rounded shadow">
                   <table className="w-full min-w-max table-auto text-left ">
@@ -5647,7 +5681,9 @@ const Compendium = () => {
                 </div>
 
                 <br />
-                <h4 className="text-md font-bold font-heading mb-2 mt-2">Silver </h4>
+                <h4 className="text-md font-bold font-heading mb-2 mt-2">
+                  Silver{" "}
+                </h4>
                 <div className="w-full hover-up-5 border-blue-gray-100 rounded shadow">
                   <table className="w-full min-w-max table-auto text-left ">
                     <thead>
@@ -5797,7 +5833,7 @@ const Compendium = () => {
                 <h6 className="text-md font-bold font-heading mb-2 mt-2">
                   Why was my credit card declined? My PayPal payment didn't go
                   through. What should I do?
-                  </h6>
+                </h6>
                 <div className="text-sm mb-2">
                   In case you see the message saying the credit card was
                   declined, there might be several reasons for that. Based on
@@ -5820,7 +5856,7 @@ const Compendium = () => {
                 <h6 className="text-md font-bold font-heading mb-2 mt-2">
                   Why do I pay VAT/GST? Why do I see a FastSpring checkout
                   window?
-                  </h6>
+                </h6>
                 <div className="text-sm mb-2">
                   FastSpring is the reseller of CloudSocial. This means that
                   FastSpring is the merchant and seller of record for the sale
@@ -5840,10 +5876,10 @@ const Compendium = () => {
                 <h6 className="text-md font-bold font-heading mb-2 mt-2">
                   Do I have to pay GST in India? Does the price include GST in
                   India?
-                  </h6>
+                </h6>
                 <h6 className="text-md font-bold font-heading mb-2 mt-2">
                   India GST Exemption
-                  </h6>
+                </h6>
 
                 <div className="text-sm mb-2">
                   Eligible businesses making digital purchases can avoid paying
@@ -5854,10 +5890,10 @@ const Compendium = () => {
                 </div>
                 <h6 className="text-md font-bold font-heading mb-2 mt-2">
                   FastSpring's Goods and Services Tax Number for India
-                  </h6>
+                </h6>
                 <h6 className="text-md font-bold font-heading mb-2 mt-2">
                   Our tax ID for India is 9917USA29028OS1.
-                  </h6>
+                </h6>
                 <div className="text-sm mb-1">Link for human :</div>
                 <div className="text-sm mb-1">
                   <a
@@ -6178,7 +6214,9 @@ const Compendium = () => {
                   If you’re facing a problem with login on desktop, there may be
                   several reasons of this issue.
                 </div>
-                <div className="text-md font-bold font-heading mb-2 mt-2">Step 1:</div>
+                <div className="text-md font-bold font-heading mb-2 mt-2">
+                  Step 1:
+                </div>
                 <div className="text-sm mb-1">
                   First, please make sure you’re using one of the supported
                   browsers and check if it’s up to date:
@@ -6193,7 +6231,9 @@ const Compendium = () => {
                     we no longer support it either.)
                   </li>
                 </ul>
-                <div className="text-md font-bold font-heading mb-2 mt-2">Step 2:</div>
+                <div className="text-md font-bold font-heading mb-2 mt-2">
+                  Step 2:
+                </div>
                 <div className="text-sm mb-1">
                   If your browser is up to date, try to delete the cache of your
                   browser and log in again. Hopefully you’ll be able to log in
@@ -6209,14 +6249,18 @@ const Compendium = () => {
                     &nbsp; https://app.cloudsocial.io/
                   </a>
                 </div>
-                <div className="text-md font-bold font-heading mb-2 mt-2">Step 3:</div>
+                <div className="text-md font-bold font-heading mb-2 mt-2">
+                  Step 3:
+                </div>
                 <div className="text-sm mb-1">
                   If you’re still facing problem with login, try to open this
                   link and remove the Manager app from the list. Open
                   CloudSocial in a new tab and try to log in, making sure you
                   grant all the permissions.
                 </div>
-                <div className="text-md font-bold font-heading mb-2 mt-2">Step 4:</div>
+                <div className="text-md font-bold font-heading mb-2 mt-2">
+                  Step 4:
+                </div>
                 <div className="text-sm mb-1">
                   If you still can’t log in, there may be several reasons. It
                   can be due to the security settings of your network. If you’re
@@ -6225,7 +6269,9 @@ const Compendium = () => {
                   whitelist CloudSocial in the network. This typically applies
                   to banks, non-governments organizations, etc.
                 </div>
-                <div className="text-md font-bold font-heading mb-2 mt-2">Step 5:</div>
+                <div className="text-md font-bold font-heading mb-2 mt-2">
+                  Step 5:
+                </div>
                 <div className="text-sm mb-1">
                   If you’ve been through all this and still can’t log in, don’t
                   give up! Open the Console of your browser (Ctrl+Shift+J) combo
@@ -6234,7 +6280,9 @@ const Compendium = () => {
                   video) for us. We’ll be happy to look into what’s happening
                   there.
                 </div>
-                <div className="text-md font-bold font-heading mb-2 mt-2">Step 6:</div>
+                <div className="text-md font-bold font-heading mb-2 mt-2">
+                  Step 6:
+                </div>
                 <div className="text-sm mb-1">Special DNS use case</div>
                 <div className="text-sm mb-2">
                   If you’re doing a web development and you’re using a localhost
@@ -6394,7 +6442,10 @@ const Compendium = () => {
                 <hr className="mb-3 mt-3 text-gray-300" />
                 <br />
 
-                <h3 id="support" className="text-lg font-bold font-heading text-center text-center">
+                <h3
+                  id="support"
+                  className="text-lg font-bold font-heading text-center text-center"
+                >
                   Support Related
                 </h3>
                 <br />

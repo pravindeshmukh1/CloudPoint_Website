@@ -15,6 +15,11 @@ const Faqs = () => {
           name="description"
           content="Check out CloudSocial FAQ to learn about CloudSocial, its features, pricing, integrations and how to schedule a post to manage multiple social media handles."
         />
+        <link
+          rel="canonical"
+          href="https://cloudsocial.io/faqs"
+          key="canonical"
+        />
       </Head>
       <Layout>
         <section

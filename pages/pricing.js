@@ -18,7 +18,7 @@ const Pricing = () => {
   const [data11, setData11] = React.useState("");
 
   const [res, setRes] = useState("");
- // console.log("🚀 ~ file: pricing.js:15 ~ res:", res);
+  // console.log("🚀 ~ file: pricing.js:15 ~ res:", res);
 
   const getLocation = async () => {
     const res = await fetch("https://api.db-ip.com/v2/free/self");
@@ -35,16 +35,23 @@ const Pricing = () => {
 
   const value1 = money.filter((money) => money.CountryCode === res.countryCode);
   const value2 = money.filter((money) => money.CountryCode === data11);
- // console.log("🚀 ~ file: pricing.js:33 ~ value1:", value1);
+  // console.log("🚀 ~ file: pricing.js:33 ~ value1:", value1);
 
   return (
     <>
       <Head>
         <meta charSet="utf-8" name="CloudSocial Pricing" />
-        <title>Pricing and Packages - Social Media Post Scheduler | CloudSocial</title>
+        <title>
+          Pricing and Packages - Social Media Post Scheduler | CloudSocial
+        </title>
         <meta
           name="description"
           content="CloudSocial provides social media post scheduling tools for small businesses, brands, digital agencies. Check out how much does CloudSocial cost? Try it free."
+        />
+        <link
+          rel="canonical"
+          href="https://cloudsocial.io/pricing"
+          key="canonical"
         />
       </Head>
       <Layout>
@@ -311,7 +318,7 @@ const Pricing = () => {
             </div> */}
 
             <div className="flex flex-wrap justify-center items-center -mx-3 mt-8">
-             {/* <div className="w-full md:w-1/2 lg:w-1/3 px-3 mb-6">
+              {/* <div className="w-full md:w-1/2 lg:w-1/3 px-3 mb-6">
                 <div
                   className="hover-up-5 pt-16 pb-8 px-4 text-center bg-white rounded shadow wow animate__animated animate__fadeIn"
                   data-wow-delay=".2s"
@@ -630,7 +637,9 @@ const Pricing = () => {
                   </div>
                   <p
                     className={`${
-                      show ? "mt-1 text-gray-4001 font-bold" : "mt-1 text-blue-500"
+                      show
+                        ? "mt-1 text-gray-4001 font-bold"
+                        : "mt-1 text-blue-500"
                     }`}
                   >
                     Billed Annually
@@ -815,9 +824,7 @@ const Pricing = () => {
                           src="/assets/imgs/icons/check-o.svg"
                           alt="check"
                         />
-                        <span>
-                          Export to XLS, PDF & Share via Email
-                        </span>
+                        <span>Export to XLS, PDF & Share via Email</span>
                       </li>
                       <li className="mt-3 mb-3 text-md text-white-600 font-bold">
                         <span>Listen</span>
@@ -1131,9 +1138,7 @@ const Pricing = () => {
                           src="/assets/imgs/icons/check-o.svg"
                           alt="check"
                         />
-                        <span>
-                          Export to XLS, PDF & Share via Email
-                        </span>
+                        <span>Export to XLS, PDF & Share via Email</span>
                       </li>
                       <li className="mt-3 mb-3 text-md text-blue-600 font-bold">
                         <span>Listen</span>
@@ -1144,9 +1149,7 @@ const Pricing = () => {
                           src="/assets/imgs/icons/check-o.svg"
                           alt="check"
                         />
-                        <span>
-                        Keyword search
-                        </span>
+                        <span>Keyword search</span>
                       </li>
                       <li className="flex mb-3 text-xs">
                         <img
@@ -1235,7 +1238,6 @@ const Pricing = () => {
             <p
               className=" text-md text-gray-700 wow animate__animated animate__fadeInDown flex justify-center items-center"
               data-wow-delay=".5s"
-              
             >
               *During trial period 250 and 500 mentions (listen) will be
               allocated to Gold & Platinum pack respectively.

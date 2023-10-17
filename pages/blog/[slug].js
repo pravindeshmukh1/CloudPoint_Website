@@ -54,6 +54,7 @@ function LinkRenderer(props) {
 // export async function getServerSideProps(context) {
 export const getServerSideProps = async (context) => {
   const { slug } = context.query;
+  console.log("🚀 ~ file: [slug].js:57 ~ slug:", slug);
   try {
     const data = await getSingleBlog(slug);
     const blogList = await getBlogList();
@@ -107,6 +108,12 @@ const BlogSingle = ({ data, slug, blogList }) => {
         <meta
           name="description"
           content={`${data.data[0].attributes.metaDescription}`}
+        />
+        <link
+          rel="canonical"
+          // href="https://cloudsocial.io/blog"
+          href={`https://cloudsocial.io/blog/${slug}`}
+          key="canonical"
         />
       </Head>
       <Layout>

@@ -142,6 +142,11 @@ const Ebook = ({ eBookList }) => {
           name="description"
           content="CloudSocial provides all the E-Book resources which guide you to succeed in the CloudSocial media marketing platform."
         />
+        <link
+          rel="canonical"
+          href="https://cloudsocial.io/ebook"
+          key="canonical"
+        />
       </Head>
       <Layout>
         <section className="-mt-24 pt-40 pb-12 bg-blueGray-100">
