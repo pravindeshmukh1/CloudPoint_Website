@@ -146,13 +146,13 @@ function Home() {
                   Manage all your{" "}
                   <strong className="text-blue-500">Social Media </strong>from
                   One Place{" "}
-                  <div className="typewrite d-inline text-brand">
+                  {/* <div className="typewrite d-inline text-brand">
                     <TextEffect
                       text1="Control multiple social accounts simultaneously"
                       text2="engage with several prospects at the same time"
                       text3="provide superior customer experience."
                     />
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <div>
