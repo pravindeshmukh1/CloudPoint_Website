@@ -35,14 +35,14 @@ const TermsOfService = () => {
               alt="terms"
             />
             <div className="mb-12 text-center">
-              <h2
+              <h1
                 className="lg:text-4xl sm:text-2xl font-bold font-heading wow animate__animated animate__fadeIn animated"
                 data-wow-delay=".1s"
               >
                 Terms and Conditions of{" "}
                 <br />
                 <span className="text-blue-500 word-break">www.cloudsocial.io</span>
-              </h2>
+              </h1>
               <h6>This Website collects some Personal Data from its Users.</h6>
             </div>
 

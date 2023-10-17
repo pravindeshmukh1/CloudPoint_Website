@@ -243,14 +243,14 @@ const Pricing = () => {
         >
           <div className="container">
             <div className="text-center mb-16">
-              <h2
+              <h1
                 className="max-w-lg mx-auto mb-4 text-4xl font-bold font-heading wow animate__animated animate__fadeIn"
                 data-wow-delay=".2s"
               >
                 <span>Start saving time today and </span>
                 <span className="text-blue-500">choose </span>
                 <span>your best plan</span>
-              </h2>
+              </h1>
               {/* <p
                 className="max-w-sm mx-auto text-lg text-gray-400 wow animate__animated animate__fadeInDown"
                 data-wow-delay=".5s"

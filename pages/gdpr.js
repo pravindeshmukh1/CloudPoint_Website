@@ -28,12 +28,12 @@ const GDPR = () => {
               alt="gdpr"
             />
             <div className="mb-12 text-center">
-              <h2
+              <h1
                 className="text-4xl font-bold font-heading wow animate__animated animate__fadeIn animated"
                 data-wow-delay=".1s"
               >
                 GDPR
-              </h2>
+              </h1>
             </div>
             <div className="w-full text-center lg:text-left text-lg lg:text-base lg:font-normal mb-2 lg:mb-0 px-3">
               <div className="text-left text-sm">

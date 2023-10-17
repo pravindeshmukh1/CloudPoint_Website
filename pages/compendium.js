@@ -37,12 +37,12 @@ const Compendium = () => {
               alt="Monst"
             />
             <div className="mb-12 text-center">
-              <h2
+              <h1
                 className="text-4xl font-bold font-heading wow animate__animated animate__fadeIn animated"
                 data-wow-delay=".1s"
               >
               Quick Start Compendium
-              </h2>
+              </h1>
             </div>
             <hr className="mb-3 mt-3 text-gray-300" />
           </div>

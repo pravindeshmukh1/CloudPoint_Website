@@ -52,10 +52,10 @@ const Integration = () => {
               <div className="w-full lg:w-1/2 px-3">
                 <div className="py-12">
                   <div className="max-w-lg lg:max-w-md mx-auto lg:mx-0 mb-8 text-center lg:text-left">
-                    <h2 className="text-3xl lg:text-5xl mb-4 font-bold font-heading wow animate__animatedanimated animate__fadeIn">
+                    <h1 className="text-3xl lg:text-5xl mb-4 font-bold font-heading wow animate__animatedanimated animate__fadeIn">
                     CloudSocial has integrated all of your <span className="text-blue-500">favourite apps</span>{" "}
                     for an holistic experience.
-                    </h2>
+                    </h1>
                     {/* <p className="text-blueGray-400 leading-relaxed wow animate__animatedanimated animate__fadeIn">
                       We are <strong className="text-blue-500">Monst</strong>, a
                       Creative Design{" "}

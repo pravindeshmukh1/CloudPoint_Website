@@ -201,9 +201,9 @@ const Faqs = () => {
                 data-wow-delay=".3s"
               >
                 <div className="px-4 mx-auto lg:ml-0">
-                  <h3 className="mb-8 text-4xl font-bold font-heading wow animate__animated animate__fadeIn">
+                  <h1 className="mb-8 text-4xl font-bold font-heading wow animate__animated animate__fadeIn">
                     Faqs
-                  </h3>
+                  </h1>
                   <div>
                     <Disclosure
                       as="div"

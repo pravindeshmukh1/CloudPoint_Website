@@ -135,13 +135,13 @@ function Home() {
           <div className="container px-4 mx-auto">
             <div className="pt-12 text-center">
               <div className="max-w-2xl mx-auto mb-8">
-                <h2 className="text-3xl lg:text-5xl lg:leading-normal mb-4 font-bold font-heading wow animate_animated animate_fadeIn ">
+                <h1 className="text-3xl lg:text-5xl lg:leading-normal mb-4 font-bold font-heading wow animate_animated animate_fadeIn ">
                   <span className="text-blue-700 text-3xl  lg:text-5xl">
                     {" "}
                     CloudSocial{" "}
                   </span>{" "}
                   <br />A Complete Social Media Management Tool
-                </h2>
+                </h1>
                 <div className="text-blueGray-400 leading-relaxed wow animate_animated animate_fadeIn d-inline">
                   Manage all your{" "}
                   <strong className="text-blue-500">Social Media </strong>from
