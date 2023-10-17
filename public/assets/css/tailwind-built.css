@@ -772,6 +772,11 @@ label {
 }
   /* end  switch */
 
+/* pagintion */
+
+/* pagintion */
+
+
 
 .drop-down-menu{
 	visibility: hidden;
@@ -2400,6 +2405,9 @@ li.menu-item-has-children.active .menu-expand {
 	.sm\:mb-0{
 		margin-bottom: 0px !important;
 	}
+	.sm\:mb-2{
+		margin-bottom: 10px !important;
+	}
 	.sm\:mr-3{
 		margin-right: 0.75rem !important;
 	}
@@ -2436,6 +2444,9 @@ li.menu-item-has-children.active .menu-expand {
 	.sm\:w-30{
 		width: 10rem !important;
 	}
+	.sm\:w-40{
+		width: 15rem !important;
+	}
 	.sm\:max-w-sm{
 		max-width: 24rem !important;
 	}
@@ -2462,6 +2473,19 @@ li.menu-item-has-children.active .menu-expand {
 	}
 	.sm\:text-sm{
 		font-size: .875rem !important;
+	}
+	.sm\:flex-row{
+		flex-direction: row !important;
+	}
+	.sm\:flex-col{
+		flex-direction: column !important;
+	}
+	.sm\:flex-nowrap{
+		flex-wrap: nowrap !important;
+	}
+	.sm\:px-2{
+		padding-left: 0.5rem !important;
+		padding-right: 0.5rem !important;
 	}
 }
 @media (min-width: 768px){
@@ -2541,6 +2565,15 @@ li.menu-item-has-children.active .menu-expand {
 	}
 	.md\:text-3xl{
 		font-size: 1.875rem !important;
+	}
+	.md\:flex-row{
+		flex-direction: row !important;
+	}
+	.md\:flex-col{
+		flex-direction: column !important;
+	}
+	.md\:flex-nowrap{
+		flex-wrap: nowrap !important;
 	}
 }
 @media (min-width: 1024px){
@@ -2651,6 +2684,9 @@ li.menu-item-has-children.active .menu-expand {
 	.lg\:max-w-full{
 		max-width: 100% !important;
 	}
+	.lg\:w-200{
+		max-width: 200% !important;
+	}
 	.lg\:max-w-md{
 		max-width: 28rem !important;
 	}
@@ -2717,6 +2753,22 @@ li.menu-item-has-children.active .menu-expand {
 	.lg\:py-6{
 		padding-top: 1.5rem !important;
 		padding-bottom: 1.5rem !important;
+	}
+	.lg\:px-2{
+		padding-left: 0.5rem !important;
+		padding-right: 0.5rem !important;
+	}
+	.lg\:px-4{
+		padding-left: 1rem !important;
+		padding-right: 1rem !important;
+	}
+	.lg\:px-6{
+		padding-left: 2rem !important;
+		padding-right: 2rem !important;
+	}
+	.lg\:px-8{
+		padding-left: 3rem !important;
+		padding-right: 3rem !important;
 	}
 	.lg\:pl-12{
 		padding-left: 3rem !important;
