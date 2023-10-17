@@ -92,7 +92,7 @@ const Integration = () => {
                   <img
                     className="lg:max-w-lg"
                     src="/assets/imgs/illustrations/team.svg"
-                    alt="Monst"
+                    alt="team"
                   />
                 </div>
               </div>

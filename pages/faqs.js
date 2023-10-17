@@ -28,7 +28,7 @@ const Faqs = () => {
               className="mx-auto sm:max-w-sm mb-10 wow animate__animated animate__fadeIn"
               data-wow-delay=".1s"
               src="assets/imgs/illustrations/eating.svg"
-              alt="Monst"
+              alt="FAQ"
             />
             {/* <form
               className="flex justify-center max-w-3xl mx-auto mb-16 wow animate__animated animate__fadeIn"

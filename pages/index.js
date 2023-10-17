@@ -10,7 +10,7 @@ import { useRouter } from "next/router";
 import { addEbookUser } from "../lib/apiCall";
 
 function Home() {
-  const router = useRouter()
+  const router = useRouter();
 
   const [inViewport, setInViewport] = useState(false);
 
@@ -96,7 +96,7 @@ function Home() {
 
           localStorage.setItem("user", JSON.stringify(localData));
           // handlePdfOpen();
-          router.push('/ebook')
+          router.push("/ebook");
         });
       }
     } catch (error) {
@@ -146,13 +146,13 @@ function Home() {
                   Manage all your{" "}
                   <strong className="text-blue-500">Social Media </strong>from
                   One Place{" "}
-                  {/* <div className="typewrite d-inline text-brand">
+                  <div className="typewrite d-inline text-brand">
                     <TextEffect
                       text1="Control multiple social accounts simultaneously"
                       text2="engage with several prospects at the same time"
                       text3="provide superior customer experience."
                     />
-                  </div> */}
+                  </div>
                 </div>
               </div>
               <div>
@@ -173,19 +173,26 @@ function Home() {
             </div>
           </div>
           <div className="relative max-w-6xl mt-16 md:mt-8 mb-8 mx-auto">
-            <img src="/assets/imgs/elements/pattern.png" alt="Monst" />
+            {/* <img src="/assets/imgs/elements/pattern.png" alt="pattern" /> */}
+            <Image
+              src="/assets/imgs/elements/pattern.png"
+              alt="pattern"
+              priority
+              width={2000}
+              height={2000}
+            />
             <div
               className="absolute"
               style={{ top: "9%", left: "14%", width: "72%", height: "66%" }}
               //style={{ top: "9%", width: "100%", height: "100%" }}
             >
-              <img
+              {/* <img
                 className="jump rounded wow animate_animated animate_fadeIn"
                 //  src="/assets/imgs/placeholders/dashboard.png"
                 src="/assets/imgs/backgrounds/slider/dashboard1248.jpg"
                 alt="dashboard"
-              />
-              {/* <Image
+              /> */}
+              <Image
                 className="jump rounded wow animate_animated animate_fadeIn mx-auto"
                 src="/assets/imgs/backgrounds/slider/dashboard1248.jpg"
                 alt="dashboard"
@@ -194,7 +201,7 @@ function Home() {
                 width={1000}
                 height={1000}
                 // objectFit="contain"
-              /> */}
+              />
             </div>
           </div>
         </section>
@@ -408,12 +415,12 @@ function Home() {
                   <img
                     className="absolute top-0 left-0 w-40 -ml-12 -mt-12"
                     src="/assets/imgs/elements/blob-tear.svg"
-                    alt="Monst"
+                    alt="blob-tear"
                   />
                   <img
                     className="absolute bottom-0 right-0 w-40 -mr-12 -mb-12"
                     src="/assets/imgs/elements/blob-tear.svg"
-                    alt="Monst"
+                    alt="blob-tear"
                   />
                 </div>
               </div>

@@ -34,7 +34,7 @@ const Compendium = () => {
               className="mx-auto sm:max-w-sm mb-10 wow animate__animated animate__fadeIn"
               data-wow-delay=".1s"
               src="assets/imgs/illustrations/eating.svg"
-              alt="Monst"
+              alt="Compendium"
             />
             <div className="mb-12 text-center">
               <h1
