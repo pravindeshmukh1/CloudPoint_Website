@@ -4,6 +4,7 @@ import CounterUp from "../components/elements/Counterup";
 import { video } from "../public/assets/cardDetails";
 import YoutubeEmbed from "../components/elements/YoutubeEmbed";
 import Head from "next/head";
+import Link from "next/link";
 
 const Video = () => {
   const [inViewport, setInViewport] = useState(false);
@@ -125,7 +126,16 @@ const Video = () => {
                         {videoData.id}
                       </div>
 
-                      <YoutubeEmbed embedId={videoData.url} />
+                      {/* <YoutubeEmbed embedId={videoData.url} /> */}
+                      <Link href={videoData.url} legacyBehavior>
+                        <a target="_blank">
+                          <img
+                            className="rounded-xl"
+                            src={videoData.image}
+                            alt={videoData.title}
+                          />
+                        </a>
+                      </Link>
                       <h3 className="mb-2 mt-2 font-bold font-heading text-xl">
                         {videoData.title}
                       </h3>

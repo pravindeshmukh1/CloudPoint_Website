@@ -1,7 +1,7 @@
 import SwiperCore, { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Link from "next/link";
-import { socialMedia } from "../../public/assets/cardDetails";
+import { cloudsocialVideo, } from "../../public/assets/cardDetails";
 import YoutubeEmbed from "../elements/YoutubeEmbed";
 
 SwiperCore.use([Navigation]);
@@ -24,21 +24,24 @@ const Slider1 = () => {
           nextEl: ".custom_next",
         }}
       >
-        {socialMedia.map(({ img, title, desc, listen, imgUrl, id }) => (
+        {cloudsocialVideo.map(({ img, title, desc, listen, imgUrl, id }) => (
           <SwiperSlide key={id}>
             <div className="px-3 pb-5">
               <div className="card-slider group p-3">
                 <div className="flex items-end mb-4">
-                  <img className="" src={img} alt={title}/>
+                  <img className="" src={img} alt={title} />
                   <h1 className="mx-2 text-xl font-semibold group-hover:text-blue-500">
-                    <Link href="/services" legacyBehavior>
-                      <a>{title}</a>
-                    </Link>
+                    <a>{title}</a>
                   </h1>
                 </div>
                 <div className="mb-4">
-                  {/* <img className="rounded-xl" src={imgUrl} alt={title} /> */}
-                  <YoutubeEmbed embedId={listen} />
+                  <Link href={listen} legacyBehavior>
+                    <a target="_blank">
+                      <img className="rounded-xl" src={imgUrl} alt={title} />
+                    </a>
+                  </Link>
+
+                  {/* <YoutubeEmbed embedId={listen} /> */}
                   <div className="flex justify-between items-end ">
                     <p className="mt-2 text-xs text-gray-500 group-hover:text-blue-500 text-justify">
                       {desc}
