@@ -1,8 +1,9 @@
 import SwiperCore, { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Link from "next/link";
-import { cloudsocialVideo, } from "../../public/assets/cardDetails";
+import { cloudsocialVideo } from "../../public/assets/cardDetails";
 import YoutubeEmbed from "../elements/YoutubeEmbed";
+import Image from "next/image";
 
 SwiperCore.use([Navigation]);
 
@@ -37,7 +38,17 @@ const Slider1 = () => {
                 <div className="mb-4">
                   <Link href={listen} legacyBehavior>
                     <a target="_blank">
-                      <img className="rounded-xl" src={imgUrl} alt={title} />
+                      {/* <img className="rounded-xl" src={imgUrl} alt={title} /> */}
+                      <Image
+                        className="rounded-xl"
+                        src={imgUrl}
+                        alt={title}
+                        priority
+                        // layout="fill"
+                        width={1000}
+                        height={1000}
+                        // objectFit="contain"
+                      />
                     </a>
                   </Link>
 

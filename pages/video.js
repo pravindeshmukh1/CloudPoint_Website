@@ -5,6 +5,7 @@ import { video } from "../public/assets/cardDetails";
 import YoutubeEmbed from "../components/elements/YoutubeEmbed";
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 
 const Video = () => {
   const [inViewport, setInViewport] = useState(false);
@@ -129,10 +130,20 @@ const Video = () => {
                       {/* <YoutubeEmbed embedId={videoData.url} /> */}
                       <Link href={videoData.url} legacyBehavior>
                         <a target="_blank">
-                          <img
+                          {/* <img
                             className="rounded-xl"
                             src={videoData.image}
                             alt={videoData.title}
+                          /> */}
+                          <Image
+                            className="rounded-xl"
+                            src={videoData.image}
+                            alt={videoData.title}
+                            priority
+                            // layout="fill"
+                            width={1000}
+                            height={1000}
+                            // objectFit="contain"
                           />
                         </a>
                       </Link>
