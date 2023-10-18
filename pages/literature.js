@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Layout from "../components/layout/Layout";
 import CounterUp from "../components/elements/Counterup";
 import YoutubeEmbed from "../components/elements/YoutubeEmbed";
-import { howToData, literatureData } from "../public/assets/cardDetails";
+import { howToData, literature, literatureData } from "../public/assets/cardDetails";
 import Head from "next/head";
 
 const Literature = () => {
@@ -113,7 +113,7 @@ const Literature = () => {
               </div>
             </div>
             <div className="flex flex-wrap -mx-3 -mb-6 text-center">
-              {literatureData.map((literatureData, index) => {
+              {literature.map((data, index) => {
                 return (
                   <div
                     className="hover-up-5 w-full md:w-1/2 lg:w-1/3 px-3 mb-6 wow animate__animated animate__fadeIn"
@@ -122,16 +122,16 @@ const Literature = () => {
                   >
                     <div className="p-12 bg-white shadow rounded">
                       <div className="flex w-12 mb-1 h-12 mx-auto items-center justify-center text-blue-800 font-bold font-heading bg-blue-200 rounded-full">
-                        {literatureData.id}
+                        {data.id}
                       </div>
-                      <a href={literatureData.url} target="_blank">
+                      <a href={data.url} target="_blank">
                         <img
                           className="h-36 mx-auto my-4"
-                          src={literatureData.image}
-                          alt={literatureData.title}
+                          src={data.image}
+                          alt={data.title}
                         />
                         <h3 className="mb-2 font-bold font-heading text-xl">
-                          {literatureData.title}
+                          {data.title}
                         </h3>
                       </a>
                     </div>

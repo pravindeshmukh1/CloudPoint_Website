@@ -264,7 +264,7 @@ const BlogSingle = ({ data, slug, blogList }) => {
                 <Link href="/ebook" legacyBehavior>
                   <a>
                     <Image
-                      className=" object-cover rounded drop-shadow"
+                      className=" object-cover rounded drop-shadow1"
                       src="https://content.cloudsocial.io/wp-content/uploads/image/guide/CloudSocial%20Guide.webp"
                       alt="Publish-Calendar"
                       priority
@@ -276,7 +276,7 @@ const BlogSingle = ({ data, slug, blogList }) => {
                   </a>
                 </Link>
               </div>
-              <div className="px-4 mb-8 order-0 lg:order-11">
+              <div className="px-4 mb-10 order-0 lg:order-11">
                 {blogFilter?.slice(0, 10).map((data, index) => {
                   return (
                     <div
@@ -284,7 +284,7 @@ const BlogSingle = ({ data, slug, blogList }) => {
                       data-wow-delay=".1s"
                       key={index}
                     >
-                      <div className="flex">
+                      {/* <div className="flex">
                         <Link
                           href={`/blog/${data.attributes.slug}`}
                           legacyBehavior
@@ -295,8 +295,8 @@ const BlogSingle = ({ data, slug, blogList }) => {
                             alt={data.attributes.title}
                           />
                         </Link>
-                      </div>
-                      <div className="px-1">
+                      </div> */}
+                      <div className="p-3">
                         <h3 className="text-xs font-bold font-heading text-center">
                           <Link
                             href={`/blog/${data.attributes.slug}`}

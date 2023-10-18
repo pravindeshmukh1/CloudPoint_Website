@@ -268,199 +268,47 @@ export const footerIcon = [
   },
 ];
 
-export const howToData = [
-  {
-    id: 1,
-    title: "How to change Password?",
-    image:
-      "https://mlvlk7qibkfe.i.optimole.com/w:383/h:294/q:auto/https://content.cloudsocial.io/wp-content/uploads/2019/01/l1.jpg",
-    url: "https://content.cloudsocial.io/wp-content/uploads/2023/HOW%20TO%20CHANGE%20PASSWORD.pdf",
-  },
-  {
-    id: 2,
-    title: "How to change Role Name",
-    image:
-      "https://mlvlk7qibkfe.i.optimole.com/w:383/h:294/q:auto/https://content.cloudsocial.io/wp-content/uploads/2019/01/l2.jpg",
-    url: "https://content.cloudsocial.io/wp-content/uploads/2023/HOW%20TO%20CHANGE%20ROLE%20NAME.pdf",
-  },
-  {
-    id: 3,
-    title: "How to create Brand?",
-    image:
-      "https://mlvlk7qibkfe.i.optimole.com/w:383/h:294/q:auto/https://content.cloudsocial.io/wp-content/uploads/2019/01/l3.jpg",
-    url: "https://content.cloudsocial.io/wp-content/uploads/2023/HOW%20TO%20CREATE%20BRAND.pdf",
-  },
-  {
-    id: 4,
-    title: "How to create Role?",
-    image:
-      "https://mlvlk7qibkfe.i.optimole.com/w:383/h:294/q:auto/https://content.cloudsocial.io/wp-content/uploads/2019/01/l4.jpg",
-    url: "https://content.cloudsocial.io/wp-content/uploads/2023/HOW%20TO%20CREATE%20ROLE.pdf",
-  },
-  {
-    id: 5,
-    title: "How to listen Keyword?",
-    image:
-      "https://mlvlk7qibkfe.i.optimole.com/w:383/h:294/q:auto/https://content.cloudsocial.io/wp-content/uploads/2019/01/l5.jpg",
-    url: "https://content.cloudsocial.io/wp-content/uploads/2020/04/How-to-Listen-keyword-1.pdf",
-  },
-  {
-    id: 6,
-    title: "How to raise support Ticket?",
-    image:
-      "https://mlvlk7qibkfe.i.optimole.com/w:383/h:294/q:auto/https://content.cloudsocial.io/wp-content/uploads/2019/01/l6.jpg",
-    url: "https://content.cloudsocial.io/wp-content/uploads/2023/HOW%20TO%20RAISE%20SUPPORT%20TICKET.pdf",
-  },
-  {
-    id: 7,
-    title: "How to publish your first post in CloudSocial?",
-    image:
-      "https://mlvlk7qibkfe.i.optimole.com/w:383/h:294/q:auto/https://content.cloudsocial.io/wp-content/uploads/2019/01/l7.jpg",
-    url: "https://content.cloudsocial.io/wp-content/uploads/2023/How%20to%20publish%20your%20first%20post%20in%20CloudSocial.pdf",
-  },
-  {
-    id: 8,
-    title: "How to respond to a mention from omnibox in CloudSocial?",
-    image:
-      "https://mlvlk7qibkfe.i.optimole.com/w:383/h:294/q:auto/https://content.cloudsocial.io/wp-content/uploads/2019/01/l8.jpg",
-    url: "https://content.cloudsocial.io/wp-content/uploads/2023/Responding%20to%20a%20particular%20mention.pdf",
-  },
-  {
-    id: 9,
-    title: "How to set your profile in CloudSocial?",
-    image:
-      "https://mlvlk7qibkfe.i.optimole.com/w:383/h:294/q:auto/https://content.cloudsocial.io/wp-content/uploads/2019/01/l9.jpg",
-    url: "https://content.cloudsocial.io/wp-content/uploads/2020/04/How-to-set-your-Profile-in-CloudSocial-1.pdf",
-  },
-  {
-    id: 10,
-    title: "How to listen from existing Brand in CloudSocial?",
-    image:
-      "https://mlvlk7qibkfe.i.optimole.com/w:383/h:294/q:auto/https://content.cloudsocial.io/wp-content/uploads/2019/01/l10.jpg",
-    url: "https://content.cloudsocial.io/wp-content/uploads/2020/04/How-to-Listen-from-existing-brand-in-CloudSocial-1.pdf",
-  },
-  {
-    id: 11,
-    title: "How to subscribe?",
-    image:
-      "https://mlvlk7qibkfe.i.optimole.com/w:383/h:294/q:auto/https://content.cloudsocial.io/wp-content/uploads/2019/01/l11.jpg",
-    url: "https://content.cloudsocial.io/wp-content/uploads/2023/How%20to%20subscribe.pdf",
-  },
-];
-export const literatureData = [
-  // {
-  //   id: 1,
-  //   title: "Silver Pack Guide",
-  //   image:
-  //     "https://mlvlk7qibkfe.i.optimole.com/w:383/h:254/q:auto/https://content.cloudsocial.io/wp-content/uploads/2020/04/UserGuide2.png",
-  //   url: "https://content.cloudsocial.io/wp-content/uploads/2023/Silver%20Pack.pdf",
-  // },
-  {
-    id: 2,
-    title: "Gold Pack Guide",
-    image:
-      "https://mlvlk7qibkfe.i.optimole.com/w:383/h:254/q:auto/https://content.cloudsocial.io/wp-content/uploads/2020/04/UserGuide2.png",
-    url: "https://content.cloudsocial.io/wp-content/uploads/2023/Gold%20Pack.pdf",
-  },
-  {
-    id: 3,
-    title: "Platinum Pack Guide",
-    image:
-      "https://mlvlk7qibkfe.i.optimole.com/w:383/h:254/q:auto/https://content.cloudsocial.io/wp-content/uploads/2020/04/UserGuide2.png",
-    url: "https://content.cloudsocial.io/wp-content/uploads/2023/Platinum%20Pack.pdf",
-  },
-  {
-    id: 4,
-    title: "Super Admin User Guide",
-    image:
-      "https://mlvlk7qibkfe.i.optimole.com/w:383/h:262/q:auto/https://content.cloudsocial.io/wp-content/uploads/2020/04/UserGuide1.png",
-    url: "https://content.cloudsocial.io/wp-content/uploads/2023/Super%20Admin.pdf",
-  },
-  {
-    id: 5,
-    title: "Brand Manager User Guide",
-    image:
-      "https://mlvlk7qibkfe.i.optimole.com/w:383/h:262/q:auto/https://content.cloudsocial.io/wp-content/uploads/2020/04/UserGuide1.png",
-    url: "https://content.cloudsocial.io/wp-content/uploads/2023/Brand%20Manager.pdf",
-  },
-  {
-    id: 6,
-    title: "Marketing User Guide",
-    image:
-      "https://mlvlk7qibkfe.i.optimole.com/w:383/h:262/q:auto/https://content.cloudsocial.io/wp-content/uploads/2020/04/UserGuide1.png",
-    url: "https://content.cloudsocial.io/wp-content/uploads/2023/Marketing%20User.pdf",
-  },
-  {
-    id: 7,
-    title: "Analytics User Guide",
-    image:
-      "https://mlvlk7qibkfe.i.optimole.com/w:383/h:262/q:auto/https://content.cloudsocial.io/wp-content/uploads/2020/04/UserGuide1.png",
-    url: "https://content.cloudsocial.io/wp-content/uploads/2023/Analytics.pdf",
-  },
-  {
-    id: 8,
-    title: "Back Office User Guide",
-    image:
-      "https://mlvlk7qibkfe.i.optimole.com/w:383/h:262/q:auto/https://content.cloudsocial.io/wp-content/uploads/2020/04/UserGuide1.png",
-    url: "https://content.cloudsocial.io/wp-content/uploads/2023/Back%20Office.pdf",
-  },
-  {
-    id: 9,
-    title: "Agent User Guide",
-    image:
-      "https://mlvlk7qibkfe.i.optimole.com/w:383/h:262/q:auto/https://content.cloudsocial.io/wp-content/uploads/2020/04/UserGuide1.png",
-    url: "https://content.cloudsocial.io/wp-content/uploads/2023/Agent.pdf",
-  },
-  {
-    id: 10,
-    title: "Agency Manager User Guide",
-    image:
-      "https://mlvlk7qibkfe.i.optimole.com/w:383/h:262/q:auto/https://content.cloudsocial.io/wp-content/uploads/2020/04/UserGuide1.png",
-    url: "https://content.cloudsocial.io/wp-content/uploads/2023/Agency%20Manager.pdf",
-  },
-];
-
 export const socialMedia = [
   {
     id: 1,
     title: "Publish",
-    img: "https://content.cloudsocial.io/wp-content/uploads/image/publish.svg",
+    img: "https://content.cloudsocial.io/wp-content/uploads/literature/videoImg/publish.svg",
     desc: `Create, schedule, and post your content on multiple social channels from the CloudSocial platform to maximize visibility and brand awareness. Remain omnipresent on all social media channels 24x7.`,
     listen: "https://www.youtube.com/embed/FU6PyhD37oI?autoplay=1&mute=1",
     imgUrl:
-      "https://mlvlk7qibkfe.i.optimole.com/w:383/h:294/q:auto/https://content.cloudsocial.io/wp-content/uploads/2019/05/ytv3.jpg",
+      "https://content.cloudsocial.io/wp-content/uploads/literature/videoImg/ytv3.jpg",
   },
   {
     id: 2,
     title: "Omnibox",
-    img: "https://content.cloudsocial.io/wp-content/uploads/image/omnibox.svg",
+    img: "https://content.cloudsocial.io/wp-content/uploads/literature/videoImg/omnibox.svg",
     desc: ` Engage with customers and prospects across numerous social media channels from our integrated Omnibox console. Manage and streamline your social media teams with approval workflows.`,
     listen: `https://www.youtube.com/embed/C9sqJiUFLxM?autoplay=1&mute=1`,
     imgUrl:
-      "https://mlvlk7qibkfe.i.optimole.com/w:383/h:294/q:auto/https://content.cloudsocial.io/wp-content/uploads/2019/05/ytv12.jpg",
+      "https://content.cloudsocial.io/wp-content/uploads/literature/videoImg/ytv12.jpg",
   },
   {
     id: 3,
     title: "Listen",
-    img: "https://content.cloudsocial.io/wp-content/uploads/image/listen.svg",
+    img: "https://content.cloudsocial.io/wp-content/uploads/literature/videoImg/listen.svg",
     desc: `Stay updated on the latest social media trends and events. Monitor all your social channels and spot prospects from miles away with custom keywords using Social Media Listening.`,
     listen: `https://www.youtube.com/embed/uez6gIiLVHs?autoplay=1&mute=1`,
     // imgUrl:
     //   "https://mlvlk7qibkfe.i.optimole.com/w:auto/h:auto/q:auto/https://content.cloudsocial.io/wp-content/uploads/2020/04/youtube-omnibox.jpg",
     imgUrl:
-      "https://mlvlk7qibkfe.i.optimole.com/w:383/h:294/q:auto/https://content.cloudsocial.io/wp-content/uploads/2019/05/ytv9.jpg",
+      "https://content.cloudsocial.io/wp-content/uploads/literature/videoImg/ytv9.jpg",
   },
 
   {
     id: 4,
     title: "Analytics",
-    img: "https://content.cloudsocial.io/wp-content/uploads/image/analysis.svg",
+    img: "https://content.cloudsocial.io/wp-content/uploads/literature/videoImg/analysis.svg",
     desc: `Track your social media performance and customize your branding strategy using CloudSocial's detailed insights and analytics reports.`,
     listen: "https://www.youtube.com/embed/e_mih_u2f8Y?autoplay=1&mute=1",
     // imgUrl:
-    //   "https://mlvlk7qibkfe.i.optimole.com/w:383/h:294/q:auto/https://content.cloudsocial.io/wp-content/uploads/2019/05/ytv5.jpg",
+    //   "https://content.cloudsocial.io/wp-content/uploads/literature/videoImg/ytv5.jpg",
     imgUrl:
-      "https://mlvlk7qibkfe.i.optimole.com/w:383/h:294/q:auto/https://content.cloudsocial.io/wp-content/uploads/2019/05/ytv2.jpg",
+      "https://content.cloudsocial.io/wp-content/uploads/literature/videoImg/ytv2.jpg",
   },
 ];
 export const video = {
@@ -469,63 +317,63 @@ export const video = {
       id: 1,
       title: "How to add an agent in CloudSocial?",
       image:
-        "https://mlvlk7qibkfe.i.optimole.com/w:383/h:294/q:auto/https://content.cloudsocial.io/wp-content/uploads/2019/05/ytv1.jpg",
+        "https://content.cloudsocial.io/wp-content/uploads/literature/videoImg/ytv1.jpg",
       url: "https://www.youtube.com/embed/5Xv9tj6345Q?autoplay=1&mute=1",
     },
     {
       id: 2,
       title: "How to add Analytics User in CloudSocial?",
       image:
-        "https://mlvlk7qibkfe.i.optimole.com/w:383/h:294/q:auto/https://content.cloudsocial.io/wp-content/uploads/2019/05/ytv2.jpg",
+        "https://content.cloudsocial.io/wp-content/uploads/literature/videoImg/ytv2.jpg",
       url: "https://www.youtube.com/embed/Y3p3O9LGkMg?autoplay=1&mute=1",
     },
     {
       id: 3,
       title: "How to add Marketing User in CloudSocial?",
       image:
-        "https://mlvlk7qibkfe.i.optimole.com/w:383/h:294/q:auto/https://content.cloudsocial.io/wp-content/uploads/2019/05/ytv3.jpg",
+        "https://content.cloudsocial.io/wp-content/uploads/literature/videoImg/ytv3.jpg",
       url: "https://www.youtube.com/embed/8BIlSPk-MVk?autoplay=1&mute=1",
     },
     {
       id: 4,
       title: "How to add a Social Channel in CloudSocial?",
       image:
-        "https://mlvlk7qibkfe.i.optimole.com/w:383/h:294/q:auto/https://content.cloudsocial.io/wp-content/uploads/2019/05/ytv4.jpg",
+        "https://content.cloudsocial.io/wp-content/uploads/literature/videoImg/ytv4.jpg",
       url: "https://www.youtube.com/embed/P7p80K_lfwo?autoplay=1&mute=1",
     },
     {
       id: 5,
       title: "How to add a Brand in CloudSocial?",
       image:
-        "https://mlvlk7qibkfe.i.optimole.com/w:383/h:294/q:auto/https://content.cloudsocial.io/wp-content/uploads/2019/05/ytv5.jpg",
+        "https://content.cloudsocial.io/wp-content/uploads/literature/videoImg/ytv5.jpg",
       url: "https://www.youtube.com/embed/WR9zvKLPi_U?autoplay=1&mute=1",
     },
     {
       id: 6,
       title: "How to use Calendar in CloudSocial?",
       image:
-        "https://mlvlk7qibkfe.i.optimole.com/w:383/h:294/q:auto/https://content.cloudsocial.io/wp-content/uploads/2019/05/ytv6.jpg",
+        "https://content.cloudsocial.io/wp-content/uploads/literature/videoImg/ytv6.jpg",
       url: "https://www.youtube.com/embed/cCYZ4hSIFVc?autoplay=1&mute=1",
     },
     {
       id: 7,
       title: "How to create a Post in CloudSocial?",
       image:
-        "https://mlvlk7qibkfe.i.optimole.com/w:383/h:294/q:auto/https://content.cloudsocial.io/wp-content/uploads/2019/05/ytv7.jpg",
+        "https://content.cloudsocial.io/wp-content/uploads/literature/videoImg/ytv7.jpg",
       url: "https://www.youtube.com/embed/3BqYnNaHTGk?autoplay=1&mute=1",
     },
     {
       id: 8,
       title: "How to view Dashboard in CloudSocial?",
       image:
-        "https://mlvlk7qibkfe.i.optimole.com/w:383/h:294/q:auto/https://content.cloudsocial.io/wp-content/uploads/2019/05/ytv8.jpg",
+        "https://content.cloudsocial.io/wp-content/uploads/literature/videoImg/ytv8.jpg",
       url: "https://www.youtube.com/embed/J7ku_RULKGk?autoplay=1&mute=1",
     },
     {
       id: 9,
       title: "How to Listen a Keyword in CloudSocial?",
       image:
-        "https://mlvlk7qibkfe.i.optimole.com/w:383/h:294/q:auto/https://content.cloudsocial.io/wp-content/uploads/2019/05/ytv9.jpg",
+        "https://content.cloudsocial.io/wp-content/uploads/literature/videoImg/ytv9.jpg",
       url: "https://www.youtube.com/embed/4Vnf8uwpUmI?autoplay=1&mute=1",
     },
   ],
@@ -534,7 +382,7 @@ export const video = {
       id: 1,
       title: "How To Create Ad Campaigns In CloudSocial?",
       image:
-        "https://mlvlk7qibkfe.i.optimole.com/w:383/h:294/q:auto/https://content.cloudsocial.io/wp-content/uploads/2019/05/ytv1.jpg",
+        "https://content.cloudsocial.io/wp-content/uploads/literature/videoImg/ytv1.jpg",
       url: "https://www.youtube.com/embed/we4QAtxBtJU?autoplay=1&mute=1",
     },
 
@@ -542,28 +390,28 @@ export const video = {
       id: 2,
       title: "How To Create Brand In CloudSocial?",
       image:
-        "https://mlvlk7qibkfe.i.optimole.com/w:383/h:294/q:auto/https://content.cloudsocial.io/wp-content/uploads/2019/05/ytv5.jpg",
+        "https://content.cloudsocial.io/wp-content/uploads/literature/videoImg/ytv5.jpg",
       url: "https://www.youtube.com/embed/LaLvFEtT_yk?autoplay=1&mute=1",
     },
     {
       id: 3,
       title: "How To Create Users In CloudSocial?",
       image:
-        "https://mlvlk7qibkfe.i.optimole.com/w:383/h:294/q:auto/https://content.cloudsocial.io/wp-content/uploads/2019/05/ytv1.jpg",
+        "https://content.cloudsocial.io/wp-content/uploads/literature/videoImg/ytv1.jpg",
       url: "https://www.youtube.com/embed/oJBFGWy92Hw?autoplay=1&mute=1",
     },
     {
       id: 4,
       title: "How To Publish Through CloudSocial?",
       image:
-        "https://mlvlk7qibkfe.i.optimole.com/w:383/h:294/q:auto/https://content.cloudsocial.io/wp-content/uploads/2019/05/ytv7.jpg",
+        "https://content.cloudsocial.io/wp-content/uploads/literature/videoImg/ytv7.jpg",
       url: "https://www.youtube.com/embed/FU6PyhD37oI?autoplay=1&mute=1",
     },
     {
       id: 5,
       title: "How To Use Analytics In CloudSocial?",
       image:
-        "https://mlvlk7qibkfe.i.optimole.com/w:383/h:294/q:auto/https://content.cloudsocial.io/wp-content/uploads/2019/05/ytv2.jpg",
+        "https://content.cloudsocial.io/wp-content/uploads/literature/videoImg/ytv2.jpg",
       url: "https://www.youtube.com/embed/e_mih_u2f8Y?autoplay=1&mute=1",
     },
 
@@ -571,21 +419,21 @@ export const video = {
       id: 6,
       title: "How To Use Calendar In CloudSocial?",
       image:
-        "https://mlvlk7qibkfe.i.optimole.com/w:383/h:294/q:auto/https://content.cloudsocial.io/wp-content/uploads/2019/05/ytv6.jpg",
+        "https://content.cloudsocial.io/wp-content/uploads/literature/videoImg/ytv6.jpg",
       url: "https://www.youtube.com/embed/4Vz6BAlZH3w?autoplay=1&mute=1",
     },
     {
       id: 7,
       title: "How To Use Listen In CloudSocial?",
       image:
-        "https://mlvlk7qibkfe.i.optimole.com/w:383/h:294/q:auto/https://content.cloudsocial.io/wp-content/uploads/2019/05/ytv9.jpg",
+        "https://content.cloudsocial.io/wp-content/uploads/literature/videoImg/ytv9.jpg",
       url: "https://www.youtube.com/embed/uez6gIiLVHs?autoplay=1&mute=1",
     },
     {
       id: 8,
       title: "How To Use Listen Insight In CloudSocial?",
       image:
-        "https://mlvlk7qibkfe.i.optimole.com/w:383/h:294/q:auto/https://content.cloudsocial.io/wp-content/uploads/2019/05/ytv9.jpg",
+        "https://content.cloudsocial.io/wp-content/uploads/literature/videoImg/ytv9.jpg",
       url: "https://www.youtube.com/embed/KOSeFF1VT_s?autoplay=1&mute=1",
     },
 
@@ -593,7 +441,7 @@ export const video = {
       id: 9,
       title: "How To Use Omnibox In CloudSocial?",
       image:
-        "https://mlvlk7qibkfe.i.optimole.com/w:383/h:294/q:auto/https://content.cloudsocial.io/wp-content/uploads/2019/05/ytv12.jpg",
+        "https://content.cloudsocial.io/wp-content/uploads/literature/videoImg/ytv12.jpg",
       url: "https://www.youtube.com/embed/C9sqJiUFLxM?autoplay=1&mute=1",
     },
 
@@ -601,8 +449,168 @@ export const video = {
       id: 10,
       title: "How To Use Plugins In CloudSocial?",
       image:
-        "https://mlvlk7qibkfe.i.optimole.com/w:383/h:294/q:auto/https://content.cloudsocial.io/wp-content/uploads/2019/05/ytv3.jpg",
+        "https://content.cloudsocial.io/wp-content/uploads/literature/videoImg/ytv3.jpg",
       url: "https://www.youtube.com/embed/FIEn0w-O9uo?autoplay=1&mute=1",
     },
   ],
 };
+
+export const literature = [
+  // {
+  //   id: 1,
+  //   title: "Silver Pack Guide",
+  //   image:
+  //     "https://content.cloudsocial.io/wp-content/uploads/literature/img/UserGuide2.png",
+  //   url: "https://content.cloudsocial.io/wp-content/uploads/literature/doc/Silver%20Pack.pdf",
+  // },
+  {
+    id: 2,
+    title: "Gold Pack Guide",
+    image:
+      "https://content.cloudsocial.io/wp-content/uploads/literature/img/UserGuide2.png",
+    url: "https://content.cloudsocial.io/wp-content/uploads/literature/doc/Gold%20Pack.pdf",
+  },
+  {
+    id: 3,
+    title: "Platinum Pack Guide",
+    image:
+      "https://content.cloudsocial.io/wp-content/uploads/literature/img/UserGuide2.png",
+    url: "https://content.cloudsocial.io/wp-content/uploads/literature/doc/Platinum%20Pack.pdf",
+  },
+  {
+    id: 4,
+    title: "Super Admin User Guide",
+    image:
+      "https://content.cloudsocial.io/wp-content/uploads/literature/img/UserGuide1.png",
+    url: "https://content.cloudsocial.io/wp-content/uploads/literature/doc/Super%20Admin.pdf",
+  },
+  {
+    id: 5,
+    title: "Brand Manager User Guide",
+    image:
+      "https://content.cloudsocial.io/wp-content/uploads/literature/img/UserGuide1.png",
+    url: "https://content.cloudsocial.io/wp-content/uploads/literature/doc/Brand%20Manager.pdf",
+  },
+  {
+    id: 6,
+    title: "Marketing User Guide",
+    image:
+      "https://content.cloudsocial.io/wp-content/uploads/literature/img/UserGuide1.png",
+    url: "https://content.cloudsocial.io/wp-content/uploads/literature/doc/Marketing%20User.pdf",
+  },
+  {
+    id: 7,
+    title: "Analytics User Guide",
+    image:
+      "https://content.cloudsocial.io/wp-content/uploads/literature/img/UserGuide1.png",
+    url: "https://content.cloudsocial.io/wp-content/uploads/literature/doc/Analytics.pdf",
+  },
+  {
+    id: 8,
+    title: "Back Office User Guide",
+    image:
+      "https://content.cloudsocial.io/wp-content/uploads/literature/img/UserGuide1.png",
+    url: "https://content.cloudsocial.io/wp-content/uploads/literature/doc/Back%20Office.pdf",
+  },
+  {
+    id: 9,
+    title: "Agent User Guide",
+    image:
+      "https://content.cloudsocial.io/wp-content/uploads/literature/img/UserGuide1.png",
+    url: "https://content.cloudsocial.io/wp-content/uploads/literature/doc/Agent.pdf",
+  },
+  {
+    id: 10,
+    title: "Agency Manager User Guide",
+    image:
+      "https://content.cloudsocial.io/wp-content/uploads/literature/img/UserGuide1.png",
+    url: "https://content.cloudsocial.io/wp-content/uploads/literature/doc/Agency%20Manager.pdf",
+  },
+];
+
+export const howToData = [
+   {
+    id: 1,
+    title: "How to Sign up?",
+    image:
+      "https://content.cloudsocial.io/wp-content/uploads/literature/img/UserGuide2.png",
+    url: "https://content.cloudsocial.io/wp-content/uploads/literature/doc/How%20to%20sign%20up.pdf",
+  },
+  {
+    id: 2,
+    title: "How to change Password?",
+    image:
+      "https://content.cloudsocial.io/wp-content/uploads/literature/img/How%20to%20change%20password.jpg",
+    url: "https://content.cloudsocial.io/wp-content/uploads/literature/doc/How%20to%20change%20password.pdf",
+  },
+  {
+    id: 3,
+    title: "How to change Role Name",
+    image:
+      "https://content.cloudsocial.io/wp-content/uploads/literature/img/How%20to%20change%20role%20name.jpg",
+    url: "https://content.cloudsocial.io/wp-content/uploads/literature/doc/How%20to%20change%20role%20name.pdf",
+  },
+  {
+    id: 4,
+    title: "How to create Brand?",
+    image:
+      "https://content.cloudsocial.io/wp-content/uploads/literature/img/How%20to%20create%20brand.jpg",
+    url: "https://content.cloudsocial.io/wp-content/uploads/literature/doc/How%20to%20create%20brand.pdf",
+  },
+  {
+    id: 5,
+    title: "How to create Role?",
+    image:
+      "https://content.cloudsocial.io/wp-content/uploads/literature/img/How%20to%20create%20role.jpg",
+    url: "https://content.cloudsocial.io/wp-content/uploads/literature/doc/How%20to%20create%20role.pdf",
+  },
+  {
+    id: 6,
+    title: "How to listen Keyword?",
+    image:
+      "https://content.cloudsocial.io/wp-content/uploads/literature/img/How%20to%20listen%20keyword.jpg",
+    url: "https://content.cloudsocial.io/wp-content/uploads/literature/doc/How%20to%20listen%20keyword.pdf",
+  },
+  {
+    id: 7,
+    title: "How to raise support Ticket?",
+    image:
+      "https://content.cloudsocial.io/wp-content/uploads/literature/img/How%20to%20raise%20support%20ticket.jpg",
+    url: "https://content.cloudsocial.io/wp-content/uploads/literature/doc/How%20to%20raise%20support%20ticket.pdf",
+  },
+  {
+    id: 8,
+    title: "How to publish your first post in CloudSocial?",
+    image:
+      "https://content.cloudsocial.io/wp-content/uploads/literature/img/How%20to%20publish%20your%20first%20post%20in%20CloudSocial.jpg",
+    url: "https://content.cloudsocial.io/wp-content/uploads/literature/doc/How%20to%20publish%20your%20first%20post%20in%20CloudSocial.pdf",
+  },
+  {
+    id: 9,
+    title: "How to respond to a mention from omnibox in CloudSocial?",
+    image:
+      "https://content.cloudsocial.io/wp-content/uploads/literature/img/How%20to%20respond%20to%20a%20mention%20from%20omnibox%20through%20cloudsocial.jpg",
+    url: "https://content.cloudsocial.io/wp-content/uploads/literature/doc/How%20to%20respond%20to%20a%20mention%20from%20omnibox%20through%20cloudsocial.pdf",
+  },
+  {
+    id: 10,
+    title: "How to set your profile in CloudSocial?",
+    image:
+      "https://content.cloudsocial.io/wp-content/uploads/literature/img/How%20to%20set%20your%20profile%20in%20cloudsocial.jpg",
+    url: "https://content.cloudsocial.io/wp-content/uploads/literature/doc/How%20to%20set%20your%20profile%20in%20cloudsocial.pdf",
+  },
+  {
+    id: 11,
+    title: "How to listen from existing Brand in CloudSocial?",
+    image:
+      "https://content.cloudsocial.io/wp-content/uploads/literature/img/How%20to%20listen%20from%20existing%20brand%20in%20cloudsocial.jpg",
+    url: "https://content.cloudsocial.io/wp-content/uploads/literature/doc/How%20to%20listen%20from%20existing%20brand%20in%20cloudsocial.pdf",
+  },
+  {
+    id: 12,
+    title: "How to subscribe?",
+    image:
+      "https://content.cloudsocial.io/wp-content/uploads/literature/img/How%20to%20subscribe.jpg",
+    url: "https://content.cloudsocial.io/wp-content/uploads/literature/doc/How%20to%20subscribe.pdf",
+  },
+];
