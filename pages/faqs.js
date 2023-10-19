@@ -82,9 +82,7 @@ const Faqs = () => {
                       />
                     </svg>
                   </div>
-                  <h4 className="mb-3 font-bold font-heading">
-                    Filters in CloudSocial
-                  </h4>
+                  <h4 className="mb-3 font-bold font-heading">Filters</h4>
                   <ul className="list-disc list-inside text-sm text-blueGray-400">
                     <li className="mb-2">Efficient Content Management:</li>
                     <li className="mb-2">Targeted Audience Engagement</li>
@@ -114,15 +112,15 @@ const Faqs = () => {
                       />
                     </svg>
                   </div>
-                  <h4 className="mb-3 font-bold font-heading">
-                    Tracking competitors
-                  </h4>
+                  <h4 className="mb-3 font-bold font-heading">Competitorship</h4>
                   <ul className="list-disc list-inside text-sm text-blueGray-400">
+                    <li className="mb-2">
+                      Track rivals social media activities
+                    </li>
+                    <li className="mb-2">Analyze their strategies</li>
                     <li className="mb-2">
                       Eye on rivals social media activities
                     </li>
-                    <li className="mb-2">Analyze Performance</li>
-                    <li className="mb-2">Benchmark Metrics</li>
                     <li>Refine your social media strategies</li>
                   </ul>
                 </div>
@@ -151,7 +149,7 @@ const Faqs = () => {
                   <h4 className="mb-3 font-bold font-heading">Reports</h4>
                   <ul className="list-disc list-inside text-sm text-blueGray-400">
                     <li className="mb-2">Generate detailed reports</li>
-                    <li className="mb-2">customizable templates and metrics</li>
+                    <li className="mb-2">Customizable templates and metrics</li>
                     <li className="mb-2">Competitor Analysis</li>
                     <li>Present data in visually engaging formats</li>
                   </ul>
@@ -186,15 +184,9 @@ const Faqs = () => {
                   </div>
                   <h4 className="mb-3 font-bold font-heading">Analytics</h4>
                   <ul className="list-disc list-inside text-sm text-blueGray-400">
-                    <li className="mb-2">
-                      Analytics aids strategy and future planning.
-                    </li>
-                    <li className="mb-2">
-                      Informed decisions rely on data, not guesswork.
-                    </li>
-                    <li className="mb-2">
-                      CloudSocial uses NPS to measure satisfaction.
-                    </li>
+                    <li className="mb-2">Understand your audience</li>
+                    <li className="mb-2">Track engagement</li>
+                    <li className="mb-2">NPS to measure satisfaction.</li>
                     <li>NPS boosts customer loyalty over time.</li>
                   </ul>
                 </div>

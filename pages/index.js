@@ -457,7 +457,7 @@ function Home() {
                   <img
                     className="h-36 mx-auto my-4"
                     src="/assets/imgs/illustrations/eating.svg"
-                    alt="collaboration"
+                    alt="team collaboration"
                   />
                   <h3 className="mb-2 font-bold font-heading text-xl">
                     Team Collaboration
@@ -471,7 +471,7 @@ function Home() {
                 </div>
               </div>
               <div
-                className="hover-up-5 w-full md:w-1/2 lg:w-1/3 px-3 mb-6 wow animate_animated animate_fadeIn"
+                className="hover-up-5 w-full md:w-1/2 lg:w-1/3 px-3 mb-6 wow animate_animated animate_fadeIn "
                 data-wow-delay=".5s"
               >
                 <div className="p-8 bg-white shadow rounded">
@@ -481,18 +481,16 @@ function Home() {
                   <img
                     className="h-36 mx-auto my-4"
                     src="/assets/imgs/illustrations/space.svg"
-                    alt="time saving"
+                    alt="scheduling efficiency"
                   />
                   <h3 className="mb-2 font-bold font-heading text-xl">
-                    Time-saving scheduling solution
+                    Scheduling Efficiency
                   </h3>
                   <p className="text-sm text-blueGray-400 leading-relaxed">
-                    A time-saving scheduling solution allows you to plan and
-                    automate your social media posts in advance. This not only
-                    frees up your time for other tasks but also ensures a
-                    consistent and organized online presence for your brand or
-                    business. It's a valuable tool for efficient social media
-                    management.
+                    Save time and simplify social media management, plan and
+                    schedule your posts in advance using a CloudSocial. This
+                    allows you to Create & Schedule content, and manage all your
+                    posts from one centralized dashboard.
                   </p>
                 </div>
               </div>
@@ -507,17 +505,16 @@ function Home() {
                   <img
                     className="h-36 mx-auto my-4"
                     src="/assets/imgs/illustrations/tasks.svg"
-                    alt="modern inbox"
+                    alt="up-to-date inbox"
                   />
                   <h3 className="mb-2 font-bold font-heading text-xl">
-                    Modern Inbox
+                    Up-to-date Inbox
                   </h3>
                   <p className="text-sm text-blueGray-400 leading-relaxed">
-                    Your all-in-one solution for social media management. Stay
-                    organized, engage with your audience, and track your
+                    Your comprehensive all-in-one social media solution. Stay
+                    organized, actively engage with your audience, and track
                     performance seamlessly with our user-friendly tool.
-                    Experience the power of efficient social media
-                    management today!
+                    Experience efficient social media management today!
                   </p>
                 </div>
               </div>
