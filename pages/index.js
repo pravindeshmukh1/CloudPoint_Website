@@ -430,14 +430,14 @@ function Home() {
         </section>
 
         <section className="py-20 bg-blueGray-50" id="how-we-work">
-          <div className="container px-4 mx-auto">
-            <div className="flex flex-wrap items-center justify-between max-w-2xl lg:max-w-full mb-12">
-              <div className="w-full lg:w-1/2 mb-4 lg:mb-0">
+          <div className="container px-4 mx-auto text-center">
+            <div className="flex flex-wrap items-center justify-between max-w-2xl lg:max-w-full mb-12 ">
+              <div className="w-full mb-4 lg:mb-0">
                 <h2 className="text-3xl md:text-4xl font-bold font-heading wow animate_animated animate_fadeInDown">
                   <span>Centralized Social Management</span>
                 </h2>
               </div>
-              <div className="w-full lg:w-1/2">
+              <div className="w-full text-center">
                 <p className="text-blueGray-400 leading-loose wow animate_animated animate_fadeIn">
                   Control multiple social accounts simultaneously, engage with
                   several prospects at the same time, and provide superior
