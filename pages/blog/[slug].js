@@ -69,14 +69,14 @@ export const getServerSideProps = async (context) => {
 };
 
 const BlogSingle = ({ data, slug, blogList }) => {
-  console.log("🚀 ~ file: [slug].js:91 ~ blogList:", typeof blogList);
+  // console.log("🚀 ~ file: [slug].js:91 ~ blogList:", typeof blogList);
   const url = process.env.DOMAIN_URL + "/blog/" + slug;
 
   const blogFilter = blogList?.filter((blog) => {
-    console.log("blog", blog);
+    // console.log("blog", blog);
     return blog.attributes.slug !== slug;
   });
-  console.log("🚀 ~ file: [slug].js:78 ~ blogFilter:", blogFilter);
+  // console.log("🚀 ~ file: [slug].js:78 ~ blogFilter:", blogFilter);
   // console.log("🚀 ~ file: [slug].js:90 ~ url:", url);
   // console.log("BlogSingle", data);
   //   React.useEffect(() => {

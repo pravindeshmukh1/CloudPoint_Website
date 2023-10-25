@@ -103,9 +103,15 @@ const categories = ({ blogList }) => {
                               legacyBehavior
                             >
                               <a>
-                                <img
+                                {/* <img
                                   className="h-80 w-full object-cover rounded"
                                   src="/assets/imgs/placeholders/img-6.png"
+                                  alt={data.attributes.title}
+                                /> */}
+                                <img
+                                  className="h-801 w-full object-cover1 rounded"
+                                  // src="/assets/imgs/placeholders/img-8.png"
+                                  src={`https://strapi.cloudsocial.io${data.attributes.thumbnail.data[0].attributes.url}`}
                                   alt={data.attributes.title}
                                 />
                               </a>
@@ -122,9 +128,15 @@ const categories = ({ blogList }) => {
                               legacyBehavior
                             >
                               <a>
-                                <img
+                                {/* <img
                                   className="h-80 w-full object-cover rounded"
                                   src="/assets/imgs/placeholders/img-6.png"
+                                  alt={data.attributes.title}
+                                /> */}
+                                <img
+                                  className="h-801 w-full object-cover1 rounded"
+                                  // src="/assets/imgs/placeholders/img-8.png"
+                                  src={`https://strapi.cloudsocial.io${data.attributes.thumbnail.data[0].attributes.url}`}
                                   alt={data.attributes.title}
                                 />
                               </a>
@@ -184,8 +196,7 @@ const categories = ({ blogList }) => {
           </div>
         </section>
 
-        <section className="py-5">
-        </section>
+        <section className="py-5"></section>
       </Layout>
     </>
   );
