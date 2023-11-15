@@ -210,7 +210,7 @@ export const star = [
     id: 2,
     title: "Top Call Center Company",
     img: "/assets/imgs/logos/Top Call Center Company.png",
-    url: "https://www.designrush.com/agency/call-centers/outbound",
+    url: "https://www.designrush.com/press/the-top-call-center-companies-in-november-2022-press-release",
   },
   // {
   //   id: 3,

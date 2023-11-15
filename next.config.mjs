@@ -21,15 +21,13 @@ const nextConfig = {
   pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"],
   images: {
     domains: [
-      "www.cloudsocial.io",
+      "https://cloudpoint.co.in/",
       "content.cloudsocial.io",
-      "www.softwaresuggest.com",
-      "www.getapp.com",
-      "www.capterra.com",
+      "www.designrush.com",
     ],
   },
   env: {
-    DOMAIN_URL: "https://www.cloudsocial.io",
+    DOMAIN_URL: "https://cloudpoint.co.in",
     TAWK: "5fc258c9920fc91564cb894d",
     STRAPI_URL: "https://strapi.cloudsocial.io/api",
     BEARER_TOKEN:
