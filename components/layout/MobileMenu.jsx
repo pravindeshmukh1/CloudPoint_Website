@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import { footerIcon } from "../../public/assets/cardDetails";
 
 const MobileMenu = ({ hiddenClass, handleRemove }) => {
   const [isActive, setIsActive] = useState({
@@ -31,8 +32,8 @@ const MobileMenu = ({ hiddenClass, handleRemove }) => {
               <a className="mr-auto text-3xl font-semibold leading-none">
                 <img
                   className="h-10"
-                  src="/assets/imgs/logos/CSLogo.svg"
-                  alt="CloudSocial"
+                  src="/assets/imgs/logos/CloudPoint.png"
+                  alt="CloudPoint"
                 />
               </a>
             </Link>
@@ -102,21 +103,6 @@ const MobileMenu = ({ hiddenClass, handleRemove }) => {
                       </a>
                     </Link>
                   </li>
-                  {/* <li>
-                                        <Link href="/index-3" legacyBehavior>
-                                            <a className="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500">Home 3</a>
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/index-4" legacyBehavior>
-                                            <a className="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500">Home 4</a>
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/index-5" legacyBehavior>
-                                            <a className="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500">Home 5</a>
-                                        </Link>
-                                    </li> */}
                 </ul>
               </li>
               <li
@@ -161,20 +147,6 @@ const MobileMenu = ({ hiddenClass, handleRemove }) => {
                       </a>
                     </Link>
                   </li>
-                  <li>
-                    <Link href="compendium" legacyBehavior>
-                      <a className="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500">
-                        Compendium
-                      </a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/ebook" legacyBehavior>
-                      <a className="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500">
-                        E-book
-                      </a>
-                    </Link>
-                  </li>
                 </ul>
               </li>
               <li className="mb-1 rounded-xl">
@@ -204,51 +176,7 @@ const MobileMenu = ({ hiddenClass, handleRemove }) => {
                   </a>
                 </Link>
               </li>
-              {/* <li
-                className={
-                  isActive.key == 2
-                    ? "mb-1 menu-item-has-children rounded-xl active"
-                    : "mb-1 menu-item-has-children rounded-xl"
-                }
-                onClick={() => handleToggle(3)}
-              >
-                <span className="menu-expand">+</span>
-                <Link href="#" legacyBehavior>
-                  <a className="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover-up-2 hover:text-blue-500 rounded-xl">
-                    Blog
-                  </a>
-                </Link>
-                <ul className={isActive.key == 3 ? "dropdown pl-5 border rounded-xl border-blueGray-200" : "hidden"}>
-                  <li>
-                    <Link href="/blog" legacyBehavior>
-                      <a className="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500">
-                        Category 1
-                      </a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/blog-2" legacyBehavior>
-                      <a className="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500">
-                        Category 2
-                      </a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/blog-single" legacyBehavior>
-                      <a className="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500">
-                        Single 1
-                      </a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/blog-single-2" legacyBehavior>
-                      <a className="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500">
-                        Single 2
-                      </a>
-                    </Link>
-                  </li>
-                </ul>
-              </li> */}
+
               <li className={"mb-1 menu-item-has-children rounded-xl"}>
                 <Link
                   href="https://app.cloudsocial.io/accounts/login"
@@ -312,14 +240,6 @@ const MobileMenu = ({ hiddenClass, handleRemove }) => {
                 </ul>
               </li>
             </ul>
-            {/* <div className="mt-4 pt-6 border-t border-blueGray-100">
-                            <Link href="/https://app.cloudsocial.io/accounts/login" legacyBehavior>
-                                <a className="block px-4 py-3 mb-3 text-xs text-center font-semibold leading-none bg-blue-400 hover:bg-blue-500 text-white rounded"  target="_blank">Log In</a>
-                            </Link>
-                            <Link href="/login" legacyBehavior>
-                                <a className="block px-4 py-3 mb-2 text-xs text-center text-blue-500 hover:text-blue-700 font-semibold leading-none border border-blue-200 hover:border-blue-300 rounded"  target="_blank">Start Free Trail</a>
-                            </Link>
-                        </div> */}
           </div>
           <div className="mt-auto">
             <p className="my-4 text-xs text-blueGray-400">
@@ -331,37 +251,24 @@ const MobileMenu = ({ hiddenClass, handleRemove }) => {
               <span>
                 <a
                   className="text-blue-500 hover:text-blue-500 underline"
-                  href="mailto:support@cloudsocial.io"
+                  href="mailto:contactus@cloudpoint.co.in"
                   target="_blank"
                 >
-                  support@cloudsocial.io
+                  contactus@cloudpoint.co.in
                 </a>
               </span>
             </p>
-            <a
-              className="inline-block px-2"
-              target="_blank"
-              href="https://www.facebook.com/cloudsocial.io"
-            >
-              <img src="/assets/imgs/icons/facebook-blue.svg" alt="facebook" />
-            </a>
-            <a
-              className="inline-block px-2"
-              target="_blank"
-              href="https://twitter.com/Cloudsocial_"
-            >
-              <img src="/assets/imgs/icons/twitter-blue.svg" alt="twitter" />
-            </a>
-            <a
-              className="inline-block px-2"
-              target="_blank"
-              href="https://www.instagram.com/challenge/?next=https%3A%2F%2Fwww.instagram.com%2Fcloudsocial.io%2F%3F__coig_challenged%3D1"
-            >
-              <img
-                src="/assets/imgs/icons/instagram-blue.svg"
-                alt="instagram"
-              />
-            </a>
+
+            {footerIcon.map(({ img, href, alt, id }) => (
+              <a
+                className="inline-block px-2"
+                target="_blank"
+                href={href}
+                key={id}
+              >
+                <img src={img} className="h-5" alt={alt} />
+              </a>
+            ))}
           </div>
         </nav>
       </div>

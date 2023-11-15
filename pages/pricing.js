@@ -24,7 +24,7 @@ const Pricing = () => {
     const res = await fetch("https://api.db-ip.com/v2/free/self");
     const data = res.json();
     data.then((data) => {
-      // console.log("-------------", data);
+      console.log("-------------", data);
       // valueData.current = data.countryCode;
       setRes(data);
     });
@@ -35,22 +35,23 @@ const Pricing = () => {
 
   const value1 = money.filter((money) => money.CountryCode === res.countryCode);
   const value2 = money.filter((money) => money.CountryCode === data11);
-  // console.log("🚀 ~ file: pricing.js:33 ~ value1:", value1);
+  console.log("🚀 ~ file: pricing.js:33 ~ value1:", value1);
+  console.log("🚀 ~ file: pricing.js:33 ~ res.countryCode:", res.countryCode);
 
   return (
     <>
       <Head>
-        <meta charSet="utf-8" name="CloudSocial Pricing" />
+        <meta charSet="utf-8" name="CloudPoint Pricing" />
         <title>
-          Pricing and Packages - Social Media Post Scheduler | CloudSocial
+          Pricing and Packages - Social Media Post Scheduler | CloudPoint
         </title>
         <meta
           name="description"
-          content="CloudSocial provides social media post scheduling tools for small businesses, brands, digital agencies. Check out how much does CloudSocial cost? Try it free."
+          content="CloudCloudPointSocial provides social media post scheduling tools for small businesses, brands, digital agencies. Check out how much does CloudSocial cost? Try it free."
         />
         <link
           rel="canonical"
-          href="https://cloudsocial.io/pricing"
+          href="https://cloudpoint.co.in/pricing"
           key="canonical"
         />
       </Head>

@@ -21,15 +21,18 @@ const Footer = () => {
           data-wow-delay=".3s"
         >
           <hr className="mb-8 mt-8 text-gray-300" />
-          <div className="container px-4 mx-auto">
-            <div className="flex justify-around pt-1 pb-1">
+          <div
+            className="container px-4 mx-auto "
+            style={{ backgroundColor: "#000" }}
+          >
+            <div className="flex justify-around pt-1 pb-1 flex-wrap">
               {star.map(({ img, title, url, id }) => (
                 <div
                   className="hover-up-5 flex w-1/2 lg:w-auto py-4 wow animate_animated animate_fadeIn"
                   data-wow-delay=".2s"
                   key={id}
                 >
-                  <div className="flex justify-center items-center text-blue-500 rounded-xl h-12 w-12 sm:h-201 sm:w-20 md:w-1\/2 lg:w-3\/5">
+                  <div className="flex justify-center items-center text-blue-500 rounded-xl h-121 w-40 sm:h-201 sm:w-201 md:w-1\/2 lg:w-3\/5">
                     <Link href={url} legacyBehavior>
                       <a target="_blank">
                         {/* <img
@@ -52,6 +55,35 @@ const Footer = () => {
                   </div>
                 </div>
               ))}
+              <div className="p-5 flex flex-col items-center">
+                <p className="text-sm text-blueGray-400 ">
+                  We would love to hear from you
+                </p>
+                <p className="text-sm text-blueGray-400 mt-2">
+                  <a
+                    className="text-sm text-Gray-600 hover:text-blue-500"
+                    href="mailto:contactus@cloudpoint.co.in"
+                    onclick="window.location=another.html"
+                    target="_blank"
+                  >
+                    contactus@cloudpoint.co.in
+                  </a>
+                </p>
+                <p className="text-sm text-blueGray-400 mt-2 ">
+                  <Link href="/privacy-policy" legacyBehavior>
+                    <a className="text-sm text-Gray-600 hover:text-blue-500 underline">
+                      Privacy Policy
+                    </a>
+                  </Link>
+                </p>
+                <p className="text-sm text-blueGray-400 mt-2 ">
+                  <Link href="/terms-of-service" legacyBehavior>
+                    <a className="text-sm text-Gray-600 hover:text-blue-500 underline">
+                      Terms Of Service
+                    </a>
+                  </Link>
+                </p>
+              </div>
             </div>
           </div>
           <hr className="mb-8 mt-8 text-gray-300" />
@@ -60,58 +92,8 @@ const Footer = () => {
             style={{ gap: "25px !important", columnGap: "10px !important" }}
           >
             <p className="text-sm text-blueGray-400 order-last lg:order-first">
-              &copy; {date} CloudSocial
-            </p>
-            <p className="text-sm text-blueGray-400 hover-up-5">
-              <Link href="/faqs" legacyBehavior>
-                <a className="text-sm text-Gray-600 hover:text-blue-500 underline">
-                  Faqs
-                </a>
-              </Link>
-            </p>
-            <p className="text-sm text-blueGray-400 hover-up-5">
-              <Link href="/privacy-policy" legacyBehavior>
-                <a className="text-sm text-Gray-600 hover:text-blue-500 underline">
-                  Privacy Policy
-                </a>
-              </Link>
-            </p>
-            <p className="text-sm text-blueGray-400 hover-up-5">
-              <Link
-                href="https://www.iubenda.com/privacy-policy/84213336/cookie-policy"
-                class="iubenda-nostyle no-brand iubenda-noiframe iubenda-embed iubenda-noiframe"
-                legacyBehavior
-              >
-                <a
-                  className="text-sm text-Gray-600 hover:text-blue-500 underline"
-                  target="_blank"
-                >
-                  Cookie Policy
-                </a>
-              </Link>
-            </p>
-            <p className="text-sm text-blueGray-400 hover-up-5">
-              <Link href="/terms-of-service" legacyBehavior>
-                <a className="text-sm text-Gray-600 hover:text-blue-500 underline">
-                  Terms Of Service
-                </a>
-              </Link>
-            </p>
-
-            <p className="text-sm text-blueGray-400 hover-up-5">
-              <Link href="/gdpr" legacyBehavior>
-                <a className="text-sm text-Gray-600 hover:text-blue-500 underline">
-                  GDPR
-                </a>
-              </Link>
-            </p>
-
-            <p className="text-sm text-blueGray-400 hover-up-5">
-              <Link href="/security" legacyBehavior>
-                <a className="text-sm text-Gray-600 hover:text-blue-500 underline">
-                  Security
-                </a>
-              </Link>
+              &copy; {date} Cloudpoint Technologies Pvt. Ltd. All Rights
+              Reserved.
             </p>
 
             <div className="order-first lg:order-last -mx-2 mb-4 lg:mb-0 flex">
@@ -129,15 +111,15 @@ const Footer = () => {
                         alt={alt}
                       /> */}
                       <Image
-                          className="object-cover p-1 mr-2"
-                          src={img}
-                          alt={alt}
-                          priority
-                          width={25}
-                          height={25}
-                          // fill
-                          // objectFit="contain"
-                        />
+                        className="object-cover p-1 mr-2"
+                        src={img}
+                        alt={alt}
+                        priority
+                        width={25}
+                        height={25}
+                        // fill
+                        // objectFit="contain"
+                      />
                     </a>
                   </Link>
                 </div>

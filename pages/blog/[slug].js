@@ -111,8 +111,8 @@ const BlogSingle = ({ data, slug, blogList }) => {
         />
         <link
           rel="canonical"
-          // href="https://cloudsocial.io/blog"
-          href={`https://cloudsocial.io/blog/${slug}`}
+          // href="https://cloudpoint.co.in/blog"
+          href={`https://cloudpoint.co.in/blog/${slug}`}
           key="canonical"
         />
       </Head>

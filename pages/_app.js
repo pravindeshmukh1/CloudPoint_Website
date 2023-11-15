@@ -47,11 +47,11 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <meta charSet="utf-8" name="CloudSocial Solution page" />
-        <title>Social Media Management Tools | CloudSocial</title>
+        <meta charSet="utf-8" name="CloudPoint Home page" />
+        <title>Cloudpoint Technologies Customer Lifecycle Management</title>
         <meta
           name="description"
-          content="Best social media management tools built to manage all your social media handles at one place. Grow and engage with an ease of social media listening."
+          content="Cloudpoint Technologies - Customer Lifecycle Management | Analytics | Business Intelligence | Social Command Center | CRM | Contract Lifecycle Management"
         />
       </Head>
       

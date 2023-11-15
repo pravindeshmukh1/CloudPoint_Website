@@ -2,7 +2,7 @@ import { getBlogList } from "../lib/apiCall";
 
 //pages/sitemap.xml.js
 const EXTERNAL_DATA_URL = `${process.env.STRAPI_URL}/Blogs`;
-const domain = "https://cloudsocial.io";
+const domain = "https://cloudpoint.co.in";
 const domainUrl = `${process.env.DOMAIN_URL}/blog`;
 
 function generateSiteMap(blogList) {

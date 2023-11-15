@@ -13,13 +13,17 @@ const TermsOfService = () => {
   return (
     <>
       <Head>
-        <meta charSet="utf-8" name="CloudSocial Terms Of Service" />
-        <title>Terms Of Service | CloudSocial</title>
+        <meta charSet="utf-8" name="CloudPoint Terms Of Service" />
+        <title>Terms Of Service | CloudPoint</title>
         <meta
           name="description"
-          content="Check out CloudSocial Terms Of Service."
+          content="Check out CloudPoint Terms Of Service."
         />
-        <link rel="canonical" href="https://cloudsocial.io/terms-of-service" key="canonical" />
+        <link
+          rel="canonical"
+          href="https://cloudpoint.co.in/terms-of-service"
+          key="canonical"
+        />
       </Head>
       <Layout>
         <section
@@ -42,1228 +46,1018 @@ const TermsOfService = () => {
               >
                 Terms and Conditions of <br />
                 <span className="text-blue-500 word-break">
-                  www.cloudsocial.io
+                  cloudpoint.co.in
                 </span>
               </h1>
-              <h6>This Website collects some Personal Data from its Users.</h6>
             </div>
 
             <div className="text-center lg:text-left lg:text-base mb-5">
-              <p className="mb-1 text-justify">
-                These Terms govern the use of this Website, and, any other
-                related Agreement or legal relationship with the Owner in a
-                legally binding way. Capitalized words are defined in the
-                relevant dedicated section of this document.
-              </p>
-              <p className="mb-1  mt-2">
-                The User must read this document carefully.
+              <p className="mb-1 mt-2 text-justify">
+                These Terms of Service are effective as of 17th May, 2021. THESE
+                TERMS OF SERVICE (“TERMS”) GOVERN YOUR USE OF OUR SERVICE.
               </p>
             </div>
 
             <hr className="mb-3 mt-3 text-gray-300" />
-            <h3 className="text-md font-bold font-heading">
-              This Website is provided by :
-            </h3>
-            <p className="mb-1 text-justify">
-              CloudSocial Technologies Pte Ltd.
-              <br />
-              68 Circular Road,
-              <br />
-              #02-01, 049422 Singapore
-            </p>
-            <p className="mb-3 text-justify">
-              <b>Owner contact email :</b>{" "}
-              <a
-                className="text-blue-400 word-break"
-                href="mailto:support@cloudsocial.io"
-                target="_blank"
-              >
-                support@cloudsocial.io
-              </a>
-            </p>
-            <hr className="mb-3 mt-3 text-gray-300" />
+
             <div className="w-full text-center lg:text-left text-lg lg:text-base font-semibold1 lg:font-normal mb-2 lg:mb-0 px-3">
               <div className="text-left text-sm">
-                <h3 className="text-md font-bold font-heading">
-                  "This Website" refers to
+                <h3 className="text-md font-bold font-heading mt-4 mb-2">
+                  1. Acceptance of Terms
                 </h3>
+                <p className="mb-1 mt-2 text-justify">
+                  <b>A.</b> Cloudpoint Technologies. (“Cloudpoint Technologies”,
+                  “We” or “Our”) provides its Service (as defined below) to You
+                  through its web site located at www.cloudpoint.co.in (the
+                  “Site”), subject to these Terms
+                </p>
+
+                <p className="mb-1 mt-2 text-justify">
+                  <b>B.</b> By accepting the Terms, or by accessing or using the
+                  Service or Site, You represent and acknowledge that You have
+                  read, understood, and agree to be bound by these Terms, and
+                  that the information You provide in registering to the Service
+                  is accurate, complete, and is Yours or within Your right to
+                  use. If You are entering into these Terms on behalf of a
+                  company or another legal entity, You represent that You have
+                  the authority to bind such entity and its affiliates to these
+                  Terms, in which case the terms “You,” “Your” or related
+                  capitalized terms herein shall refer to such entity and its
+                  affiliates. If You do not have such authority, or if You do
+                  not agree with these Terms, You must not accept these Terms
+                  and may not use the Service.
+                </p>
+                <p className="mb-1 mt-2 text-justify">
+                  You acknowledge that these Terms constitute a contract between
+                  You and Cloudpoint Technologies, even though it is electronic
+                  and is not physically signed by You and Cloudpoint
+                  Technologies. You further acknowledge that these Terms govern
+                  Your use of the Service and, except for written addendums
+                  signed by the parties that specifically modify these Terms,
+                  these Terms supersede any other agreements between You and
+                  Cloudpoint Technologies.
+                </p>
 
                 <h3 className="text-md font-bold font-heading mt-4 mb-2">
-                  Methods of processing
+                  2. Availability of the Site
                 </h3>
-                <ul className="list-disc list-inside text-sm ml-4 text-justify">
+                <p className="mb-1 mt-2 text-justify">
+                  You acknowledge that there may be interruptions in service or
+                  events that are beyond our control. While we use reasonable
+                  efforts to keep the Site accessible, the Site may be
+                  unavailable from time to time for any reason including,
+                  without limitation, routine maintenance. You understand and
+                  acknowledge that due to circumstances both within and outside
+                  of our control, Site access may be interrupted, suspended or
+                  terminated. You further understand that there may be
+                  interruptions in service or events on third-party sites,
+                  including, but not limited to, Facebook, Twitter, etc., that
+                  will affect your use of the Service (defined below) and that
+                  are beyond our control to prevent or correct. Interruptions in
+                  the Service that are beyond our control shall not serve as a
+                  basis to terminate your subscription or demand a full or
+                  partial refund of any prepaid fees.
+                </p>
+
+                <h3 className="text-md font-bold font-heading mt-4 mb-2">
+                  3. Description of Service
+                </h3>
+                <p className="mb-1 mt-2 text-justify">
+                  <b>A.</b> The “Service” includes
+                </p>
+
+                <ul className="list-alphabet text-sm ml-5 text-justify">
+                  <li>The Site</li>
+                  <li>The Cloudpoint Technologies Applications, and</li>
                   <li>
-                    Acceptance of Terms Your use of services offered by
-                    CloudSocial.io (powered by CLOUDSOCIAL TECHNOLOGIES PTE LTD)
-                    is subject to the terms of a legal agreement between you and
-                    CloudSocial.io. This page explains how the agreement is made
-                    up and sets out some of the terms of that agreement
-                    (referred as Terms of Service (TOS) in this document). The
-                    name CloudSocial has been used interchangeable with
-                    CloudSocial or CloudSocial.io or cloudsocial or CLOUDSOCIAL
-                    TECHNOLOGIES PTE LTD. In order to use the Services, you must
-                    first agree to the Terms. You may not use the Services if
-                    you do not accept the Terms of Use. You may not access the
-                    services if you are our direct competitor, except with our
-                    prior written consent. In addition, you may not access the
-                    services for purposes of monitoring their availability,
-                    performance or functionality, or for any other benchmarking
-                    or competitive purposes. Definitions “Third party platforms”
-                    means a third-party social media website like Facebook,
-                    Twitter, Instagram, LinkedIn, YouTube. for which you have
-                    authenticated CloudSocial to collect information. “We, Us or
-                    Our” means CloudSocial.io or CLOUDSOCIAL TECHNOLOGIES PTE
-                    LTD. “You or Your” means the company or an individual on
-                    behalf of your company who is signing up for CloudSocial.io
-                    services Account Registration When you register, you ensure
-                    that any registration information you give to CloudSocial
-                    will always be accurate, correct and up to date. You ensure
-                    that you maintain the security of any logins, passwords, or
-                    other credentials that you select or that are provided to
-                    you for use of the Service. You will notify us immediately
-                    of any unauthorized use of your account or any other breach
-                    of security by emailing us at{" "}
-                    <a
-                      className="text-blue-400 word-break"
-                      href="mailto:support@cloudsocial.io"
-                      target="_blank"
-                    >
-                      support@cloudsocial.io
-                    </a>
-                    . Services offered by CloudSocial CloudSocial is constantly
-                    evolving in order to provide the best possible experience,
-                    services and information for its users. You acknowledge and
-                    agree that the form and nature of the services which we
-                    provide may add or modify from time to time without prior
-                    notice to you. By using CloudSocial ‘s services you agree to
-                    the following disclaimer: The contents of this website are
-                    for informational purposes only. CloudSocial disclaims any
-                    liability for any information that may have become outdated
-                    since the last time the particular piece of information was
-                    updated. CloudSocial reserves the right to make changes and
-                    corrections to any part of the content of this website at
-                    any time without prior notice. Free Trial We may offer you
-                    free trials for selected Packages and/or features of the
-                    Service, including a 30 (thirty) days trial period. Once
-                    your free trial period ends, your ability to access certain
-                    features of the service will terminate. CloudSocial reserves
-                    the right to determine if you are eligible for a free trial
-                    and to discontinue any free trial without notice in our sole
-                    discretion. Fees; No Refunds We may charge fees for certain
-                    packages and/or add-ons and/or features, either on a
-                    one-time or a subscription basis (“Paid Services”).
-                    CloudSocial reserves the right to implement fees or change
-                    the fees for certain services at any time by providing you
-                    notice of a pricing change 7 days before the end of prior
-                    term. If you purchase any Paid Services through credit card,
-                    you authorize CloudSocial through FastSpring the seller on
-                    record to process and charge the credit card identified by
-                    you (which you represent and warrant that you are authorized
-                    to use) including all applicable taxes. If FastSpring does
-                    not receive payment from your credit card provider, you
-                    agree to pay all amounts due upon demand and CloudSocial may
-                    suspend your access to the Services. All sales are final and
-                    CloudSocial will not issue refunds, including for prepaid
-                    yearly fees. Content on the Site We do not own the content
-                    that we fetch from our search engines. The content may be
-                    indecent, offensive, inaccurate, unlawful, or otherwise
-                    objectionable. We shall have no obligation to preview,
-                    verify, flag, modify, filter, or remove any Indexed Content,
-                    even if requested to do so, although We may do so at our
-                    sole discretion. Indexed content is provided “AS IS”,
-                    exclusive of any warranty whatsoever. Your use of Indexed
-                    Content is at your sole risk, and we shall not be liable to
-                    you or any third party based on Indexed Content. Social
-                    Platforms Authentication You shall enable CloudSocial to
-                    access your third-party social platform accounts. You
-                    acknowledge and agree that we may access, collect, process,
-                    and/or store information or content, regardless of whether
-                    such content is your data or Content, from such Third-Party
-                    Social Platform accounts and/or website. Except for our
-                    obligations with respect to your data, CloudSocial shall not
-                    be responsible or liable for: (i) any content provided by
-                    You or Your Users to any Third Party Social Platform or
-                    other website, and any content accessed by You, Your Users
-                    or any third party from any Third-Party Social Media
-                    Platform or websites; (ii) any interactions or
-                    communications between You and/or Your Users and any third
-                    parties through any Third-Party Social Platform or websites;
-                    or (iii) any transactions relating to a separate agreement
-                    or arrangement between You or Your Users and any Third-Party
-                    Social Platform provider or websites. Confidential
-                    Information “Confidential Information” means all
-                    confidential information disclosed by a party (“Disclosing
-                    Party”) to the other party (“Receiving Party”), whether
-                    orally or in writing, that is designated as confidential or
-                    that reasonably should be understood to be confidential
-                    given the nature of the information and the circumstances of
-                    disclosure. Your Confidential Information shall include Your
-                    Data; Our Confidential Information shall include CloudSocial
-                    Services; and Confidential Information of each party shall
-                    include the terms and conditions of this Agreement and all
-                    Order Forms, as well as business and marketing plans,
-                    technology and technical information, product plans and
-                    designs, and business processes disclosed by such party.
-                    However, Confidential Information shall not include any
-                    information that (i) is or becomes generally known to the
-                    public without breach of any obligation owed to the
-                    Disclosing Party; (ii) was known to the Receiving Party
-                    prior to its disclosure by the Disclosing Party without
-                    breach of any obligation owed to the Disclosing Party; (iii)
-                    is received from a third party without breach of any
-                    obligation owed to the Disclosing Party; or (iv) was
-                    independently developed by the Receiving Party. Protection
-                    of Confidential Information : The Receiving Party shall (i)
-                    use the same degree of care that it uses to protect the
-                    confidentiality of its own confidential information of like
-                    kind (but in no event less than reasonable care), (ii) not
-                    use any Confidential Information of the Disclosing Party for
-                    any purpose outside the scope of this Agreement, and (iii)
-                    except as otherwise authorized by the Disclosing Party in
-                    writing, to limit access to Confidential Information of the
-                    Disclosing Party to those of its and its Affiliates’
-                    employees, contractors and agents who need such access for
-                    purposes consistent with this Agreement and who have signed
-                    agreements with the Receiving Party containing protections
-                    no less stringent than those herein. Neither party shall
-                    disclose the terms of this Agreement or any Order Form to
-                    any third party other than its Affiliates and their legal
-                    counsel and accountants without the other party’s consent.
-                    Responsibilities Our Responsibilities: We shall: (i) provide
-                    Our basic support for the Purchased CloudSocial services to
-                    You at no additional charge, and (ii) use commercially
-                    reasonable efforts to make the CloudSocial Services
-                    available 24 hours a day, 7 days a week, except for: (a)
-                    planned downtime (of which We shall give at least 8 hours
-                    notice via email and which We shall schedule to the extent
-                    practicable during the weekend hours from 6:00 p.m. Saturday
-                    to 3:00 a.m. Monday IST), or (b) any unavailability caused
-                    by circumstances beyond Our reasonable control, including
-                    without limitation, acts of God, acts of government, floods,
-                    fires, earthquakes, civil unrest, acts of terror, strikes,
-                    downtime or delays by an Internet Service Provider or
-                    Third-party Social Platform, or denial of service attacks.
-                    Your Responsibilities: You shall: (i) be responsible for
-                    Users’ compliance with this Agreement; (ii) be responsible
-                    for the accuracy, quality and legality of Your Data and of
-                    the means by which You acquired Your Data; (iii) use
-                    commercially reasonable efforts to prevent unauthorized
-                    access to or use of the CloudSocial Services, and notify us
-                    promptly of any such unauthorized access or use. You shall
-                    not: (a) make the CloudSocial Services available to anyone
-                    other than authorized Users; (b) sell, resell, rent, or
-                    lease the CloudSocial Services; (c) interfere with or
-                    disrupt the integrity or performance of the CloudSocial
-                    Services or third-party data contained therein; or (d)
-                    attempt to gain unauthorized access to the CloudSocial
-                    Services or their related systems or networks. Proprietary
-                    Rights You acknowledge and agree that CloudSocial.io (or
-                    CLOUDSOCIAL TECHNOLOGIES PTE LTD) own all legal right, title
-                    and interest in and to the Services, including any
-                    intellectual property rights which subsist in the Services
-                    (whether those rights happen to be registered or not, and
-                    wherever in the world those rights may exist). You further
-                    acknowledge that the Services may contain information which
-                    is designated confidential by us and that you shall not
-                    disclose such information without our prior written consent.
-                    Nothing in the Terms gives you a right to use any of our
-                    trade names, trade-marks, service marks, logos, domain
-                    names, and other distinctive brand features. Third party
-                    links Occasionally, at our discretion, we may include or
-                    offer third party products or services on our website. These
-                    third party sites have separate and independent Terms of
-                    Service. We therefore have no responsibility or liability
-                    for the content and activities of these linked sites.
-                    Nonetheless, we seek to protect the integrity of our site
-                    and welcome any feedback about these sites. Please refer to
-                    the Terms of Service of third party products YouTube Terms
-                    of Use When you agree to terms and conditions you are
-                    agreeing to be bound by the YouTube Terms of Service at{" "}
-                    <a
-                      className="text-blue-400 word-break"
-                      href="https://www.youtube.com/t/terms"
-                      target="_blank"
-                    >
-                      https://www.youtube.com/t/terms
-                    </a>{" "}
-                    and Google privacy policy at{" "}
-                    <a
-                      className="text-blue-400 word-break"
-                      href="https://policies.google.com/privacy"
-                      target="_blank"
-                    >
-                      http://www.google.com/policies/privacy
-                    </a>{" "}
-                    CloudSocial accesses your account with YouTube/Google
-                    through the API Client and reads your account data, user
-                    information, including API Data relating to your account and
-                    stores it in CloudSocial for displaying the information in
-                    your CloudSocial account. If you wish to discontinue, you
-                    can revoke CloudSocial access from your data via the Google
-                    security settings at{" "}
-                    <a
-                      className="text-blue-400 word-break"
-                      href="https://myaccount.google.com/connections?filters=3,4&hl=en_GB"
-                      target="_blank"
-                    >
-                      https://security.google.com/settings/security/permissions
-                    </a>{" "}
-                    For any questions or complaints about the CloudSocial’s
-                    privacy practices you can contact us at{" "}
-                    <a
-                      className="text-blue-400 word-break"
-                      href="mailto:support@cloudsocial.io"
-                      target="_blank"
-                    >
-                      support@cloudsocial.io.
-                    </a>{" "}
-                    Facebook Terms of Service –{" "}
-                    <a
-                      className="text-blue-400 word-break"
-                      href="https://www.facebook.com/terms.php"
-                      target="_blank"
-                    >
-                      https://www.facebook.com/terms.php
-                    </a>{" "}
-                    By using CloudSocial you are agreeing to be bound by the
-                    Facebook Terms of Service. Instagram Terms of Service –{" "}
-                    <a
-                      className="text-blue-400 word-break"
-                      href="https://help.instagram.com/581066165581870"
-                      target="_blank"
-                    >
-                      https://help.instagram.com/581066165581870
-                    </a>{" "}
-                    By using CloudSocial you are agreeing to be bound by the
-                    Instagram Terms of Service. Twitter Terms of Service –{" "}
-                    <a
-                      className="text-blue-400 word-break"
-                      href="https://twitter.com/en/tos"
-                      target="_blank"
-                    >
-                      https://twitter.com/en/tos
-                    </a>{" "}
-                    By using CloudSocial you are agreeing to be bound by the
-                    Twitter Terms of Service. LinkedIn Terms of Service –{" "}
-                    <a
-                      className="text-blue-400 word-break"
-                      href="https://www.linkedin.com/legal/l/service-terms"
-                      target="_blank"
-                    >
-                      https://legal.linkedin.com/service-specific-terms
-                    </a>{" "}
-                    By using CloudSocial you are agreeing to be bound by the
-                    LinkedIn Terms of Service. Privacy Terms We respect the
-                    personal nature of the information you provide us on our web
-                    site and recognize the importance of protecting this
-                    information. In adopting this privacy policy (“Privacy
-                    Policy”), our intent is to balance our legitimate business
-                    interests in collecting and using your personal information
-                    with your reasonable expectations of privacy. This Privacy
-                    Policy may be revised or updated at any time and we
-                    encourage you to check back often to ensure that you are
-                    familiar with the most recent version and the terms of our
-                    Privacy Policy. What information do we collect? We collect
-                    information from you when you register on our site or fill
-                    out a form. When registering on our site, as appropriate,
-                    you may be asked to enter your: name, e-mail address or
-                    phone number. What do we use your information for? Any of
-                    the information we collect from you may be used in one of
-                    the following ways: To personalize your experience Your
-                    information helps us to better respond to your individual
-                    needs To improve our website We continually strive to
-                    improve our website offerings based on the information and
-                    feedback we receive from you To improve customer service
-                    Your information helps us to more effectively respond to
-                    your customer service requests and support needs To process
-                    transactions Your information, whether public or private,
-                    will not be sold, exchanged, transferred, or given to any
-                    other company for any reason whatsoever, without your
-                    consent, other than for the express purpose of delivering
-                    the purchased product or service requested. To send periodic
-                    emails The email address you provide may be used to send you
-                    information, respond to inquiries, and/or other requests or
-                    questions. How do we protect your information? We use a
-                    third-party platform FastSpring to process your payments.
-                    Please refer to the Privacy Policies of FastSpring{" "}
-                    <a
-                      className="text-blue-400 word-break"
-                      href="https://fastspring.com/privacy/"
-                      target="_blank"
-                    >
-                      https://fastspring.com/privacy/
-                    </a>{" "}
-                    Do we use cookies? Yes (Cookies are small files that a site
-                    or its service provider transfers to your computers hard
-                    drive through your Web browser (if you allow) that enables
-                    the sites or service providers systems to recognize your
-                    browser and capture and remember certain information. We use
-                    cookies to understand and save your preferences for future
-                    visits. Do we disclose any information to outside parties?
-                    We do not sell, trade, or otherwise transfer to outside
-                    parties your personally identifiable information. This does
-                    not include trusted third parties who assist us in operating
-                    our website, conducting our business, or servicing you, so
-                    long as those parties agree to keep this information
-                    confidential. We may also release your information when we
-                    believe release is appropriate to comply with the law,
-                    enforce our site policies, or protect ours or others rights,
-                    property, or safety. However, non-personally identifiable
-                    visitor information may be provided to other parties for
-                    marketing, advertising, or other uses. Third party links
-                    Occasionally, at our discretion, we may include or offer
-                    third party products or services on our website. These third
-                    party sites have separate and independent privacy policies.
-                    We therefore have no responsibility or liability for the
-                    content and activities of these linked sites. Nonetheless,
-                    we seek to protect the integrity of our site and welcome any
-                    feedback about these sites. Please refer to the Privacy
-                    Policies of third-party products:
-                    <br />
-                    <a
-                      className="text-blue-400 word-break"
-                      href=" https://www.youtube.com/about/policies/#community-guidelines"
-                      target="_blank"
-                    >
-                      https://www.youtube.com/about/policies/#community-guidelines
-                    </a>{" "}
-                    <br />
-                    <a
-                      className="text-blue-400 word-break"
-                      href="https://www.facebook.com/policy.php"
-                      target="_blank"
-                    >
-                      https://www.facebook.com/policy.php
-                    </a>{" "}
-                    <br />
-                    <a
-                      className="text-blue-400 word-break"
-                      href="https://twitter.com/en/privacy"
-                      target="_blank"
-                    >
-                      https://twitter.com/en/privacy
-                    </a>{" "}
-                    <br />
-                    <a
-                      className="text-blue-400 word-break"
-                      href="https://help.instagram.com/155833707900388"
-                      target="_blank"
-                    >
-                      https://help.instagram.com/155833707900388
-                    </a>{" "}
-                    <br />
-                    <a
-                      className="text-blue-400 word-break"
-                      href="https://www.linkedin.com/legal/privacy-policy"
-                      target="_blank"
-                    >
-                      https://www.linkedin.com/legal/privacy-policy
-                    </a>{" "}
-                    <br />
-                    Use By Minors Prohibited CloudSocial is committed to
-                    protecting the privacy of children. Neither our Website nor
-                    our Software are designed or intended for use by individuals
-                    under the age of 18 without parental supervision.
-                    CloudSocial is not responsible for determining the age of
-                    its users and has no liability whatsoever should a minor use
-                    our Website to acquire services that would otherwise be
-                    prohibited due to the minor’s age. CloudSocial encourages
-                    parents to monitor their children’s Internet usage as a
-                    result. Online Privacy Policy Only This online privacy
-                    policy applies only to information collected through our
-                    website and not to information collected offline. Your
-                    Consent By using our site, you consent to our privacy
-                    policy. Questions About This Privacy Policy Should you have
-                    a question about privacy policy of our Website and/or
-                    Software, please email to{" "}
-                    <a
-                      className="text-blue-400 word-break"
-                      href="mailto:support@cloudsocial.io"
-                      target="_blank"
-                    >
-                      support@cloudsocial.io
-                    </a>
-                    .
+                    The other services provided to You through the Site based on
+                    the plan purchased, including all software, data, text,
+                    images, sounds, videos, and other content made available
+                    through the Site (collectively, “Content”). Any new features
+                    added to or augmenting the Service are also subject to these
+                    Terms. Certain new features made generally available at no
+                    cost to all subscribing customers will be made available to
+                    You at no additional charge. However, the availability of
+                    some new features may require the payment of additional
+                    fees, and Cloudpoint Technologies will determine at its sole
+                    discretion whether access to any other such new features
+                    will require an additional fee.
+                  </li>
+                </ul>
+                <p className="mb-1 mt-2 text-justify">
+                  <b>B.</b> The Service may also include basic or expanded
+                  services based on the Service plan purchased. Cloudpoint
+                  Technologies will use commercially reasonable efforts to make
+                  the Service available as detailed in the applicable Service
+                  plan, except for:
+                </p>
+                <ul className="list-alphabet text-sm ml-5 text-justify">
+                  <li>Planned downtime, or </li>
+                  <li>
+                    Any unavailability caused by circumstances beyond Our
+                    reasonable control, such as, but not limited to, acts of
+                    God, acts of government, acts of terror or civil unrest, or
+                    technical failures beyond Our control.
                   </li>
                 </ul>
 
-                <hr className="mb-3 mt-3 text-gray-300" />
-                <h3 className="text-md font-bold font-heading mt-4 mb-2">
-                  What the User should know at a glance
-                </h3>
+                <p className="mb-1 mt-2 text-justify">
+                  <b>C.</b> Cloudpoint Technologies may offer Demo/Trial where
+                  you may experience the Service free of charge for a specified
+                  time period. Upon expiration of this time period, your access
+                  to the Service will be terminated unless you choose to pay the
+                  applicable subscription fee and become a subscriber. You
+                  understand that only a single Free Trial/Demo account will be
+                  granted for a given email address. The provision, maintenance
+                  and termination of Demo/Free Trial accounts are within the
+                  sole discretion of Cloudpoint Technologies. Cloudpoint
+                  Technologies has no obligation or liability related to the
+                  provision, maintenance and termination of Demo/Free Trial
+                  accounts.
+                </p>
 
-                <ul className="list-disc list-inside text-sm ml-4 text-justify">
+                <h3 className="text-md font-bold font-heading mt-4 mb-2">
+                  4. Applications
+                </h3>
+                <p className="mb-1 mt-2 text-justify">
+                  Cloudpoint Technologies makes Applications to access the
+                  Service via a web/mobile device. To use the Application You
+                  must have a device that is compatible with the service. We do
+                  not warrant that the Application will be compatible with Your
+                  device. Cloudpoint Technologies hereby grants to You a
+                  non-exclusive, non-transferable, revocable license to use an
+                  object code copy of the Application for one registered account
+                  on one device owned or leased solely by You, for Your personal
+                  use.
+                </p>
+                <h3 className="text-md font-bold font-heading mt-4 mb-2">
+                  5. Third Party Services
+                </h3>
+                <p className="mb-1 mt-2 text-justify">
+                  <b>External Sites: </b>The Service may contain links to, or
+                  otherwise may allow You to connect to and use certain third
+                  party products, services or software under separate terms and
+                  conditions (collectively, “Third-party Services”) in
+                  conjunction with Our Service. If You decide to access and use
+                  such Third-party Services, be advised that Your use of such
+                  Third-party Services is governed solely by the terms and
+                  conditions of such Third-party Services, and We do not
+                  endorse, are not responsible for, and make no representations
+                  as to such Third-party Services, their content or the manner
+                  in which they handle Your data. Cloudpoint Technologies is not
+                  liable for any damage or loss caused or alleged to be caused
+                  by or in connection with Your access or use of any such
+                  Third-party Services, or Your reliance on the privacy
+                  practices or other policies of such Third-party Services. A.
+                  Integration. The Service may contain features that enable
+                  various Third-party Services (such as social media services
+                  like Facebook and Twitter) to be directly integrated into your
+                  Cloudpoint Technologies account. To take advantage of these
+                  features, You will be required to register for or log into
+                  such Third-party Services on their respective websites. By
+                  enabling third party services within the Service, You are
+                  allowing Cloudpoint Technologies to pass Your log-in
+                  information to these Third-party Services for this purpose.
+                </p>
+                <h3 className="text-md font-bold font-heading mt-4 mb-2">
+                  6. Billing, Plan Modifications and Payments
+                </h3>
+                <p className="mb-1 mt-2 text-justify">
+                  <b>Billing and Payments:</b> Unless otherwise agreed to in
+                  writing by Cloudpoint Technologies, the Service is made
+                  available on a pay-as-you-go basis and is charged at the start
+                  of Your elected subscription term (generally monthly or
+                  annually). If You do not provide Your credit card or other
+                  payment information to Cloudpoint Technologies before the
+                  expiration of any applicable demo/free trial period, Your
+                  account will be suspended until payment information and charge
+                  authorization are provided. You will be promptly billed and,
+                  if applicable, any trial period will terminate. Unless You
+                  cancel Your subscription prior to the expiration of its
+                  current subscription term, We will automatically renew Your
+                  subscription based on Your plan’s renewal cycle and will
+                  charge Your credit card with the applicable renewal
+                  subscription fees. Subscriptions must be cancelled at least 3
+                  days prior to expiration thereof to avoid automatic renewal.
+                  This will prevent any further payments from occurring. The
+                  Service provides an interface for the account owner to change
+                  credit card information (e.g., upon card renewal).
+                </p>
+                <p className="mb-1 mt-2 text-justify">
+                  <b>A. Modifying Your Subscription: </b> If You choose to
+                  upgrade Your plan or number of users during Your elected
+                  subscription period, any incremental cost will be prorated
+                  over the remaining term of the subscription period and charged
+                  to Your account. You will be charged the adjusted rate on
+                  subsequent billing cycles. If your payments for the Service
+                  are made by credit card, your credit card will be billed the
+                  prorated charge at the time your account is modified. Except
+                  as provided in Section 11, regardless of Your billing cycle,
+                  there are no refunds or credits for partial months of Service,
+                  plan downgrades, or refunds for unused time if You close Your
+                  account before the end of Your subscription period.
+                  Downgrading Your plan level may cause the loss of content,
+                  features, or capacity of Your account and Cloudpoint
+                  Technologies does not accept any liability for such loss.
+                </p>
+                <p className="mb-1 mt-2 text-justify">
+                  <b>B. Authorization to Charge Your Credit Card: </b> By
+                  becoming a subscriber of the Service and submitting your
+                  credit card information to Cloudpoint Technologies, you
+                  authorize Cloudpoint Technologies to store your payment card
+                  information and to charge the billing source you have provided
+                  for your account according to the subscription plan you
+                  selected until your account is terminated
+                </p>
+                <p className="mb-1 mt-2 text-justify">
+                  <b>C. Overdue charges: </b>If You fail to pay your
+                  subscription fee on time, or if Your credit card payment
+                  information is entered in error or does not go through for
+                  processing and You do not update payment information upon Our
+                  request, your entire subscription may be suspended or
+                  cancelled. Even after your subscription is suspended or
+                  cancelled, You will still have access to the Site, and you
+                  will be able to access your account information to restore
+                  your access to the Service by providing a proper billing
+                  source. After your subscription is terminated, we will keep
+                  your current account settings on file for 90 days. After that
+                  time, Cloudpoint Technologies reserves the right to remove
+                  such settings from our servers with NO liability or notice to
+                  you.
+                </p>
+                <p className="mb-1 mt-2 text-justify">
+                  <b>D. Billing Privacy: </b> Cloudpoint Technologies uses a
+                  third-party intermediary to manage credit card processing and
+                  this intermediary is not permitted to store, retain, or use
+                  Your billing information except to process Your credit card
+                  information for Cloudpoint Technologies. For more information
+                  about Our billing practices and Your personal information
+                  please visit Our Privacy Policy.
+                </p>
+                <p className="mb-1 mt-2 text-justify">
+                  <b>E. Taxes: </b> Unless otherwise stated, Our charges do not
+                  include any taxes, levies, duties or similar governmental
+                  assessments, including value-added, sales, use or withholding
+                  taxes assessable by any local, state, provincial or foreign
+                  jurisdiction (collectively “Taxes”). You are responsible for
+                  paying Taxes except those assessable against Cloudpoint
+                  Technologies based on its income. We will invoice You for such
+                  Taxes if we believe we have a legal obligation to do so.
+                </p>
+
+                <h3 className="text-md font-bold font-heading mt-4 mb-2">
+                  7. Intellectual Property Rights
+                </h3>
+                <p className="mb-1 mt-2 text-justify">
+                  Cloudpoint Technologies retains all rights, title and interest
+                  in and to all patents, inventions, copyrights, trademarks,
+                  domain names, trade secrets, know-how and any other
+                  intellectual property and/or proprietary rights (collectively,
+                  “Intellectual Property Rights”) related to the Service. The
+                  rights granted to You to use the Service under these Terms do
+                  not convey any additional rights in the Service, or ownership
+                  of any Intellectual Property Rights associated therewith.
+                </p>
+                <p className="mb-1 mt-2 text-justify">
+                  <b>A. </b> As between You and Cloudpoint Technologies You own
+                  the information you provide Cloudpoint Technologies or input
+                  on third-party websites through the Service. You grant
+                  Cloudpoint Technologies a nonexclusive, revocable, worldwide,
+                  perpetual, unlimited fully paid up and royalty-free right to
+                  us to use copy, prepare derivative works of, distribute,
+                  publish, remove, retain, add, process, or analyze the
+                  foregoing described information for the sole purpose of
+                  providing the Service to You and Your Users (as defined
+                  below). By providing information to us or to third-parties
+                  through the Service, You represent and warrant that You are
+                  entitled to and authorized to submit the information and that
+                  the information is accurate, not confidential, and not in
+                  violation of any contractual restrictions or other third party
+                  rights. Licensee may not upload, post or otherwise make
+                  available through the Service any material protected by
+                  copyright, trademark, or any other proprietary right without
+                  first having obtained all rights, permissions and consents
+                  necessary
+                </p>
+
+                <ul className="list-alphabet text-sm ml-5 text-justify">
                   <li>
-                    Please note that some provisions in these Terms may only
-                    apply to certain categories of Users. In particular, certain
-                    provisions may only apply to Consumers or to those Users
-                    that do not qualify as Consumers. Such limitations are
-                    always explicitly mentioned within each affected clause. In
-                    the absence of any such mention, clauses apply to all Users.
+                    To make such content available on or through the Service
+                  </li>
+                  <li>
+                    To grant Cloudpoint Technologies the limited rights to use
+                    the content as set forth in this Agreement. The burden of
+                    determining whether any content is protected by any such
+                    right is on You.
                   </li>
                 </ul>
-                <hr className="mb-3 mt-3 text-gray-300" />
 
-                <h4 className="text-md font-bold font-heading text-lg mt-4 mb-3">
-                  TERMS OF USE
-                </h4>
-                <p className="mb-1 text-justify">
-                  Unless otherwise specified, the terms of use detailed in this
-                  section apply generally when using this Website.
+                <p className="mb-1 mt-2 text-justify">
+                  <b>B. </b> Cloudpoint Technologies shall have a royalty-free,
+                  worldwide, transferable, sub-licensable, irrevocable and
+                  perpetual license to incorporate into the Service or otherwise
+                  use any suggestions, enhancement requests, recommendations or
+                  other feedback (“Feedback”) We receive from You. You
+                  understand and agree, however, that Cloudpoint Technologies is
+                  not obligated to use, display, reproduce, or distribute any
+                  such ideas, know-how, concepts, or techniques contained in the
+                  Feedback, and You have no right to compel such use, display,
+                  reproduction, or distribution.
                 </p>
-                <p className="mb-1 text-justify">
-                  Single or additional conditions of use or access may apply in
-                  specific scenarios and in such cases are additionally
-                  indicated within this document.
+
+                <p className="mb-1 mt-2 text-justify">
+                  <b>C. </b>Cloudpoint Technologies, and Cloudpoint
+                  Technologies’s other product and service names, and logos used
+                  or displayed on the Service are registered or unregistered
+                  trademarks of Cloudpoint Technologies (collectively, “Marks”),
+                  and You may only use such Marks to identify yourself as a
+                  customer and user of the Service; provided You do not attempt,
+                  now or in the future, to claim any rights in the Marks,
+                  degrade the distinctiveness of the Marks, or use the Marks to
+                  disparage or misrepresent Cloudpoint Technologies, its
+                  services or products
                 </p>
-                <p className="mb-1 text-justify">
-                  By using this Website, Users confirm to meet the following
-                  requirements:
+                <p className="mb-1 mt-2 text-justify">
+                  <b>D. </b>All rights, title and interest in and to the Service
+                  and its components, including all related intellectual
+                  property rights, will remain with and belong exclusively to
+                  Cloudpoint Technologies and its third-party vendors.
                 </p>
-                <ul className="list-disc list-inside text-sm ml-4">
+                <p className="mb-1 mt-2 text-justify">
+                  <b>E. </b>Upon subscribing to the Service and subject to Your
+                  compliance with the terms and conditions of these Terms,
+                  Cloudpoint Technologies grants you a non-exclusive,
+                  non-transferable, non- sublicenseable, revocable license to
+                  access and use the Service (for the particular subscription
+                  purchased) and the Site, strictly in accordance with this
+                  Agreement and subject to all the limitations set forth in this
+                  Agreement. If applicable to the plan for which you have
+                  subscribed, you may create separate logins under your account
+                  for as many end user clients (each a “User”) as your plan
+                  permits.
+                </p>
+
+                <h3 className="text-md font-bold font-heading mt-4 mb-2">
+                  8. Account Registration
+                </h3>
+                <p className="mb-1 mt-2 text-justify">
+                  Subject to the terms and conditions of these Terms, You agree
+                  to access and use the Service only for Your internal business
+                  purposes as contemplated by these Terms. In order to use the
+                  Service, you are required to register for our service for
+                  which you will pay a subscription fee for use of the Service
+                  following the expiration or termination of any Free Trial
+                  accounts. The subscription fee, following the expiration or
+                  termination of any Free Trial accounts, must be prepaid in
+                  order to use the Service.
+                </p>
+                <p className="mb-1 mt-2 text-justify">
+                  <b>A. </b> If You add Users to your account, You must
+                  contractually bind each of such User to these Terms and, as
+                  between You and Cloudpoint Technologies you will be solely
+                  liable for any breach of these Terms by Your Users. By adding
+                  any User to your account, You represent and warrant that:
+                </p>
+
+                <ul className="list-roman list-inside text-sm ml-4 text-justify">
                   <li>
-                    There are no restrictions for Users in terms of being
-                    Consumers or Business Users;
+                    You have obtained all necessary authorizations, consents,
+                    and licenses from such User to bind it to this Agreement.
+                    You are at all times fully responsible and liable for all
+                    acts and omissions by Your Users and You agree to indemnify
+                    Cloudpoint Technologies for all claims and losses related to
+                    any such acts and/or omissions.
+                  </li>
+                </ul>
+
+                <p className="mb-1 mt-2 text-justify">
+                  <b>B. </b> To be eligible to use the Service, you must meet
+                  the following criteria and represent and warrant that you:
+                </p>
+                <ul className="list-decimal list-inside text-sm ml-4 text-justify">
+                  <li>Are 18 years of age or older</li>
+                  <li>
+                    Are not currently restricted from the Service, or not
+                    otherwise prohibited from having a Cloudpoint.co.in account
+                  </li>
+                  <li>
+                    Are not a competitor of Cloudpoint Technologies or are not
+                    using the Service for reasons that are in competition with
+                    Cloudpoint Technologies
+                  </li>
+                  <li>
+                    Have full power and authority to enter into this Agreement
+                    and doing so will not violate any other agreement to which
+                    you are a party
+                  </li>
+                  <li>
+                    Will not violate any rights of Cloudpoint Technologies,
+                    including intellectual property rights such as copyright or
+                    trademark rights
+                  </li>
+                  <li>
+                    Agree to provide at Your cost all equipment, software, and
+                    internet access necessary to use the Service.
                   </li>
                 </ul>
 
                 <h3 className="text-md font-bold font-heading mt-4 mb-2">
-                  Account registration
+                  9. Use of the Service
                 </h3>
-                <p className="mb-1 text-justify">
-                  To use the Service Users must register or create a User
-                  account, providing all required data or information in a
-                  complete and truthful manner.
+                <p className="mb-1 mt-2 text-justify">
+                  You shall not, and shall not permit, induce or encourage any
+                  third party (including, without limitation, any User)
                 </p>
 
-                <p className="mb-1 text-justify">
-                  Failure to do so will cause unavailability of the Service.
-                </p>
-                <p className="mb-1 text-justify">
-                  Users are responsible for keeping their login credentials
-                  confidential and safe. For this reason, Users are also
-                  required to choose passwords that meet the highest standards
-                  of strength permitted by this Website.
-                </p>
-                <p className="mb-1 text-justify">
-                  By registering, Users agree to be fully responsible for all
-                  activities that occur under their username and password.
-                </p>
-                <p className="mb-1 text-justify">
-                  Users are required to immediately and unambiguously inform the
-                  Owner via the contact details indicated in this document, if
-                  they think their personal information, including but not
-                  limited to User accounts, access credentials or personal data,
-                  have been violated, unduly disclosed or stolen.
-                </p>
-                <h3 className="text-md font-bold font-heading mt-4 mb-2">
-                  Account termination
-                </h3>
-
-                <p className="mb-1 text-justify">
-                  Users can terminate their account and stop using the Service
-                  subject to the conditions and according to the procedures
-                  outlined in the relevant section of this Website.
-                </p>
-                <p className="mb-1 text-justify">
-                  However, termination of the account will not be possible until
-                  the subscription period paid for by the User has expired.
-                </p>
-
-                <h3 className="text-md font-bold font-heading mt-4 mb-2">
-                  Account suspension and deletion
-                </h3>
-                <p className="mb-1 text-justify">
-                  The Owner reserves the right to suspend or terminate the
-                  User's account at any time and without notice, at the Owner's
-                  sole discretion, in these cases:
-                </p>
-                <ul className="list-disc list-inside text-sm ml-4">
-                  <li>User has violated these Terms; and/or</li>
+                <ul className="list-alphabet text-sm ml-5 text-justify">
                   <li>
-                    User's access or use of this Website may cause injury to the
-                    Owner, other Users or third parties; and/or
+                    license, sublicense, sell, resell, rent, lease, transfer,
+                    assign, distribute, time share or otherwise commercially
+                    exploit or make the Service available to any third party,
+                    other than as expressly permitted by these Terms.
                   </li>
                   <li>
-                    the use of this Website by the User may cause violation of
-                    law or regulations; and/or
+                    Use the Service to process data on behalf of any third party
                   </li>
                   <li>
-                    in case of an investigation by legal action or governmental
-                    involvement; and/or
+                    Modify, adapt or hack the Service to falsely imply any
+                    sponsorship or association with Cloudpoint Technologies, or
+                    otherwise attempt to gain unauthorized access to the Service
+                    or its related systems or networks;
                   </li>
                   <li>
-                    the account or its use is deemed to be, at the Owner’s sole
-                    discretion inappropriate or offensive or in violation of
-                    these Terms.
-                  </li>
-                </ul>
-
-                <p className="mb-1 text-justify">
-                  The suspension or deletion of User accounts shall not entitle
-                  Users to any claims for compensation, damages or
-                  reimbursement.
-                </p>
-                <p className="mb-1 text-justify">
-                  The suspension or deletion of accounts due to causes
-                  attributable to the User does not exempt the User from paying
-                  any applicable fees or prices.
-                </p>
-
-                <h3 className="text-md font-bold font-heading mt-4 mb-2">
-                  Content on this Website
-                </h3>
-                <p className="mb-1 text-justify">
-                  Unless where otherwise specified or clearly recognizable, all
-                  content available on this Website is owned or provided by the
-                  Owner or its licensors.
-                </p>
-                <p className="mb-1 text-justify">
-                  The Owner undertakes its utmost effort to ensure that the
-                  content provided on this Website infringes no applicable legal
-                  provisions or third-party rights. However, it may not always
-                  be possible to achieve such a result.
-                </p>
-                <p className="mb-1 text-justify">
-                  In such cases, without prejudice to any legal prerogatives of
-                  Users to enforce their rights, Users are kindly asked to
-                  preferably report related complaints using the contact details
-                  provided in this document.
-                </p>
-                <h3 className="text-md font-bold font-heading mt-4 mb-2">
-                  Rights regarding content on this Website - All rights reserved
-                </h3>
-                <p className="mb-1 text-justify">
-                  The Owner holds and reserves all intellectual property rights
-                  for any such content.
-                </p>
-                <p className="mb-1 text-justify">
-                  In particular, but without limitation, Users may not copy,
-                  download, share (beyond the limits set forth below), modify,
-                  translate, transform, publish, transmit, sell, sublicense,
-                  edit, transfer/assign to third parties or create derivative
-                  works from the content available on this Website, nor allow
-                  any third party to do so through the User or their device,
-                  even without the User's knowledge.
-                </p>
-                <p className="mb-1 text-justify">
-                  Where explicitly stated on this Website, the User may
-                  download, copy and/or share some content available through
-                  this Website for its sole personal and non-commercial use and
-                  provided that the copyright attributions and all the other
-                  attributions requested by the Owner are correctly implemented.
-                </p>
-                <p className="mb-1 text-justify">
-                  Any applicable statutory limitation or exception to copyright
-                  shall stay unaffected.
-                </p>
-                <h3 className="text-md font-bold font-heading mt-4 mb-2">
-                  Access to external resources
-                </h3>
-                <p className="mb-1 text-justify">
-                  Through this Website Users may have access to external
-                  resources provided by third parties. Users acknowledge and
-                  accept that the Owner has no control over such resources and
-                  is therefore not responsible for their content and
-                  availability.
-                </p>
-                <p className="mb-1 text-justify">
-                  Conditions applicable to any resources provided by third
-                  parties, including those applicable to any possible grant of
-                  rights in content, result from each such third parties’ terms
-                  and conditions or, in the absence of those, applicable
-                  statutory law.
-                </p>
-                <h3 className="text-md font-bold font-heading mt-4 mb-2">
-                  Acceptable use
-                </h3>
-                <p className="mb-1 text-justify">
-                  This Website and the Service may only be used within the scope
-                  of what they are provided for, under these Terms and
-                  applicable law.
-                </p>
-                <p className="mb-1 text-justify">
-                  Users are solely responsible for making sure that their use of
-                  this Website and/or the Service violates no applicable law,
-                  regulations or third-party rights.
-                </p>
-                <p className="mb-1 text-justify">
-                  Therefore, the Owner reserves the right to take any
-                  appropriate measure to protect its legitimate interests
-                  including by denying Users access to this Website or the
-                  Service, terminating contracts, reporting any misconduct
-                  performed through this Website or the Service to the competent
-                  authorities – such as judicial or administrative authorities -
-                  whenever Users engage or are suspected to engage in any of the
-                  following activities:
-                </p>
-                <ul className="list-disc list-inside text-sm ml-4">
-                  <li>violate laws, regulations and/or these Terms;</li>
-                  <li>infringe any third-party rights;</li>
-                  <li>considerably impair the Owner’s legitimate interests;</li>
-                  <li>offend the Owner or any third party.</li>
-                </ul>
-
-                <h4 className="text-md font-bold font-heading text-lg mt-4 mb-3">
-                  Liability and indemnification
-                </h4>
-                <h4 className="text-md font-bold font-heading text-lg mt-4 mb-3">
-                  Australian Users
-                </h4>
-                <h3 className="text-md font-bold font-heading mt-4 mb-2">
-                  Limitation of liability
-                </h3>
-                <p className="mb-1 text-justify">
-                  Nothing in these Terms excludes, restricts or modifies any
-                  guarantee, condition, warranty, right or remedy which the User
-                  may have under the Competition and Consumer Act 2010 (Cth) or
-                  any similar State and Territory legislation and which cannot
-                  be excluded, restricted or modified (non-excludable right). To
-                  the fullest extent permitted by law, our liability to the
-                  User, including liability for a breach of a non-excludable
-                  right and liability which is not otherwise excluded under
-                  these Terms of Use, is limited, at the Owner’s sole
-                  discretion, to the re-performance of the services or the
-                  payment of the cost of having the services supplied again.
-                </p>
-
-                <h4 className="text-md font-bold font-heading text-lg mt-4 mb-3">
-                  US Users
-                </h4>
-
-                <h3 className="text-md font-bold font-heading mt-4 mb-2">
-                  Disclaimer of Warranties
-                </h3>
-                <p className="mb-1 font-bold text-justify">
-                  This Website is provided strictly on an “as is” and “as
-                  available” basis. Use of the Service is at Users’ own risk. To
-                  the maximum extent permitted by applicable law, the Owner
-                  expressly disclaims all conditions, representations, and
-                  warranties — whether express, implied, statutory or otherwise,
-                  including, but not limited to, any implied warranty of
-                  merchantability, fitness for a particular purpose, or
-                  non-infringement of third-party rights. No advice or
-                  information, whether oral or written, obtained by user from
-                  owner or through the Service will create any warranty not
-                  expressly stated herein.
-                </p>
-                <p className="mb-1 font-bold text-justify">
-                  Without limiting the foregoing, the Owner, its subsidiaries,
-                  affiliates, licensors, officers, directors, agents,
-                  co-branders, partners, suppliers and employees do not warrant
-                  that the content is accurate, reliable or correct; that the
-                  Service will meet Users’ requirements; that the Service will
-                  be available at any particular time or location, uninterrupted
-                  or secure; that any defects or errors will be corrected; or
-                  that the Service is free of viruses or other harmful
-                  components. Any content downloaded or otherwise obtained
-                  through the use of the Service is downloaded at users own risk
-                  and users shall be solely responsible for any damage to Users’
-                  computer system or mobile device or loss of data that results
-                  from such download or Users’ use of the Service.
-                </p>
-                <p className="mb-1 font-bold text-justify">
-                  The Owner does not warrant, endorse, guarantee, or assume
-                  responsibility for any product or service advertised or
-                  offered by a third party through the Service or any
-                  hyperlinked website or service, and the Owner shall not be a
-                  party to or in any way monitor any transaction between Users
-                  and third-party providers of products or services.
-                </p>
-                <p className="mb-1 font-bold text-justify">
-                  The Service may become inaccessible or it may not function
-                  properly with Users’ web browser, mobile device, and/or
-                  operating system. The owner cannot be held liable for any
-                  perceived or actual damages arising from Service content,
-                  operation, or use of this Service.
-                </p>
-                <p className="mb-1 font-bold text-justify">
-                  Without limiting the foregoing, the Owner, its subsidiaries,
-                  affiliates, licensors, officers, directors, agents,
-                  co-branders, partners, suppliers and employees do not warrant
-                  that the content is accurate, reliable or correct; that the
-                  Service will meet Users’ requirements; that the Service will
-                  be available at any particular time or location, uninterrupted
-                  or secure; that any defects or errors will be corrected; or
-                  that the Service is free of viruses or other harmful
-                  components. Any content downloaded or otherwise obtained
-                  through the use of the Service is downloaded at users own risk
-                  and users shall be solely responsible for any damage to Users’
-                  computer system or mobile device or loss of data that results
-                  from such download or Users’ use of the Service.
-                </p>
-                <p className="mb-1 font-bold text-justify">
-                  Federal law, some states, and other jurisdictions, do not
-                  allow the exclusion and limitations of certain implied
-                  warranties. The above exclusions may not apply to Users. This
-                  Agreement gives Users specific legal rights, and Users may
-                  also have other rights which vary from state to state. The
-                  disclaimers and exclusions under this agreement shall not
-                  apply to the extent prohibited by applicable law.
-                </p>
-
-                <h3 className="text-md font-bold font-heading mt-4 mb-2">
-                  Limitations of liability
-                </h3>
-                <p className="mb-1 font-bold text-justify">
-                  To the maximum extent permitted by applicable law, in no event
-                  shall the Owner, and its subsidiaries, affiliates, officers,
-                  directors, agents, co-branders, partners, suppliers and
-                  employees be liable for
-                </p>
-
-                <ul className="list-disc list-inside text-sm ml-4 font-bold text-justify">
-                  <li>
-                    any indirect, punitive, incidental, special, consequential
-                    or exemplary damages, including without limitation damages
-                    for loss of profits, goodwill, use, data or other intangible
-                    losses, arising out of or relating to the use of, or
-                    inability to use, the Service; and
+                    (d) use the Service in any unlawful manner, including but
+                    not limited to violation of any persons privacy rights,
+                    infringing any person’s intellectual property rights, or
+                    sending spam or otherwise duplicative or unsolicited
+                    messages in violation of applicable law
                   </li>
                   <li>
-                    any damage, loss or injury resulting from hacking, tampering
-                    or other unauthorized access or use of the Service or User
-                    account or the information contained therein;
-                  </li>
-                  <li>any errors, mistakes, or inaccuracies of content;</li>
-                  <li>
-                    personal injury or property damage, of any nature
-                    whatsoever, resulting from User access to or use of the
-                    Service;
+                    (e) use the Service in any manner that interferes with or
+                    disrupts the integrity or performance of the Service and its
+                    components;
                   </li>
                   <li>
-                    any unauthorized access to or use of the Owner’s secure
-                    servers and/or any and all personal information stored
-                    therein;
+                    (f) attempt to decipher, decompile, reverse engineer or
+                    otherwise discover the source code of any software making up
+                    the Service;
                   </li>
                   <li>
-                    any interruption or cessation of transmission to or from the
-                    Service;
+                    (g) use the Service to knowingly post, upload, link to, send
+                    or store any content that is unlawful, racist, hateful,
+                    obscene, discriminatory, or contains any viruses, malware,
+                    Trojan horses, time bombs, or any other similar harmful
+                    software;
                   </li>
                   <li>
-                    any bugs, viruses, trojan horses, or the like that may be
-                    transmitted to or through the Service;
+                    (h) attempt to use any method to gain unauthorized access to
+                    any paid features of the Site;
                   </li>
                   <li>
-                    any errors or omissions in any content or for any loss or
-                    damage incurred as a result of the use of any content
-                    posted, emailed, transmitted, or otherwise made available
-                    through the Service; and/or
+                    (i) unless otherwise explicitly agreed to in writing by
+                    Cloudpoint Technologies, use the Site or any content
+                    obtained from it to develop, as a component of, any
+                    information, storage and retrieval system, database,
+                    information base, or similar resource (in any media now
+                    existing or hereafter developed), that is offered for
+                    commercial distribution of any kind, including through sale,
+                    license, lease, rental, subscription, or any other
+                    commercial distribution mechanism;
                   </li>
                   <li>
-                    the defamatory, offensive, or illegal conduct of any User or
-                    third party. In no event shall the Owner, and its
-                    subsidiaries, affiliates, officers, directors, agents,
-                    co-branders, partners, suppliers and employees be liable for
-                    any claims, proceedings, liabilities, obligations, damages,
-                    losses or costs in an amount exceeding the amount paid by
-                    User to the Owner hereunder in the preceding 12 months, or
-                    the period of duration of this agreement between the Owner
-                    and User, whichever is shorter.
+                    (j) use automated scripts to collect information from or
+                    otherwise interact with the Site or the Service
+                  </li>
+                  <li>
+                    deep-link to the Site for any purpose (other than Cloudpoint
+                    Technologies’s home page), unless expressly authorized in
+                    writing by Cloudpoint Technologies;
+                  </li>
+                  <li>(l) impersonate any other user of the Service; or </li>
+                  <li>
+                    (m) try to use, or use the Service in violation of these
+                    Terms. A. You are responsible for all information, data,
+                    text, messages or other materials that You or Your Users
+                    post or otherwise transmit via the Service. You are
+                    responsible for maintaining the confidentiality of Your
+                    login and account, and are fully responsible for any and all
+                    activities that occur under or in connection with Your login
+                    or account. You agree and acknowledge that Your login may
+                    only be used by one (1) person, and that You will not share
+                    a single login among multiple people. You agree that You
+                    will not sell, trade or otherwise transfer Your login or
+                    account to another party and that you will not, unless
+                    otherwise specifically agreed to in writing by Cloudpoint
+                    Technologies, charge anyone for access to any portion of the
+                    Site, or any information therein. You agree that you are
+                    responsible for anything that happens through your account,
+                    including the acts or omissions of your Users.
                   </li>
                 </ul>
 
-                <p className="mb-1 mt-2 font-bold text-justify">
-                  This limitation of liability section shall apply to the
-                  fullest extent permitted by law in the applicable jurisdiction
-                  whether the alleged liability is based on contract, tort,
-                  negligence, strict liability, or any other basis, even if
-                  company has been advised of the possibility of such damage.
-                </p>
-                <p className="mb-1 font-bold text-justify">
-                  Some jurisdictions do not allow the exclusion or limitation of
-                  incidental or consequential damages, therefore the above
-                  limitations or exclusions may not apply to User. The terms
-                  give User specific legal rights, and User may also have other
-                  rights which vary from jurisdiction to jurisdiction. The
-                  disclaimers, exclusions, and limitations of liability under
-                  the terms shall not apply to the extent prohibited by
-                  applicable law.
-                </p>
-
                 <h3 className="text-md font-bold font-heading mt-4 mb-2">
-                  Indemnification
+                  10. Data Privacy and Security
                 </h3>
-                <p className="mb-1 font-bold text-justify">
-                  The User agrees to defend, indemnify and hold the Owner and
-                  its subsidiaries, affiliates, officers, directors, agents,
-                  co-branders, partners, suppliers and employees harmless from
-                  and against any and all claims or demands, damages,
-                  obligations, losses, liabilities, costs or debt, and expenses,
-                  including, but not limited to, legal fees and expenses,
-                  arising from
+                <p className="mb-1 mt-2 text-justify">
+                  In providing You the Service We shall maintain appropriate
+                  administrative, physical and technical safeguards to protect
+                  the security, confidentiality and integrity of Your data and
+                  the personal data of Your end-users. These safeguards include
+                  encryption of Your data in transmission (using SSL or similar
+                  technologies), except for external third party integrations
+                  that do not support encryption, which You may link to the
+                  Service at Your choice. We agree to promptly notify You in the
+                  event that Cloudpoint Technologies learns or has reason to
+                  believe that any person or entity has breached Cloudpoint
+                  Technologies’s measures, or gained unauthorized access to Your
+                  data (“Information Security Breach”). Upon any such discovery,
+                  We will:
                 </p>
 
-                <ul className="list-disc list-inside text-sm ml-4 font-bold text-justify">
+                <ul className="list-alphabet text-sm ml-5 text-justify">
                   <li>
-                    User’s use of and access to the Service, including any data
-                    or content transmitted or received by User;
+                    Investigate, and mitigate the effects of the Information
+                    Security Breach
                   </li>
                   <li>
-                    User’s violation of these terms, including, but not limited
-                    to, User’s breach of any of the representations and
-                    warranties set forth in these terms;
+                    Use Our best efforts to ensure that such Information
+                    Security Breach will not recur
                   </li>
                   <li>
-                    User’s violation of any third-party rights, including, but
-                    not limited to, any right of privacy or intellectual
-                    property rights;
+                    Assist You in remediation of the Information Security
+                    Breach. We shall use commercially reasonable efforts to
+                    promptly and properly deal with inquiries and requests from
+                    You in relation to the processing of Your data.
+                  </li>
+                </ul>
+                <p className="mb-1 mt-2 text-justify">
+                  <b>A. </b> You agree that Cloudpoint Technologies can access
+                  Your account information in order to respond to Your service
+                  requests and/or as necessary, in Our sole discretion, to
+                  provide You with the Services. We will not disclose such data
+                  except if compelled by law, permitted by You, or pursuant to
+                  the terms of the Cloudpoint Technologies Privacy Policy, which
+                  is available at https://cloudpoint.co.in and is incorporated
+                  into these Terms. We agree to store, use and process Your
+                  business contact information, including names, business phone
+                  numbers, and business e-mail addresses only to the extent
+                  necessary to provide You the Services. We will not disclose
+                  such business contact information to third parties except if
+                  permitted by You in writing.
+                </p>
+                <p className="mb-1 mt-2 text-justify">
+                  <b>B. </b> The Privacy Policy governs our treatment of any
+                  information, including personally identifiable information,
+                  you submit to us. Please note that certain information,
+                  statements, data, and content which You may submit to or
+                  through the Service may reveal your gender, ethnic origin,
+                  nationality, age, and/or other personal information about You.
+                  You acknowledge that Your submission of any information,
+                  statements, data, and content to Us is voluntary on Your part.
+                  The Privacy Policy is incorporated into this Agreement by
+                  reference.
+                </p>
+                <p className="mb-1 mt-2 text-justify">
+                  <b>C. </b> For Your personal data or personal information
+                  (collectively, “Your personal data”) received by Cloudpoint
+                  Technologies from the European Union (EU) in any form or
+                  format with respect to any identified or identifiable person
+                  covered by the European Union Privacy Directive, Cloudpoint
+                  Technologies agrees to comply as follows:
+                </p>
+
+                <ul className="list-roman text-sm ml-5 text-justify">
+                  <li>
+                    When acting in the capacity of a data processor, Cloudpoint
+                    Technologies only acts on Your instructions and does not
+                    control or share Your personal data without direction from
+                    You and
                   </li>
                   <li>
-                    User’s violation of any statutory law, rule, or regulation;
+                    When acting in the capacity of a data controller, Cloudpoint
+                    Technologies will adhere to the EU Safe Harbor Privacy
+                    Principles regarding the collection, use and retention of
+                    personal information from European Union member countries.
+                  </li>
+                </ul>
+                <h3 className="text-md font-bold font-heading mt-4 mb-2">
+                  11. Cancellation and Termination
+                </h3>
+                <p className="mb-1 mt-2 text-justify">
+                  You may cancel your account with Cloudpoint Technologies at
+                  any time; however, unless Cloudpoint Technologies is in breach
+                  of this Agreement and does not cure said breach within thirty
+                  (30) days of receiving written notice from You of an actual
+                  breach, identifying specifically the nature of the breach, You
+                  are not entitled to any refunds. We may suspend or cancel Your
+                  account without notice or refund to You if you violate this
+                  Agreement. If your account is cancelled, Cloudpoint
+                  Technologies reserves the right to remove Your account
+                  information along with any account settings from our servers
+                  with NO liability or notice to You. Once Your account
+                  information and account settings are removed, You will not be
+                  able to recover this data and You will lose access to all of
+                  Your content (except that content stored/published to
+                  third-party websites, that data will remain on said
+                  third-party websites pursuant to those website’s terms and
+                  conditions). If You cancel the Service before the end of Your
+                  current paid-up subscription period, Your cancellation will
+                  take effect immediately and You will not be charged again.
+                </p>
+                <p className="mb-1 mt-2 text-justify">
+                  <b>A. </b> Cloudpoint Technologies reserves the right to
+                </p>
+
+                <ul className="list-roman text-sm ml-5 text-justify">
+                  <li>
+                    Modify or discontinue, temporarily or permanently, the
+                    Service (or any part thereof)
                   </li>
                   <li>
-                    any content that is submitted from User’s account, including
-                    third party access with User’s unique username, password or
-                    other security measure, if applicable, including, but not
-                    limited to, misleading, false, or inaccurate information;
-                  </li>
-                  <li>User’s wilful misconduct; or</li>
-                  <li>
-                    statutory provision by User or its affiliates, officers,
-                    directors, agents, co-branders, partners, suppliers and
-                    employees to the extent allowed by applicable law.
+                    Refuse any/all current and future use of the Service,
+                    suspend or terminate your account or any part thereof (or
+                    Your use of the Service), and remove and discard any of Your
+                    content within the Service if We believe that You have
+                    violated these Terms. Cloudpoint Technologies will use
+                    reasonable efforts to contact You directly via email to warn
+                    You prior to suspension or termination of Your account. Any
+                    suspected fraudulent, abusive, or illegal activity may be
+                    grounds for immediate termination of Your use of Service,
+                    and may be referred to law enforcement authorities.
+                    Cloudpoint Technologies shall not be liable to You or any
+                    third party for any modification, suspension or
+                    discontinuation of the Service.
                   </li>
                 </ul>
 
-                <h4 className="text-md font-bold font-heading text-lg mt-4 mb-3">
-                  Common provisions
-                </h4>
-
                 <h3 className="text-md font-bold font-heading mt-4 mb-2">
-                  No Waiver
+                  12. Disclaimer of Warranties and Liability
                 </h3>
-                <p className="mb-3 text-justify">
-                  The Owner’s failure to assert any right or provision under
-                  these Terms shall not constitute a waiver of any such right or
-                  provision. No waiver shall be considered a further or
-                  continuing waiver of such term or any other term.
+                <p className="mb-1 mt-2 text-justify">
+                  THE SERVICE, INCLUDING THE SITE AND CONTENT, AND ALL SERVER
+                  AND NETWORK COMPONENTS ARE PROVIDED ON AN “AS IS” AND “AS
+                  AVAILABLE” BASIS, WITHOUT ANY WARRANTIES OF ANY KIND TO THE
+                  FULLEST EXTENT PERMITTED BY LAW, AND CLOUDPOINT TECHNOLOGIES
+                  EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES, WHETHER EXPRESS OR
+                  IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+                  OF MERCHANTABILITY, TITLE, FITNESS FOR A PARTICULAR PURPOSE,
+                  AND NON-INFRINGEMENT.
                 </p>
-                <h3 className="text-md font-bold font-heading mt-4 mb-2">
-                  Service interruption
-                </h3>
-
-                <p className="mb-3 text-justify">
-                  To ensure the best possible service level, the Owner reserves
-                  the right to interrupt the Service for maintenance, system
-                  updates or any other changes, informing the Users
-                  appropriately.
+                <p className="mb-1 mt-2 text-justify">
+                  <b>A. </b> CLOUDPOINT TECHNOLOGIES DOES NOT REPRESENT OR
+                  WARRANT THAT THE SERVICE, CONTENT OR MATERIALS FROM OR RELATED
+                  TO THE SERVICE ARE ACCURATE, COMPLETE, RELIABLE, CURRENT OR
+                  ERROR-FREE OR THAT THE SITE OR THE SERVICE, SERVERS, OR ANY
+                  PLATFORM APPLICATIONS ARE FREE OF VIRUSES OR OTHER HARMFUL
+                  COMPONENTS. THEREFORE, YOU SHOULD EXERCISE CAUTION IN THE USE
+                  AND DOWNLOADING OF ANY SUCH SOFTWARE, CONTENT OR MATERIALS AND
+                  USE INDUSTRY-RECOGNIZED SOFTWARE TO DETECT AND DISINFECT
+                  VIRUSES. ALL RESPONSIBILITY OR LIABILITY FOR ANY DAMAGES
+                  CAUSED BY VIRUSES CONTAINED WITHIN THE ELECTRONIC FILE
+                  CONTAINING A FORM OR DOCUMENT IS DISCLAIMED. WITHOUT LIMITING
+                  THE FOREGOING, YOU UNDERSTAND AND AGREE THAT YOU DOWNLOAD OR
+                  OTHERWISE OBTAIN CONTENT, MATERIAL, DATA OR SOFTWARE
+                  (INCLUDING ANY MOBILE CLIENT) FROM OR THROUGH THE SITE, THE
+                  SOFTWARE, OR ANY PLATFORM APPLICATIONS AT YOUR OWN DISCRETION
+                  AND RISK AND THAT YOU WILL BE SOLELY RESPONSIBLE FOR YOUR USE
+                  THEREOF AND ANY DAMAGES TO YOUR MOBILE DEVICE OR COMPUTER
+                  SYSTEM, LOSS OF DATA OR OTHER HARM OF ANY KIND THAT MAY
+                  RESULT.
                 </p>
-                <p className="mb-3 text-justify">
-                  Within the limits of law, the Owner may also decide to suspend
-                  or terminate the Service altogether. If the Service is
-                  terminated, the Owner will cooperate with Users to enable them
-                  to withdraw Personal Data or information in accordance with
-                  applicable law.
-                </p>
-                <p className="mb-3 text-justify">
-                  Additionally, the Service might not be available due to
-                  reasons outside the Owner’s reasonable control, such as “force
-                  majeure” (eg. labor actions, infrastructural breakdowns or
-                  blackouts etc).
-                </p>
-                <h3 className="text-md font-bold font-heading mt-4 mb-2">
-                  Service reselling
-                </h3>
-                <p className="mb-3 text-justify">
-                  Users may not reproduce, duplicate, copy, sell, resell or
-                  exploit any portion of this Website and of its Service without
-                  the Owner’s express prior written permission, granted either
-                  directly or through a legitimate reselling programme.
-                </p>
-
-                <h3 className="text-md font-bold font-heading mt-4 mb-2">
-                  Privacy policy
-                </h3>
-
-                <p className="mb-3 text-justify">
-                  To learn more about the use of their Personal Data, Users may
-                  refer to the privacy policy of this Website.
-                </p>
-
-                <h3 className="text-md font-bold font-heading mt-4 mb-2">
-                  Intellectual property rights
-                </h3>
-
-                <p className="mb-3 text-justify">
-                  Without prejudice to any more specific provision of these
-                  Terms, any intellectual property rights, such as copyrights,
-                  trademark rights, patent rights and design rights related to
-                  this Website are the exclusive property of the Owner or its
-                  licensors and are subject to the protection granted by
-                  applicable laws or international treaties relating to
-                  intellectual property.
-                </p>
-                <p className="mb-3 text-justify">
-                  All trademarks — nominal or figurative — and all other marks,
-                  trade names, service marks, word marks, illustrations, images,
-                  or logos appearing in connection with this Website are, and
-                  remain, the exclusive property of the Owner or its licensors
-                  and are subject to the protection granted by applicable laws
-                  or international treaties related to intellectual property.
+                <p className="mb-1 mt-2 text-justify">
+                  <b>B. </b>NO INFORMATION OR ADVICE OBTAINED FROM CLOUDPOINT
+                  TECHNOLOGIES OR THROUGH THE SERVICE SHALL CREATE ANY WARRANTY
+                  NOT EXPRESSLY STATED IN THESE TERMS. CLOUDPOINT TECHNOLOGIES
+                  DISCLAIMS ALL LIABILITY FOR DAMAGES CAUSED BY ANY SUCH
+                  INTERRUPTION OR ERRORS IN THE FUNCTIONING OF THE WEBSITE,
+                  EXCEPT AS OTHERWISE EXPRESSLY SETFORTH HEREIN. FURTHERMORE,
+                  CLOUDPOINT TECHNOLOGIES DISCLAIMS ALL LIABILITY FOR ANY
+                  MALFUNCTIONING, IMPOSSIBILITY OF ACCESS, OR POOR USE
+                  CONDITIONS OF THE SERVICE DUE TO INAPPROPRIATE EQUIPMENT,
+                  DISTURBANCES RELATED TO INTERNET SERVICE PROVIDERS, TO THE
+                  SATURATION OF THE INTERNET NETWORK, ERROR, OMISSION,
+                  INTERRUPTION, DELETION, DEFECT, DELAY IN OPERATION OR
+                  TRANSMISSION, COMMUNICATIONS LINE FAILURE, THEFT OR
+                  DESTRUCTION OR UNAUTHORIZED ACCESS TO, OR ALTERATION OF, USER
+                  COMMUNICATIONS, PROBLEMS RELATED TO THE SERVICE OR ITS USE,
+                  LOSS OF PERSONAL CONTENT ON THE SITE, LOST OR UNDELIVERABLE
+                  EMAIL, AND FOR ANY OTHER REASON. UNDER NO CIRCUMSTANCES WILL
+                  CLOUDPOINT TECHNOLOGIES BE RESPONSIBLE FOR ANY LOSS OR DAMAGE,
+                  INCLUDING, BUT NOT LIMITED TO PERSONAL INJURY OR DEATH,
+                  RESULTING FROM USE OF THE SITE OR THE SERVICE, OR ANY
+                  INTERACTIONS BETWEEN USERS OF THE SITE OR THE SERVICE, WHETHER
+                  ONLINE OR OFFLINE.
                 </p>
 
-                <h3 className="text-md font-bold font-heading mt-4 mb-2">
-                  Changes to these Terms
-                </h3>
-
-                <p className="mb-3 text-justify">
-                  The Owner reserves the right to amend or otherwise modify
-                  these Terms at any time. In such cases, the Owner will
-                  appropriately inform the User of these changes.
+                <p className="mb-1 mt-2 text-justify">
+                  <b>C. </b>Cloudpoint Technologies provides the platform for
+                  the Service. Cloudpoint Technologies does not control or vet
+                  user generated content for accuracy. Although We provide rules
+                  for user conduct and postings, We do not control and We are
+                  not responsible for what users post, transmit or share on or
+                  through the Site or any other website (even if such content is
+                  published on or through the Site). Furthermore, we are not
+                  responsible for any offensive, inappropriate, obscene,
+                  unlawful or otherwise objectionable content You may encounter
+                  on the Site. Cloudpoint Technologies is not responsible for
+                  the conduct, whether online or offline, of any user of the
+                  Site or the Service. Further, Cloudpoint Technologies is not
+                  responsible or liable in any manner for any 3rd party
+                  applications, software, viruses, etc. that are uploaded or
+                  posted on the Site, caused by users of the Site, or that are
+                  related to the use of the Service by third parties, or caused
+                  by any third parties’ use of the equipment or programming
+                  associated with or utilized in the Site or the Service.
                 </p>
-                <p className="mb-3 text-justify">
-                  Such changes will only affect the relationship with the User
-                  for the future.
+                <p className="mb-1 mt-2 text-justify">
+                  <b>D. </b>CLOUDPOINT TECHNOLOGIES CANNOT GUARANTEE AND DOES
+                  NOT PROMISE ANY SPECIFIC RESULTS FROM USE OF THE SITE AND/OR
+                  THE SERVICE.
                 </p>
-                <p className="mb-3 text-justify">
-                  The continued use of the Service will signify the User’s
-                  acceptance of the revised Terms. If Users do not wish to be
-                  bound by the changes, they must stop using the Service.
-                  Failure to accept the revised Terms, may entitle either party
-                  to terminate the Agreement.
-                </p>
-                <p className="mb-3 text-justify">
-                  The applicable previous version will govern the relationship
-                  prior to the User's acceptance. The User can obtain any
-                  previous version from the Owner.
-                </p>
-                <p className="mb-3 text-justify">
-                  If required by applicable law, the Owner will specify the date
-                  by which the modified Terms will enter into force.
+                <p className="mb-1 mt-2 text-justify">
+                  <b>E. </b>We do not monitor content published through the
+                  Service and We are not responsible for content published
+                  through the Service. Notwithstanding the foregoing, Cloudpoint
+                  Technologies reserves the right to delete, move, or edit
+                  messages or materials, including, but not limited to,
+                  advertisements, public postings, and messages, that we, in our
+                  sole discretion, deem necessary to be removed.
                 </p>
 
                 <h3 className="text-md font-bold font-heading mt-4 mb-2">
-                  Assignment of contract
+                  13. Limitation of Liability
                 </h3>
-                <p className="mb-3 text-justify">
-                  The Owner reserves the right to transfer, assign, dispose of
-                  by novation, or subcontract any or all rights or obligations
-                  under these Terms, taking the User’s legitimate interests into
-                  account. Provisions regarding changes of these Terms will
-                  apply accordingly.
+                <p className="mb-1 mt-2 text-justify">
+                  NO CONSEQUENTIAL DAMAGES. UNDER NO CIRCUMSTANCES AND UNDER NO
+                  LEGAL THEORY (WHETHER IN CONTRACT, TORT, NEGLIGENCE OR
+                  OTHERWISE) WILL CLOUDPOINT TECHNOLOGIES, ITS AFFILIATES OR
+                  THEIR RESPECTIVE OFFICERS, DIRECTORS, EMPLOYEES, AGENTS,
+                  SUPPLIERS OR LICENSORS BE LIABLE TO THE YOU, YOUR USERS OR ANY
+                  OTHER THIRD PARTY FOR ANY INDIRECT, INCIDENTAL, SPECIAL,
+                  EXEMPLARY, CONSEQUENTIAL, PUNITIVE OR OTHER SIMILAR DAMAGES,
+                  INCLUDING LOST PROFITS, LOST SALES OR BUSINESS, LOST DATA,
+                  BUSINESS INTERRUPTION OR ANY OTHER LOSS INCURRED BY SUCH PARTY
+                  IN CONNECTION WITH THESE TERMS OR THE SERVICE, REGARDLESS OF
+                  WHETHER CLOUDPOINT TECHNOLOGIES HAS BEEN ADVISED OF THE
+                  POSSIBILITY OF OR COULD HAVE FORESEEN SUCH DAMAGES
                 </p>
-                <p className="mb-3 text-justify">
-                  Users may not assign or transfer their rights or obligations
-                  under these Terms in any way, without the written permission
-                  of the Owner.
+                <p className="mb-1 mt-2 text-justify">
+                  <b>A. </b>LIMITS ON MONETARY DAMAGES. NOTWITHSTANDING ANYTHING
+                  TO THE CONTRARY IN THESE TERMS, CLOUDPOINT TECHNOLOGIES’S
+                  (INCLUDING ANY OF ITS AFFILIATES) AGGREGATE LIABILITY FOR
+                  DAMAGES (MONETARY OR OTHERWISE) UNDER THESE TERMS SHALL BE
+                  LIMITED TO THE PAYMENTS MADE BY YOU FOR THE SERVICE DURING THE
+                  TWELVE (12) MONTHS PRECEDING THE CLAIM. THE PARTIES
+                  ACKNOWLEDGE AND AGREE THAT THE ESSENTIAL PURPOSE OF THIS
+                  SECTION 13.2. IS TO ALLOCATE THE RISKS UNDER THESE TERMS
+                  BETWEEN THE PARTIES AND LIMIT THEIR POTENTIAL LIABILITY GIVEN
+                  THE FEES CHARGED UNDER THIS AGREEMENT, WHICH WOULD HAVE BEEN
+                  SUBSTANTIALLY HIGHER IF CLOUDPOINT TECHNOLOGIES WERE TO ASSUME
+                  ANY FURTHER LIABILITY OTHER THAN AS SET FORTH HEREIN. THE
+                  PARTIES HAVE RELIED ON THESE LIMITATIONS IN DETERMINING
+                  WHETHER TO ENTER INTO THESE TERMS.
+                </p>
+
+                <p className="mb-1 mt-2 text-justify">
+                  <b>B. </b>Some jurisdictions do not allow the exclusion of
+                  implied warranties or limitation of liability for incidental
+                  or consequential damages, which means that some of the above
+                  limitations may not apply to You.
+                </p>
+
+                <p className="mb-1 mt-2 text-justify">
+                  IN THESE JURISDICTIONS, CLOUDPOINT TECHNOLOGIES’S LIABILITY
+                  WILL BE LIMITED TO THE GREATEST EXTENT PERMITTED BY LAW.
                 </p>
 
                 <h3 className="text-md font-bold font-heading mt-4 mb-2">
-                  Contacts
+                  14. Indemnification
                 </h3>
-                <p className="mb-3 text-justify">
-                  All communications relating to the use of this Website must be
-                  sent using the contact information stated in this document.
+                <p className="mb-1 mt-2 text-justify">
+                  You agree to defend, indemnify, and hold harmless Cloudpoint
+                  Technologies from and against any claims, actions or demands,
+                  including, without limitation, reasonable legal and
+                  professional services fees, arising or resulting from Your or
+                  Your Users’ breach of these Terms, or Your and Your Users’
+                  access to, use, misuse or illegal use of the Service.
+                  Cloudpoint Technologies will provide You notice of any such
+                  claim, suit, or proceeding. Cloudpoint Technologies reserves
+                  the right to assume the exclusive defense and control of any
+                  matter which is subject to indemnification under this section,
+                  in which case You agree to cooperate with any reasonable
+                  requests to assist Cloudpoint Technologies’s defense of such
+                  matter.
                 </p>
                 <h3 className="text-md font-bold font-heading mt-4 mb-2">
-                  Severability
+                  15. Assignment
                 </h3>
-
-                <p className="mb-3 text-justify">
-                  Should any provision of these Terms be deemed or become
-                  invalid or unenforceable under applicable law, the invalidity
-                  or unenforceability of such provision shall not affect the
-                  validity of the remaining provisions, which shall remain in
-                  full force and effect.
+                <p className="mb-1 mt-2 text-justify">
+                  Neither party may assign these Terms or any of its rights
+                  under these Terms, directly, by operation of law or otherwise,
+                  without the prior written consent of the other party, except
+                  that Cloudpoint Technologies may assign these Terms, without
+                  Your consent to a parent, affiliate, or successor by way of a
+                  merger or reorganization. Subject to the foregoing
+                  restrictions on assignment, these Terms will be fully binding
+                  upon, inure to the benefit of and be enforceable by the
+                  parties and their respective successors and assigns. Any
+                  assignment in violation of this Section will be void. These
+                  Terms shall be binding upon, and inure to the benefit of, the
+                  successors and permitted assigns of the parties hereto.
                 </p>
                 <h3 className="text-md font-bold font-heading mt-4 mb-2">
-                  US Users
+                  16. Entire Agreement Amended Terms
                 </h3>
-                <p className="mb-3 text-justify">
-                  Any such invalid or unenforceable provision will be
-                  interpreted, construed and reformed to the extent reasonably
-                  required to render it valid, enforceable and consistent with
-                  its original intent. These Terms constitute the entire
-                  Agreement between Users and the Owner with respect to the
-                  subject matter hereof, and supersede all other communications,
-                  including but not limited to all prior agreements, between the
-                  parties with respect to such subject matter. These Terms will
-                  be enforced to the fullest extent permitted by law.
+                <p className="mb-1 mt-2 text-justify">
+                  This Agreement constitutes the entire agreement between the
+                  parties with respect to the subject matter hereof, all
+                  previous understandings whether oral or written having been
+                  merged herein. No representations or warranties have been made
+                  other than those expressly set forth herein. Without limiting
+                  the foregoing, the parties have not relied on any oral
+                  statements that are not included in the Terms. Except as
+                  otherwise provided in these Terms, the Terms may not be
+                  changed, modified, renewed, extended, or discharged or any
+                  covenant or provision hereof waived except by an agreement in
+                  writing signed by both parties. These Terms supersede prior
+                  versions of these Terms. We may amend these Terms from time to
+                  time, in which case the new Terms will supersede prior
+                  versions. We will notify You of such changes and direct You to
+                  the latest version. Upon notice of modification of these
+                  Terms, except such modifications required by law, You may
+                  notify us within two weeks of Our sending You notice of the
+                  amended Terms that You are exercising Your right to terminate
+                  Your subscription to the Service. Upon termination of your
+                  Subscription under this Section, any prepaid fees will be
+                  prorated and returned to You. If You do not notify use within
+                  two weeks or if you continue using the Service after we have
+                  provided notice of any changes to these Terms, you will be
+                  deemed to have accepted the revised Terms.
                 </p>
                 <h3 className="text-md font-bold font-heading mt-4 mb-2">
-                  EU Users
+                  17. Severability
                 </h3>
-                <p className="mb-3 text-justify">
-                  Should any provision of these Terms be or be deemed void,
-                  invalid or unenforceable, the parties shall do their best to
-                  find, in an amicable way, an agreement on valid and
-                  enforceable provisions thereby substituting the void, invalid
-                  or unenforceable parts.
-                </p>
-                <p className="mb-3 text-justify">
-                  In case of failure to do so, the void, invalid or
-                  unenforceable provisions shall be replaced by the applicable
-                  statutory provisions, if so permitted or stated under the
-                  applicable law.
-                </p>
-                <p className="mb-3 text-justify">
-                  Without prejudice to the above, the nullity, invalidity or the
-                  impossibility to enforce a particular provision of these Terms
-                  shall not nullify the entire Agreement, unless the severed
-                  provisions are essential to the Agreement, or of such
-                  importance that the parties would not have entered into the
-                  contract if they had known that the provision would not be
-                  valid, or in cases where the remaining provisions would
-                  translate into an unacceptable hardship on any of the parties.
-                </p>
-
-                <h3 className="text-md font-bold font-heading mt-4 mb-2">
-                  Governing law
-                </h3>
-                <p className="mb-3 text-justify">
-                  These Terms are governed by the law of the place where the
-                  Owner is based, as disclosed in the relevant section of this
-                  document, without regard to conflict of laws principles.
-                </p>
-
-                <h3 className="text-md font-bold font-heading mt-4 mb-2">
-                  Exception for European Consumers
-                </h3>
-                <p className="mb-3 text-justify">
-                  However, regardless of the above, if the User qualifies as a
-                  European Consumer and has their habitual residence in a
-                  country where the law provides for a higher consumer
-                  protection standard, such higher standards shall prevail.
-                </p>
-
-                <h3 className="text-md font-bold font-heading mt-4 mb-2">
-                  Venue of jurisdiction
-                </h3>
-                <p className="mb-3 text-justify">
-                  The exclusive competence to decide on any controversy
-                  resulting from or connected to these Terms lies with the
-                  courts of the place where the Owner is based, as displayed in
-                  the relevant section of this document.
+                <p className="mb-1 mt-2 text-justify">
+                  If any provision of these Terms, or the application thereof
+                  under certain circumstances, is held to be invalid or
+                  unenforceable, such provision shall be modified by the court
+                  and interpreted so as to best accomplish the original
+                  provision to the fullest extent permitted by law, and the
+                  remaining provisions of these Terms, or the application of
+                  such provision under other circumstances, shall remain in full
+                  force and effect.
                 </p>
                 <h3 className="text-md font-bold font-heading mt-4 mb-2">
-                  Exception for European Consumers
+                  18. Export Control
                 </h3>
-                <p className="mb-3 text-justify">
-                  The above does not apply to any Users that qualify as European
-                  Consumers, nor to Consumers based in Switzerland, Norway or
-                  Iceland.
+                <p className="mb-1 mt-2 text-justify">
+                  Your use of Service, including our software, is subject to
+                  export and re-export control laws and regulations, including
+                  the Export Administration Regulations (“EAR”) maintained by
+                  the United States Department of Commerce and sanctions
+                  programs maintained by the Treasury Department’s Office of
+                  Foreign Assets Control. You shall not — directly or indirectly
+                  — sell, export, re-export, transfer, divert, or otherwise
+                  dispose of any Service or software to any end-user without
+                  obtaining the required authorizations from the appropriate
+                  government authorities. You also warrant that you are not
+                  prohibited from receiving US origin products, including
+                  services or software.
+                </p>
+                <h3 className="text-md font-bold font-heading mt-4 mb-2">
+                  19. Relationship
+                </h3>
+                <p className="mb-1 mt-2 text-justify">
+                  Independent Contractor Nothing herein contained shall be so
+                  construed as to constitute the parties as principal and agent,
+                  employer and employee, partners or joint venturers, nor shall
+                  any similar relationship be deemed to exist between the
+                  parties. Neither party shall have any power to obligate or
+                  bind the other party, except as specifically provided herein.
+                </p>
+                <h3 className="text-md font-bold font-heading mt-4 mb-2">
+                  20. Survival
+                </h3>
+                <p className="mb-1 mt-2 text-justify">
+                  Sections 1 (Acceptance of Terms), 6 (Billing, Plan
+                  Modifications and Payments), 7.A-D. (Intellectual Property
+                  Rights) 11 (Cancellation and Termination), 12 (Disclaimer of
+                  Warranties and Liability), 13 (Limitation of Liability), 14
+                  (Indemnification), 15 (Assignment), 16 (Entire Agreement;
+                  Amended Terms), 17 (Severability), 18 (Export Compliance and
+                  Use Restrictions), 19 (Relationship; Independent Contractor),
+                  21 (Governing Law), 22 (Arbitration of Disputes), and 25 (No
+                  Waiver) will survive any termination of these Terms.
+                </p>
+                <h3 className="text-md font-bold font-heading mt-4 mb-2">
+                  21. Governing Law
+                </h3>
+                <p className="mb-1 mt-2 text-justify">
+                  The validity, interpretation and performance of these Terms
+                  shall be governed by the laws of Republic of India without
+                  giving effect to the conflicts of laws provisions or
+                  principals thereof.
+                </p>
+                <h3 className="text-md font-bold font-heading mt-4 mb-2">
+                  22. Arbitration of Disputes
+                </h3>
+                <p className="mb-1 mt-2 text-justify">
+                  If we cannot amicably resolve any legal dispute or damage
+                  claim that should arise from your interactions with the Site,
+                  the Service, and/or Cloudpoint Technologies, you agree to
+                  resolve any such dispute or damage claim by arbitration. The
+                  arbitration proceeding shall be conducted in Mumbai, India, in
+                  accordance with the Arbitration and conciliation Act, 1996 and
+                  amendments thereto then in effect with one (1) arbitrator to
+                  be selected by mutual agreement of both you and Cloudpoint
+                  Technologies. If we cannot agree on an arbitrator, then either
+                  parties shall appoint one (01) arbitrator and both appointed
+                  arbitrators shall appoint one (01) arbitrator who shall be
+                  presiding officer among three (03) designated arbitrators. You
+                  agree that the arbitrator cannot award punitive damages to
+                  either of us and agree to be bound by the arbitrator’s
+                  findings. Award granted shall be executed before courts of
+                  republic of India.
+                </p>
+                <h3 className="text-md font-bold font-heading mt-4 mb-2">
+                  23. No Waiver
+                </h3>
+                <p className="mb-1 mt-2 text-justify">
+                  Cloudpoint Technologies’s failure to enforce at any time any
+                  provision of these Terms does not constitute a waiver of that
+                  provision or of any other provision of these Terms.
+                  Responsible Disclosure Policy At Cloudpoint Technologies, we
+                  take the security of our users’ data very seriously. We
+                  encourage those who have discovered potential security
+                  vulnerabilities in a Cloudpoint Technologies service to
+                  disclose it to us in a responsible manner. We will work with
+                  security researchers to validate and respond to
+                  vulnerabilities that are reported to us. We won’t take legal
+                  action against or suspend or terminate your account access
+                  provided you discover and report security vulnerabilities in
+                  accordance with this Responsible Disclosure Policy. Cloudpoint
+                  Technologies reserves all of its legal rights in the event of
+                  any noncompliance. Testing for Security Vulnerabilities You
+                  may only test against an account for which you are the account
+                  owner or an agent authorized by the account owner to conduct
+                  such testing. Cloudpoint Technologies Prohibits the Following
+                  Types of Research: • Accessing, or attempting to access, data
+                  that does not belong to you • Executing, or attempting to
+                  execute, a denial of service attack • Sending, or attempting
+                  to send, unsolicited or unauthorized email, spam or other
+                  forms of unsolicited messages • Testing third party websites,
+                  applications or services that integrate with Cloudpoint
+                  Technologies • Knowingly posting, transmitting, uploading,
+                  linking to, sending or storing any malware, viruses or similar
+                  harmful software • Research conducted by minors, individuals
+                  on sanctions lists or individuals in countries on sanctions
+                  lists Reporting Potential Vulnerabilities Share the details of
+                  any suspected vulnerabilities with the Cloudpoint Technologies
+                  Security Team by sending an email to
+                  contactus@cloudpoint.co.in. Please do not publicly disclose
+                  these details without express written consent from Cloudpoint
+                  Technologies. In reporting any suspected vulnerabilities,
+                  please include the following information: • • • • • • • •
                 </p>
 
-                <hr className="mb-3 mt-3 text-gray-300" />
-
-                <Disclosure
-                  as="div"
-                  className="leading-loose text-lg mt-6 wow animate__animated animate__fadeIn"
-                >
-                  {({ open }) => (
-                    <>
-                      <Disclosure.Button className="w-full font-bold border-b border-gray-200 py-3 flex justify-between items-center mt-4">
-                        <span>Definitions and legal references</span>
-                        <PlusCircleIcon
-                          className={`${
-                            open ? "transform rotate-180" : ""
-                          } w-6 h-6`}
-                        />
-                      </Disclosure.Button>
-                      <Disclosure.Panel className="text-gray-700 text-sm mt-2">
-                        <h3 className="text-md font-bold font-heading mt-4 mb-2">
-                          This Website (or this Application)
-                        </h3>
-                        <p className="mb-3 text-justify">
-                          The property that enables the provision of the
-                          Service.
-                        </p>
-
-                        <h3 className="text-md font-bold font-heading mt-4 mb-2">
-                          Agreement
-                        </h3>
-                        <p className="mb-3 text-justify">
-                          Any legally binding or contractual relationship
-                          between the Owner and the User, governed by these
-                          Terms.
-                        </p>
-
-                        <h3 className="text-md font-bold font-heading mt-4 mb-2">
-                          Business User
-                        </h3>
-                        <p className="mb-3 text-justify">
-                          Any User that does not qualify as a Consumer.
-                        </p>
-
-                        <h3 className="text-md font-bold font-heading mt-4 mb-2">
-                          European (or Europe)
-                        </h3>
-                        <p className="mb-3 text-justify">
-                          Applies where a User is physically present or has
-                          their registered offices within the EU, regardless of
-                          nationality.
-                        </p>
-
-                        <h3 className="text-md font-bold font-heading mt-4 mb-2">
-                          Owner (or We)
-                        </h3>
-                        <p className="mb-3 text-justify">
-                          Indicates the natural person(s) or legal entity that
-                          provides this Website and/or the Service to Users.
-                        </p>
-                        <h3 className="text-md font-bold font-heading mt-4 mb-2">
-                          Service
-                        </h3>
-                        <p className="mb-3 text-justify">
-                          The service provided by this Website as described in
-                          these Terms and on this Website.
-                        </p>
-                        <h3 className="text-md font-bold font-heading mt-4 mb-2">
-                          Terms
-                        </h3>
-                        <p className="mb-3 text-justify">
-                          All provisions applicable to the use of this Website
-                          and/or the Service as described in this document,
-                          including any other related documents or agreements,
-                          and as updated from time to time.
-                        </p>
-
-                        <h3 className="text-md font-bold font-heading mt-4 mb-2">
-                          User (or You)
-                        </h3>
-                        <p className="mb-3 text-justify">
-                          Indicates any natural person or legal entity using
-                          this Website.
-                        </p>
-
-                        <h3 className="text-md font-bold font-heading mt-4 mb-2">
-                          Consumer
-                        </h3>
-                        <p className="mb-3 text-justify">
-                          Any User qualifying as a natural person who accesses
-                          goods or services for personal use, or more generally,
-                          acts for purposes outside their trade, business, craft
-                          or profession.
-                        </p>
-                      </Disclosure.Panel>
-                    </>
-                  )}
-                </Disclosure>
-
-                <hr className="mb-3 mt-3 text-gray-300" />
-
-                <p className="mb-1 text-justify">
-                  Latest update: September 22, 2021
-                </p>
-                <p className="mb-1 text-justify">
-                  <a
-                    className="text-blue-400 word-break"
-                    href="https://www.iubenda.com/en/terms-and-conditions-generator"
-                    target="_blank"
-                  >
-                    iubenda
-                  </a>{" "}
-                  hosts this content and only collects{" "}
-                  <a
-                    className="text-blue-400 word-break"
-                    href="https://www.iubenda.com/privacy-policy/65675001"
-                    target="_blank"
-                  >
-                    the Personal Data strictly necessary
-                  </a>{" "}
-                  for it to be provided.
-                </p>
+                <ul className="list-disc text-sm ml-5 text-justify">
+                  <li>
+                    
+                    Exploit details with adequate information to allow us to
+                    reproduce your steps
+                  </li>
+                  <li>Your email address</li>
+                  <li>
+                    Your name as it should be displayed on this page if you
+                    would like it to be
+                  </li>
+                  <li>
+                    Your Twitter handle if you would like it displayed next to
+                    your name, on this page No Compensation Cloudpoint
+                    Technologies does not compensate individuals or
+                    organizations for identifying potential or confirmed
+                    vulnerabilities.
+                  </li>
+                  <li>
+                    Requests for monetary compensation will be deemed in
+                    violation of this Responsible Disclosure Policy. Cloudpoint
+                    Technologies’s Commitment To all security researchers who
+                    follow this Responsible Disclosure Policy, Cloudpoint
+                    Technologies promises to:
+                  </li>
+                  <li>
+                    Acknowledge receipt of your report in a timely manner
+                  </li>
+                  <li>
+                    Provide an estimated time frame for addressing the
+                    vulnerability
+                  </li>
+                  <li>Notify you when the vulnerability is fixed </li>
+                  <li>
+                    Publicly acknowledge your responsible disclosure, if you
+                    wish
+                  </li>
+                </ul>
                 <hr className="mb-3 mt-3 text-gray-300" />
               </div>
             </div>

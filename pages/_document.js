@@ -6,48 +6,47 @@ import { useEffect } from "react";
 const content1 = {
   "@context": "http://www.schema.org",
   "@type": "product",
-  brand: "CloudSocial",
-  name: "CloudSocial Technologies",
+  brand: "Cloudpoint",
+  name: "Cloudpoint Technologies",
   image:
-    "https://drive.google.com/file/d/1of8XuTIGlls4qo3bDUQdNFPELbGaTsGP/view?usp=sharing",
+    "https://cloudpoint.co.in/images/CPT%20Logo-White.png",
   description:
-    "CloudSocial is Social Media Engagement, Marketing & Management Platform. User can manage several social channels like Facebook, Instagram, LinkedIn, Twitter, Youtube, Google My Business and Email. CloudSocial allows to quickly Respond, Publish, Listen and Analyze. Many more features at affordable price and powered by 24*7*365 support.",
+    "We offer a powerful suite of BI and analytics products that will change the way you discover and share insights, so you can make the best decisions, faster.",
   aggregateRating: {
-    "@type": "aggregateRating",
-    ratingValue: "4.9",
-    reviewCount: "8",
+    "@type": "aggregateRating", "ratingValue": "4.2", "reviewCount": "13"
   },
 };
 const content2 = {
   "@context": "https://schema.org/",
   "@type": "WebSite",
   name: "CloudSocial",
-  url: "https://www.cloudsocial.io/",
+  url: "https://cloudpoint.co.in/",
   potentialAction: {
     "@type": "SearchAction",
-    target: "https://www.cloudsocial.io/{search_term_string}",
-    "query-input": "required name=search_term_string",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://cloudpoint.co.in/search?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
   },
 };
 const content3 = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "CloudSocial",
-  url: "https://www.cloudsocial.io/",
-  logo: "https://drive.google.com/file/d/1of8XuTIGlls4qo3bDUQdNFPELbGaTsGP/view",
+  name: "Cloudpoint",
+  url: "https://cloudpoint.co.in/",
+  logo: "https://cloudpoint.co.in/images/CPT%20Logo-White.png",
   contactPoint: {
     "@type": "ContactPoint",
-    telephone: "9372923073",
+    telephone: "02249720048",
     contactType: "technical support",
     areaServed: "IN",
     availableLanguage: "en",
   },
   sameAs: [
-    "https://www.facebook.com/CloudSocial-2099206000345885/",
-    "https://twitter.com/Cloudsocial_",
-    "https://www.instagram.com/cloudsocial.io/",
-    "https://www.youtube.com/channel/UCcdcLfRsJmTRax5L3XqbOYQ",
-    "https://www.linkedin.com/company/cloudsocial-io/",
+    "https://www.facebook.com/cloudpointtech/",
+    "https://www.linkedin.com/in/cpt/?originalSubdomain=in",
+     "https://twitter.com/techcloudpoint?lang=en" 
   ],
 };
 

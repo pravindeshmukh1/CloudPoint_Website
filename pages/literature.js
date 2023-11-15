@@ -30,14 +30,14 @@ const Literature = () => {
     <>
       <Head>
         <meta charSet="utf-8" name="CloudSocial Resource Literature" />
-        <title>Literature Social Media Resources | CloudSocial</title>
+        <title>Literature Social Media Resources | CloudPoint</title>
         <meta
           name="description"
-          content="CloudSocial provides all the literature resources which guide you to succeed in the CloudSocial media marketing platform. Check out our learning materials."
+          content="CloudPoint provides all the literature resources which guide you to succeed in the CloudPoint platform. Check out our learning materials."
         />
         <link
           rel="canonical"
-          href="https://cloudsocial.io/literature"
+          href="https://cloudpoint.co.in/literature"
           key="canonical"
         />
       </Head>
@@ -45,74 +45,22 @@ const Literature = () => {
         <section className="-mt-24 pt-40 pb-12 bg-blueGray-100">
           <div className="container">
             <h1 className="text-2xl lg:text-5xl font-bold mb-5 wow animate__animated animate__fadeIn animated">
-              How to use cloudsocial
+            Case Studies
             </h1>
-            <ul className="flex text-gray-500 text-sm lg:text-sm pb-12 wow animate__animated animate__fadeIn animated">
-              <li className="inline-flex items-center">
-                <a href="#" className="hover:text-blue-500 text-gray-800">
-                  Home
-                </a>
-                <svg
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  className="h-5 w-auto text-gray-300"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                    clipRule="evenodd"
-                  ></path>
-                </svg>
-              </li>
-              <li className="inline-flex items-center">
-                <a href="#" className="hover:text-blue-500 text-gray-800">
-                  Literature Info
-                </a>
-                <svg
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  className="h-5 w-auto text-gray-300"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                    clipRule="evenodd"
-                  ></path>
-                </svg>
-              </li>
-              <li className="inline-flex items-center text-gray-400">
-                <span>How to use platform demo Literatures</span>
-              </li>
-            </ul>
           </div>
         </section>
 
         <section className="pt-20 pb-24 bg-blueGray-50" id="how-we-work">
           <div className="container">
             <div className="flex flex-wrap items-center justify-between max-w-2xl lg:max-w-full mb-12">
-              {/* <div className="w-full lg:w-1/2 mb-4 lg:mb-0">
-                <h2 className="text-3xl md:text-4xl font-bold font-heading wow animate__animated animate__fadeInDown">
-                  <span>We are </span>
-                  <span className="text-blue-500">awesome team </span>
-                  <br />
-                  <span>for your business dream</span>
-                </h2>
-              </div>
-              <div className="w-full lg:w-1/2">
-                <p className="text-blueGray-400 leading-loose wow animate__animated animate__fadeIn">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  luctus eget justo et iaculis. Quisque vitae nulla malesuada,
-                  auctor arcu vitae, luctus nisi. Sed elementum vitae ligula id
-                  imperdiet.
-                </p>
-              </div> */}
+            
               <div className="w-full  text-center mb-4 lg:mb-0">
                 <h2 className="text-3xl md:text-4xl font-bold font-heading wow animate__animated animate__fadeInDown">
                   <span>Literature</span>
                 </h2>
               </div>
             </div>
-            <div className="flex flex-wrap -mx-3 -mb-6 text-center">
+            <div className="flex flex-wrap -mx-3 -mb-6 text-center justify-center">
               {literature.map((data, index) => {
                 return (
                   <div
@@ -141,7 +89,7 @@ const Literature = () => {
             </div>
           </div>
         </section>
-        <section className="pt-10 pb-24 bg-blueGray-50" id="how-we-work">
+        {/* <section className="pt-10 pb-24 bg-blueGray-50" id="how-we-work">
           <div className="container">
             <div className="flex flex-wrap items-center justify-between max-w-2xl lg:max-w-full mb-12">
               <div className="w-full  text-center mb-4 lg:mb-0">
@@ -178,7 +126,7 @@ const Literature = () => {
               })}
             </div>
           </div>
-        </section>
+        </section> */}
       </Layout>
     </>
   );

@@ -49,90 +49,19 @@ export async function getServerSideProps({ query: { page = 1 } }) {
 const Blog = ({ blogList, currentPage, pagination }) => {
   //  console.log("🚀 ~ file: blog.js:22 ~ blogList:", blogList);
   const router = useRouter();
-  const [errors, setErrors] = useState({});
-
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phoneNumber: "",
-    // Other form fields
-  });
-  const validateForm = () => {
-    const newErrors = {};
-    // Add validation rules here
-    if (!formData.name) {
-      newErrors.name = "Name is required";
-    }
-
-    if (!formData.email) {
-      newErrors.email = "Email is required";
-    } else if (!/^\S+@\S+\.\S+$/.test(formData.email)) {
-      newErrors.email = "Invalid email format";
-    }
-    if (!formData.phoneNumber) {
-      newErrors.phoneNumber = "Phone number is required";
-    } else if (!/^[0-9]{10}$/.test(formData.phoneNumber)) {
-      newErrors.phoneNumber = "Invalid phone number format";
-    }
-
-    setErrors(newErrors);
-    return Object.keys(newErrors).length === 0;
-  };
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-      // createdAt: new Date(),
-    });
-  };
-
-  const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState("");
-
-  async function onSubmit(event) {
-    // console.log("🚀 ~ file: index.js:29 ~ event:", event);
-    event.preventDefault();
-    setIsLoading(true);
-    setError(null);
-
-    try {
-      if (validateForm()) {
-        // console.log("🚀 ~ file: index.js:35 ~ formData:", formData);
-        await addEbookUser(formData).then((data) => {
-          // console.log("🚀 ~ file: blog.js:175 ~ response:", data);
-          const localData = {
-            name: data.data.attributes.name,
-            email: data.data.attributes.email,
-            phoneNumber: data.data.attributes.phoneNumber,
-          };
-
-          localStorage.setItem("user", JSON.stringify(localData));
-          // handlePdfOpen();
-          router.push("/ebook");
-        });
-      }
-    } catch (error) {
-      setError(error.message);
-      console.error(error);
-    } finally {
-      setIsLoading(false);
-    }
-  }
 
   return (
     <>
       <Head>
-        <meta charSet="utf-8" name="CloudSocial Solution" />
-        <title>Social Media Management and Marketing Blogs | CloudSocial</title>
+        <meta charSet="utf-8" name="CloudPoint" />
+        <title>Cloudpoint Technologies Blogs</title>
         <meta
           name="description"
-          content="Social Media Management and Marketing Blogs"
+          content="Cloudpoint Technologies - Customer Lifecycle Management | Analytics | Business Intelligence | Social Command Center | CRM | Contract Lifecycle Management"
         />
         <link
           rel="canonical"
-          href="https://cloudsocial.io/blog"
+          href="https://cloudpoint.io/blog"
           key="canonical"
         />
       </Head>

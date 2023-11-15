@@ -202,31 +202,31 @@ export const socialIcon = [
 export const star = [
   {
     id: 1,
-    title: "Best Support",
-    img: "https://www.softwaresuggest.com/award_logo/2021/Best-Support.png",
-    url: "https://www.softwaresuggest.com/cloudsocial",
+    title: "Accredited Agency",
+    img: "/assets/imgs/logos/Accredited Agency.png",
+    url: "https://www.designrush.com/agency/call-centers/outbound",
   },
   {
     id: 2,
-    title: "Get App",
-    img: "http://content.cloudsocial.io/wp-content/uploads/image/icon/getapp.png",
-    url: "https://www.getapp.com/marketing-software/a/cloudsocial/reviews/",
+    title: "Top Call Center Company",
+    img: "/assets/imgs/logos/Top Call Center Company.png",
+    url: "https://www.designrush.com/agency/call-centers/outbound",
   },
-  {
-    id: 3,
-    title: "Software Suggest",
-    img:
-      "http://content.cloudsocial.io/wp-content/uploads/image/icon/software5star.png",
-    url: "https://www.softwaresuggest.com/cloudsocial",
-  },
-  {
-    id: 4,
-    title: "Capterra",
-    img:
-      "http://content.cloudsocial.io/wp-content/uploads/image/icon/capterra.png",
-    url:
-      "https://www.capterra.com/reviews/205569/CloudSocial?utm_source=vendor&utm_medium=badge&utm_campaign=capterra_reviews_badge",
-  },
+  // {
+  //   id: 3,
+  //   title: "Software Suggest",
+  //   img:
+  //     "http://content.cloudsocial.io/wp-content/uploads/image/icon/software5star.png",
+  //   url: "https://www.softwaresuggest.com/cloudsocial",
+  // },
+  // {
+  //   id: 4,
+  //   title: "Capterra",
+  //   img:
+  //     "http://content.cloudsocial.io/wp-content/uploads/image/icon/capterra.png",
+  //   url:
+  //     "https://www.capterra.com/reviews/205569/CloudSocial?utm_source=vendor&utm_medium=badge&utm_campaign=capterra_reviews_badge",
+  // },
 ];
 export const footerIcon = [
   {
@@ -234,22 +234,22 @@ export const footerIcon = [
     title: "Facebook",
     alt: "facebook",
     img: "https://content.cloudsocial.io/wp-content/uploads/image/icon/facebook.svg",
-    href:"https://www.facebook.com/cloudsocial.io"
+    href:"https://www.facebook.com/cloudpointtech"
   },
-  {
-    id: 2,
-    title: "Youtube",
-    alt: "youtube",
-    img: "https://content.cloudsocial.io/wp-content/uploads/image/icon/youtube.svg",
-    href:"https://www.youtube.com/channel/UCcdcLfRsJmTRax5L3XqbOYQ"
-  },
-  {
-    id: 3,
-    title: "Instagram",
-    alt: "instagram",
-    img: "https://content.cloudsocial.io/wp-content/uploads/image/icon/Instagram.svg",
-    href:"https://www.instagram.com/cloudsocial.io/"
-  },
+  // {
+  //   id: 2,
+  //   title: "Youtube",
+  //   alt: "youtube",
+  //   img: "https://content.cloudsocial.io/wp-content/uploads/image/icon/youtube.svg",
+  //   href:"https://www.youtube.com/channel/UCcdcLfRsJmTRax5L3XqbOYQ"
+  // },
+  // {
+  //   id: 3,
+  //   title: "Instagram",
+  //   alt: "instagram",
+  //   img: "https://content.cloudsocial.io/wp-content/uploads/image/icon/Instagram.svg",
+  //   href:"https://www.instagram.com/cloudsocial.io/"
+  // },
   {
     id: 4,
     title: "LinkedIn",
@@ -257,14 +257,14 @@ export const footerIcon = [
     img: "https://content.cloudsocial.io/wp-content/uploads/image/icon/linkedin.svg",
     // img:
     //   "https://content.cloudsocial.io/wp-content/uploads/image/icon/LinkedIn.svg",
-    href:"https://www.linkedin.com/company/cloudsocial-io/"
+    href:"https://www.linkedin.com/company/cptin"
   },
   {
     id: 5,
     title: "Twitter",
     alt: "twitter",
     img: "https://content.cloudsocial.io/wp-content/uploads/image/icon/twitter.svg",
-    href:"https://twitter.com/Cloudsocial_"
+    href:"https://twitter.com/TechCloudpoint"
   },
 ];
 
@@ -380,237 +380,65 @@ export const video = {
   CloudSocialVideo: [
     {
       id: 1,
-      title: "How To Create Ad Campaigns In CloudSocial?",
+      title: "VAS SERVICES",
       image:
         "https://content.cloudsocial.io/wp-content/uploads/literature/videoImg/ytv1.jpg",
-      url: "https://www.youtube.com/embed/we4QAtxBtJU?autoplay=1&mute=0",
+      url: "https://www.youtube.com/embed/K_G5p2r5xFo?autoplay=1&mute=0",
     },
 
     {
       id: 2,
-      title: "How To Create Brand In CloudSocial?",
+      title: "TV SHOPPING",
       image:
         "https://content.cloudsocial.io/wp-content/uploads/literature/videoImg/ytv5.jpg",
-      url: "https://www.youtube.com/embed/LaLvFEtT_yk?autoplay=1&mute=0",
+      url: "https://www.youtube.com/embed/KqGSxHQg5W0?autoplay=1&mute=0",
     },
     {
       id: 3,
-      title: "How To Create Users In CloudSocial?",
+      title: "MEDIA DISTRIBUTION",
       image:
         "https://content.cloudsocial.io/wp-content/uploads/literature/videoImg/ytv1.jpg",
-      url: "https://www.youtube.com/embed/oJBFGWy92Hw?autoplay=1&mute=0",
+      url: "https://www.youtube.com/embed/-UtqtoSP2ns?autoplay=1&mute=0",
     },
     {
       id: 4,
-      title: "How To Publish Through CloudSocial?",
+      title: "MEDIA & ENTERTAINMENT",
       image:
         "https://content.cloudsocial.io/wp-content/uploads/literature/videoImg/ytv7.jpg",
-      url: "https://www.youtube.com/embed/FU6PyhD37oI?autoplay=1&mute=0",
+      url: "https://www.youtube.com/embed/czHPsT1RrpY?autoplay=1&mute=0",
     },
     {
       id: 5,
-      title: "How To Use Analytics In CloudSocial?",
+      title: "B2B SAAS",
       image:
         "https://content.cloudsocial.io/wp-content/uploads/literature/videoImg/ytv2.jpg",
-      url: "https://www.youtube.com/embed/e_mih_u2f8Y?autoplay=1&mute=0",
+      url: "https://www.youtube.com/embed/rOdzBUd90n8?autoplay=1&mute=0",
     },
 
     {
       id: 6,
-      title: "How To Use Calendar In CloudSocial?",
+      title: "CONSUMER APPLIANCES",
       image:
         "https://content.cloudsocial.io/wp-content/uploads/literature/videoImg/ytv6.jpg",
-      url: "https://www.youtube.com/embed/4Vz6BAlZH3w?autoplay=1&mute=0",
+      url: "https://www.youtube.com/embed/9kdzWA-YzxE?autoplay=1&mute=0",
     },
     {
       id: 7,
-      title: "How To Use Listen In CloudSocial?",
+      title: "HOLLYWOOD OTT PLAYER HAVING GLOBAL PRESENCE",
       image:
         "https://content.cloudsocial.io/wp-content/uploads/literature/videoImg/ytv9.jpg",
-      url: "https://www.youtube.com/embed/uez6gIiLVHs?autoplay=1&mute=0",
-    },
-    {
-      id: 8,
-      title: "How To Use Listen Insight In CloudSocial?",
-      image:
-        "https://content.cloudsocial.io/wp-content/uploads/literature/videoImg/ytv9.jpg",
-      url: "https://www.youtube.com/embed/KOSeFF1VT_s?autoplay=1&mute=0",
-    },
-
-    {
-      id: 9,
-      title: "How To Use Omnibox In CloudSocial?",
-      image:
-        "https://content.cloudsocial.io/wp-content/uploads/literature/videoImg/ytv12.jpg",
-      url: "https://www.youtube.com/embed/C9sqJiUFLxM?autoplay=1&mute=0",
-    },
-
-    {
-      id: 10,
-      title: "How To Use Plugins In CloudSocial?",
-      image:
-        "https://content.cloudsocial.io/wp-content/uploads/literature/videoImg/ytv3.jpg",
-      url: "https://www.youtube.com/embed/FIEn0w-O9uo?autoplay=1&mute=0",
+      url: "https://www.youtube.com/embed/rragvBHCAjM?autoplay=1&mute=0",
     },
   ],
 };
 
 export const literature = [
-  // {
-  //   id: 1,
-  //   title: "Silver Pack Guide",
-  //   image:
-  //     "https://content.cloudsocial.io/wp-content/uploads/literature/img/UserGuide2.png",
-  //   url: "https://content.cloudsocial.io/wp-content/uploads/literature/doc/Silver%20Pack.pdf",
-  // },
-  {
-    id: 2,
-    title: "Gold Pack Guide",
-    image:
-      "https://content.cloudsocial.io/wp-content/uploads/literature/img/UserGuide2.png",
-    url: "https://content.cloudsocial.io/wp-content/uploads/literature/doc/Gold%20Pack.pdf",
-  },
-  {
-    id: 3,
-    title: "Platinum Pack Guide",
-    image:
-      "https://content.cloudsocial.io/wp-content/uploads/literature/img/UserGuide2.png",
-    url: "https://content.cloudsocial.io/wp-content/uploads/literature/doc/Platinum%20Pack.pdf",
-  },
-  {
-    id: 4,
-    title: "Super Admin User Guide",
-    image:
-      "https://content.cloudsocial.io/wp-content/uploads/literature/img/UserGuide1.png",
-    url: "https://content.cloudsocial.io/wp-content/uploads/literature/doc/Super%20Admin.pdf",
-  },
-  {
-    id: 5,
-    title: "Brand Manager User Guide",
-    image:
-      "https://content.cloudsocial.io/wp-content/uploads/literature/img/UserGuide1.png",
-    url: "https://content.cloudsocial.io/wp-content/uploads/literature/doc/Brand%20Manager.pdf",
-  },
-  {
-    id: 6,
-    title: "Marketing User Guide",
-    image:
-      "https://content.cloudsocial.io/wp-content/uploads/literature/img/UserGuide1.png",
-    url: "https://content.cloudsocial.io/wp-content/uploads/literature/doc/Marketing%20User.pdf",
-  },
-  {
-    id: 7,
-    title: "Analytics User Guide",
-    image:
-      "https://content.cloudsocial.io/wp-content/uploads/literature/img/UserGuide1.png",
-    url: "https://content.cloudsocial.io/wp-content/uploads/literature/doc/Analytics.pdf",
-  },
-  {
-    id: 8,
-    title: "Back Office User Guide",
-    image:
-      "https://content.cloudsocial.io/wp-content/uploads/literature/img/UserGuide1.png",
-    url: "https://content.cloudsocial.io/wp-content/uploads/literature/doc/Back%20Office.pdf",
-  },
-  {
-    id: 9,
-    title: "Agent User Guide",
-    image:
-      "https://content.cloudsocial.io/wp-content/uploads/literature/img/UserGuide1.png",
-    url: "https://content.cloudsocial.io/wp-content/uploads/literature/doc/Agent.pdf",
-  },
-  {
-    id: 10,
-    title: "Agency Manager User Guide",
-    image:
-      "https://content.cloudsocial.io/wp-content/uploads/literature/img/UserGuide1.png",
-    url: "https://content.cloudsocial.io/wp-content/uploads/literature/doc/Agency%20Manager.pdf",
-  },
-];
 
-export const howToData = [
-   {
+  {
     id: 1,
-    title: "How to Sign up?",
+    title: "Customer Success Case Studies",
     image:
       "https://content.cloudsocial.io/wp-content/uploads/literature/img/UserGuide2.png",
-    url: "https://content.cloudsocial.io/wp-content/uploads/literature/doc/How%20to%20sign%20up.pdf",
-  },
-  {
-    id: 2,
-    title: "How to change Password?",
-    image:
-      "https://content.cloudsocial.io/wp-content/uploads/literature/img/How%20to%20change%20password.jpg",
-    url: "https://content.cloudsocial.io/wp-content/uploads/literature/doc/How%20to%20change%20password.pdf",
-  },
-  {
-    id: 3,
-    title: "How to change Role Name",
-    image:
-      "https://content.cloudsocial.io/wp-content/uploads/literature/img/How%20to%20change%20role%20name.jpg",
-    url: "https://content.cloudsocial.io/wp-content/uploads/literature/doc/How%20to%20change%20role%20name.pdf",
-  },
-  {
-    id: 4,
-    title: "How to create Brand?",
-    image:
-      "https://content.cloudsocial.io/wp-content/uploads/literature/img/How%20to%20create%20brand.jpg",
-    url: "https://content.cloudsocial.io/wp-content/uploads/literature/doc/How%20to%20create%20brand.pdf",
-  },
-  {
-    id: 5,
-    title: "How to create Role?",
-    image:
-      "https://content.cloudsocial.io/wp-content/uploads/literature/img/How%20to%20create%20role.jpg",
-    url: "https://content.cloudsocial.io/wp-content/uploads/literature/doc/How%20to%20create%20role.pdf",
-  },
-  {
-    id: 6,
-    title: "How to listen Keyword?",
-    image:
-      "https://content.cloudsocial.io/wp-content/uploads/literature/img/How%20to%20listen%20keyword.jpg",
-    url: "https://content.cloudsocial.io/wp-content/uploads/literature/doc/How%20to%20listen%20keyword.pdf",
-  },
-  {
-    id: 7,
-    title: "How to raise support Ticket?",
-    image:
-      "https://content.cloudsocial.io/wp-content/uploads/literature/img/How%20to%20raise%20support%20ticket.jpg",
-    url: "https://content.cloudsocial.io/wp-content/uploads/literature/doc/How%20to%20raise%20support%20ticket.pdf",
-  },
-  {
-    id: 8,
-    title: "How to publish your first post in CloudSocial?",
-    image:
-      "https://content.cloudsocial.io/wp-content/uploads/literature/img/How%20to%20publish%20your%20first%20post%20in%20CloudSocial.jpg",
-    url: "https://content.cloudsocial.io/wp-content/uploads/literature/doc/How%20to%20publish%20your%20first%20post%20in%20CloudSocial.pdf",
-  },
-  {
-    id: 9,
-    title: "How to respond to a mention from omnibox in CloudSocial?",
-    image:
-      "https://content.cloudsocial.io/wp-content/uploads/literature/img/How%20to%20respond%20to%20a%20mention%20from%20omnibox%20through%20cloudsocial.jpg",
-    url: "https://content.cloudsocial.io/wp-content/uploads/literature/doc/How%20to%20respond%20to%20a%20mention%20from%20omnibox%20through%20cloudsocial.pdf",
-  },
-  {
-    id: 10,
-    title: "How to set your profile in CloudSocial?",
-    image:
-      "https://content.cloudsocial.io/wp-content/uploads/literature/img/How%20to%20set%20your%20profile%20in%20cloudsocial.jpg",
-    url: "https://content.cloudsocial.io/wp-content/uploads/literature/doc/How%20to%20set%20your%20profile%20in%20cloudsocial.pdf",
-  },
-  {
-    id: 11,
-    title: "How to listen from existing Brand in CloudSocial?",
-    image:
-      "https://content.cloudsocial.io/wp-content/uploads/literature/img/How%20to%20listen%20from%20existing%20brand%20in%20cloudsocial.jpg",
-    url: "https://content.cloudsocial.io/wp-content/uploads/literature/doc/How%20to%20listen%20from%20existing%20brand%20in%20cloudsocial.pdf",
-  },
-  {
-    id: 12,
-    title: "How to subscribe?",
-    image:
-      "https://content.cloudsocial.io/wp-content/uploads/literature/img/How%20to%20subscribe.jpg",
-    url: "https://content.cloudsocial.io/wp-content/uploads/literature/doc/How%20to%20subscribe.pdf",
+    url: "https://cloudpoint.co.in/file/CPT%20Case%20Studies.pdf",
   },
 ];

@@ -36,8 +36,8 @@ const Header = ({ handleHidden }) => {
               <a className="text-3xl font-semibold leading-none">
                 <img
                   className="h-6" //h-10
-                  src="/assets/imgs/logos/CSLogo.svg"
-                  alt="CloudSocial"
+                  src="/assets/imgs/logos/CloudPoint.png"
+                  alt="CloudPoint"
                   style={{marginBottom:"5px !important"}}
                 />
               </a>
@@ -162,99 +162,11 @@ const Header = ({ handleHidden }) => {
                       </a>
                     </Link>
                   </li>
-                  <li>
-                    <Link href="/compendium" legacyBehavior>
-                      <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-                        Compendium
-                      </a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/ebook" legacyBehavior>
-                      <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-                        E-book
-                      </a>
-                    </Link>
-                  </li>
-                  {/* <li>
-                    <Link href="/faqs" legacyBehavior>
-                      <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-                        Faqs
-                      </a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/privacy-policy" legacyBehavior>
-                      <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-                        Privacy Policy
-                      </a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="https://www.iubenda.com/privacy-policy/84213336/cookie-policy"
-                      class="iubenda-nostyle no-brand iubenda-noiframe iubenda-embed iubenda-noiframe"
-                      legacyBehavior
-                    >
-                      <a
-                        className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500"
-                        target="_blank"
-                      >
-                        Cookie Policy
-                      </a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/terms-of-service" legacyBehavior>
-                      <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-                        Terms Of Service
-                      </a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/gdpr" legacyBehavior>
-                      <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-                        GDPR
-                      </a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/security" legacyBehavior>
-                      <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-                        Security
-                      </a>
-                    </Link>
-                  </li>
-                   <li>
-                    <Link href="/services" legacyBehavior>
-                      <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-                        Services
-                      </a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/about" legacyBehavior>
-                      <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-                        About Us
-                      </a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/404" legacyBehavior>
-                      <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-                        404
-                      </a>
-                    </Link>
-                  </li> */}
+                 
+                 
                 </ul>
               </li>
-              {/* <li className="pt-4 pb-4">
-                <Link href="/about" legacyBehavior>
-                  <a className="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500">
-                    About Us
-                  </a>
-                </Link>
-              </li> */}
+        
 
               <li className="pt-4 pb-4">
                 <Link href="/pricing" legacyBehavior>
@@ -263,13 +175,6 @@ const Header = ({ handleHidden }) => {
                   </a>
                 </Link>
               </li>
-              {/* <li className="pt-4 pb-4">
-                  <Link href="https://calendly.com/cloudsocial-support/csdemo" legacyBehavior>
-                    <a className="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500" target="_blank">
-                    ScheduleDemo
-                    </a>
-                  </Link>
-                </li> */}
               <li className="pt-4 pb-4">
                 <Link
                   legacyBehavior
@@ -291,63 +196,9 @@ const Header = ({ handleHidden }) => {
                   </a>
                 </Link>
               </li>
-              {/* <li className="group relative pt-4 pb-4 has-child">
-                <Link href="#" legacyBehavior>
-                  <a className="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500">
-                    Blog
-                  </a>
-                </Link>
-                <ul className="drop-down-menu min-w-200">
-                  <li>
-                    <Link href="/blog" legacyBehavior>
-                      <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-                        Blog
-                      </a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/blog-2" legacyBehavior>
-                      <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-                        Category 2
-                      </a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/blog-single" legacyBehavior>
-                      <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-                        Single 1
-                      </a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/blog-single-2" legacyBehavior>
-                      <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-                        Single 2
-                      </a>
-                    </Link>
-                  </li>
-                </ul>
-              </li> */}
-              {/* <li className="pt-4 pb-4">
-                <Link href="/contact" legacyBehavior>
-                  <a className="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500">
-                    Contact
-                  </a>
-                </Link>
-              </li> */}
+             
             </ul>
             <div className="hidden lg:block">
-              {/* <Link
-                href="https://app.cloudsocial.io/accounts/login"
-                legacyBehavior
-              >
-                <a className="btn-accent hover-up-2" target="_blank">
-                  Log In
-                </a>
-              </Link>
-              <Link href="/signup" legacyBehavior>
-                <a className="btn-primary hover-up-2">Sign Up</a>
-              </Link> */}
               <ul className="hidden lg:flex lg:items-center lg:w-auto">
                 <li className="group relative">
                   <Link

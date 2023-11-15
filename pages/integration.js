@@ -33,16 +33,16 @@ const Integration = () => {
       <Head>
         <meta
           charSet="utf-8"
-          name="CloudSocial : All social integration in your pocket"
+          name="CloudPoint : All social integration in your pocket"
         />
-        <title>Social Media Integration Apps | CloudSocial</title>
+        <title>Social Media Integration Apps | CloudPoint</title>
         <meta
           name="description"
-          content="Cloudsocial offers you all social media integration for your all social media management needs. Checkout our page to know more"
+          content="CloudPoint offers you all social media integration for your all social media management needs. Checkout our page to know more"
         />
         <link
           rel="canonical"
-          href="https://cloudsocial.io/integration"
+          href="https://cloudpoint.co.in/integration"
           key="canonical"
         />
       </Head>
