@@ -23,7 +23,7 @@ const nextConfig = {
     domains: [
       "https://cloudpoint.co.in/",
       "content.cloudsocial.io",
-      "www.designrush.com",
+      "https://www.designrush.com"
     ],
   },
   env: {
