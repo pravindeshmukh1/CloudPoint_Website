@@ -26,45 +26,61 @@ const Footer = () => {
             style={{ backgroundColor: "#000" }}
           >
             <div className="flex justify-around pt-1 pb-1 flex-wrap">
-          
               <div
-                  className="hover-up-5 flex w-1/2 lg:w-auto py-4 wow animate_animated animate_fadeIn"
-                  data-wow-delay=".2s"
-                >
-                  <div className="flex justify-center items-center text-blue-500 rounded-xl h-121 w-40 sm:h-201 sm:w-201 md:w-1\/2 lg:w-3\/5">
-                    <Link href="https://www.designrush.com/agency/call-centers/outbound" legacyBehavior>
-                      <a target="_blank">
-                        <Image
-                          className="object-cover"
-                          src="/assets/imgs/logos/Accredited Agency.png"
-                          alt="Accredited Agency"
-                          priority
-                          width={600}
-                          height={600}
-                        />
-                      </a>
-                    </Link>
-                  </div>
+                className="hover-up-5 flex w-1/2 lg:w-auto py-4 wow animate_animated animate_fadeIn"
+                data-wow-delay=".2s"
+              >
+                <div className="flex justify-center items-center text-blue-500 rounded-xl h-121 w-40 sm:h-201 sm:w-201 md:w-1\/2 lg:w-3\/5">
+                  <Link
+                    href="https://www.designrush.com/agency/call-centers/outbound"
+                    legacyBehavior
+                  >
+                    <a target="_blank">
+                      {/* <Image
+                        className="object-cover"
+                        src="/assets/imgs/logos/AccreditedAgency.png"
+                        alt="Accredited Agency"
+                        priority
+                        width={600}
+                        height={600}
+                      /> */}
+                       <img
+                        className="h-100 w-full object-cover"
+                        src="/assets/imgs/logos/AccreditedAgency.png"
+                        alt="Accredited Agency"
+                      />
+                    </a>
+                  </Link>
                 </div>
-                <div
-                  className="hover-up-5 flex w-1/2 lg:w-auto py-4 wow animate_animated animate_fadeIn"
-                  data-wow-delay=".2s"
-                >
-                  <div className="flex justify-center items-center text-blue-500 rounded-xl h-121 w-40 sm:h-201 sm:w-201 md:w-1\/2 lg:w-3\/5">
-                    <Link href="https://www.designrush.com/press/the-top-call-center-companies-in-november-2022-press-release" legacyBehavior>
-                      <a target="_blank">
-                        <Image
+              </div>
+              <div
+                className="hover-up-5 flex w-1/2 lg:w-auto py-4 wow animate_animated animate_fadeIn"
+                data-wow-delay=".2s"
+              >
+                <div className="flex justify-center items-center text-blue-500 rounded-xl h-121 w-40 sm:h-201 sm:w-201 md:w-1\/2 lg:w-3\/5">
+                  <Link
+                    href="https://www.designrush.com/press/the-top-call-center-companies-in-november-2022-press-release"
+                    legacyBehavior
+                  >
+                    <a target="_blank">
+                      {/* <Image
                           className="object-cover"
-                          src="/assets/imgs/logos/Top Call Center Company.png"
+                          src="/assets/imgs/logos/TopCallCenterCompany.png"
                           alt="Top Call Center Company"
                           priority
                           width={600}
                           height={600}
-                        />
-                      </a>
-                    </Link>
-                  </div>
+                        /> */}
+                      <img
+                        className="h-100 w-full object-cover"
+                        src="/assets/imgs/logos/TopCallCenterCompany.png"
+                        alt="Top Call Center Company"
+                      />
+                    </a>
+                  </Link>
                 </div>
+              </div>
+
               <div className="p-5 flex flex-col items-center">
                 <p className="text-sm text-blueGray-400 ">
                   We would love to hear from you
@@ -143,7 +159,6 @@ const Footer = () => {
 };
 
 export default Footer;
-
 
 // {star.map(({ img, title, url, id }) => (
 //   <div
