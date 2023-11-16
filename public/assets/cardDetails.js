@@ -209,7 +209,8 @@ export const star = [
   {
     id: 2,
     title: "Top Call Center Company",
-    img: "/assets/imgs/logos/Top Call Center Company.png",
+    //img: "/assets/imgs/logos/Top Call Center Company.png",
+    img: "https://www.designrush.com/topbest/images/svg/top-agency-badges/top-outbound-call-center-companies.svg",
     url: "https://www.designrush.com/press/the-top-call-center-companies-in-november-2022-press-release",
   },
   // {
