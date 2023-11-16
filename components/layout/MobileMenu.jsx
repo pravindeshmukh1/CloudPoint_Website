@@ -56,54 +56,19 @@ const MobileMenu = ({ hiddenClass, handleRemove }) => {
           </div>
           <div>
             <ul className="mobile-menu">
-              <li
-                className={
-                  isActive.key == 1
-                    ? "mb-1 menu-item-has-children rounded-xl active"
-                    : "mb-1 menu-item-has-children rounded-xl"
-                }
-                onClick={() => handleToggle(1)}
-              >
-                <span className="menu-expand">+</span>
+              <li className="mb-1 rounded-xl">
                 <Link href="/" legacyBehavior>
-                  <a className="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover-up-2 hover:text-blue-500 rounded-xl">
-                    Home
+                  <a className="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500 rounded-xl"  target="_blank">
+                  Home
                   </a>
                 </Link>
-                <ul
-                  className={
-                    isActive.key == 1
-                      ? "dropdown pl-5 border rounded-xl border-blueGray-200"
-                      : "hidden"
-                  }
-                >
-                  <li>
-                    <Link
-                      href="https://calendly.com/cloudsocial-support/csdemo"
-                      legacyBehavior
-                    >
-                      <a
-                        className="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500"
-                        target="_blank"
-                      >
-                        ScheduleDemo
-                      </a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="https://content.cloudsocial.io/managedservice"
-                      legacyBehavior
-                    >
-                      <a
-                        className="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500"
-                        target="_blank"
-                      >
-                        Managed Service
-                      </a>
-                    </Link>
-                  </li>
-                </ul>
+              </li>
+              <li className="mb-1 rounded-xl">
+                <Link href="https://content.cloudsocial.io/managedservice" legacyBehavior>
+                  <a className="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500 rounded-xl"  target="_blank">
+                  Managed Service
+                  </a>
+                </Link>
               </li>
               <li
                 className={
@@ -127,48 +92,22 @@ const MobileMenu = ({ hiddenClass, handleRemove }) => {
                   }
                 >
                   <li>
-                    <Link href="video" legacyBehavior>
+                    <Link href="/video" legacyBehavior>
                       <a className="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500">
-                        Video
+                      Case Study Video
                       </a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="literature" legacyBehavior>
+                    <Link href="/literature" legacyBehavior>
                       <a className="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500">
-                        Literature
-                      </a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="integration" legacyBehavior>
-                      <a className="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500">
-                        Integration
+                      Case Study Doc
                       </a>
                     </Link>
                   </li>
                 </ul>
               </li>
-              <li className="mb-1 rounded-xl">
-                <Link href="/pricing" legacyBehavior>
-                  <a className="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500 rounded-xl">
-                    Pricing
-                  </a>
-                </Link>
-              </li>
-              <li className="mb-1">
-                <Link
-                  href="https://cloudsocial.postaffiliatepro.com"
-                  legacyBehavior
-                >
-                  <a
-                    className="prefinery-form-cta block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500"
-                    target="_blank"
-                  >
-                    Refer Us
-                  </a>
-                </Link>
-              </li>
+          
               <li className="mb-1 rounded-xl">
                 <Link href="/blog" legacyBehavior>
                   <a className="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500 rounded-xl">
@@ -176,78 +115,12 @@ const MobileMenu = ({ hiddenClass, handleRemove }) => {
                   </a>
                 </Link>
               </li>
-
-              <li className={"mb-1 menu-item-has-children rounded-xl"}>
-                <Link
-                  href="https://app.cloudsocial.io/accounts/login"
-                  legacyBehavior
-                >
-                  <a
-                    className="text-blue Gray-600 hover:text-blue Gray-500 btn-accent hover-up-2 block text-center"
-                    target="_blank"
-                  >
-                    Log In
-                  </a>
-                </Link>
-              </li>
-              <li
-                className={
-                  isActive.key == 1
-                    ? "mb-1 menu-item-has-children rounded-xl active"
-                    : "mb-1 menu-item-has-children rounded-xl"
-                }
-                onClick={() => handleToggle(4)}
-              >
-                {/* <span className="menu-expand">+</span> */}
-                <Link href="#" legacyBehavior>
-                  <a className="text-white btn-primary hover:text-blue Gray-500 btn-accent hover-up-2 block text-center">
-                    Start Free Trial
-                  </a>
-                </Link>
-                <ul
-                  className={
-                    isActive.key == 4
-                      ? "dropdown pl-5 border rounded-xl border-blueGray-200"
-                      : "hidden"
-                  }
-                >
-                  <li>
-                    <Link
-                      href="https://app.cloudsocial.io/accounts/gold/9"
-                      legacyBehavior
-                    >
-                      <a
-                        className="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500"
-                        target="_blank"
-                      >
-                        Brand
-                      </a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="https://app.cloudsocial.io/accounts/platinum/17"
-                      legacyBehavior
-                    >
-                      <a
-                        className="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500"
-                        target="_blank"
-                      >
-                        Agency
-                      </a>
-                    </Link>
-                  </li>
-                </ul>
-              </li>
             </ul>
           </div>
           <div className="mt-auto">
             <p className="my-4 text-xs text-blueGray-400">
               <span>Get in Touch</span>
               <br />
-              {/* <span className="text-blue-500 hover:text-blue-500 underline">
-              support@cloudsocial.io
-              </span> */}
               <span>
                 <a
                   className="text-blue-500 hover:text-blue-500 underline"
